@@ -39,10 +39,15 @@
 .richtext p {
 	margin-bottom: 1rem;
 	line-height: 1.5;
+	font-size: 16px;
 }
 
 .richtext p:last-child {
 	margin-bottom: 0;
+}
+
+.rich-text-content-title {
+	letter-spacing: 0.07em;
 }
 
 @media only screen and (max-width: 800px) {.house-grid.gallery a.house-grid-item:last-of-type {
@@ -79,10 +84,6 @@
 
 .media-content.row .media-info {margin-right: 32px;}
 .media-content.row .media-info .media-subtitle {max-width: 700px;}
-}
-
-.rich-text-content-title {
-	letter-spacing: 0.07em;
 }
 
 .home .md-cta-sc.standard .single-picture,
