@@ -12,15 +12,15 @@
 .md-gallery.standard .img-box {max-width:300px;margin:0 auto;}
 .md-gallery.standard .img-box img {-o-object-fit: contain;object-fit: contain;font-family: "object-fit: contain";}
 
-.padding--s {padding:10px;}
-.padding--m {padding:20px;}
-.padding--l {padding:60px;}
-.padding--xl {padding:90px;}
+.padding-s {padding:10px;}
+.padding-m {padding:20px;}
+.padding-l {padding:60px;}
+.padding-xl {padding:90px;}
 
-.margin--s {margin:10px;}
-.margin--m {margin:20px;}
-.margin--l {margin:60px;}
-.margin--xl {margin:90px;}
+.margin-s {margin:10px;}
+.margin-m {margin:20px;}
+.margin-l {margin:60px;}
+.margin-xl {margin:90px;}
 
 .flex {display: flex;}
 .flex-wrap {flex-wrap: wrap;}
