@@ -72,6 +72,10 @@
 .media-content.row .media-info .media-subtitle {max-width: 700px;}
 }
 
+.rich-text-content-title {
+	letter-spacing: 0.07em;
+}
+
 .home .md-cta-sc.standard .single-picture,
 .home .md-banner.standard .single-picture {background-attachment: fixed;}
 
