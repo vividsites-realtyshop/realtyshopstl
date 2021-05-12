@@ -44,6 +44,10 @@
 
 .md-lead-form.standard .media-content .title-text{    background-color: rgba(0,0,0,0.6) !important;     padding: 21px !important;}
 
+.md-header.fashion .header-container .menu-item {
+	letter-spacing: 0.07em;
+}
+
 .md-header.fashion .header-container .head-account .menu-item {
   border-color: #FFC03A !important;
   color: #FFC03A; 
@@ -75,7 +79,7 @@
 .home .page-content .md-team,
 .home .page-content .md-testimonial {padding-top: 60px;}
 
-.home .page-content .md-house.template4 .house-status.new {background-color: #FFC03A;}
+.home .page-content .md-house.template4 house-detail .house-status.new {background-color: #FFC03A;}
 
 .home .page-content>*:nth-of-type(even),
 .home .page-content>*:nth-of-type(odd) {background-color: black;}
