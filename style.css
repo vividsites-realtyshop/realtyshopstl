@@ -93,7 +93,7 @@
 .home .page-content .md-team,
 .home .page-content .md-testimonial {padding-top: 60px;}
 
-.home .page-content .md-house.template4 house-detail .house-status.new {background-color: #FFC03A;}
+.home .page-content .md-house.template4 .house-detail .house-status.new {background-color: #FFC03A;}
 
 .home .page-content>*:nth-of-type(even),
 .home .page-content>*:nth-of-type(odd) {background-color: black;}
