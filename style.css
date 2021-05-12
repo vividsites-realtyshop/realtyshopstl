@@ -1,3 +1,7 @@
+.dev {
+	display: none !important;
+}
+
 .home .md-testimonial.list-standard .mg-more {
 	position: absolute;
 }
