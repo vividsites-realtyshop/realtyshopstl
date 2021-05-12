@@ -79,8 +79,8 @@
 
 @media (min-width: 1081px){
 .banner .media-content .search-bar.template4 {background-color: rgba(0,0,0,0.7) !important;}
-.md-hero.template4 .media-content .title-text .media-title,
-.md-hero.template4 .media-content .title-text .media-subtitle {text-shadow: 0 3px 6px rgb(0 0 0 / 50%);}
+.md-hero.template4 .media-content .media-info .title-text .media-title,
+.md-hero.template4 .media-content .media-info .title-text .media-subtitle {text-shadow: 0 3px 6px rgb(0 0 0 / 50%);}
 
 .media-content.row .media-info {margin-right: 32px;}
 .media-content.row .media-info .media-subtitle {max-width: 700px;}
