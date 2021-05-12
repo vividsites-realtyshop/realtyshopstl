@@ -36,6 +36,15 @@
 .width-1-4 {width: 25%;}
 .width-1-5 {width: 20%;}
 
+.richtext p {
+	margin-bottom: 1rem;
+	line-height: 1.5;
+}
+
+.richtext p:last-child {
+	margin-bottom: 0;
+}
+
 @media only screen and (max-width: 800px) {.house-grid.gallery a.house-grid-item:last-of-type {
    display: none;
 }}
