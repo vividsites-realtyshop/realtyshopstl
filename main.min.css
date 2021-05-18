@@ -53,4 +53,5 @@
 .md-featured-area.grid-fashion .style-container .city-style .mask{width:100% !important}
 .md-featured-area.grid-fashion .style-container .city-style .info .pc-content{right:auto !important}
 .md-testimonial.list-standard .comment-list-wrap .comment-list .odd .testimonial-picture{margin-right:0 !important}
-.new-class{border:solid 4px}
+.banner-button:empty{display:none !important}
+.md-cta-tc-sc.standard .copy-column .title,.md-cta-tc-sc.standard .copy-column .desc{text-overflow:initial}
