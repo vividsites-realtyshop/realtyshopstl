@@ -138,3 +138,9 @@
 		}
 	}
 }
+
+.banner {
+	.single-picture[title^='parallax'] {
+		background-attachment: fixed;
+	}
+}

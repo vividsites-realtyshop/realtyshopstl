@@ -56,3 +56,4 @@
 .banner-button:empty{display:none !important}
 .md-cta-tc-sc.standard .copy-column .title,.md-cta-tc-sc.standard .copy-column .desc{text-overflow:initial}
 .copy-content p:not(:last-child){margin-bottom:1rem}
+.banner .single-picture[title^='parallax']{background-attachment:fixed}
