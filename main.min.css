@@ -55,3 +55,4 @@
 .md-testimonial.list-standard .comment-list-wrap .comment-list .odd .testimonial-picture{margin-right:0 !important}
 .banner-button:empty{display:none !important}
 .md-cta-tc-sc.standard .copy-column .title,.md-cta-tc-sc.standard .copy-column .desc{text-overflow:initial}
+.copy-content p:not(:last-child){margin-bottom:1rem}
