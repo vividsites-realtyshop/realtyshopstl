@@ -1,0 +1,5 @@
+*.DS_Store
+.DS_Store
+
+# ignore node dependency directories (used by grunt)
+node_modules/
