@@ -1,3 +1,13 @@
+.md-team .agents-list{margin-left:-10px;margin-right:-10px;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important}
+.md-team .agent-item{padding-left:10px;padding-right:10px;padding-top:0 !important}
+.md-team .agent-item.empty{display:none !important}
+@media(min-width:601px){.md-team .agent-item{width:50% !important}
+}@media(min-width:901px){.md-team .agent-item{width:33.333% !important}
+}.md-team .agent-item .agent-img{position:relative !important;height:125%}
+.md-team .agent-item .info{-webkit-transition:all .3s;transition:all .3s}
+.md-team .agent-item .info-text.agent-position{margin-bottom:20px}
+.md-team .agent-item .info-text.agent-name{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1;margin-bottom:0 !important;letter-spacing:.07em}
+.md-team .agent-item:hover .info{height:100% !important;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background:rgba(0,0,0,0.5);-webkit-transition:height .4s,background .4s ease .2s;transition:height .4s,background .4s ease .2s}
 .dev{display:none !important}
 .home .md-testimonial.list-standard .mg-more{position:absolute}
 .home .house-grid-item.template4 .mask .house-detail{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),color-stop(25%,rgba(0,0,0,0.4)),to(rgba(0,0,0,0.8)));background-image:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.4) 25%,rgba(0,0,0,0.8) 100%)}
