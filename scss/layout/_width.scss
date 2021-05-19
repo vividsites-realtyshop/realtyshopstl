@@ -7,7 +7,7 @@
 
 			@each $label, $breakpoint in $breakpoints {
 				.width-#{$i}-#{$t}\@#{$label} {
-					@media ( min-width: $breakpoint ) {
+					@media ( min-width: $breakpoint + 1 ) {
 						width: percentage($i / $t);
 					}
 				}
@@ -21,7 +21,7 @@
 }
 @each $label, $breakpoint in $breakpoints {
 	.width-auto\@#{$label} {
-		@media ( min-width: $breakpoint ) {
+		@media ( min-width: $breakpoint + 1 ) {
 			width: auto;
 		}
 	}
