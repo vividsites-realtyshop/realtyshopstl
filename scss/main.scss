@@ -52,6 +52,12 @@
 	letter-spacing: 0.07em;
 }
 
+.header-container:not(:only-child) {
+	.header-bg {
+		opacity: 1 !important;
+	}
+}
+
 .md-header.fashion .header-container .head-account .menu-item {
   border-color: #FFC03A !important;
   color: #FFC03A; 
