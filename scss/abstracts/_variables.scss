@@ -6,6 +6,15 @@ $breakpoints: (
 	'l': $breakpoint-l,
 );
 
+$sizes: (
+	'remove': 0 !important,
+	's':      10px,
+	'm':      20px,
+	'l':      60px,
+	'xl':     90px,
+	'none':   0 !important
+);
+
 $sides: (
 	'left',
 	'right',
