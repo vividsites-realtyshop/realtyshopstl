@@ -1,0 +1,7 @@
+$breakpoint-s:  600px;
+$breakpoint-l:  900px;
+
+$breakpoints: (
+	's': $breakpoint-s,
+	'l': $breakpoint-l,
+);
