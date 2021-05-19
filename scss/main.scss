@@ -52,9 +52,11 @@
 	letter-spacing: 0.07em;
 }
 
-.header-container:not(:only-child) {
-	.header-bg {
-		opacity: 1 !important;
+main.hide-chat {
+	.header-container:only-child {
+		.header-bg {
+			opacity: 0.8 !important;
+		}
 	}
 }
 

@@ -365,7 +365,7 @@
 }.page-content>.md-house.gallery.template4,.home .page-content{background:#000}
 .md-lead-form.standard .media-content .title-text{background-color:rgba(0,0,0,0.6) !important;padding:21px !important}
 .md-header.fashion .header-container .menu-item{letter-spacing:.07em}
-.header-container:not(:only-child) .header-bg{opacity:1 !important}
+main.hide-chat .header-container:only-child .header-bg{opacity:.8 !important}
 .md-header.fashion .header-container .head-account .menu-item{border-color:#ffc03a !important;color:#ffc03a}
 @media(min-width:800px){.md-team-desc.team-desc-simple .desc-content .description{padding:180px 0 !important;background-color:rgba(1,1,1,0.5);width:100%}
 }.customize-banner{width:30% !important;min-width:300px}
