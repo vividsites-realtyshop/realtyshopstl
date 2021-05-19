@@ -1,0 +1,60 @@
+$sizes: (
+	'remove': 0 !important,
+	's':      10px,
+	'm':      20px,
+	'l':      30px,
+	'none':   0 !important
+);
+
+@each $size, $spacing in $sizes {
+	.padding-#{$size} {
+		padding: $spacing;
+	}
+
+	.padding-y-#{$size} {
+		padding-top: $spacing;
+		padding-bottom: $spacing;
+	}
+
+	.padding-x-#{$size} {
+		padding-left: $spacing;
+		padding-right: $spacing;
+	}
+
+	@each $side in $sides {
+		.padding-#{$side}-#{$size} {
+			padding-#{$side}: $spacing;
+		}
+	}
+}
+
+@each $label, $breakpoint in $breakpoints {
+	@each $size, $spacing in $sizes {
+		@media ( min-width: $breakpoint ) {
+			.padding-#{$size}\@#{$label} {
+				padding: $spacing;
+			}
+
+			.padding-y-#{$size}\@#{$label} {
+				padding-top: $spacing;
+				padding-bottom: $spacing;
+			}
+
+			.padding-x-#{$size}\@#{$label} {
+				padding-left: $spacing;
+				padding-right: $spacing;
+			}
+
+		}
+	}
+
+	@each $side in $sides {
+		@each $size, $spacing in $sizes {
+			@media ( min-width: $breakpoint ) {
+				.padding-#{$side}-#{$size}\@#{$label} {
+					padding-#{$side}: $spacing;
+				}
+			}
+		}
+	}
+}

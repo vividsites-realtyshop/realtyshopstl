@@ -5,3 +5,10 @@ $breakpoints: (
 	's': $breakpoint-s,
 	'l': $breakpoint-l,
 );
+
+$sides: (
+	'left',
+	'right',
+	'top',
+	'bottom'
+);

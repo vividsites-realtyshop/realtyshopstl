@@ -4,16 +4,22 @@
 			.width-#{$i}-#{$t} {
 				width: percentage($i / $t);
 			}
-
-			@each $label, $breakpoint in $breakpoints {
-				.width-#{$i}-#{$t}\@#{$label} {
-					@media ( min-width: $breakpoint + 1 ) {
-						width: percentage($i / $t);
-					}
-				}
-			}
 		}
 	}
+}
+
+@each $label, $breakpoint in $breakpoints {
+    @for $t from 1 through 5 {
+        @for $i from 1 through $t {
+            @if $t == 1 or $i < $t {
+                .width-#{$i}-#{$t}\@#{$label} {
+                    @media ( min-width: $breakpoint + 1 ) {
+                        width: percentage($i / $t);
+                    }
+                }
+            }
+        }
+    }
 }
 
 .width-auto {
