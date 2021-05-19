@@ -1,5 +1,5 @@
-$breakpoint-s:  600px;
-$breakpoint-l:  900px;
+$breakpoint-s:  601px;
+$breakpoint-l:  901px;
 
 $breakpoints: (
 	's': $breakpoint-s,
@@ -10,8 +10,9 @@ $sizes: (
 	'remove': 0 !important,
 	's':      10px,
 	'm':      20px,
-	'l':      60px,
-	'xl':     90px,
+	'l':      30px,
+	'xl':     60px,
+	'xxl':    90px,
 	'none':   0 !important
 );
 
