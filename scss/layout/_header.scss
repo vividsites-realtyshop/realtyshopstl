@@ -1,0 +1,12 @@
+header {
+    .head-account {
+        .menu-item {
+            transition: $transition;
+            
+            &:hover {
+                background: var(--color-theme);
+                color: #fff;
+            }
+        }
+    }
+}
