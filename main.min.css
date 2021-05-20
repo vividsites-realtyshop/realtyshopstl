@@ -14,8 +14,11 @@
 .md-team:not(.carousel-fashion) .agent-item .info-text.agent-name{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1;margin-bottom:0 !important;letter-spacing:.07em}
 .md-team:not(.carousel-fashion) .agent-item:hover .info{height:100% !important;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important;background:rgba(0,0,0,0.5);-webkit-transition:height .4s,background .4s ease .2s;transition:height .4s,background .4s ease .2s}
 footer .site-logo img{height:auto !important;max-height:2.5em}
+footer .site-logo .co-name{visibility:hidden}
 header .head-menu .submenu{background:#222}
 header .head-menu .submenu .menu-item{font-size:15px;line-height:2.5em;height:2.5em}
+header .head-menu .submenu .menu-item a{-webkit-transition:all .2s;transition:all .2s}
+header .head-menu .submenu .menu-item a:hover{background:#000 !important}
 header .head-account .menu-item{-webkit-transition:all .3s;transition:all .3s}
 header .head-account .menu-item:hover{background:var(--color-theme);color:#fff !important}
 .md-header.fashion .header-container .menu-item{letter-spacing:.07em}

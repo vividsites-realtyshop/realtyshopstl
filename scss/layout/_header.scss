@@ -7,6 +7,14 @@ header {
                 font-size: 15px;
                 line-height: 2.5em;
                 height: 2.5em;
+
+                a {
+                    transition: all 0.2s;
+                    
+                    &:hover {
+                        background: #000 !important;
+                    }
+                }
             }
         }
     }
