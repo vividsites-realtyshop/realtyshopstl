@@ -1,4 +1,6 @@
 header {
+    z-index: 9000;
+
     .head-menu {
         .submenu {
             background: #222;
@@ -12,7 +14,7 @@ header {
                     transition: all 0.2s;
                     
                     &:hover {
-                        background: #000 !important;
+                        background: transparent !important;
                     }
                 }
             }
