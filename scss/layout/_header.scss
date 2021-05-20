@@ -1,12 +1,40 @@
 header {
-    .head-account {
-        .menu-item {
-            transition: $transition;
-            
-            &:hover {
-                background: var(--color-theme);
-                color: #fff;
+    .head-menu {
+        .submenu {
+            background: #222;
+
+            .menu-item {
+                font-size: 15px;
+                line-height: 2.5em;
+                height: 2.5em;
             }
         }
     }
+    .head-account {
+        .menu-item {
+            transition: $transition;
+
+            &:hover {
+                background: var(--color-theme);
+                color: #fff !important;
+            }
+        }
+    }
+}
+
+.md-header.fashion .header-container .menu-item {
+	letter-spacing: 0.07em;
+}
+
+main.hide-chat {
+	.header-container:only-child {
+		.header-bg {
+			opacity: 0.7 !important;
+		}
+	}
+}
+
+.md-header.fashion .header-container .head-account .menu-item {
+  border-color: #FFC03A !important;
+  color: #FFC03A; 
 }

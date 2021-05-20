@@ -49,23 +49,6 @@
 
 .md-lead-form.standard .media-content .title-text{    background-color: rgba(0,0,0,0.6) !important;     padding: 21px !important;}
 
-.md-header.fashion .header-container .menu-item {
-	letter-spacing: 0.07em;
-}
-
-main.hide-chat {
-	.header-container:only-child {
-		.header-bg {
-			opacity: 0.8 !important;
-		}
-	}
-}
-
-.md-header.fashion .header-container .head-account .menu-item {
-  border-color: #FFC03A !important;
-  color: #FFC03A; 
-}
-
 @media (min-width: 800px){
 .md-team-desc.team-desc-simple .desc-content .description {padding: 180px 0 !important;background-color: rgba(1,1,1,0.5);width: 100%;}
 }
