@@ -28,6 +28,17 @@ body.contact {
                     width: 33.333%;
                     background-color: transparent;
                     border: none;
+
+                    .title {
+                        color: #fff;
+                        font-weight: normal;
+                    }
+
+                    .content {
+                        @media (min-width: 601px) {
+                            font-size: 16px;
+                        }
+                    }
                     
                     &:not(:last-of-type) {
                         @media (min-width: 601px) {
