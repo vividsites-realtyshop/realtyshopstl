@@ -38,8 +38,10 @@
 .md-team:not(.carousel-fashion) .agent-item:hover .info{height:100% !important;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important;background:rgba(0,0,0,0.5);-webkit-transition:height .4s,background .4s ease .2s;transition:height .4s,background .4s ease .2s}
 .md-team.multi-column-info-over-img+.md-team.multi-column-info-over-img{padding-top:0 !important}
 .md-testimonial.list-standard{padding-bottom:140px}
-.md-testimonial.list-standard .title-container{position:static}
-.md-testimonial.list-standard .title-container .mg-more{position:absolute;bottom:60px}
+.md-testimonial.list-standard .title-container{position:static !important}
+.md-testimonial.list-standard .title-container .mg-more{position:absolute;bottom:60px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.md-testimonial.list-standard .title-container .mg-more .text{margin-right:0;text-align:center}
+.md-testimonial.list-standard .title-container .mg-more .iconfont{display:none}
 footer .site-logo img{height:auto !important;max-height:2.5em}
 footer .site-logo+.co-name{visibility:hidden}
 footer .detail-info .detail-phone .text:after{content:"314-372-0324";display:block}
