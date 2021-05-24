@@ -121,5 +121,5 @@
 }
 
 @mixin loadingbg() {
-	@include animate(loadingbg, 15s, 0, infinite, normal);
+	@include animate(loadingbg, 4s, 0, infinite, normal);
 }

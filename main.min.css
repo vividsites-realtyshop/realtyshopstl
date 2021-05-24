@@ -407,7 +407,7 @@ body.has-uikit header .menu-item a,body.has-uikit footer .menu-item a{color:#fff
 body.has-uikit header .menu-item a:hover,body.has-uikit footer .menu-item a:hover{color:var(--color-theme);text-decoration:none}
 body.has-uikit header .menu-item.active a,body.has-uikit footer .menu-item.active a{color:var(--color-theme)}
 .home .md-cta-sc.standard .single-picture,.home .md-banner.standard .single-picture{background-attachment:fixed}
-.home .md-banner.standard .banner{background-image:linear-gradient(-45deg,#222,#ccc);background-size:400% 400%;-webkit-animation-duration:15s;animation-duration:15s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:loadingbg;animation-name:loadingbg;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
+.home .md-banner.standard .banner,.home .md-hero.standard .banner{background-image:linear-gradient(-45deg,#222,#666);background-size:400% 400%;-webkit-animation-duration:4s;animation-duration:4s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:loadingbg;animation-name:loadingbg;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
 .home .page-content .md-featured-area,.home .page-content .md-team,.home .page-content .md-testimonial{padding-top:60px}
 .home .page-content .md-house.template4 .house-detail .house-status.new{background-color:var(--color-theme)}
 .home .page-content>*:nth-of-type(even),.home .page-content>*:nth-of-type(odd){background-color:black}
