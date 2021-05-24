@@ -16,7 +16,7 @@ body.contact {
         .contact-box {
             min-width: 100%;
             order: -1;
-            background-image: #222;
+            background: #222;
             margin: 0;
 
             .contact-container {
@@ -30,12 +30,22 @@ body.contact {
                     border: none;
                     
                     &:not(:last-of-type) {
-                        border-right: solid 1px #444;
+                        @media (min-width: 601px) {
+                            border-right: solid 1px #444;
+                        }
                     }
 
                     @media (max-width: 900px) {
                         &.address {
                             min-width: 100%;
+                            border-top: solid 1px #444;
+                        }
+                    }
+
+                    @media (max-width: 600px) {
+                        &.email {
+                            min-width: 100%;
+                            border-top: solid 1px #444;
                         }
                     }
                 }

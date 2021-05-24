@@ -414,11 +414,12 @@ body.has-uikit header .menu-item a:hover,body.has-uikit footer .menu-item a:hove
 body.has-uikit header .menu-item.active a,body.has-uikit footer .menu-item.active a{color:var(--color-theme)}
 body.contact header+.md-lead-form.standard .media-content .title-text{background:transparent !important}
 body.contact .md-agent-contact{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
-body.contact .md-agent-contact .contact-box{min-width:100%;-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1;background-image:#222;margin:0}
+body.contact .md-agent-contact .contact-box{min-width:100%;-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1;background:#222;margin:0}
 body.contact .md-agent-contact .contact-box .contact-container{background:transparent;max-width:1400px;margin:0 auto}
 body.contact .md-agent-contact .contact-box .contact-container .item{width:33.333%;background-color:transparent;border:0}
-body.contact .md-agent-contact .contact-box .contact-container .item:not(:last-of-type){border-right:solid 1px #444}
-@media(max-width:900px){body.contact .md-agent-contact .contact-box .contact-container .item.address{min-width:100%}
+@media(min-width:601px){body.contact .md-agent-contact .contact-box .contact-container .item:not(:last-of-type){border-right:solid 1px #444}
+}@media(max-width:900px){body.contact .md-agent-contact .contact-box .contact-container .item.address{min-width:100%;border-top:solid 1px #444}
+}@media(max-width:600px){body.contact .md-agent-contact .contact-box .contact-container .item.email{min-width:100%;border-top:solid 1px #444}
 }.home .md-cta-sc.standard .single-picture,.home .md-banner.standard .single-picture{background-attachment:fixed}
 .home .md-banner .banner,.home .md-hero .banner,.home .md-cta-sc .banner{background-image:linear-gradient(-45deg,#222,#666);background-size:400% 400%;-webkit-animation-duration:4s;animation-duration:4s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:loadingbg;animation-name:loadingbg;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
 .home .md-house.grid.template1{background-image:repeating-linear-gradient(110deg,#222 0,#222 60px,#444 60px,#444 61px);padding-bottom:90px}
