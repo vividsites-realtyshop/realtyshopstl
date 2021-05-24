@@ -25,7 +25,7 @@
 .font-size--s{font-size:1rem}
 .font-size--m{font-size:1.25rem}
 .font-size--l{font-size:1.5rem}
-.rs-button{font-size:16px;background:var(--color-theme);color:#fff;padding:.75rem 2rem;min-width:240px}
+.rs-button,.md-testimonial.list-standard .title-container .mg-more{font-size:16px;background:var(--color-theme);color:#fff;padding:.75rem 2rem;min-width:240px}
 .md-team:not(.carousel-fashion) .agents-list{margin-left:-10px;margin-right:-10px;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important}
 .md-team:not(.carousel-fashion) .agent-item{padding-left:10px;padding-right:10px;padding-top:0 !important}
 .md-team:not(.carousel-fashion) .agent-item.empty{display:none !important}
@@ -37,6 +37,9 @@
 .md-team:not(.carousel-fashion) .agent-item .info-text.agent-name{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1;margin-bottom:0 !important;letter-spacing:.07em}
 .md-team:not(.carousel-fashion) .agent-item:hover .info{height:100% !important;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important;background:rgba(0,0,0,0.5);-webkit-transition:height .4s,background .4s ease .2s;transition:height .4s,background .4s ease .2s}
 .md-team.multi-column-info-over-img+.md-team.multi-column-info-over-img{padding-top:0 !important}
+.md-testimonial.list-standard{padding-bottom:140px}
+.md-testimonial.list-standard .title-container{position:static}
+.md-testimonial.list-standard .title-container .mg-more{position:absolute;bottom:60px}
 footer .site-logo img{height:auto !important;max-height:2.5em}
 footer .site-logo+.co-name{visibility:hidden}
 footer .detail-info .detail-phone .text:after{content:"314-372-0324";display:block}
