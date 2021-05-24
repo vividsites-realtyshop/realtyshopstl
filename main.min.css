@@ -25,7 +25,7 @@
 .font-size--s{font-size:1rem}
 .font-size--m{font-size:1.25rem}
 .font-size--l{font-size:1.5rem}
-.rs-button,.md-testimonial.list-standard .title-container .mg-more{font-size:16px;background:var(--color-theme);color:#fff;padding:.75rem 2rem;min-width:240px}
+.rs-button,.md-testimonial.list-standard .title-container .mg-more{font-size:16px;background:var(--color-theme);color:#fff !important;padding:.75rem 2rem;min-width:240px;border-radius:2px}
 .md-team:not(.carousel-fashion) .agents-list{margin-left:-10px;margin-right:-10px;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important}
 .md-team:not(.carousel-fashion) .agent-item{padding-left:10px;padding-right:10px;padding-top:0 !important}
 .md-team:not(.carousel-fashion) .agent-item.empty{display:none !important}

@@ -1,7 +1,8 @@
 .rs-button {
     font-size: 16px;
     background: var(--color-theme);
-    color: #fff;
+    color: #fff !important;
     padding: 0.75rem 2rem;
     min-width: 240px;
+    border-radius: 2px;
 }
