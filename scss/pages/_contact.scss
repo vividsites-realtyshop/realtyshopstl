@@ -1,0 +1,45 @@
+body.contact {
+    header {
+        & + .md-lead-form.standard {
+            .media-content {
+                .title-text {
+                    background: transparent !important;
+                }
+            }
+        }
+    }
+
+    .md-agent-contact {
+        display: flex;
+        flex-wrap: wrap;
+
+        .contact-box {
+            min-width: 100%;
+            order: -1;
+            background-image: #222;
+            margin: 0;
+
+            .contact-container {
+                background: transparent;
+                max-width: 1400px;
+                margin: 0 auto;
+
+                .item {
+                    width: 33.333%;
+                    background-color: transparent;
+                    border: none;
+                    
+                    &:not(:last-of-type) {
+                        border-right: solid 1px #444;
+                    }
+
+                    @media (max-width: 900px) {
+                        &.address {
+                            min-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
