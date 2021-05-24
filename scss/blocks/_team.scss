@@ -58,4 +58,10 @@
             }
         }
     }
+
+    &.multi-column-info-over-img {
+        & + .md-team.multi-column-info-over-img {
+            padding-top: 0 !important;
+        }
+    }
 }

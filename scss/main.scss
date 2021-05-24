@@ -3,6 +3,7 @@
 @import 'blocks/blocks';
 @import 'layout/layout';
 @import 'vendors/vendors';
+@import 'pages/pages';
 
 .dev {
 	display: none !important;
@@ -67,28 +68,6 @@
 .media-content.row .media-info {margin-right: 32px;}
 .media-content.row .media-info .media-subtitle {max-width: 700px;}
 }
-
-.home .md-cta-sc.standard .single-picture,
-.home .md-banner.standard .single-picture {background-attachment: fixed;}
-
-.home .page-content .md-featured-area,
-.home .page-content .md-team,
-.home .page-content .md-testimonial {padding-top: 60px;}
-
-.home .page-content .md-house.template4 .house-detail .house-status.new {background-color: #FFC03A;}
-
-.home .page-content>*:nth-of-type(even),
-.home .page-content>*:nth-of-type(odd) {background-color: black;}
-
-@media (min-width: 1081px){
-.home .md-featured-area.grid-fashion .mg-container {width: 1200px;}
-.home .md-featured-area.grid-fashion .style-container .city-wrapper {width: 25%;}
-.home .md-featured-area.grid-fashion .city-wrapper:nth-of-type(9n) {display: none !important;}
-}
-
-.home .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main .name {font-size: 18px;}
-
-.home .house-grid-item.template1 {border: none;border-radius:0; background: #FFF;}
 
 .house-grid-item.template4 .mask .house-detail .house-basic .vertical-line:after {content: "\00a0";}
 

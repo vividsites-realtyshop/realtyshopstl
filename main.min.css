@@ -1,4 +1,26 @@
-.text-align--center{text-align:center}
+@-webkit-keyframes wobble{0%{-webkit-transform:none;transform:none}
+20%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}
+40%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}
+60%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}
+80%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}
+100%{-webkit-transform:none;transform:none}
+}@keyframes wobble{0%{-webkit-transform:none;transform:none}
+20%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}
+40%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}
+60%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}
+80%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}
+100%{-webkit-transform:none;transform:none}
+}@-webkit-keyframes fadeIn{0%{opacity:0}
+100%{opacity:1}
+}@keyframes fadeIn{0%{opacity:0}
+100%{opacity:1}
+}@-webkit-keyframes loadingbg{0%{background-position:0 50%}
+50%{background-position:100% 50%}
+100%{background-position:0 50%}
+}@keyframes loadingbg{0%{background-position:0 50%}
+50%{background-position:100% 50%}
+100%{background-position:0 50%}
+}.text-align--center{text-align:center}
 .font-family--title{font-family:var(--font-title)}
 .font-size--s{font-size:1rem}
 .font-size--m{font-size:1.25rem}
@@ -13,12 +35,13 @@
 .md-team:not(.carousel-fashion) .agent-item .info-text.agent-position{margin-bottom:20px}
 .md-team:not(.carousel-fashion) .agent-item .info-text.agent-name{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1;margin-bottom:0 !important;letter-spacing:.07em}
 .md-team:not(.carousel-fashion) .agent-item:hover .info{height:100% !important;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important;background:rgba(0,0,0,0.5);-webkit-transition:height .4s,background .4s ease .2s;transition:height .4s,background .4s ease .2s}
+.md-team.multi-column-info-over-img+.md-team.multi-column-info-over-img{padding-top:0 !important}
 footer .site-logo img{height:auto !important;max-height:2.5em}
-footer .site-logo .co-name{visibility:hidden}
+footer .site-logo+.co-name{visibility:hidden}
+footer .detail-info .detail-phone .text:after{content:"314-372-0324";display:block}
 header{z-index:9000}
 header .head-menu .submenu{background:#222}
 header .head-menu .submenu .menu-item{font-size:15px;line-height:2.5em;height:2.5em}
-header .head-menu .submenu .menu-item a{-webkit-transition:all .2s;transition:all .2s}
 header .head-menu .submenu .menu-item a:hover{background:transparent !important}
 header .head-account .menu-item{-webkit-transition:all .3s;transition:all .3s}
 header .head-account .menu-item:hover{background:var(--color-theme);color:#fff !important}
@@ -383,6 +406,16 @@ body.has-uikit header ul,body.has-uikit header ol,body.has-uikit footer ul,body.
 body.has-uikit header .menu-item a,body.has-uikit footer .menu-item a{color:#fff}
 body.has-uikit header .menu-item a:hover,body.has-uikit footer .menu-item a:hover{color:var(--color-theme);text-decoration:none}
 body.has-uikit header .menu-item.active a,body.has-uikit footer .menu-item.active a{color:var(--color-theme)}
+.home .md-cta-sc.standard .single-picture,.home .md-banner.standard .single-picture{background-attachment:fixed}
+.home .page-content .md-featured-area,.home .page-content .md-team,.home .page-content .md-testimonial{padding-top:60px}
+.home .page-content .md-house.template4 .house-detail .house-status.new{background-color:var(--color-theme)}
+.home .page-content>*:nth-of-type(even),.home .page-content>*:nth-of-type(odd){background-color:black}
+@media(min-width:1081px){.home .md-featured-area.grid-fashion .mg-container{width:1200px}
+.home .md-featured-area.grid-fashion .style-container .city-wrapper{width:25%}
+.home .md-featured-area.grid-fashion .city-wrapper:nth-of-type(9n){display:none !important}
+}.home .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main .name{font-size:18px}
+.home .house-grid-item.template1{border:0;border-radius:0;background:#FFF}
+.home .md-banner.standard{background:linear-gradient(-45deg,#222,#ccc);background-size:400% 400%;-webkit-animation-duration:15s;animation-duration:15s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:loadingbg;animation-name:loadingbg;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
 .dev{display:none !important}
 .home .md-testimonial.list-standard .mg-more{position:absolute}
 .home .house-grid-item.template4 .mask .house-detail{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),color-stop(25%,rgba(0,0,0,0.4)),to(rgba(0,0,0,0.8)));background-image:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.4) 25%,rgba(0,0,0,0.8) 100%)}
@@ -411,16 +444,7 @@ body.has-uikit header .menu-item.active a,body.has-uikit footer .menu-item.activ
 .md-hero.template4 .media-content .media-info .title-text .media-title,.md-hero.template4 .media-content .media-info .title-text .media-subtitle{text-shadow:0 3px 6px rgba(0,0,0,0.5)}
 .media-content.row .media-info{margin-right:32px}
 .media-content.row .media-info .media-subtitle{max-width:700px}
-}.home .md-cta-sc.standard .single-picture,.home .md-banner.standard .single-picture{background-attachment:fixed}
-.home .page-content .md-featured-area,.home .page-content .md-team,.home .page-content .md-testimonial{padding-top:60px}
-.home .page-content .md-house.template4 .house-detail .house-status.new{background-color:#ffc03a}
-.home .page-content>*:nth-of-type(even),.home .page-content>*:nth-of-type(odd){background-color:black}
-@media(min-width:1081px){.home .md-featured-area.grid-fashion .mg-container{width:1200px}
-.home .md-featured-area.grid-fashion .style-container .city-wrapper{width:25%}
-.home .md-featured-area.grid-fashion .city-wrapper:nth-of-type(9n){display:none !important}
-}.home .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main .name{font-size:18px}
-.home .house-grid-item.template1{border:0;border-radius:0;background:#FFF}
-.house-grid-item.template4 .mask .house-detail .house-basic .vertical-line:after{content:"\00a0"}
+}.house-grid-item.template4 .mask .house-detail .house-basic .vertical-line:after{content:"\00a0"}
 .md-featured-area.grid-fashion .style-container .city-style .mask{width:100% !important}
 .md-featured-area.grid-fashion .style-container .city-style .info .pc-content{right:auto !important}
 .md-testimonial.list-standard .comment-list-wrap .comment-list .odd .testimonial-picture{margin-right:0 !important}

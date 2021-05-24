@@ -1,0 +1,35 @@
+.home {
+    .md-cta-sc.standard .single-picture,
+    .md-banner.standard .single-picture {background-attachment: fixed;}
+
+    .page-content {
+        .md-featured-area,
+        .md-team,
+        .md-testimonial {padding-top: 60px;}
+        
+        .md-house.template4 .house-detail .house-status.new {
+            background-color: var(--color-theme);
+        }
+        
+        & > *:nth-of-type(even),
+        & > *:nth-of-type(odd) {background-color: black;}
+    }
+    
+    @media (min-width: 1081px){
+        .md-featured-area.grid-fashion .mg-container {width: 1200px;}
+        .md-featured-area.grid-fashion .style-container .city-wrapper {width: 25%;}
+        .md-featured-area.grid-fashion .city-wrapper:nth-of-type(9n) {display: none !important;}
+    }
+    
+    .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main .name {font-size: 18px;}
+    
+    .house-grid-item.template1 {border: none;border-radius:0; background: #FFF;}
+
+    .md-banner {
+        &.standard {
+            background: linear-gradient(-45deg, #222, #ccc);
+            background-size: 400% 400%;
+            @include loadingbg;
+        }
+    }
+}

@@ -5,8 +5,19 @@ footer {
             max-height: 2.5em;
         }
 
-        .co-name {
+        & + .co-name {
             visibility: hidden;
+        }
+    }
+
+    .detail-info {
+        .detail-phone {
+            .text {
+                &:after {
+                    content: "314-372-0324";
+                    display: block;
+                }
+            }
         }
     }
 }
