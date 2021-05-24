@@ -1,6 +1,20 @@
 .home {
-    .md-cta-sc.standard .single-picture,
-    .md-banner.standard .single-picture {background-attachment: fixed;}
+    .md-cta-sc,
+    .md-banner {
+        &.standard .single-picture {
+            background-attachment: fixed;
+        }
+    }
+
+    .md-banner {
+        &.standard {
+            .banner {
+                background-image: linear-gradient(-45deg, #222, #ccc);
+                background-size: 400% 400%;
+                @include loadingbg;
+            }
+        }
+    }
 
     .page-content {
         .md-featured-area,
@@ -24,12 +38,4 @@
     .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main .name {font-size: 18px;}
     
     .house-grid-item.template1 {border: none;border-radius:0; background: #FFF;}
-
-    .md-banner {
-        &.standard {
-            background: linear-gradient(-45deg, #222, #ccc);
-            background-size: 400% 400%;
-            @include loadingbg;
-        }
-    }
 }
