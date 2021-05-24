@@ -1,5 +1,6 @@
 @import 'abstracts/abstracts';
 @import 'base/base';
+@import 'components/components';
 @import 'blocks/blocks';
 @import 'layout/layout';
 @import 'vendors/vendors';
@@ -8,12 +9,6 @@
 .dev {
 	display: none !important;
 }
-
-.home .md-testimonial.list-standard .mg-more {
-	position: absolute;
-}
-
-.home .house-grid-item.template4 .mask .house-detail {background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.8) 100%);}
 
 .md-gallery.standard:after {content: "";display: block;width: 100%;height: 100%;position: absolute;z-index: 9;left: 0;top: 0;}
 .md-gallery.standard .img-box {max-width:300px;margin:0 auto;}

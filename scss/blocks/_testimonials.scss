@@ -1,0 +1,15 @@
+.md-testimonial {
+    &.list-standard {
+        padding-bottom: 140px;
+
+        .title-container {
+            position: static;
+    
+            .mg-more {
+                position: absolute;
+                bottom: 60px;
+                @extend .rs-button;
+            }
+        }
+    }
+}

@@ -25,6 +25,7 @@
 .font-size--s{font-size:1rem}
 .font-size--m{font-size:1.25rem}
 .font-size--l{font-size:1.5rem}
+.rs-button{font-size:16px;background:var(--color-theme);color:#fff;padding:.75rem 2rem;min-width:240px}
 .md-team:not(.carousel-fashion) .agents-list{margin-left:-10px;margin-right:-10px;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important}
 .md-team:not(.carousel-fashion) .agent-item{padding-left:10px;padding-right:10px;padding-top:0 !important}
 .md-team:not(.carousel-fashion) .agent-item.empty{display:none !important}
@@ -407,7 +408,9 @@ body.has-uikit header .menu-item a,body.has-uikit footer .menu-item a{color:#fff
 body.has-uikit header .menu-item a:hover,body.has-uikit footer .menu-item a:hover{color:var(--color-theme);text-decoration:none}
 body.has-uikit header .menu-item.active a,body.has-uikit footer .menu-item.active a{color:var(--color-theme)}
 .home .md-cta-sc.standard .single-picture,.home .md-banner.standard .single-picture{background-attachment:fixed}
-.home .md-banner.standard .banner,.home .md-hero.standard .banner{background-image:linear-gradient(-45deg,#222,#666);background-size:400% 400%;-webkit-animation-duration:4s;animation-duration:4s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:loadingbg;animation-name:loadingbg;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
+.home .md-banner .banner,.home .md-hero .banner,.home .md-cta-sc .banner{background-image:linear-gradient(-45deg,#222,#666);background-size:400% 400%;-webkit-animation-duration:4s;animation-duration:4s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:loadingbg;animation-name:loadingbg;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
+.home .md-house.grid.template1{background-image:repeating-linear-gradient(110deg,#222 0,#222 60px,#444 60px,#444 61px);padding-bottom:90px}
+.home .house-grid-item.template4 .mask .house-detail{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),color-stop(25%,rgba(0,0,0,0.4)),to(rgba(0,0,0,0.8)));background-image:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.4) 25%,rgba(0,0,0,0.8) 100%)}
 .home .page-content .md-featured-area,.home .page-content .md-team,.home .page-content .md-testimonial{padding-top:60px}
 .home .page-content .md-house.template4 .house-detail .house-status.new{background-color:var(--color-theme)}
 .home .page-content>*:nth-of-type(even),.home .page-content>*:nth-of-type(odd){background-color:black}
@@ -417,8 +420,6 @@ body.has-uikit header .menu-item.active a,body.has-uikit footer .menu-item.activ
 }.home .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main .name{font-size:18px}
 .home .house-grid-item.template1{border:0;border-radius:0;background:#FFF}
 .dev{display:none !important}
-.home .md-testimonial.list-standard .mg-more{position:absolute}
-.home .house-grid-item.template4 .mask .house-detail{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),color-stop(25%,rgba(0,0,0,0.4)),to(rgba(0,0,0,0.8)));background-image:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.4) 25%,rgba(0,0,0,0.8) 100%)}
 .md-gallery.standard:after{content:"";display:block;width:100%;height:100%;position:absolute;z-index:9;left:0;top:0}
 .md-gallery.standard .img-box{max-width:300px;margin:0 auto}
 .md-gallery.standard .img-box img{-o-object-fit:contain;object-fit:contain;font-family:"object-fit: contain"}
