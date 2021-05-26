@@ -28,7 +28,7 @@
 .font-size--l{font-size:1.5rem}
 body .mg-title{text-overflow:initial;white-space:initial}
 body .mg-title *{text-overflow:initial;white-space:initial}
-.rs-button,.md-testimonial.list-standard .title-container .mg-more{font-size:16px;background:var(--color-theme);color:#fff !important;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase}
+.rs-button,.md-testimonial.list-standard .title-container .mg-more{font-size:14px;background:var(--color-theme);color:#fff !important;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase}
 .rs-button--outline{background:transparent;border:solid 1px #fff}
 .md-team:not(.carousel-fashion) .agents-list{margin-left:-10px;margin-right:-10px;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important}
 .md-team:not(.carousel-fashion) .agent-item{padding-left:10px;padding-right:10px;padding-top:0 !important}
@@ -450,14 +450,15 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 .home .md-featured-area.grid-fashion .style-container .city-wrapper .info .read-more{display:none}
 .home .md-house .house-grid.template4 .house-grid-item{width:50%}
 .home .md-house .house-grid.template4 .house-grid-item.more-link{background:transparent;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;padding:20px 0 40px}
-.home .md-house .house-grid.template4 .house-grid-item.more-link a{font-size:16px;color:#fff !important;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;border:solid 1px #fff}
+.home .md-house .house-grid.template4 .house-grid-item.more-link a{color:#fff !important;background:transparent;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;border:solid 1px #fff;width:auto;height:auto;max-width:100%}
 .home .md-house .house-grid.template4 .house-grid-item .mask{position:absolute;top:0;height:100%;background:0;margin:0}
 .home .md-house .house-grid.template4 .house-grid-item .mask .house-detail{position:absolute}
 .home .md-house .house-grid.template4 .house-grid-item .house-detail .house-basic{letter-spacing:initial}
 .home .md-house .house-grid.template4 .house-grid-item .house-detail .house-basic .vertical-line:after{margin:0 4px}
-.home .md-house .house-grid.template4 .house-grid-item .house-detail .house-address{height:auto;text-overflow:initial}
+.home .md-house .house-grid.template4 .house-grid-item .house-detail .house-address{height:auto;text-overflow:initial;white-space:initial}
 .home .md-house .house-grid.template4 .house-grid-item .house-provided,.home .md-house .house-grid.template4 .house-grid-item .house-mls-logo{position:absolute !important;left:-200vw !important;visibility:hidden !important}
 }@media(max-width:420px){.home .md-featured-area.grid-fashion .style-container .city-wrapper{width:50%}
+.home .md-featured-area.grid-fashion .style-container .city-wrapper:nth-of-type(n+9){display:none}
 }.home .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main .name{font-size:18px}
 .home .house-grid-item.template1{border:0;border-radius:0;background:#FFF}
 .dev{display:none !important}

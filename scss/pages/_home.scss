@@ -129,12 +129,15 @@
                             padding: 20px 0 40px;
 
                             a {
-                                font-size: 16px;
                                 color: #fff !important;
+                                background: transparent;
                                 padding: 0.75rem 2rem !important;
                                 min-width: 240px;
                                 text-transform: uppercase;
                                 border: solid 1px #fff;
+                                width: auto;
+                                height: auto;
+                                max-width: 100%;
                             }
                         }
 
@@ -163,6 +166,7 @@
                             .house-address {
                                 height: auto;
                                 text-overflow: initial;
+                                white-space: initial;
                             }
                         }
 
@@ -183,6 +187,10 @@
             .style-container {
                 .city-wrapper {
                     width: 50%;
+
+                    &:nth-of-type(n + 9) {
+                        display: none;
+                    }
                 }
             }
         }
