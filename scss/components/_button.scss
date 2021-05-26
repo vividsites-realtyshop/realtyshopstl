@@ -6,6 +6,11 @@
     padding: 0.75rem 2rem !important;
     min-width: 240px;
     text-transform: uppercase;
+    text-align: center;
+    border-radius: 0;
+    height: auto;
+    width: auto;
+    line-height: initial;
 
     &--outline {
         background: transparent;
