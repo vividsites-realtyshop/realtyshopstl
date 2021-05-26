@@ -1,0 +1,13 @@
+.page-content {
+    .md-cta-sc {
+        &.standard {
+            .media-content {
+                .banner-button {
+                    .btn-item {
+                        @extend .rs-button;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,10 @@
 .page-content {
     .md-house {
+        &.template1 {
+            .mg-more {
+                @extend .rs-button;
+            }
+        }
         &.template4 {
             .house-detail {
                 .house-status {

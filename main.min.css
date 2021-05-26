@@ -28,7 +28,7 @@
 .font-size--l{font-size:1.5rem}
 body .mg-title{text-overflow:initial;white-space:initial}
 body .mg-title *{text-overflow:initial;white-space:initial}
-.rs-button,.md-testimonial.list-standard .title-container .mg-more{font-size:14px;background:var(--color-theme);color:#fff !important;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase}
+.rs-button,.page-content .md-cta-sc.standard .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,.md-testimonial.list-standard .title-container .mg-more{font-size:14px;font-weight:normal;background:var(--color-theme);color:#fff !important;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase}
 .rs-button--outline{background:transparent;border:solid 1px #fff}
 .page-content .md-house.template4 .house-detail .house-status.new,.page-content .md-house.template4 .house-detail .house-status.open-house{background-color:var(--color-theme)}
 .page-content .md-house.template4 .house-detail .house-status.active{background-color:#5eb4d1}
@@ -438,7 +438,8 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 .home .md-house.grid.template1,.home .md-featured-area.grid-fashion{background-image:repeating-linear-gradient(110deg,#222 0,#222 60px,#444 60px,#444 61px);padding-bottom:90px}
 .home .md-house.grid.template1:before,.home .md-featured-area.grid-fashion:before{content:'';display:block;position:absolute;top:0;bottom:0;left:0;right:0;background-image:repeating-linear-gradient(20deg,transparent 0,transparent 60px,#444 60px,#444 61px)}
 .home .house-grid-item.template4 .mask .house-detail{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),color-stop(25%,rgba(0,0,0,0.4)),to(rgba(0,0,0,0.8)));background-image:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.4) 25%,rgba(0,0,0,0.8) 100%)}
-.home .page-content .md-featured-area,.home .page-content .md-team,.home .page-content .md-testimonial{padding-top:60px}
+.home .page-content .md-featured-area,.home .page-content .md-team{padding-top:60px}
+.home .page-content .md-testimonial{padding-top:60px !important}
 .home .page-content>*:nth-of-type(even),.home .page-content>*:nth-of-type(odd){background-color:black}
 @media(min-width:1081px){.home .md-featured-area.grid-fashion .mg-container{width:1200px}
 .home .md-featured-area.grid-fashion .style-container .city-wrapper{width:25%}
