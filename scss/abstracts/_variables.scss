@@ -28,3 +28,9 @@ $sides: (
 	'top',
 	'bottom'
 );
+
+.invisible {
+	position: absolute !important;
+	left: -200vw !important;
+	visibility: hidden !important;
+}

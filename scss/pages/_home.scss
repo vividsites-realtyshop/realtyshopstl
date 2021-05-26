@@ -1,4 +1,23 @@
 .home {
+    .md-hero {
+        @media (max-width: 1080px) {
+            .search-bar {
+                background: #222;
+                background-image: $pinstripes;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-image: repeating-linear-gradient(20deg,transparent 0,transparent 60px,#444 60px,#444 61px);
+                }
+            }
+        }
+    }
     .md-cta-sc,
     .md-banner {
         &.standard .single-picture {
@@ -20,6 +39,17 @@
         &.grid.template1 {
             background-image: $pinstripes;
             padding-bottom: 90px;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-image: repeating-linear-gradient(20deg,transparent 0,transparent 60px,#444 60px,#444 61px);
+            }
         }
     }
 
@@ -44,6 +74,118 @@
         .md-featured-area.grid-fashion .mg-container {width: 1200px;}
         .md-featured-area.grid-fashion .style-container .city-wrapper {width: 25%;}
         .md-featured-area.grid-fashion .city-wrapper:nth-of-type(9n) {display: none !important;}
+    }
+
+    @media (max-width: 600px) {
+        .md-featured-area.grid-fashion {
+            .style-container {
+                padding: 5px;
+
+                .city-wrapper {
+                    width: 33.333%;
+                    padding: 5px;
+
+                    .background {
+                        height: auto;
+                    }
+
+                    .img-box {
+                        padding-bottom: 150%;
+                    }
+
+                    .info {
+                        position: absolute;
+                        top: auto;
+                        bottom: 0;
+                        background: transparent;
+                        background-image: linear-gradient(to bottom, transparent, black 100%);
+
+                        .pc-content {
+                            margin-bottom: 0;
+
+                            .style-title {
+                                font-size: 20px;
+                            }          
+                        }
+
+                        .read-more {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .md-house {
+            .house-grid {
+                &.template4 {
+                    .house-grid-item {
+                        width: 50%;
+
+                        &.more-link {
+                            background: transparent;
+                            width: 100%;
+                            display: flex;
+                            padding: 20px 0 40px;
+
+                            a {
+                                font-size: 16px;
+                                color: #fff !important;
+                                padding: 0.75rem 2rem !important;
+                                min-width: 240px;
+                                text-transform: uppercase;
+                                border: solid 1px #fff;
+                            }
+                        }
+
+                        .mask {
+                            position: absolute;
+                            top: 0;
+                            height: 100%;
+                            background: none;
+                            margin: 0;
+
+                            .house-detail {
+                                position: absolute;
+                            }
+                        }
+
+                        .house-detail {
+                            .house-basic {
+                                letter-spacing: initial;
+
+                                .vertical-line {
+                                    &:after {
+                                        margin: 0 4px;
+                                    }
+                                }
+                            }
+                            .house-address {
+                                height: auto;
+                                text-overflow: initial;
+                            }
+                        }
+
+                        .house-provided,
+                        .house-mls-logo {
+                            position: absolute !important;
+                            left: -200vw !important;
+                            visibility: hidden !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 420px) {
+        .md-featured-area.grid-fashion {
+            .style-container {
+                .city-wrapper {
+                    width: 50%;
+                }
+            }
+        }
     }
     
     .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main .name {font-size: 18px;}

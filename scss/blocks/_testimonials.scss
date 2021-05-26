@@ -23,5 +23,11 @@
                 }
             }
         }
+
+        .comment-list-wrap .comment-list .odd .testimonial-picture {
+            @media (min-width: 601px) {
+                margin-right: 0 !important;
+            }
+        }
     }
 }

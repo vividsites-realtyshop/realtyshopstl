@@ -1,1 +1,13 @@
 @import 'typography';
+
+body {
+    .mg-title {
+        text-overflow: initial;
+        white-space: initial;
+
+        * {
+            text-overflow: initial;
+            white-space: initial;
+        }
+    }
+}
