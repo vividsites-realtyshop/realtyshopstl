@@ -1,0 +1,42 @@
+.page-content {
+    .md-house {
+        &.template4 {
+            .house-detail {
+                .house-status {
+                    &.new,
+                    &.open-house {
+                        background-color: var(--color-theme);
+                    }
+
+                    &.active {
+                        background-color: #5eb4d1;
+                    }
+                }
+            }
+        }
+
+        .house-grid {
+            &.template4 {
+                .house-grid-item {
+                    &.more-link {
+                        a {
+                            color: #fff !important;
+                            background: transparent;
+                            padding: 0.75rem 2rem !important;
+                            min-width: 240px;
+                            text-transform: uppercase;
+                            border: solid 1px #fff;
+                            width: auto;
+                            height: auto;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .house-mls-logo {
+            filter: hue-rotate(-23deg) brightness(1.2);
+        }
+    }
+}
