@@ -45,8 +45,8 @@
         .house-status {
             font-size: 12px !important;
             height: auto !important;
-            line-height: normal;
-            padding: 4px 8px;
+            line-height: normal !important;
+            padding: 4px 8px !important;
             border-radius: 0 !important;
 
             &.new,
@@ -59,14 +59,32 @@
             &.contingent {
                 background-color: $blue !important;
             }
+
+            &.coming-soon {
+                background-color: rgba(255,255,255,0.3) !important;
+                border: solid 1px #fff !important;
+                color: #fff !important;
+            }
         }
 
-        .house-mls-logo {
+        .house-mls-logo,
+        .provided .small-logo {
             filter: hue-rotate(-23deg);
         }
     }
 
     .template1 {
+        .house-grid-item,
+        .house-list-item {
+            .detail .price-fav .house-tag,
+            .house-footer .property .house-tag {
+                border: solid 1px $charcoal;
+                border-radius: 0;
+                background: transparent;
+                color: $charcoal;
+            }
+        }
+
         .house-list-item {
             .detail {
                 display: flex;
@@ -78,13 +96,6 @@
                     .house-price {
                         font-size: 22px;
                         color: $gold;
-                    }
-                    
-                    .house-tag {
-                        border: solid 1px $charcoal;
-                        border-radius: 0;
-                        background: transparent;
-                        color: $charcoal;
                     }
                 }
 
@@ -100,6 +111,67 @@
 
                     .small-logo {
                         height: auto;
+                    }
+                }
+            }
+        }
+
+        .house-grid {
+            &.template1.small {
+                padding-top: 10px;
+            }
+            
+            .house-grid-item {
+                box-shadow: 0 2px 16px -2px rgba(0,0,0,0.2);
+                border: none !important;
+                transition: all 0.2s;
+
+                &:hover {
+                    transform: scale(1.02);
+                    box-shadow: 0 5px 17px 0px rgba(0,0,0,0.25);
+                    transition: all 0.4s;
+                }
+
+                .price-fav {
+                    .house-price {
+                        font-size: 22px !important;
+                        color: $gold !important;
+                    }
+                }
+
+                .house-basic {
+                    border: none;
+                }
+
+                .house-footer {
+                    .house-address {
+                        font-size: 16px;
+                        font-family: var(--font-normal);
+                        text-decoration: none;
+                    }
+
+                    .house-provided {
+                        margin-bottom: 8px;
+                    }
+
+                    .property {
+                        position: static;
+
+                        .small-logo {
+                            width: 90px;
+                            height: auto;
+                        }
+
+                        .placeholder:empty {
+                            display: none;
+                        }
+
+                        .fav-icon {
+                            position: absolute;
+                            top: -4px;
+                            right: 10px;
+                            transform: translateY(-100%);
+                        }
                     }
                 }
             }

@@ -31,17 +31,29 @@ body .mg-title *{text-overflow:initial;white-space:initial}
 .rs-button,.page-content .md-cta-sc.standard .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,.md-testimonial.list-standard .title-container .mg-more{font-size:14px;font-weight:normal;background:var(--color-theme);color:#fff !important;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;text-align:center;border-radius:0;height:auto;width:auto;line-height:initial}
 .rs-button--outline{background:transparent;border:solid 1px #fff}
 .page-content .md-house.template4 .house-grid .house-grid-item.more-link a{color:#fff !important;background:transparent;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;border:solid 1px #fff;width:auto;height:auto;max-width:100%}
-.page-content .house-grid-item .house-status,.page-content .house-list-item .house-status{font-size:12px !important;height:auto !important;line-height:normal;padding:4px 8px;border-radius:0 !important}
+.page-content .house-grid-item .house-status,.page-content .house-list-item .house-status{font-size:12px !important;height:auto !important;line-height:normal !important;padding:4px 8px !important;border-radius:0 !important}
 .page-content .house-grid-item .house-status.new,.page-content .house-grid-item .house-status.open-house,.page-content .house-list-item .house-status.new,.page-content .house-list-item .house-status.open-house{background-color:#ffc03a !important}
 .page-content .house-grid-item .house-status.active,.page-content .house-grid-item .house-status.pending,.page-content .house-grid-item .house-status.contingent,.page-content .house-list-item .house-status.active,.page-content .house-list-item .house-status.pending,.page-content .house-list-item .house-status.contingent{background-color:#2c74a0 !important}
-.page-content .house-grid-item .house-mls-logo,.page-content .house-list-item .house-mls-logo{-webkit-filter:hue-rotate(-23deg);filter:hue-rotate(-23deg)}
+.page-content .house-grid-item .house-status.coming-soon,.page-content .house-list-item .house-status.coming-soon{background-color:rgba(255,255,255,0.3) !important;border:solid 1px #fff !important;color:#fff !important}
+.page-content .house-grid-item .house-mls-logo,.page-content .house-grid-item .provided .small-logo,.page-content .house-list-item .house-mls-logo,.page-content .house-list-item .provided .small-logo{-webkit-filter:hue-rotate(-23deg);filter:hue-rotate(-23deg)}
+.page-content .template1 .house-grid-item .detail .price-fav .house-tag,.page-content .template1 .house-grid-item .house-footer .property .house-tag,.page-content .template1 .house-list-item .detail .price-fav .house-tag,.page-content .template1 .house-list-item .house-footer .property .house-tag{border:solid 1px #222;border-radius:0;background:transparent;color:#222}
 .page-content .template1 .house-list-item .detail{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .page-content .template1 .house-list-item .detail .price-fav{width:100%}
 .page-content .template1 .house-list-item .detail .price-fav .house-price{font-size:22px;color:#ffc03a}
-.page-content .template1 .house-list-item .detail .price-fav .house-tag{border:solid 1px #222;border-radius:0;background:transparent;color:#222}
 .page-content .template1 .house-list-item .detail .house-address{font-size:16px;margin-bottom:10px}
 .page-content .template1 .house-list-item .detail .property{width:100%;margin-bottom:10px;margin-top:auto}
 .page-content .template1 .house-list-item .detail .property .small-logo{height:auto}
+.page-content .template1 .house-grid.template1.small{padding-top:10px}
+.page-content .template1 .house-grid .house-grid-item{-webkit-box-shadow:0 2px 16px -2px rgba(0,0,0,0.2);box-shadow:0 2px 16px -2px rgba(0,0,0,0.2);border:none !important;-webkit-transition:all .2s;transition:all .2s}
+.page-content .template1 .house-grid .house-grid-item:hover{-webkit-transform:scale(1.02);transform:scale(1.02);-webkit-box-shadow:0 5px 17px 0 rgba(0,0,0,0.25);box-shadow:0 5px 17px 0 rgba(0,0,0,0.25);-webkit-transition:all .4s;transition:all .4s}
+.page-content .template1 .house-grid .house-grid-item .price-fav .house-price{font-size:22px !important;color:#ffc03a !important}
+.page-content .template1 .house-grid .house-grid-item .house-basic{border:0}
+.page-content .template1 .house-grid .house-grid-item .house-footer .house-address{font-size:16px;font-family:var(--font-normal);text-decoration:none}
+.page-content .template1 .house-grid .house-grid-item .house-footer .house-provided{margin-bottom:8px}
+.page-content .template1 .house-grid .house-grid-item .house-footer .property{position:static}
+.page-content .template1 .house-grid .house-grid-item .house-footer .property .small-logo{width:90px;height:auto}
+.page-content .template1 .house-grid .house-grid-item .house-footer .property .placeholder:empty{display:none}
+.page-content .template1 .house-grid .house-grid-item .house-footer .property .fav-icon{position:absolute;top:-4px;right:10px;-webkit-transform:translateY(-100%);transform:translateY(-100%)}
 .md-team:not(.carousel-fashion) .agents-list{margin-left:-10px;margin-right:-10px;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important}
 .md-team:not(.carousel-fashion) .agent-item{padding-left:10px;padding-right:10px;padding-top:0 !important}
 .md-team:not(.carousel-fashion) .agent-item.empty{display:none !important}
