@@ -5,24 +5,23 @@
                 @extend .rs-button;
             }
         }
+        
         &.template4 {
-            .house-detail {
-                .house-status {
-                    &.new,
-                    &.open-house {
-                        background-color: var(--color-theme);
-                    }
-
-                    &.active {
-                        background-color: $blue-lt;
-                    }
-                }
-            }
-        }
-
-        .house-grid {
-            &.template4 {
+            .house-grid {
                 .house-grid-item {
+                    .house-detail {
+                        .house-status {
+                            &.new,
+                            &.open-house {
+                                background-color: var(--color-theme);
+                            }
+        
+                            &.active {
+                                background-color: $blue-lt;
+                            }
+                        }
+                    }
+
                     &.more-link {
                         a {
                             color: #fff !important;

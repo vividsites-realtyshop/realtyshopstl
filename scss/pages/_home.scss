@@ -36,23 +36,29 @@
     }
 
     .md-house.grid.template1 {
-        background-image: $pinstripes;
+        background-color: #222;
+        background-image: url('https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png');
+        background-size: auto;
+        background-repeat: repeat;
         padding-bottom: 90px;
 
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-image: repeating-linear-gradient(20deg,transparent 0,transparent 60px,#444 60px,#444 61px);
-        }
+        // &:before {
+        //     content: '';
+        //     display: block;
+        //     position: absolute;
+        //     top: 0;
+        //     bottom: 0;
+        //     left: 0;
+        //     right: 0;
+        //     background-image: repeating-linear-gradient(20deg,transparent 0,transparent 60px,#444 60px,#444 61px);
+        // }
     }
 
     .md-featured-area.grid-fashion {
-        background: #222;
+        background-color: #222 !important;
+        background-image: url('https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png') !important;
+        background-size: auto !important;
+        background-repeat: repeat !important;
         padding-bottom: 40px;
     }
 

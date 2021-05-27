@@ -30,9 +30,9 @@ body .mg-title{text-overflow:initial;white-space:initial}
 body .mg-title *{text-overflow:initial;white-space:initial}
 .rs-button,.page-content .md-cta-sc.standard .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,.md-testimonial.list-standard .title-container .mg-more{font-size:14px;font-weight:normal;background:var(--color-theme);color:#fff !important;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;text-align:center;border-radius:0;height:auto;width:auto;line-height:initial}
 .rs-button--outline{background:transparent;border:solid 1px #fff}
-.page-content .md-house.template4 .house-detail .house-status.new,.page-content .md-house.template4 .house-detail .house-status.open-house{background-color:var(--color-theme)}
-.page-content .md-house.template4 .house-detail .house-status.active{background-color:#a9c8d8}
-.page-content .md-house .house-grid.template4 .house-grid-item.more-link a{color:#fff !important;background:transparent;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;border:solid 1px #fff;width:auto;height:auto;max-width:100%}
+.page-content .md-house.template4 .house-grid .house-grid-item .house-detail .house-status.new,.page-content .md-house.template4 .house-grid .house-grid-item .house-detail .house-status.open-house{background-color:var(--color-theme)}
+.page-content .md-house.template4 .house-grid .house-grid-item .house-detail .house-status.active{background-color:#a9c8d8}
+.page-content .md-house.template4 .house-grid .house-grid-item.more-link a{color:#fff !important;background:transparent;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;border:solid 1px #fff;width:auto;height:auto;max-width:100%}
 .page-content .md-house .house-mls-logo{-webkit-filter:hue-rotate(-23deg) brightness(1.2);filter:hue-rotate(-23deg) brightness(1.2)}
 .md-team:not(.carousel-fashion) .agents-list{margin-left:-10px;margin-right:-10px;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important}
 .md-team:not(.carousel-fashion) .agent-item{padding-left:10px;padding-right:10px;padding-top:0 !important}
@@ -435,9 +435,8 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 .home .md-hero .search-bar:before{content:'';display:block;position:absolute;top:0;bottom:0;left:0;right:0;background-image:repeating-linear-gradient(20deg,transparent 0,transparent 60px,#444 60px,#444 61px)}
 }.home .md-cta-sc.standard .single-picture,.home .md-banner.standard .single-picture{background-attachment:fixed}
 .home .md-banner .banner,.home .md-hero .banner,.home .md-cta-sc .banner{background-image:linear-gradient(-45deg,#222,#666);background-size:400% 400%;-webkit-animation-duration:4s;animation-duration:4s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:loadingbg;animation-name:loadingbg;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
-.home .md-house.grid.template1{background-image:repeating-linear-gradient(110deg,#222 0,#222 60px,#444 60px,#444 61px);padding-bottom:90px}
-.home .md-house.grid.template1:before{content:'';display:block;position:absolute;top:0;bottom:0;left:0;right:0;background-image:repeating-linear-gradient(20deg,transparent 0,transparent 60px,#444 60px,#444 61px)}
-.home .md-featured-area.grid-fashion{background:#222;padding-bottom:40px}
+.home .md-house.grid.template1{background-color:#222;background-image:url("https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png");background-size:auto;background-repeat:repeat;padding-bottom:90px}
+.home .md-featured-area.grid-fashion{background-color:#222 !important;background-image:url("https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png") !important;background-size:auto !important;background-repeat:repeat !important;padding-bottom:40px}
 .home .house-grid-item.template4 .mask .house-detail{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),color-stop(25%,rgba(0,0,0,0.4)),to(rgba(0,0,0,0.8)));background-image:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.4) 25%,rgba(0,0,0,0.8) 100%)}
 .home .page-content .md-featured-area,.home .page-content .md-testimonial{padding-top:60px}
 .home .page-content .md-team{padding-top:60px !important}
