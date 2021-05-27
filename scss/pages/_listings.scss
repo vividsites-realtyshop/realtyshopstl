@@ -1,0 +1,45 @@
+body.listing {
+    .house-list {
+        &.brief-list {
+            &.template1 {
+                padding: 0 0 0 12px;
+
+                .house-list-item {
+                    &:nth-of-type(even) {
+                        background: $gray-lt;
+                    }
+                    &.template1 {
+                        margin-bottom: 12px;
+
+                        .house-preview {
+                            align-self: center;
+                            width: 240px;
+                            min-height: 160px;
+                        }
+
+                        .detail {
+                            padding: 6px 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .house-list-item {
+        &.template1 {
+            .house-preview {
+                .house-status {
+                    &.open-house {
+                        background-color: $gold;
+                    }
+                    &.open-house {
+                        background-color: $gold;
+                    }
+                    &.open-house {
+                        background-color: $gold;
+                    }
+                }
+            }
+        }
+    }
+}

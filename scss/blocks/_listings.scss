@@ -9,18 +9,18 @@
         &.template4 {
             .house-grid {
                 .house-grid-item {
-                    .house-detail {
-                        .house-status {
-                            &.new,
-                            &.open-house {
-                                background-color: var(--color-theme);
-                            }
+                    // .house-detail {
+                    //     .house-status {
+                    //         &.new,
+                    //         &.open-house {
+                    //             background-color: var(--color-theme);
+                    //         }
         
-                            &.active {
-                                background-color: $blue;
-                            }
-                        }
-                    }
+                    //         &.active {
+                    //             background-color: $blue;
+                    //         }
+                    //     }
+                    // }
 
                     &.more-link {
                         a {
@@ -38,9 +38,71 @@
                 }
             }
         }
+    }
+
+    .house-grid-item,
+    .house-list-item {
+        .house-status {
+            font-size: 12px !important;
+            height: auto !important;
+            line-height: normal;
+            padding: 4px 8px;
+            border-radius: 0 !important;
+
+            &.new,
+            &.open-house {
+                background-color: $gold !important;
+            }
+
+            &.active,
+            &.pending,
+            &.contingent {
+                background-color: $blue !important;
+            }
+        }
 
         .house-mls-logo {
             filter: hue-rotate(-23deg);
+        }
+    }
+
+    .template1 {
+        .house-list-item {
+            .detail {
+                display: flex;
+                flex-direction: column;
+
+                .price-fav {
+                    width: 100%;
+ 
+                    .house-price {
+                        font-size: 22px;
+                        color: $gold;
+                    }
+                    
+                    .house-tag {
+                        border: solid 1px $charcoal;
+                        border-radius: 0;
+                        background: transparent;
+                        color: $charcoal;
+                    }
+                }
+
+                .house-address {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+
+                .property {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    margin-top: auto;
+
+                    .small-logo {
+                        height: auto;
+                    }
+                }
+            }
         }
     }
 }
