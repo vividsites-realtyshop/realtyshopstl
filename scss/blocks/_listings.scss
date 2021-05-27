@@ -5,7 +5,7 @@
                 @extend .rs-button;
             }
         }
-        
+
         &.template4 {
             .house-grid {
                 .house-grid-item {
@@ -17,7 +17,7 @@
                             }
         
                             &.active {
-                                background-color: $blue-lt;
+                                background-color: $blue;
                             }
                         }
                     }
@@ -40,7 +40,7 @@
         }
 
         .house-mls-logo {
-            filter: hue-rotate(-23deg) brightness(1.2);
+            filter: hue-rotate(-23deg);
         }
     }
 }

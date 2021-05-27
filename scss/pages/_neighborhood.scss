@@ -1,0 +1,82 @@
+.neighborhood {
+    .page-content.template4 {
+        .md-nbr-info {
+            background: #000;
+            background-image: $marble;
+            background-size: auto !important;
+            background-repeat: repeat !important;
+    
+            .info-container {
+                .left-box {
+                    display: flex;
+                    flex-wrap: wrap;
+    
+                    .info-content {
+                        font-family: var(--font-title);
+                        font-size: 24px;
+                        color: #fff;
+                        line-height: normal;
+    
+                        &:before {
+                            content: ', ';
+                        }
+                    }
+    
+                    .name {
+                        font-size: 24px;
+                        font-weight: normal;
+                        margin-top: 0;
+                        order: -1;
+                        line-height: normal;
+                    }
+                }
+    
+                .info-dec {
+                    color: #fff;
+                }
+    
+                .right-box {
+                    .item {
+                        .title {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    
+        // .md-map {
+        //     .map-tab {
+        //         .tab-header {
+        //             background-color: #000;
+    
+        //             .item {
+        //                 &:not(.active) {
+        //                     color: #fff;
+        //                 }
+        //             }
+        //         }
+    
+        //         .tab-collapse {
+        //             .icon-expand {
+        //                 background-color: #000;
+    
+        //                 &:before {
+        //                     color: #fff;
+        //                 }
+        //             }
+        //         }
+    
+        //         .tab-body {
+        //             background-color: #000;
+        //         }
+        //     }
+        // }
+    
+        .md-market-trends {
+            .container {
+                padding: 60px 0;
+            }
+        }
+    }
+}
