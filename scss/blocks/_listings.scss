@@ -188,7 +188,7 @@
 
                     &:not(.collected) {
                         .icon-heart-fill {
-                            color: rgba(0,0,0,0.2);
+                            color: rgba(255,255,255,0.5);
                         }
                     }
                 }
@@ -200,6 +200,11 @@
     
                 .house-price {
                     min-width: 100%;
+                }
+
+                .house-mls-logo {
+                    align-self: flex-end;
+                    margin-left: 10px;
                 }
             }
         }
