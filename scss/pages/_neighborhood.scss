@@ -20,6 +20,14 @@
                         &:before {
                             content: ', ';
                         }
+
+                        span {
+                            &:last-child {
+                                &:after {
+                                    display: none;
+                                }
+                            }
+                        }
                     }
     
                     .name {
@@ -41,6 +49,19 @@
                             color: #fff;
                         }
                     }
+                }
+            }
+        }
+
+        .md-house {
+            .house-title {
+                .mg-more {
+                    background: transparent;
+                    color: $gold;
+                    border: solid 1px;
+                    height: auto;
+                    line-height: normal;
+                    padding: 4px 12px;
                 }
             }
         }
