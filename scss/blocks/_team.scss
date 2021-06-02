@@ -1,67 +1,118 @@
-.md-team {
-    &:not(.carousel-fashion) {
-        .agents-list {
-            margin-left: -10px;
-            margin-right: -10px;
-            justify-content: center !important;
-        }
-        .agent-item {
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 0 !important;
-    
-            &.empty {
-                display: none !important;
+.page-content {
+    .md-team {
+        &:not(.carousel-fashion) {
+            .agents-list {
+                margin-left: -10px;
+                margin-right: -10px;
+                justify-content: center !important;
             }
-    
-            @media (min-width: 601px) {
-                width: 50% !important;
-            }
-            
-            @media (min-width: 901px) {
-                width: 33.333% !important;
-            }
-    
-            .agent-img {
-                position: relative !important;
-                padding-bottom: 125%;
-            }
-    
-            .info {
-                transition: all 0.3s;
-                padding: 20px !important;
-    
-                &-text {
-                    &.agent-position {
-                        margin-bottom: 20px;
-                    }
-    
-                    &.agent-name {
-                        order: -1;
-                        margin-bottom: 0 !important;
-                        letter-spacing: 0.07em;
-                    }
+            .agent-item {
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 0 !important;
+        
+                &.empty {
+                    display: none !important;
                 }
-            }
-            
-            &:hover {
+        
+                @media (min-width: 601px) {
+                    width: 50% !important;
+                }
+                
+                @media (min-width: 901px) {
+                    width: 33.333% !important;
+                }
+        
+                .agent-img {
+                    position: relative !important;
+                    padding-bottom: 125%;
+                }
+        
                 .info {
-                    height: 100% !important;
-                    justify-content: center !important;
-                    background: rgba(0,0,0,0.5);
-                    transition: height 0.4s, background 0.4s ease 0.2s;
+                    transition: all 0.3s;
+                    padding: 20px !important;
+        
+                    &-text {
+                        &.agent-position {
+                            margin-bottom: 20px;
+                        }
+        
+                        &.agent-name {
+                            order: -1;
+                            margin-bottom: 0 !important;
+                            letter-spacing: 0.07em;
+                        }
+                    }
+                }
+                
+                &:hover {
+                    .info {
+                        height: 100% !important;
+                        justify-content: center !important;
+                        background: rgba(0,0,0,0.5);
+                        transition: height 0.4s, background 0.4s ease 0.2s;
+                    }
+                }
+        
+                @media (max-width: 900px) AND (min-width: 601px) {
+        
                 }
             }
+        }
     
-            @media (max-width: 900px) AND (min-width: 601px) {
-    
+        &.multi-column-info-over-img {
+            & + .md-team.multi-column-info-over-img {
+                padding-top: 0 !important;
             }
         }
-    }
+    
+        &.team-desc-simple {
+            .desc-content[role="img"][aria-label=""] {
+                display: none;
+            }
+    
+            .intro-desc {
+                .desc-list {
+                    align-items: stretch;
+                    height: auto;
 
-    &.multi-column-info-over-img {
-        & + .md-team.multi-column-info-over-img {
-            padding-top: 0 !important;
+                    @media (min-width: 801px) {
+                        align-items: flex-start;
+                        width: calc(100vw - 80px);
+                        max-width: 1400px;
+                    }
+
+                    .item {
+                        padding-top: 32px;
+                        padding-bottom: 32px;
+
+                        &:not(:first-of-type) {
+                            &:before {
+                                top: 42px;
+                                bottom: 42px;
+                            }
+                        }
+
+                        .number {
+                            line-height: initial;
+
+                            @media (min-width: 1201px) {
+                                font-size: 48px;
+                            }
+                            
+                            @media (max-width: 800px) {
+                                font-size: 32px;
+                            }
+                        }
+
+                        .text {
+                            white-space: normal;
+                            text-overflow: initial;
+                            line-height: initial;
+                        }
+                    }
+                }
+            }
         }
     }
 }
