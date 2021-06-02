@@ -1,32 +1,50 @@
-.md-testimonial {
-    &.list-standard {
-        padding-bottom: 140px;
-
-        .title-container {
-            position: static !important;
+.page-content {
+    .md-testimonial {
+        &.list-standard {
+            padding-bottom: 140px;
     
-            .mg-more {
-                position: absolute;
-                bottom: 60px;
-                left: 50%;
-                transform: translateX(-50%);
-                justify-content: center;
-                @extend .rs-button;
-
-                .text {
-                    margin-right: 0;
-                    text-align: center;
+            .title-container {
+                position: static !important;
+        
+                .mg-more {
+                    position: absolute;
+                    bottom: 60px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    justify-content: center;
+                    @extend .rs-button;
+    
+                    .text {
+                        margin-right: 0;
+                        text-align: center;
+                    }
+                    
+                    .iconfont {
+                        display: none;
+                    }
                 }
-                
-                .iconfont {
-                    display: none;
+            }
+    
+            .comment-list-wrap .comment-list .odd .testimonial-picture {
+                @media (min-width: 601px) {
+                    margin-right: 0 !important;
                 }
             }
         }
-
-        .comment-list-wrap .comment-list .odd .testimonial-picture {
-            @media (min-width: 601px) {
-                margin-right: 0 !important;
+        &.flow-classic {
+            .comment-card {
+                .footer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    
+                    & > img {
+                        margin-top: 0;
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 100%;
+                    }
+                }
             }
         }
     }

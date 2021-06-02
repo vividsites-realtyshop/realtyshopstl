@@ -28,7 +28,7 @@
 .font-size--l{font-size:1.5rem}
 body .mg-title{text-overflow:initial;white-space:initial}
 body .mg-title *{text-overflow:initial;white-space:initial}
-.rs-button,.page-content .md-cta-sc.standard .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,.md-testimonial.list-standard .title-container .mg-more{font-size:14px;font-weight:normal;background:var(--color-theme);color:#fff !important;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;text-align:center;border-radius:0;height:auto;width:auto;line-height:initial}
+.rs-button,.page-content .md-cta-sc.standard .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,.page-content .md-testimonial.list-standard .title-container .mg-more{font-size:14px;font-weight:normal;background:var(--color-theme);color:#fff !important;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;text-align:center;border-radius:0;height:auto;width:auto;line-height:initial}
 .rs-button--outline{background:transparent;border:solid 1px #fff}
 .page-content .md-house.template4 .house-grid .house-grid-item.more-link a{color:#fff !important;background:transparent;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;border:solid 1px #fff;width:auto;height:auto;max-width:100%}
 .page-content .house-grid-item .house-status,.page-content .house-list-item .house-status{font-size:12px !important;height:auto !important;line-height:normal !important;padding:4px 8px !important;border-radius:0 !important}
@@ -70,13 +70,15 @@ body .mg-title *{text-overflow:initial;white-space:initial}
 .md-team:not(.carousel-fashion) .agent-item .info-text.agent-name{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1;margin-bottom:0 !important;letter-spacing:.07em}
 .md-team:not(.carousel-fashion) .agent-item:hover .info{height:100% !important;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important;background:rgba(0,0,0,0.5);-webkit-transition:height .4s,background .4s ease .2s;transition:height .4s,background .4s ease .2s}
 .md-team.multi-column-info-over-img+.md-team.multi-column-info-over-img{padding-top:0 !important}
-.md-testimonial.list-standard{padding-bottom:140px}
-.md-testimonial.list-standard .title-container{position:static !important}
-.md-testimonial.list-standard .title-container .mg-more{position:absolute;bottom:60px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
-.md-testimonial.list-standard .title-container .mg-more .text{margin-right:0;text-align:center}
-.md-testimonial.list-standard .title-container .mg-more .iconfont{display:none}
-@media(min-width:601px){.md-testimonial.list-standard .comment-list-wrap .comment-list .odd .testimonial-picture{margin-right:0 !important}
-}footer .site-logo img{height:auto !important;max-height:2.5em}
+.page-content .md-testimonial.list-standard{padding-bottom:140px}
+.page-content .md-testimonial.list-standard .title-container{position:static !important}
+.page-content .md-testimonial.list-standard .title-container .mg-more{position:absolute;bottom:60px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.page-content .md-testimonial.list-standard .title-container .mg-more .text{margin-right:0;text-align:center}
+.page-content .md-testimonial.list-standard .title-container .mg-more .iconfont{display:none}
+@media(min-width:601px){.page-content .md-testimonial.list-standard .comment-list-wrap .comment-list .odd .testimonial-picture{margin-right:0 !important}
+}.page-content .md-testimonial.flow-classic .comment-card .footer{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
+.page-content .md-testimonial.flow-classic .comment-card .footer>img{margin-top:0;width:120px;height:120px;border-radius:100%}
+footer .site-logo img{height:auto !important;max-height:2.5em}
 footer .site-logo+.co-name{visibility:hidden}
 footer .detail-info .detail-phone .text:after{content:"314-372-0324";display:block}
 header{z-index:9000}
