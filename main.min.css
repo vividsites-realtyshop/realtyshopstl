@@ -1,4 +1,4 @@
-.invisible{position:absolute !important;left:-200vw !important;visibility:hidden !important}
+@charset "UTF-8";.invisible{position:absolute !important;left:-200vw !important;visibility:hidden !important}
 @-webkit-keyframes wobble{0%{-webkit-transform:none;transform:none}
 20%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}
 40%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}
@@ -71,13 +71,17 @@ body .mg-title *{text-overflow:initial;white-space:initial}
 .page-content .md-team:not(.carousel-fashion) .agent-item:hover .info{height:100% !important;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important;background:rgba(0,0,0,0.5);-webkit-transition:height .4s,background .4s ease .2s;transition:height .4s,background .4s ease .2s}
 .page-content .md-team.multi-column-info-over-img+.md-team.multi-column-info-over-img{padding-top:0 !important}
 .page-content .md-team-desc.team-desc-simple .desc-content[role="img"][aria-label=""]{display:none}
-.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list{-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;height:auto}
+.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list{height:auto}
 @media(min-width:801px){.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;width:calc(100vw - 80px);max-width:1400px}
-}.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item{padding-top:32px;padding-bottom:32px}
+}@media(max-width:800px){.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;width:calc(100vw - 80px);max-width:1400px;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
+}.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item{padding-top:32px;padding-bottom:32px;height:auto}
 .page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item:not(:first-of-type):before{top:42px;bottom:42px}
-.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .number{line-height:initial}
-@media(min-width:1201px){.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .number{font-size:48px}
-}@media(max-width:800px){.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .number{font-size:32px}
+.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .number{line-height:36px}
+@media(min-width:1201px){.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .number{font-size:48px;line-height:48px}
+}@media(max-width:800px){.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .number{font-size:32px;line-height:32px}
+}.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .number[title="★★★★★"]{font-size:20px}
+@media(min-width:801px){.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .number[title="★★★★★"]{font-size:24px}
+}@media(min-width:1201px){.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .number[title="★★★★★"]{font-size:32px}
 }.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .text{white-space:normal;text-overflow:initial;line-height:initial}
 .page-content .md-testimonial.list-standard{padding-bottom:140px}
 .page-content .md-testimonial.list-standard .title-container{position:static !important}

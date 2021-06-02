@@ -75,7 +75,6 @@
     
             .intro-desc {
                 .desc-list {
-                    align-items: stretch;
                     height: auto;
     
                     @media (min-width: 801px) {
@@ -83,10 +82,18 @@
                         width: calc(100vw - 80px);
                         max-width: 1400px;
                     }
+
+                    @media (max-width: 800px) {
+                        align-items: flex-start;
+                        width: calc(100vw - 80px);
+                        max-width: 1400px;
+                        align-items: stretch;
+                    }
     
                     .item {
                         padding-top: 32px;
                         padding-bottom: 32px;
+                        height: auto;
     
                         &:not(:first-of-type) {
                             &:before {
@@ -96,14 +103,28 @@
                         }
     
                         .number {
-                            line-height: initial;
-    
+                            line-height: 36px;
+
                             @media (min-width: 1201px) {
                                 font-size: 48px;
+                                line-height: 48px;
                             }
                             
                             @media (max-width: 800px) {
                                 font-size: 32px;
+                                line-height: 32px;
+                            }
+
+                            &[title="★★★★★"] {
+                                font-size: 20px;
+
+                                @media (min-width: 801px) {
+                                    font-size: 24px;
+                                }
+
+                                @media (min-width: 1201px) {
+                                    font-size: 32px;
+                                }
                             }
                         }
     
