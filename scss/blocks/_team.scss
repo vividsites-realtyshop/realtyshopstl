@@ -66,7 +66,9 @@
             }
         }
     
-        &.team-desc-simple {
+    }
+    .md-team-desc {
+        .team-desc-simple {
             .desc-content[role="img"][aria-label=""] {
                 display: none;
             }
@@ -75,27 +77,27 @@
                 .desc-list {
                     align-items: stretch;
                     height: auto;
-
+    
                     @media (min-width: 801px) {
                         align-items: flex-start;
                         width: calc(100vw - 80px);
                         max-width: 1400px;
                     }
-
+    
                     .item {
                         padding-top: 32px;
                         padding-bottom: 32px;
-
+    
                         &:not(:first-of-type) {
                             &:before {
                                 top: 42px;
                                 bottom: 42px;
                             }
                         }
-
+    
                         .number {
                             line-height: initial;
-
+    
                             @media (min-width: 1201px) {
                                 font-size: 48px;
                             }
@@ -104,7 +106,7 @@
                                 font-size: 32px;
                             }
                         }
-
+    
                         .text {
                             white-space: normal;
                             text-overflow: initial;
