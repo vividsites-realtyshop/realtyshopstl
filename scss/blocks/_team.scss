@@ -68,7 +68,7 @@
     
     }
     .md-team-desc {
-        .team-desc-simple {
+        &.team-desc-simple {
             .desc-content[role="img"][aria-label=""] {
                 display: none;
             }
