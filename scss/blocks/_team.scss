@@ -74,6 +74,13 @@
             }
     
             .intro-desc {
+                .view-more-container {
+                    .view-more-content {
+                        max-width: 700px;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                    }
+                }
                 .desc-list {
                     height: auto;
     
@@ -84,9 +91,6 @@
                     }
 
                     @media (max-width: 800px) {
-                        align-items: flex-start;
-                        width: calc(100vw - 80px);
-                        max-width: 1400px;
                         align-items: stretch;
                     }
     
