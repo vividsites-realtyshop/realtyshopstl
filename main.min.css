@@ -22,10 +22,11 @@
 50%{background-position:100% 50%}
 100%{background-position:0 50%}
 }.text-align--center{text-align:center}
-.font-family--title{font-family:var(--font-title)}
+.font-family--title{font-family:var(--font-title);font-weight:normal;letter-spacing:.07em}
 .font-size--s{font-size:1rem}
 .font-size--m{font-size:1.25rem}
 .font-size--l{font-size:1.5rem}
+.font-color--theme{color:var(--color-theme)}
 body .mg-title{text-overflow:initial;white-space:initial}
 body .mg-title *{text-overflow:initial;white-space:initial}
 .rs-button,.page-content .md-cta-sc.standard .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,.page-content .md-testimonial.list-standard .title-container .mg-more{font-size:14px;font-weight:normal;background:var(--color-theme);color:#fff !important;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;text-align:center;border-radius:0;height:auto;width:auto;line-height:initial}

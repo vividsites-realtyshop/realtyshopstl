@@ -10,6 +10,8 @@
     &-family {
         &--title {
             font-family: var(--font-title);
+            font-weight: normal;
+            letter-spacing: 0.07em;
         }
     }
 
@@ -24,6 +26,12 @@
 
         &--l {
             font-size: 1.5rem;
+        }
+    }
+
+    &-color {
+        &--theme {
+            color: var(--color-theme);
         }
     }
 }
