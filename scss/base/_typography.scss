@@ -1,5 +1,6 @@
 *[style*="font-family: var(--font-title)"] {
     letter-spacing: $title-letter-spacing;
+    font-weight: normal;
 }
 
 *.mg-title {
@@ -20,6 +21,7 @@
             font-family: var(--font-title);
             font-weight: normal;
             letter-spacing: $title-letter-spacing;
+            line-height: 1;
         }
     }
 

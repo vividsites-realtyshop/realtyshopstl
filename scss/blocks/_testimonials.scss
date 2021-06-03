@@ -33,11 +33,15 @@
         }
         &.flow-classic {
             .comment-card {
+                background-color: $gray-lt;
+                filter: hue-rotate(180deg);
+
                 .footer {
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-end;
-                    
+                    filter: hue-rotate(-180deg);
+
                     & > img {
                         margin-top: 0;
                         width: 120px;

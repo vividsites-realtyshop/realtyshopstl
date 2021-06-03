@@ -21,10 +21,10 @@
 }@keyframes loadingbg{0%{background-position:0 50%}
 50%{background-position:100% 50%}
 100%{background-position:0 50%}
-}*[style*="font-family: var(--font-title)"]{letter-spacing:.05em}
+}*[style*="font-family: var(--font-title)"]{letter-spacing:.05em;font-weight:normal}
 *.mg-title{font-weight:normal}
 .text-align--center{text-align:center}
-.font-family--title{font-family:var(--font-title);font-weight:normal;letter-spacing:.05em}
+.font-family--title{font-family:var(--font-title);font-weight:normal;letter-spacing:.05em;line-height:1}
 .font-size--s{font-size:1rem}
 .font-size--m{font-size:1.25rem}
 .font-size--l{font-size:1.5rem}
@@ -75,7 +75,8 @@ body .mg-title *{text-overflow:initial;white-space:initial}
 .page-content .md-team:not(.carousel-fashion) .agent-item:hover .info{height:100% !important;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important;background:rgba(0,0,0,0.5);-webkit-transition:height .4s,background .4s ease .2s;transition:height .4s,background .4s ease .2s}
 .page-content .md-team.multi-column-info-over-img+.md-team.multi-column-info-over-img{padding-top:0 !important}
 .page-content .md-team-desc.team-desc-simple .desc-content[role="img"][aria-label=""]{display:none}
-.page-content .md-team-desc.team-desc-simple .intro-desc .view-more-container .view-more-content{max-width:700px;padding-top:8px;padding-bottom:8px;margin-left:auto;margin-right:auto}
+.page-content .md-team-desc.team-desc-simple .intro-desc .view-more-container .view-more-content{max-width:700px;padding-top:20px;padding-bottom:8px;margin-left:auto;margin-right:auto}
+.page-content .md-team-desc.team-desc-simple .intro-desc .view-more-container .view-more-content p:not(:last-child){margin-bottom:1rem}
 @media(max-width:800px){.page-content .md-team-desc.team-desc-simple .intro-desc .view-more-container .view-more-content{padding-top:24px;padding-bottom:24px}
 }.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list{height:auto}
 @media(min-width:801px){.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;width:calc(100vw - 80px);max-width:1400px}
@@ -95,7 +96,8 @@ body .mg-title *{text-overflow:initial;white-space:initial}
 .page-content .md-testimonial.list-standard .title-container .mg-more .text{margin-right:0;text-align:center}
 .page-content .md-testimonial.list-standard .title-container .mg-more .iconfont{display:none}
 @media(min-width:601px){.page-content .md-testimonial.list-standard .comment-list-wrap .comment-list .odd .testimonial-picture{margin-right:0 !important}
-}.page-content .md-testimonial.flow-classic .comment-card .footer{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
+}.page-content .md-testimonial.flow-classic .comment-card{background-color:#f8f8f8;-webkit-filter:hue-rotate(180deg);filter:hue-rotate(180deg)}
+.page-content .md-testimonial.flow-classic .comment-card .footer{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;-webkit-filter:hue-rotate(-180deg);filter:hue-rotate(-180deg)}
 .page-content .md-testimonial.flow-classic .comment-card .footer>img{margin-top:0;width:120px;height:120px;border-radius:100%}
 footer .site-logo img{height:auto !important;max-height:2.5em}
 footer .site-logo+.co-name{visibility:hidden}
@@ -511,7 +513,7 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 }.home .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main .name{font-size:18px}
 .home .house-grid-item.template1{border:0;border-radius:0;background:#FFF}
 body.listing .house-list.brief-list.template1{padding:0 0 0 12px}
-body.listing .house-list.brief-list.template1 .house-list-item:nth-of-type(even){background:#f0f0f0}
+body.listing .house-list.brief-list.template1 .house-list-item:nth-of-type(even){background:#f8f8f8}
 body.listing .house-list.brief-list.template1 .house-list-item.template1{margin-bottom:12px}
 body.listing .house-list.brief-list.template1 .house-list-item.template1 .house-preview{-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center;width:240px;min-height:160px}
 body.listing .house-list.brief-list.template1 .house-list-item.template1 .detail{padding:6px 12px}
