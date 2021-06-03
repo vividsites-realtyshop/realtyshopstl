@@ -40,7 +40,7 @@
                         &.agent-name {
                             order: -1;
                             margin-bottom: 0 !important;
-                            letter-spacing: 0.07em;
+                            letter-spacing: $title-letter-spacing;
                         }
                     }
                 }

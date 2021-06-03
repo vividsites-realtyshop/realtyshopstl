@@ -2,6 +2,10 @@
     letter-spacing: $title-letter-spacing;
 }
 
+*.mg-title {
+    font-weight: normal;
+}
+
 .text {
 	&-align {
 		&--center {

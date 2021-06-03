@@ -31,7 +31,7 @@ header {
 }
 
 .md-header.fashion .header-container .menu-item {
-	letter-spacing: 0.07em;
+	letter-spacing: $title-letter-spacing;
 }
 
 main.hide-chat {
