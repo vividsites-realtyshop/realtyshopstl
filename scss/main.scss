@@ -93,8 +93,9 @@
 	}
 }
 
-.banner {
-	.single-picture[title^='parallax'] {
+.banner .single-picture,
+.md-content[role="img"] {
+	&[title^='parallax'] {
 		background-attachment: fixed;
 	}
 }
