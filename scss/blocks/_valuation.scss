@@ -1,0 +1,116 @@
+.page-content {
+    .md-evaluation-banner {
+        &.standard {
+            .banner {
+                .cover {
+                    padding: 120px 0 90px;
+                }
+            }
+
+            .top {
+                border-radius: 0;
+
+                .form-wrap {
+                    border-radius: 0;
+                    
+                    .reg-form {
+                        .desc {
+                            padding: 0;
+
+                            .basic-info {
+                                .iconfont {
+                                    display: none;
+                                }
+
+                                .input-container {
+                                    input:not([type="submit"]) {
+                                        padding: 6px 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .single-picture {
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(0,0,0,0.4);
+                }
+            }
+
+            .address-input {
+                &.gf {
+                    .address-body {
+                        .input {
+                            border-radius: 0;
+                        }
+
+                        .left-box {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+
+            .clame {
+                margin-top: 16px;
+            }
+
+            .report-info {
+                .report-price {
+                    .price-item {
+                        .price-text {
+                            font-family: var(--font-title);
+                            letter-spacing: $title-letter-spacing;
+                        }
+                    }
+                }
+                .report-change {
+                    & > span {
+                        flex: none;
+
+                        &:empty {
+                            display: none;
+                        }
+
+                        &.change-text {
+                            content: ":";
+                            margin-left: 0;
+                            margin-right: 16px;
+                            font-family: var(--font-title);
+                            font-size: 24px;
+                            letter-spacing: $title-letter-spacing;
+                            line-height: initial;
+                        }
+                        
+                        &.change-value {
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.evaluation-progress {
+            .md-evaluation-steps-content {
+                .md-evaluation-steps {
+                    .steps-box {
+                        .step-description {
+                            .step-label {
+                                font-family: var(--font-title);
+                                font-size: 28px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
