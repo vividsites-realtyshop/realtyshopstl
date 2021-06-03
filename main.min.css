@@ -21,11 +21,13 @@
 }@keyframes loadingbg{0%{background-position:0 50%}
 50%{background-position:100% 50%}
 100%{background-position:0 50%}
-}.text-align--center{text-align:center}
-.font-family--title{font-family:var(--font-title);font-weight:normal;letter-spacing:.07em}
+}*[style*="font-family: var(--font-title)"]{letter-spacing:.05em}
+.text-align--center{text-align:center}
+.font-family--title{font-family:var(--font-title);font-weight:normal;letter-spacing:.05em}
 .font-size--s{font-size:1rem}
 .font-size--m{font-size:1.25rem}
 .font-size--l{font-size:1.5rem}
+.font-size--xl{font-size:2rem}
 .font-color--theme{color:var(--color-theme)}
 body .mg-title{text-overflow:initial;white-space:initial}
 body .mg-title *{text-overflow:initial;white-space:initial}
