@@ -9,5 +9,13 @@
                 }
             }
         }
+
+        &.new {
+            .media-content {
+                .title-text {
+                    padding-bottom: 32px;
+                }
+            }
+        }
     }
 }
