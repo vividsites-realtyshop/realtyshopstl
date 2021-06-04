@@ -69,11 +69,17 @@
     }
     .md-team-desc {
         &.team-desc-simple {
+            .team-desc-content {
+                margin-bottom: 0 !important;
+                background-color: $gray-lt;
+            }
+
             .desc-content[role="img"][aria-label=""] {
                 display: none;
             }
     
             .intro-desc {
+
                 .view-more-container {
                     .view-more-content {
                         max-width: 700px;
@@ -96,6 +102,10 @@
                 }
                 .desc-list {
                     height: auto;
+                    box-shadow: 0 2px 12px 0px rgba(0,0,0,0.1);
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: none;
     
                     @media (min-width: 801px) {
                         align-items: flex-start;
@@ -149,6 +159,7 @@
                             white-space: normal;
                             text-overflow: initial;
                             line-height: initial;
+                            color: $charcoal;
                         }
                     }
                 }
