@@ -93,16 +93,16 @@ body .mg-title *{text-overflow:initial;white-space:initial}
 @media(min-width:801px){.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .number[title="★★★★★"]{font-size:24px}
 }@media(min-width:1201px){.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .number[title="★★★★★"]{font-size:32px}
 }.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .text{white-space:normal;text-overflow:initial;line-height:initial;color:#222}
+body:not(.reviews) .md-testimonial.flow-classic .comment-card{background-color:#f8f8f8;-webkit-filter:hue-rotate(180deg);filter:hue-rotate(180deg)}
+body:not(.reviews) .md-testimonial.flow-classic .comment-card .footer{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;-webkit-filter:hue-rotate(-180deg);filter:hue-rotate(-180deg)}
+body:not(.reviews) .md-testimonial.flow-classic .comment-card .footer>img{margin-top:0;width:120px;height:120px;border-radius:100%}
 .page-content .md-testimonial.list-standard{padding-bottom:140px}
 .page-content .md-testimonial.list-standard .title-container{position:static !important}
 .page-content .md-testimonial.list-standard .title-container .mg-more{position:absolute;bottom:60px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .page-content .md-testimonial.list-standard .title-container .mg-more .text{margin-right:0;text-align:center}
 .page-content .md-testimonial.list-standard .title-container .mg-more .iconfont{display:none}
 @media(min-width:601px){.page-content .md-testimonial.list-standard .comment-list-wrap .comment-list .odd .testimonial-picture{margin-right:0 !important}
-}.page-content .md-testimonial.flow-classic .comment-card{background-color:#f8f8f8;-webkit-filter:hue-rotate(180deg);filter:hue-rotate(180deg)}
-.page-content .md-testimonial.flow-classic .comment-card .footer{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;-webkit-filter:hue-rotate(-180deg);filter:hue-rotate(-180deg)}
-.page-content .md-testimonial.flow-classic .comment-card .footer>img{margin-top:0;width:120px;height:120px;border-radius:100%}
-.page-content .md-evaluation-banner.standard .banner .cover{padding:120px 0 90px}
+}.page-content .md-evaluation-banner.standard .banner .cover{padding:120px 0 90px}
 .page-content .md-evaluation-banner.standard .top{border-radius:0}
 .page-content .md-evaluation-banner.standard .top .form-wrap{border-radius:0}
 .page-content .md-evaluation-banner.standard .top .form-wrap .reg-form .desc{padding:0}

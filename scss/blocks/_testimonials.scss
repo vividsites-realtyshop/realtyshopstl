@@ -1,3 +1,27 @@
+body:not(.reviews) {
+    .md-testimonial {
+        &.flow-classic {
+            .comment-card {
+                background-color: $gray-lt;
+                filter: hue-rotate(180deg);
+
+                .footer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    filter: hue-rotate(-180deg);
+
+                    & > img {
+                        margin-top: 0;
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
 .page-content {
     .md-testimonial {
         &.list-standard {
@@ -28,26 +52,6 @@
             .comment-list-wrap .comment-list .odd .testimonial-picture {
                 @media (min-width: 601px) {
                     margin-right: 0 !important;
-                }
-            }
-        }
-        &.flow-classic {
-            .comment-card {
-                background-color: $gray-lt;
-                filter: hue-rotate(180deg);
-
-                .footer {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: flex-end;
-                    filter: hue-rotate(-180deg);
-
-                    & > img {
-                        margin-top: 0;
-                        width: 120px;
-                        height: 120px;
-                        border-radius: 100%;
-                    }
                 }
             }
         }
