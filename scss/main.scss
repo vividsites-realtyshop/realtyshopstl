@@ -98,4 +98,8 @@
 	&[title^='parallax'] {
 		background-attachment: fixed;
 	}
+	&[title^='repeating*'] {
+		background-repeat: repeat;
+		background-size: contain !important;
+	}
 }
