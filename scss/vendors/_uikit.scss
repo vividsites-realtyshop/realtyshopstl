@@ -1,4 +1,8 @@
 body.has-uikit {
+    address, dl, fieldset, figure, ol, p, pre, ul {
+        margin: initial;
+    }
+
     header,
     footer {
         .logo {
@@ -26,6 +30,35 @@ body.has-uikit {
             &.active {
                 a {
                     color: var(--color-theme);
+                }
+            }
+        }
+    }
+
+    .md-team-desc {
+        .intro-desc {
+            .desc-list {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    .md-cta-tc-sc {
+        &.standard {
+            .copy-content {
+                .title {
+                    margin-bottom: 0;
+
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .desc {
+                    p:last-child {
+                        margin-bottom: 0;
+                    }
                 }
             }
         }
