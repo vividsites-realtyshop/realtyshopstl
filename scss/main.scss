@@ -94,7 +94,8 @@
 }
 
 .banner .single-picture,
-.md-content[role="img"] {
+.md-content[role="img"],
+.md-testimonial .testimonial-frame[role="img"] {
 	&[title^='parallax'] {
 		background-attachment: fixed;
 	}

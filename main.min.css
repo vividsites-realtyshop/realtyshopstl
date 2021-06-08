@@ -102,7 +102,9 @@ body:not(.reviews) .md-testimonial.flow-classic .comment-card .footer>img{margin
 .page-content .md-testimonial.list-standard .title-container .mg-more .text{margin-right:0;text-align:center}
 .page-content .md-testimonial.list-standard .title-container .mg-more .iconfont{display:none}
 @media(min-width:601px){.page-content .md-testimonial.list-standard .comment-list-wrap .comment-list .odd .testimonial-picture{margin-right:0 !important}
-}.page-content .md-evaluation-banner.standard .banner .cover{padding:120px 0 90px}
+}.page-content .md-testimonial.slider-standard .testimonial-frame .testimonial-container .testimonial-swiper .testimonial .testimonial-item-container{background:rgba(255,255,255,0.9)}
+.page-content .md-testimonial.slider-standard .testimonial-frame .testimonial-container .testimonial-swiper .testimonial .testimonial-item-container .testimonial-body,.page-content .md-testimonial.slider-standard .testimonial-frame .testimonial-container .testimonial-swiper .testimonial .testimonial-item-container .testimonial-footer .testimonial-name{color:#222}
+.page-content .md-evaluation-banner.standard .banner .cover{padding:120px 0 90px}
 .page-content .md-evaluation-banner.standard .top{border-radius:0}
 .page-content .md-evaluation-banner.standard .top .form-wrap{border-radius:0}
 .page-content .md-evaluation-banner.standard .top .form-wrap .reg-form .desc{padding:0}
@@ -587,5 +589,5 @@ body.listing .house-list-item.template1 .house-preview .house-status.open-house{
 .banner-button:empty{display:none !important}
 .md-cta-tc-sc.standard .copy-column .title,.md-cta-tc-sc.standard .copy-column .desc{text-overflow:initial}
 .copy-content p:not(:last-child){margin-bottom:1rem}
-.banner .single-picture[title^='parallax'],.md-content[role="img"][title^='parallax']{background-attachment:fixed}
-.banner .single-picture[title^='repeating*'],.md-content[role="img"][title^='repeating*']{background-repeat:repeat;background-size:contain !important}
+.banner .single-picture[title^='parallax'],.md-content[role="img"][title^='parallax'],.md-testimonial .testimonial-frame[role="img"][title^='parallax']{background-attachment:fixed}
+.banner .single-picture[title^='repeating*'],.md-content[role="img"][title^='repeating*'],.md-testimonial .testimonial-frame[role="img"][title^='repeating*']{background-repeat:repeat;background-size:contain !important}

@@ -55,5 +55,24 @@ body:not(.reviews) {
                 }
             }
         }
+
+        &.slider-standard {
+            .testimonial-frame {
+                .testimonial-container {
+                    .testimonial-swiper {
+                        .testimonial {
+                            .testimonial-item-container {
+                                background: rgba(255,255,255,0.9);
+
+                                .testimonial-body,
+                                .testimonial-footer .testimonial-name {
+                                    color: #222;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
