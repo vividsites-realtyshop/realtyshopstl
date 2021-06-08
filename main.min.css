@@ -489,10 +489,11 @@ body.has-uikit header ul,body.has-uikit header ol,body.has-uikit footer ul,body.
 body.has-uikit header .menu-item a,body.has-uikit footer .menu-item a{color:#fff}
 body.has-uikit header .menu-item a:hover,body.has-uikit footer .menu-item a:hover{color:var(--color-theme);text-decoration:none}
 body.has-uikit header .menu-item.active a,body.has-uikit footer .menu-item.active a{color:var(--color-theme)}
-body.has-uikit .md-team-desc .intro-desc .desc-list{margin:0;padding:0}
+body.has-uikit .md-team-desc .intro-desc .desc-list{margin-top:0;margin-bottom:0;padding:0}
 body.has-uikit .md-cta-tc-sc.standard .copy-content .title{margin-bottom:0}
 body.has-uikit .md-cta-tc-sc.standard .copy-content .title p{margin-bottom:0}
 body.has-uikit .md-cta-tc-sc.standard .copy-content .desc p:last-child{margin-bottom:0}
+body.has-uikit .md-content.standard .list .sub-title p{margin-bottom:0}
 body.contact header+.md-lead-form.standard .media-content .title-text{background:transparent !important}
 body.contact .md-agent-contact{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
 body.contact .md-agent-contact .contact-box{min-width:100%;-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1;background:#222;margin:0}

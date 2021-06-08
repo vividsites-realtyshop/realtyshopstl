@@ -34,7 +34,8 @@ body.has-uikit {
     .md-team-desc {
         .intro-desc {
             .desc-list {
-                margin: 0;
+                margin-top: 0;
+                margin-bottom: 0;
                 padding: 0;
             }
         }
@@ -54,6 +55,18 @@ body.has-uikit {
                 .desc {
                     p:last-child {
                         margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .md-content {
+        &.standard {
+            .list {
+                .sub-title {
+                    p {
+                        margin-bottom: 0
                     }
                 }
             }
