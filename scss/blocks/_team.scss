@@ -94,6 +94,15 @@
                             }
                         }
 
+                        a {
+                            text-decoration: underline;
+                            color: darken($gold, 50%);
+
+                            &:hover {
+                                color: $gold;
+                            }
+                        }
+
                         @media (max-width: 800px) {
                             padding-top: 24px;
                             padding-bottom: 24px;
