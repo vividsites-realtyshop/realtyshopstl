@@ -40,6 +40,14 @@ body.has-uikit {
         }
     }
 
+    .md-lead-form {
+        .media-info {
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+
     .md-team-desc {
         .intro-desc {
             .desc-list {
@@ -52,7 +60,7 @@ body.has-uikit {
 
     .md-cta-sc {
         p {
-            margin: 0;
+            margin-bottom: 0;
         }
     }
 

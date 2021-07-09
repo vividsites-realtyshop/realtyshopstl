@@ -495,8 +495,9 @@ body.has-uikit header .menu-item a,body.has-uikit footer .menu-item a{color:#fff
 body.has-uikit header .menu-item a:hover,body.has-uikit footer .menu-item a:hover{color:var(--color-theme);text-decoration:none}
 body.has-uikit header .menu-item.active a,body.has-uikit footer .menu-item.active a{color:var(--color-theme)}
 body.has-uikit .uk-accordion-content{background:#f8f8f8}
+body.has-uikit .md-lead-form .media-info p{margin-bottom:0}
 body.has-uikit .md-team-desc .intro-desc .desc-list{margin-top:0;margin-bottom:0;padding:0}
-body.has-uikit .md-cta-sc p{margin:0}
+body.has-uikit .md-cta-sc p{margin-bottom:0}
 body.has-uikit .md-cta-tc-sc.standard .copy-content .title{margin-bottom:0}
 body.has-uikit .md-cta-tc-sc.standard .copy-content .title p{margin-bottom:0}
 body.has-uikit .md-cta-tc-sc.standard .copy-content .desc p:last-child{margin-bottom:0}
