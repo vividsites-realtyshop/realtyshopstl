@@ -297,7 +297,7 @@ main.hide-chat .header-container .header-bg{opacity:.7 !important}
 .padding-right-s{padding-right:10px}
 .padding-top-s{padding-top:10px}
 .padding-bottom-s{padding-bottom:10px}
-.padding-m,body.has-uikit .uk-accordian-content{padding:20px}
+.padding-m,body.has-uikit .uk-accordion-content{padding:20px}
 .padding-y-m{padding-top:20px;padding-bottom:20px}
 .padding-x-m{padding-left:20px;padding-right:20px}
 .padding-left-m{padding-left:20px}
@@ -494,7 +494,7 @@ body.has-uikit header ul,body.has-uikit header ol,body.has-uikit footer ul,body.
 body.has-uikit header .menu-item a,body.has-uikit footer .menu-item a{color:#fff}
 body.has-uikit header .menu-item a:hover,body.has-uikit footer .menu-item a:hover{color:var(--color-theme);text-decoration:none}
 body.has-uikit header .menu-item.active a,body.has-uikit footer .menu-item.active a{color:var(--color-theme)}
-body.has-uikit .uk-accordian-content{background:#f8f8f8}
+body.has-uikit .uk-accordion-content{background:#f8f8f8}
 body.has-uikit .md-team-desc .intro-desc .desc-list{margin-top:0;margin-bottom:0;padding:0}
 body.has-uikit .md-cta-sc p{margin:0}
 body.has-uikit .md-cta-tc-sc.standard .copy-content .title{margin-bottom:0}
