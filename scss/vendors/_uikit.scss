@@ -41,6 +41,12 @@ body.has-uikit {
         }
     }
 
+    .md-cta-sc {
+        p {
+            margin: 0;
+        }
+    }
+    
     .md-cta-tc-sc {
         &.standard {
             .copy-content {
