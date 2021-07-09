@@ -32,10 +32,16 @@
 .font-color--theme{color:var(--color-theme)}
 body .mg-title{text-overflow:initial;white-space:initial}
 body .mg-title *{text-overflow:initial;white-space:initial}
-.rs-button,.page-content .md-cta-sc .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,.page-content .md-testimonial.list-standard .title-container .mg-more{font-size:14px;font-weight:normal;background:var(--color-theme);color:#fff !important;padding:.75rem 2rem !important;text-transform:uppercase;text-align:center;border-radius:0;height:auto !important;width:auto;line-height:initial !important}
+.rs-button,.page-content .md-cta-sc .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,.page-content .md-testimonial.list-standard .title-container .mg-more{display:inline-block;font-size:14px;font-weight:normal;background:#ffc03a;color:#fff !important;padding:.75rem 2rem !important;text-transform:uppercase;text-align:center;border-radius:0;height:auto !important;width:auto;line-height:initial !important}
+.rs-button:hover,.page-content .md-cta-sc .media-content .banner-button .btn-item:hover,.page-content .md-house.template1 .mg-more:hover,.page-content .md-testimonial.list-standard .title-container .mg-more:hover{background:#ffb007}
 .rs-button--outline{background:transparent;border:solid 1px #fff}
+.rs-button--outline:hover{background:transparent}
 .page-content .richtext h1:not(:last-child),.page-content .richtext h2:not(:last-child),.page-content .richtext h3:not(:last-child),.page-content .richtext h4:not(:last-child),.page-content .richtext h5:not(:last-child),.page-content .richtext h6:not(:last-child){margin-bottom:.5rem}
 .page-content .md-cta-sc.new .media-content .title-text{padding-bottom:32px}
+.page-content .md-cta-multiple-column.one-bg-two-column .content{padding:30px;min-height:0 !important;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
+@media(min-width:1441px){.page-content .md-cta-multiple-column.one-bg-two-column .content{padding:60px}
+}.page-content .md-cta-multiple-column.one-bg-two-column .content .card{height:auto !important}
+.page-content .md-cta-multiple-column.one-bg-two-column .content .card .description{color:#222}
 .page-content .md-house.template4 .house-grid .house-grid-item.more-link a{color:#fff !important;background:transparent;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;border:solid 1px #fff;width:auto;height:auto;max-width:100%}
 .page-content .house-grid-item .house-status,.page-content .house-list-item .house-status{font-size:12px !important;height:auto !important;line-height:normal !important;padding:4px 8px !important;border-radius:0 !important}
 .page-content .house-grid-item .house-status.new,.page-content .house-grid-item .house-status.open-house,.page-content .house-list-item .house-status.new,.page-content .house-list-item .house-status.open-house{background-color:#ffc03a !important}
@@ -489,12 +495,15 @@ main.hide-chat .header-container .header-bg{opacity:.7 !important}
 @media(min-width:601px){.width-auto\@s{width:auto}
 }@media(min-width:901px){.width-auto\@l{width:auto}
 }body.has-uikit{color:#222}
+body.has-uikit address:last-child,body.has-uikit dl:last-child,body.has-uikit fieldset:last-child,body.has-uikit figure:last-child,body.has-uikit ol:last-child,body.has-uikit p:last-child,body.has-uikit pre:last-child,body.has-uikit ul:last-child{margin-bottom:0}
 body.has-uikit header .logo img,body.has-uikit footer .logo img{max-width:initial}
 body.has-uikit header ul,body.has-uikit header ol,body.has-uikit footer ul,body.has-uikit footer ol{padding-left:initial;margin:initial}
 body.has-uikit header .menu-item a,body.has-uikit footer .menu-item a{color:#fff}
 body.has-uikit header .menu-item a:hover,body.has-uikit footer .menu-item a:hover{color:var(--color-theme);text-decoration:none}
 body.has-uikit header .menu-item.active a,body.has-uikit footer .menu-item.active a{color:var(--color-theme)}
 body.has-uikit .uk-accordion-content{background:#f8f8f8}
+body.has-uikit .md-cta-multiple-column .site-card .title{margin-bottom:0}
+body.has-uikit .md-cta-multiple-column .site-card .title *{margin-bottom:0}
 body.has-uikit .md-lead-form .media-info p{margin-bottom:0}
 body.has-uikit .md-team-desc .intro-desc .desc-list{margin-top:0;margin-bottom:0;padding:0}
 body.has-uikit .md-cta-sc p{margin-bottom:0}

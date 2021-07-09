@@ -1,6 +1,12 @@
 body.has-uikit {
     color: $charcoal;
 
+    address, dl, fieldset, figure, ol, p, pre, ul {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
     header,
     footer {
         .logo {
@@ -37,6 +43,18 @@ body.has-uikit {
         &-content {
             background: $gray-lt;
             @extend .padding-m;
+        }
+    }
+
+    .md-cta-multiple-column {
+        .site-card {
+            .title {
+                margin-bottom: 0;
+
+                * {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 

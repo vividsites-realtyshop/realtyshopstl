@@ -7,7 +7,7 @@
                 }
             }
         }
-        
+
         &.standard {
         }
 
@@ -15,6 +15,28 @@
             .media-content {
                 .title-text {
                     padding-bottom: 32px;
+                }
+            }
+        }
+    }
+
+    .md-cta-multiple-column {
+        &.one-bg-two-column {
+            .content {
+                padding: 30px;
+                min-height: 0 !important;
+                align-items: stretch;
+
+                @media (min-width: 1441px) {
+                    padding: 60px;
+                }
+
+                .card {
+                    height: auto !important;
+
+                    .description {
+                        color: $charcoal;
+                    }
                 }
             }
         }

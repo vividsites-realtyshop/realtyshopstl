@@ -1,7 +1,8 @@
 .rs-button {
+    display: inline-block;
     font-size: 14px;
     font-weight: normal;
-    background: var(--color-theme);
+    background: $gold;
     color: #fff !important;
     padding: 0.75rem 2rem !important;
     text-transform: uppercase;
@@ -11,8 +12,16 @@
     width: auto;
     line-height: initial !important;
 
+    &:hover {
+        background: darken($gold, 10%);
+    }
+
     &--outline {
         background: transparent;
         border: solid 1px #fff;
+
+        &:hover {
+            background: transparent;
+        }
     }
 }
