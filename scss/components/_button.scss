@@ -7,9 +7,9 @@
     text-transform: uppercase;
     text-align: center;
     border-radius: 0;
-    height: auto;
+    height: auto !important;
     width: auto;
-    line-height: initial;
+    line-height: initial !important;
 
     &--outline {
         background: transparent;

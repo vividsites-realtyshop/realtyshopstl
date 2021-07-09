@@ -1,4 +1,6 @@
 body.has-uikit {
+    color: $charcoal;
+
     header,
     footer {
         .logo {
@@ -31,6 +33,13 @@ body.has-uikit {
         }
     }
 
+    .uk-accordian {
+        &-content {
+            background: $gray-lt;
+            @extend .padding-m;
+        }
+    }
+
     .md-team-desc {
         .intro-desc {
             .desc-list {
@@ -46,7 +55,7 @@ body.has-uikit {
             margin: 0;
         }
     }
-    
+
     .md-cta-tc-sc {
         &.standard {
             .copy-content {
@@ -76,6 +85,12 @@ body.has-uikit {
                     }
                 }
             }
+        }
+    }
+
+    .md-testimonial {
+        ul {
+            margin-bottom: 0;
         }
     }
 }

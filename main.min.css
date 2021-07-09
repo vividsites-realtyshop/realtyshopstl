@@ -32,7 +32,7 @@
 .font-color--theme{color:var(--color-theme)}
 body .mg-title{text-overflow:initial;white-space:initial}
 body .mg-title *{text-overflow:initial;white-space:initial}
-.rs-button,.page-content .md-cta-sc .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,.page-content .md-testimonial.list-standard .title-container .mg-more{font-size:14px;font-weight:normal;background:var(--color-theme);color:#fff !important;padding:.75rem 2rem !important;text-transform:uppercase;text-align:center;border-radius:0;height:auto;width:auto;line-height:initial}
+.rs-button,.page-content .md-cta-sc .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,.page-content .md-testimonial.list-standard .title-container .mg-more{font-size:14px;font-weight:normal;background:var(--color-theme);color:#fff !important;padding:.75rem 2rem !important;text-transform:uppercase;text-align:center;border-radius:0;height:auto !important;width:auto;line-height:initial !important}
 .rs-button--outline{background:transparent;border:solid 1px #fff}
 .page-content .richtext h1:not(:last-child),.page-content .richtext h2:not(:last-child),.page-content .richtext h3:not(:last-child),.page-content .richtext h4:not(:last-child),.page-content .richtext h5:not(:last-child),.page-content .richtext h6:not(:last-child){margin-bottom:.5rem}
 .page-content .md-cta-sc.new .media-content .title-text{padding-bottom:32px}
@@ -297,7 +297,7 @@ main.hide-chat .header-container .header-bg{opacity:.7 !important}
 .padding-right-s{padding-right:10px}
 .padding-top-s{padding-top:10px}
 .padding-bottom-s{padding-bottom:10px}
-.padding-m{padding:20px}
+.padding-m,body.has-uikit .uk-accordian-content{padding:20px}
 .padding-y-m{padding-top:20px;padding-bottom:20px}
 .padding-x-m{padding-left:20px;padding-right:20px}
 .padding-left-m{padding-left:20px}
@@ -488,17 +488,20 @@ main.hide-chat .header-container .header-bg{opacity:.7 !important}
 }.width-auto{width:auto}
 @media(min-width:601px){.width-auto\@s{width:auto}
 }@media(min-width:901px){.width-auto\@l{width:auto}
-}body.has-uikit header .logo img,body.has-uikit footer .logo img{max-width:initial}
+}body.has-uikit{color:#222}
+body.has-uikit header .logo img,body.has-uikit footer .logo img{max-width:initial}
 body.has-uikit header ul,body.has-uikit header ol,body.has-uikit footer ul,body.has-uikit footer ol{padding-left:initial;margin:initial}
 body.has-uikit header .menu-item a,body.has-uikit footer .menu-item a{color:#fff}
 body.has-uikit header .menu-item a:hover,body.has-uikit footer .menu-item a:hover{color:var(--color-theme);text-decoration:none}
 body.has-uikit header .menu-item.active a,body.has-uikit footer .menu-item.active a{color:var(--color-theme)}
+body.has-uikit .uk-accordian-content{background:#f8f8f8}
 body.has-uikit .md-team-desc .intro-desc .desc-list{margin-top:0;margin-bottom:0;padding:0}
 body.has-uikit .md-cta-sc p{margin:0}
 body.has-uikit .md-cta-tc-sc.standard .copy-content .title{margin-bottom:0}
 body.has-uikit .md-cta-tc-sc.standard .copy-content .title p{margin-bottom:0}
 body.has-uikit .md-cta-tc-sc.standard .copy-content .desc p:last-child{margin-bottom:0}
 body.has-uikit .md-content.standard .list .sub-title p{margin-bottom:0}
+body.has-uikit .md-testimonial ul{margin-bottom:0}
 body.contact header+.md-lead-form.standard .media-content .title-text{background:transparent !important}
 body.contact .md-agent-contact{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
 body.contact .md-agent-contact .contact-box{min-width:100%;-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1;background:#222;margin:0}
