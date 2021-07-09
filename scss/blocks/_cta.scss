@@ -23,12 +23,20 @@
     .md-cta-multiple-column {
         &.one-bg-two-column {
             .content {
-                padding: 30px;
+                padding: 40px 30px;
                 min-height: 0 !important;
                 align-items: stretch;
 
-                @media (min-width: 1441px) {
+                @media (min-width: 961px) {
                     padding: 60px;
+                }
+
+                .left-card {
+                    margin-right: 30px;
+
+                    @media (min-width: 961px) {
+                        margin-right: 40px;
+                    }
                 }
 
                 .card {
@@ -36,6 +44,7 @@
 
                     .description {
                         color: $charcoal;
+                        margin-bottom: 0;
                     }
                 }
             }

@@ -38,10 +38,12 @@ body .mg-title *{text-overflow:initial;white-space:initial}
 .rs-button--outline:hover{background:transparent}
 .page-content .richtext h1:not(:last-child),.page-content .richtext h2:not(:last-child),.page-content .richtext h3:not(:last-child),.page-content .richtext h4:not(:last-child),.page-content .richtext h5:not(:last-child),.page-content .richtext h6:not(:last-child){margin-bottom:.5rem}
 .page-content .md-cta-sc.new .media-content .title-text{padding-bottom:32px}
-.page-content .md-cta-multiple-column.one-bg-two-column .content{padding:30px;min-height:0 !important;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
-@media(min-width:1441px){.page-content .md-cta-multiple-column.one-bg-two-column .content{padding:60px}
+.page-content .md-cta-multiple-column.one-bg-two-column .content{padding:40px 30px;min-height:0 !important;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
+@media(min-width:961px){.page-content .md-cta-multiple-column.one-bg-two-column .content{padding:60px}
+}.page-content .md-cta-multiple-column.one-bg-two-column .content .left-card{margin-right:30px}
+@media(min-width:961px){.page-content .md-cta-multiple-column.one-bg-two-column .content .left-card{margin-right:40px}
 }.page-content .md-cta-multiple-column.one-bg-two-column .content .card{height:auto !important}
-.page-content .md-cta-multiple-column.one-bg-two-column .content .card .description{color:#222}
+.page-content .md-cta-multiple-column.one-bg-two-column .content .card .description{color:#222;margin-bottom:0}
 .page-content .md-house.template4 .house-grid .house-grid-item.more-link a{color:#fff !important;background:transparent;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;border:solid 1px #fff;width:auto;height:auto;max-width:100%}
 .page-content .house-grid-item .house-status,.page-content .house-list-item .house-status{font-size:12px !important;height:auto !important;line-height:normal !important;padding:4px 8px !important;border-radius:0 !important}
 .page-content .house-grid-item .house-status.new,.page-content .house-grid-item .house-status.open-house,.page-content .house-list-item .house-status.new,.page-content .house-list-item .house-status.open-house{background-color:#ffc03a !important}
