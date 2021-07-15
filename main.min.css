@@ -44,6 +44,7 @@ body .mg-title *{text-overflow:initial;white-space:initial}
 @media(min-width:961px){.page-content .md-cta-multiple-column.one-bg-two-column .content .left-card{margin-right:40px}
 }.page-content .md-cta-multiple-column.one-bg-two-column .content .card{height:auto !important}
 .page-content .md-cta-multiple-column.one-bg-two-column .content .card .description{color:#222;margin-bottom:0}
+.page-content .md-cta-multiple-column.one-bg-two-column .content .card .button:first-child{margin-top:0}
 .page-content .md-house.template4 .house-grid .house-grid-item.more-link a{color:#fff !important;background:transparent;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;border:solid 1px #fff;width:auto;height:auto;max-width:100%}
 .page-content .house-grid-item .house-status,.page-content .house-list-item .house-status{font-size:12px !important;height:auto !important;line-height:normal !important;padding:4px 8px !important;border-radius:0 !important}
 .page-content .house-grid-item .house-status.new,.page-content .house-grid-item .house-status.open-house,.page-content .house-list-item .house-status.new,.page-content .house-list-item .house-status.open-house{background-color:#ffc03a !important}
@@ -132,6 +133,7 @@ body:not(.reviews) .md-testimonial.flow-classic .comment-card .footer>img{margin
 .page-content .md-evaluation-banner.evaluation-progress .md-evaluation-steps-content .md-evaluation-steps .steps-box .step-description .step-label{font-family:var(--font-title);font-size:28px}
 .background-color--light{background:#f8f8f8}
 .background__layer{position:absolute;top:0;right:0;left:0;bottom:0;width:100%;height:100%;display:block;z-index:0}
+.background__layer ~ *{position:relative;z-index:2}
 .background__image{position:absolute;top:0;right:0;left:0;bottom:0;width:100%;height:100%;display:block;z-index:0;-o-object-fit:cover;object-fit:cover;-o-object-position:center center;object-position:center center;font-family:"object-fit: cover; object-position: center center"}
 .background__image-wrapper{overflow:hidden;position:relative}
 .background__image-wrapper *:not(.background__image){z-index:2}
@@ -504,6 +506,7 @@ main.hide-chat .header-container .header-bg{opacity:.7 !important}
 }@media(min-width:901px){.width-auto\@l{width:auto}
 }body.has-uikit{color:#222}
 body.has-uikit address:last-child,body.has-uikit dl:last-child,body.has-uikit fieldset:last-child,body.has-uikit figure:last-child,body.has-uikit ol:last-child,body.has-uikit p:last-child,body.has-uikit pre:last-child,body.has-uikit ul:last-child{margin-bottom:0}
+body.has-uikit .button{text-decoration:none}
 body.has-uikit header .logo img,body.has-uikit footer .logo img{max-width:initial}
 body.has-uikit header ul,body.has-uikit header ol,body.has-uikit footer ul,body.has-uikit footer ol{padding-left:initial;margin:initial}
 body.has-uikit header .menu-item a,body.has-uikit footer .menu-item a{color:#fff}
@@ -613,5 +616,5 @@ body.listing .house-list-item.template1 .house-preview .house-status.open-house{
 .banner-button:empty{display:none !important}
 .md-cta-tc-sc.standard .copy-column .title,.md-cta-tc-sc.standard .copy-column .desc{text-overflow:initial}
 .copy-content p:not(:last-child){margin-bottom:1rem}
-.banner .single-picture[title^='parallax'],.md-content[role="img"][title^='parallax'],.md-testimonial .testimonial-frame[role="img"][title^='parallax']{background-attachment:fixed}
-.banner .single-picture[title^='repeating*'],.md-content[role="img"][title^='repeating*'],.md-testimonial .testimonial-frame[role="img"][title^='repeating*']{background-repeat:repeat;background-size:contain !important}
+.banner .single-picture[title^='parallax'],[role="img"][title^='parallax']{background-attachment:fixed}
+.banner .single-picture[title^='repeating*'],.banner .single-picture[aria-label^='repeating*'],[role="img"][title^='repeating*'],[role="img"][aria-label^='repeating*']{background-repeat:repeat;background-size:contain !important}

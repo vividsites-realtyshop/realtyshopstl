@@ -94,12 +94,14 @@
 }
 
 .banner .single-picture,
-.md-content[role="img"],
-.md-testimonial .testimonial-frame[role="img"] {
+// .md-content[role="img"],
+// .md-testimonial .testimonial-frame[role="img"],
+[role="img"] {
 	&[title^='parallax'] {
 		background-attachment: fixed;
 	}
-	&[title^='repeating*'] {
+	&[title^='repeating*'],
+	&[aria-label^='repeating*'] {
 		background-repeat: repeat;
 		background-size: contain !important;
 	}

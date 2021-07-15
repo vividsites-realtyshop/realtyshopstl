@@ -1,0 +1,181 @@
+.flex {
+    display: flex;
+    &\@s {
+        @media (min-width: $breakpoint-s) {
+            display: flex;
+        }
+    }
+    &\@m {
+        @media (min-width: $breakpoint-m) {
+            display: flex;
+        }
+    }
+
+    &-wrap {
+        flex-wrap: wrap;
+    }
+
+    &-column {
+		flex-direction: column;
+
+		&\@m {
+            @media (min-width: $breakpoint-m) {
+                flex-direction: column;
+            }
+        }
+	}
+
+	&-column--mobile-only{
+		flex-direction: row;
+
+		@media (max-width: $breakpoint-m) {
+			flex-direction: column;
+		}
+	}
+
+    // Horizontal
+    &-left {
+        justify-content: flex-start;
+        &\@s {
+            @media (min-width: $breakpoint-s) {
+                justify-content: flex-start;
+            }
+        }
+        &\@m {
+            @media (min-width: $breakpoint-m) {
+                justify-content: flex-start !important;
+            }
+        }
+        &\@l {
+            @media (min-width: $breakpoint-l) {
+                justify-content: flex-start;
+            }
+        }
+        &\@xl {
+            @media (min-width: $breakpoint-xl) {
+                justify-content: flex-start;
+            }
+        }
+    }
+    &-center {
+        justify-content: center;
+        &\@s {
+            @media (min-width: $breakpoint-s) {
+                justify-content: center;
+            }
+        }
+        &\@m {
+            @media (min-width: $breakpoint-m) {
+                justify-content: center;
+            }
+        }
+        &\@l {
+            @media (min-width: $breakpoint-l) {
+                justify-content: center;
+            }
+        }
+        &\@xl {
+            @media (min-width: $breakpoint-xl) {
+                justify-content: center;
+            }
+        }
+    }
+    &-right {
+        justify-content: flex-end;
+
+		&\@s {
+            @media (min-width: $breakpoint-s) {
+                justify-content: flex-end;
+            }
+        }
+        &\@m {
+            @media (min-width: $breakpoint-m) {
+                justify-content: flex-end;
+            }
+        }
+        &\@l {
+            @media (min-width: $breakpoint-l) {
+                justify-content: flex-end;
+            }
+        }
+        &\@xl {
+            @media (min-width: $breakpoint-xl) {
+                justify-content: flex-end;
+            }
+        }
+    }
+    &-between {
+        justify-content: space-between;
+    }
+    &-around {
+        justify-content: space-around;
+    }
+
+    // Vertical
+    &-stretch {
+        align-items: stretch;
+    }
+    &-top {
+        align-items: flex-start;
+    }
+    &-middle {
+        align-items: center;
+    }
+    &-bottom {
+        align-items: flex-end;
+	}
+
+	// Grow
+	&-grow {
+		flex: 1;
+	}
+}
+
+.order {
+    &-1 {
+        order: 1;
+        &\@s {
+            @media (min-width: $breakpoint-s) {
+                order: 1;
+            }
+        }
+        &\@m {
+            @media (min-width: $breakpoint-m) {
+                order: 1;
+            }
+        }
+        &\@l {
+            @media (min-width: $breakpoint-l) {
+                order: 1;
+            }
+        }
+        &\@xl {
+            @media (min-width: $breakpoint-xl) {
+                order: 1;
+            }
+        }
+    }
+    &-2 {
+        order: 2;
+        &\@s {
+            @media (min-width: $breakpoint-s) {
+                order: 2;
+            }
+        }
+        &\@m {
+            @media (min-width: $breakpoint-m) {
+                order: 2;
+            }
+        }
+        &\@l {
+            @media (min-width: $breakpoint-l) {
+                order: 2;
+            }
+        }
+        &\@xl {
+            @media (min-width: $breakpoint-xl) {
+                order: 2;
+            }
+        }
+    }
+}
