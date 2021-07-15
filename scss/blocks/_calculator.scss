@@ -26,6 +26,7 @@
         .approve-checkbox {
             position: relative;
             left: -200vw;
+            float: left;
 
             &:before {
                 content: "";
@@ -59,6 +60,7 @@
         }
 
         .approve-text {
+            display: block;
             padding-left: 32px;
         }
     }

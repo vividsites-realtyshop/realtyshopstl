@@ -42,11 +42,11 @@ body .mg-title *{text-overflow:initial;white-space:initial}
 .page-content .md-calculator .mortgage-lead-form{background:#333;background-image:url("https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png");background-repeat:repeat}
 .page-content .md-calculator .mortgage-lead-form form .submit{background:#ffc03a}
 .page-content .md-calculator .mortgage-lead-form form .submit:hover{background:#ffb516}
-.page-content .md-calculator .approve-checkbox{position:relative;left:-200vw}
+.page-content .md-calculator .approve-checkbox{position:relative;left:-200vw;float:left}
 .page-content .md-calculator .approve-checkbox:before{content:"";border:solid 1px white;position:relative;left:200vw;width:20px;height:20px;display:block;top:4px}
 .page-content .md-calculator .approve-checkbox:after{content:"✓";position:absolute;top:1px;left:200vw;color:white;font-size:20px;overflow:hidden;margin-left:4px;opacity:0;-webkit-transition:all .1s;transition:all .1s}
 .page-content .md-calculator .approve-checkbox:checked:after{opacity:1}
-.page-content .md-calculator .approve-text{padding-left:32px}
+.page-content .md-calculator .approve-text{display:block;padding-left:32px}
 .page-content .md-cta-sc.new .media-content .title-text{padding-bottom:32px}
 .page-content .md-cta-multiple-column.one-bg-two-column .content{padding:40px 30px;min-height:0 !important;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
 .page-content .md-cta-multiple-column.one-bg-two-column .content .left-card{margin-right:30px}
