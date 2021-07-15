@@ -5,5 +5,9 @@
                 margin-bottom: 0.5rem;
             }
         }
+
+        & > .mg-container {
+            overflow: visible;
+        }
     }
 }

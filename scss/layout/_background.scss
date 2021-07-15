@@ -1,0 +1,177 @@
+.background {
+
+	/**------------------------------------*\
+		Global shared colors
+	\*------------------------------------*/
+
+	&-color {
+		// Light
+		&--light {
+			background: $gray-lt;
+		}
+	}
+
+	/**------------------------------------*\
+		Dark and light theming
+	\*------------------------------------*/
+	// 	&--dark,
+	// 	&--black,
+	// 	&--primary,
+	// 	&--secondary {
+	// 		@extend .block--dark;
+	// 		.background--light,
+	// 		.background--white {
+	// 			color: $color-black;
+	// 			h1, h2, h3, h4, h5, h6 {
+	// 				&:not([class*="text-color"]) {
+	// 					color: $color-black;
+	// 				}
+	// 			}
+	// 			p {
+	// 				&:not([class*="text-color"]) {
+	// 					color: $color-black;
+	// 				}
+	// 			}
+	// 			.button {
+	// 				&:not(.button--secondary) {
+	// 					color: #ffffff;
+	// 					background-color: $button-primary-light-background-color-default;
+	// 					border-color: transparent;
+	// 					&:hover {
+	// 						&:not(.button--disabled) {
+	// 							color: #ffffff;
+	// 							background-color: $button-primary-light-background-color-hover;
+	// 							border-color: transparent;
+	// 						}
+	// 					}
+	// 				}
+	// 				&--secondary {
+	// 					color: $button-secondary-light-text-color-default;
+	// 					background-color: $button-secondary-light-background-color-default;
+	// 					border-color: var(--button-border);
+	// 					&:hover {
+	// 						&:not(.button--disabled) {
+	// 							color: $button-secondary-light-text-color-hover;
+	// 							background-color: $button-secondary-light-background-color-hover;
+	// 							border-color: var(--button-border);
+	// 						}
+	// 					}
+	// 				}
+	// 			}
+	// 			.cta {
+	// 				color: $cta-primary-light-text-color-default;
+	// 				&:after {
+	// 					border-color: $cta-primary-light-text-color-default;
+	// 				}
+	// 				&:hover {
+	// 					color: $cta-primary-light-text-color-hover;
+	// 					&:after {
+	// 						border-color: $cta-primary-light-text-color-hover;
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+
+	// 	&--light,
+	// 	&--white {
+	// 		@extend .block--light;
+	// 		.background--dark,
+	// 		.background--black {
+	// 			color: $color-white;
+	// 			h1, h2, h3, h4, h5, h6 {
+	// 				&:not([class*="text-color"]) {
+	// 					color: $color-black;
+	// 				}
+	// 			}
+	// 			p {
+	// 				&:not([class*="text-color"]) {
+	// 					color: $color-white;
+	// 				}
+	// 			}
+	// 			.button {
+	// 				&:not(.button--secondary) {
+	// 					color: $button-primary-dark-text-color-default;
+	// 					background-color: $button-primary-dark-background-color-default;
+	// 					border-color: $button-primary-dark-border-color-default;
+	// 					&:hover {
+	// 						&:not(.button--disabled) {
+	// 							color: $button-primary-dark-text-color-hover;
+	// 							background-color: $button-primary-dark-background-color-hover;
+	// 							border-color: $button-primary-dark-border-color-hover;
+	// 						}
+	// 					}
+	// 				}
+	// 				&--secondary {
+	// 					color: $button-secondary-dark-text-color-default;
+	// 					background-color: $button-secondary-dark-background-color-default;
+	// 					border-color: $button-secondary-dark-border-color-default;
+	// 					&:hover {
+	// 						&:not(.button--disabled) {
+	// 							color: $button-secondary-dark-text-color-hover;
+	// 							background-color: $button-secondary-dark-background-color-hover;
+	// 							border-color: $button-secondary-dark-border-color-hover;
+	// 						}
+	// 					}
+	// 				}
+	// 			}
+	// 			.cta {
+	// 				color: $cta-primary-dark-text-color-default;
+	// 				&:after {
+	// 					border-color: $cta-primary-dark-text-color-default;
+	// 				}
+	// 				&:hover {
+	// 					color: $cta-primary-dark-text-color-hover;
+	// 					&:after {
+	// 						border-color: $cta-primary-dark-text-color-hover;
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+
+	// }
+
+
+	/**------------------------------------*\
+		Images
+	\*------------------------------------*/
+
+	&__layer {
+		position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: 0;
+	}
+
+	&__image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: 0;
+        @include object-fit(cover, center center);
+        &-wrapper {
+            overflow: hidden;
+            position: relative;
+            * {
+                &:not(.background__image) {
+                    z-index: 2;
+                }
+            }
+        }
+		&.contain {
+			object-fit: contain;
+			padding: 1rem;
+		}
+    }
+}
