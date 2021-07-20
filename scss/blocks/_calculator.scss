@@ -15,6 +15,7 @@
             form {
                 .submit {
                     background: $gold;
+                    text-transform: uppercase;
                     
                     &:hover {
                         background: darken($gold, 7%);

@@ -6,6 +6,10 @@
             }
         }
 
+        &.mg-content {
+            overflow: hidden;
+        }
+
         & > .mg-container {
             overflow: visible;
         }
