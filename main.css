@@ -61,7 +61,7 @@ body .mg-title * { text-overflow: initial; white-space: initial; }
 
 .page-content .richtext h1:not(:last-child), .page-content .richtext h2:not(:last-child), .page-content .richtext h3:not(:last-child), .page-content .richtext h4:not(:last-child), .page-content .richtext h5:not(:last-child), .page-content .richtext h6:not(:last-child) { margin-bottom: 0.5rem; }
 
-.page-content .richtext.mg-content { overflow: hidden; }
+.page-content .richtext.md-content { overflow: hidden; }
 
 .page-content .richtext > .mg-container { overflow: visible; }
 

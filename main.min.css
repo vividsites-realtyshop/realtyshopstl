@@ -37,7 +37,7 @@ body .mg-title *{text-overflow:initial;white-space:initial}
 .rs-button--outline{background:transparent;border:solid 1px #fff}
 .rs-button--outline:hover{background:transparent}
 .page-content .richtext h1:not(:last-child),.page-content .richtext h2:not(:last-child),.page-content .richtext h3:not(:last-child),.page-content .richtext h4:not(:last-child),.page-content .richtext h5:not(:last-child),.page-content .richtext h6:not(:last-child){margin-bottom:.5rem}
-.page-content .richtext.mg-content{overflow:hidden}
+.page-content .richtext.md-content{overflow:hidden}
 .page-content .richtext>.mg-container{overflow:visible}
 .page-content .md-calculator .description-container{max-width:700px;margin-left:auto;margin-right:auto;color:#222}
 .page-content .md-calculator .mortgage-lead-form{background:#333;background-image:url("https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png");background-repeat:repeat}
