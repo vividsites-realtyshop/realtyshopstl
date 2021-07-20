@@ -32,7 +32,7 @@
 .font-color--theme{color:var(--color-theme)}
 body .mg-title{text-overflow:initial;white-space:initial}
 body .mg-title *{text-overflow:initial;white-space:initial}
-.rs-button,.page-content .md-cta-sc .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,.page-content .md-testimonial.list-standard .title-container .mg-more{display:inline-block;font-size:14px;font-weight:normal;background:#ffc03a;color:#fff !important;padding:.75rem 2rem !important;text-transform:uppercase;text-align:center;border-radius:0;height:auto !important;width:auto;line-height:initial !important;text-decoration:none !important;-webkit-transition:all .3s;transition:all .3s}
+.rs-button,.page-content .md-cta-sc .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,.page-content .md-testimonial.list-standard .title-container .mg-more{display:inline-block;font-size:14px;font-weight:normal;background:#ffc03a;color:#fff !important;padding:.75rem 2rem !important;text-transform:uppercase;text-align:center;border-radius:0;height:auto !important;width:auto;line-height:initial !important;text-decoration:none !important;white-space:nowrap;-webkit-transition:all .3s;transition:all .3s}
 .rs-button:hover,.page-content .md-cta-sc .media-content .banner-button .btn-item:hover,.page-content .md-house.template1 .mg-more:hover,.page-content .md-testimonial.list-standard .title-container .mg-more:hover{background:#ffb516}
 .rs-button--outline{background:transparent;border:solid 1px #fff}
 .rs-button--outline:hover{background:transparent}
