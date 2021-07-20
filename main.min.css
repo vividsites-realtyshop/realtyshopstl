@@ -64,6 +64,16 @@ body .mg-title *{text-overflow:initial;white-space:initial}
 }.page-content .md-cta-multiple-column.one-bg-two-column .content .card{height:auto !important}
 .page-content .md-cta-multiple-column.one-bg-two-column .content .card .description{color:#222;margin-bottom:0}
 .page-content .md-cta-multiple-column.one-bg-two-column .content .card .button:first-child{margin-top:0}
+.page-content .md-featured-area.grid-fashion .style-container .city-style{-webkit-transition:all .2s;transition:all .2s}
+.page-content .md-featured-area.grid-fashion .style-container .city-style .mask{display:block;background-color:#000;opacity:0;-webkit-transition:inherit;transition:inherit}
+.page-content .md-featured-area.grid-fashion .style-container .city-style>.style-title{-webkit-transition:inherit;transition:inherit}
+.page-content .md-featured-area.grid-fashion .style-container .city-style .info{-webkit-transition:inherit;transition:inherit}
+.page-content .md-featured-area.grid-fashion .style-container .city-style .info .pc-content{display:none}
+.page-content .md-featured-area.grid-fashion .style-container .city-style .info .read-more{bottom:0;opacity:0;-webkit-transition:inherit;transition:inherit}
+.page-content .md-featured-area.grid-fashion .style-container .city-style:hover{-webkit-transition:all .4s;transition:all .4s}
+.page-content .md-featured-area.grid-fashion .style-container .city-style:hover .mask{opacity:.8}
+.page-content .md-featured-area.grid-fashion .style-container .city-style:hover>.style-title{display:block;bottom:64px}
+.page-content .md-featured-area.grid-fashion .style-container .city-style:hover .read-more{bottom:20px;opacity:1}
 .page-content .md-house.template4 .house-grid .house-grid-item.more-link a{color:#fff !important;background:transparent;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;border:solid 1px #fff;width:auto;height:auto;max-width:100%}
 .page-content .house-grid-item .house-status,.page-content .house-list-item .house-status{font-size:12px !important;height:auto !important;line-height:normal !important;padding:4px 8px !important;border-radius:0 !important}
 .page-content .house-grid-item .house-status.new,.page-content .house-grid-item .house-status.open-house,.page-content .house-list-item .house-status.new,.page-content .house-list-item .house-status.open-house{background-color:#ffc03a !important}

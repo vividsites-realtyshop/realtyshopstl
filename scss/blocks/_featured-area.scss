@@ -1,0 +1,54 @@
+.page-content {
+    .md-featured-area {
+        &.grid-fashion {
+            .style-container {
+                .city-style {
+                    transition: all 0.2s;
+
+                    .mask {
+                        display: block;
+                        background-color: #000;
+                        opacity: 0;
+                        transition: inherit;
+                    }
+
+                    & > .style-title {
+                        transition: inherit;
+                    }
+
+                    .info {
+                        transition: inherit;
+
+                        .pc-content {
+                            display: none;
+                        }
+
+                        .read-more {
+                            bottom: 0;
+                            opacity: 0;
+                            transition: inherit;
+                        }
+                    }
+
+                    &:hover {
+                        transition: all 0.4s;
+
+                        .mask {
+                            opacity: 0.8;
+                        }
+
+                        & > .style-title {
+                            display: block;
+                            bottom: 64px;
+                        }
+
+                        .read-more {
+                            bottom: 20px;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
