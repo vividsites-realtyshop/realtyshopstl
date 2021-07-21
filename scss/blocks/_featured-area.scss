@@ -19,13 +19,14 @@
                     .info {
                         transition: inherit;
                         display: block;
+                        overflow: hidden;
 
                         .pc-content {
                             display: none;
                         }
 
                         .read-more {
-                            bottom: 0;
+                            bottom: -20px;
                             opacity: 0;
                             transition: inherit;
                         }
@@ -35,7 +36,7 @@
                         transition: all 0.4s;
 
                         .mask {
-                            opacity: 0.8;
+                            opacity: 0.7;
                         }
 
                         & > .style-title {
