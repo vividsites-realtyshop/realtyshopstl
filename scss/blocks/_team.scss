@@ -1,5 +1,46 @@
 .page-content {
     .md-team {
+        &.carousel-fashion {
+            .agents-container {
+                .agent-list {
+                    .agent-item {
+                        .agent-main {
+                            .agent-info {
+                                background-color: rgba(0,0,0,0.7);
+
+                                & > * {
+                                    transform: translateY(20px);
+                                    opacity: 0;
+                                    transition: all 0.2s;
+                                }
+
+                                .info-name {
+                                    font-family: var(--font-title);
+                                }
+
+                                .pos-li {
+                                    margin-top: 0;
+                                }
+
+                                .license {
+                                    display: none;
+                                }
+                            }
+
+                            &:hover {
+                                .agent-info {
+                                    & > * {
+                                        transform: none;
+                                        opacity: 1;
+                                        transition: all 0.4s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         &:not(.carousel-fashion) {
             .agents-list {
                 margin-left: -10px;

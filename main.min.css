@@ -67,7 +67,7 @@ body .mg-title *{text-overflow:initial;white-space:initial}
 .page-content .md-featured-area.grid-fashion .style-container .city-style{-webkit-transition:all .2s;transition:all .2s}
 .page-content .md-featured-area.grid-fashion .style-container .city-style .mask{display:block;background-color:#000;opacity:0;-webkit-transition:inherit;transition:inherit}
 .page-content .md-featured-area.grid-fashion .style-container .city-style>.style-title{-webkit-transition:inherit;transition:inherit}
-.page-content .md-featured-area.grid-fashion .style-container .city-style .info{-webkit-transition:inherit;transition:inherit}
+.page-content .md-featured-area.grid-fashion .style-container .city-style .info{-webkit-transition:inherit;transition:inherit;display:block}
 .page-content .md-featured-area.grid-fashion .style-container .city-style .info .pc-content{display:none}
 .page-content .md-featured-area.grid-fashion .style-container .city-style .info .read-more{bottom:0;opacity:0;-webkit-transition:inherit;transition:inherit}
 .page-content .md-featured-area.grid-fashion .style-container .city-style:hover{-webkit-transition:all .4s;transition:all .4s}
@@ -103,6 +103,12 @@ body .mg-title *{text-overflow:initial;white-space:initial}
 .page-content .template4.house-grid-item .house-detail{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .page-content .template4.house-grid-item .house-detail .house-price{min-width:100%}
 .page-content .template4.house-grid-item .house-detail .house-mls-logo{-ms-flex-item-align:end;align-self:flex-end;margin-left:10px}
+.page-content .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main .agent-info{background-color:rgba(0,0,0,0.7)}
+.page-content .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main .agent-info>*{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0;-webkit-transition:all .2s;transition:all .2s}
+.page-content .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main .agent-info .info-name{font-family:var(--font-title)}
+.page-content .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main .agent-info .pos-li{margin-top:0}
+.page-content .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main .agent-info .license{display:none}
+.page-content .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main:hover .agent-info>*{-webkit-transform:none;transform:none;opacity:1;-webkit-transition:all .4s;transition:all .4s}
 .page-content .md-team:not(.carousel-fashion) .agents-list{margin-left:-10px;margin-right:-10px;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important}
 .page-content .md-team:not(.carousel-fashion) .agent-item{padding-left:10px;padding-right:10px;padding-top:0 !important}
 .page-content .md-team:not(.carousel-fashion) .agent-item.empty{display:none !important}
