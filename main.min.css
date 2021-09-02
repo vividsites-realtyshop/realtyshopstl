@@ -182,6 +182,8 @@ header .head-menu .submenu .menu-item{font-size:15px;line-height:2.5em;height:2.
 header .head-menu .submenu .menu-item a:hover{background:transparent !important}
 header .head-account .menu-item{-webkit-transition:all .3s;transition:all .3s}
 header .head-account .menu-item:hover{background:var(--color-theme);color:#fff !important}
+header .head-account .menu-item.item-regist{display:none !important}
+header .head-account .menu-item.item-login{margin-left:0 !important}
 header .header-placeholder{background:#000}
 .md-header.fashion .header-container .menu-item{letter-spacing:.05em}
 main.hide-chat .header-container .header-bg{opacity:.7 !important}

@@ -26,6 +26,14 @@ header {
                 background: var(--color-theme);
                 color: #fff !important;
             }
+
+            &.item-regist {
+                display: none !important;
+            }
+
+            &.item-login {
+                margin-left: 0 !important;
+            }
         }
     }
 
