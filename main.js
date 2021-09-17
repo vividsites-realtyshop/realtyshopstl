@@ -1,5 +1,8 @@
 "use strict";
 
+var listingsInterval;
+var listings = false;
+
 function domReady(fn) {
   // If we're early to the party
   document.addEventListener("DOMContentLoaded", fn); // If late; I mean on time.
@@ -9,9 +12,8 @@ function domReady(fn) {
   }
 }
 
-domReady(function () {
-  console.log("extra script loaded");
-  var listings = document.querySelectorAll(".house-grid-item");
+function setUpListings() {
+  clearInterval(listingsInterval);
 
   for (var i = 0; i < listings.length; i++) {
     console.log("listingStart");
@@ -22,5 +24,19 @@ domReady(function () {
       this.classList.add("activated");
     });
     console.log("listingEnd");
+  }
+}
+
+domReady(function () {
+  console.log("extra script loaded"); // Initially, just setting this up on Homepage
+
+  if (document.body.classList.contains("home")) {
+    listingsInterval = setInterval(function () {
+      listings = document.querySelectorAll(".house-grid-item");
+      if (listings && listings.length > 0) setUpListings();
+    }, 1000);
+    setTimeout(function () {
+      clearInterval(listingsInterval);
+    }, 15000);
   }
 });
