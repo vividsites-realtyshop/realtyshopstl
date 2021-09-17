@@ -33,6 +33,11 @@ const minifycss = require( 'gulp-uglifycss' ); // Minifies CSS files.
 const autoprefixer = require( 'gulp-autoprefixer' ); // Autoprefixing magic.
 const gcmq = require('gulp-group-css-media-queries');
 
+// JS related plugins.
+const concat = require( 'gulp-concat' ); // Concatenates JS files.
+const uglify = require( 'gulp-uglify' ); // Minifies JS files.
+const babel = require( 'gulp-babel' ); // Compiles ESNext to browser compatible JS.
+
 // Utility related plugins.
 const rename = require( 'gulp-rename' ); // Renames files E.g. style.css -> style.min.css.
 const lineec = require( 'gulp-line-ending-corrector' ); // Consistent Line Endings for non UNIX systems. Gulp Plugin for Line Ending Corrector (A utility that makes sure your files have consistent line endings).
@@ -104,13 +109,57 @@ gulp.task( 'styles', () => {
 });
 
 /**
+ * Task: `customJS`.
+ *
+ * Concatenate and uglify custom JS scripts.
+ *
+ * This task does the following:
+ *     1. Gets the source folder for JS custom files
+ *     2. Concatenates all the files and generates custom.js
+ *     3. Renames the JS file with suffix .min.js
+ *     4. Uglifes/Minifies the JS file and generates custom.min.js
+ */
+ gulp.task( 'customJS', () => {
+	return gulp
+		.src( config.jsCustomSRC, { since: gulp.lastRun( 'customJS' ) }) // Only run on changed files.
+		.pipe( plumber( errorHandler ) )
+		.pipe(
+			babel({
+				presets: [
+					[
+						'@babel/preset-env', // Preset to compile your modern JS to ES5.
+						{
+							targets: { browsers: config.BROWSERS_LIST } // Target browser list to support.
+						}
+					]
+				]
+			})
+		)
+		.pipe( remember( config.jsCustomSRC ) ) // Bring all files back to stream.
+		.pipe( concat( config.jsCustomFile + '.js' ) )
+		.pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
+		.pipe( gulp.dest( config.jsCustomDestination ) )
+		.pipe(
+			rename({
+				basename: config.jsCustomFile,
+				suffix: '.min'
+			})
+		)
+		.pipe( uglify() )
+		.pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
+		.pipe( gulp.dest( config.jsCustomDestination ) )
+		.pipe( notify({ message: '\n\n✅  ===> CUSTOM JS — completed!\n', onLast: true }) );
+});
+
+/**
  * Watch Tasks.
  *
  * Watches for file changes and runs specific tasks.
  */
  gulp.task(
 	'default',
-	gulp.parallel( 'styles', () => {
+	gulp.parallel( 'styles', 'customJS', () => {
 		gulp.watch( config.watchStyles, gulp.parallel( 'styles' ) ); // Reload on SCSS file changes.
+		gulp.watch( config.watchJsCustom, gulp.parallel( 'customJS' ) ); // Reload on customJS file changes.
 	} )
 );

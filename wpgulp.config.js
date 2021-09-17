@@ -15,10 +15,16 @@ module.exports = {
 	outputStyle: 'compact', // Available options → 'compact' or 'compressed' or 'nested' or 'expanded'
 	errLogToConsole: true,
 	precision: 10,
+	
+	// JS Custom options.
+	jsCustomSRC: './assets/js/custom/*.js', // Path to JS custom scripts folder.
+	jsCustomDestination: './', // Path to place the compiled JS custom scripts file.
+	jsCustomFile: 'main', // Compiled JS custom file name. Default set to custom i.e. custom.js.
 
 	// Watch files paths.
 	watchStyles: './scss/**/*.scss', // Path to all *.scss files inside css folder and inside them.
-
+	watchJsCustom: './assets/js/custom/*.js', // Path to all custom JS files.
+	
 	// Translation options.
 	textDomain: 'WPGULP', // Your textdomain here.
 	translationFile: 'WPGULP.pot', // Name of the translation file.
