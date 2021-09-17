@@ -10,14 +10,16 @@ function domReady(fn) {
 }
 
 domReady(function () {
+  console.log("extra script loaded");
   var listings = document.querySelectorAll(".house-grid-item");
 
   for (var i = 0; i < listings.length; i++) {
     listings[i].addEventListener("mouseover", function () {
       if (this.classList.contains("activated")) return null;
       var fav = this.querySelector(".icon-fav");
-      if (fav) fav.setAttribute("data-address", this.getAttribute("aria-label"));
+      if (fav) fav.dataset.address = this.getAttribute("aria-label");
       this.classList.add("activated");
     });
+    console.log("listing");
   }
 });
