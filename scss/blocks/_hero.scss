@@ -1,0 +1,112 @@
+.md-hero {
+    &.template4 {
+        &.banner-with-search-bar {
+            @media (max-width: 1080px) {
+                .banner-video.autoplay {
+                    padding-bottom: 0;
+                }
+
+                .media-content {
+                    margin-top: 120px;
+
+                    .search-bar {
+                        position: static;
+                        background-color: rgba(14,18,34,0.85) !important;
+
+                        .search-category {
+                            .keyword-submit {
+                                display: none;
+                            }
+                        }
+
+                        & > .title,
+                        .condition-search {
+                            display: block;
+                        }
+
+                        .condition-search {
+                            display: block;
+                        }
+
+                        .condition-wrap {
+                            flex-wrap: wrap;
+                            margin-left: 0;
+                            width: 100%;
+
+                            .condition-item {
+                                min-width: calc(50% - 30px);
+                                margin-bottom: 1rem;
+
+                                &:nth-of-type(2) {
+                                    order: 3;
+                                }
+
+                                &:nth-of-type(3) {
+                                    order: 4;
+                                }
+                            }
+                        }
+
+                        .keyword-submit {
+                            margin-top: 20px;
+                            height: 50px;
+                            line-height: 50px;
+                            text-align: center;
+                            font-family: var(--font-medium);
+                            font-size: 16px;
+                            cursor: pointer;
+                            background-color: var(--mg-button-background, #03c9ff);
+                            border-color: var(--mg-button-background, #03c9ff);
+                            color: var(--mg-button-color, #fff);
+                            float: right;
+                            padding: 0 3rem;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 800px) {
+                .click-show-list {
+                    &:not(.show-list) {
+                        .list-panel {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 649px) {
+                .media-content {
+                    .search-bar {
+                        .condition-wrap {
+                            .condition-item {
+                                min-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 600px) {
+                .media-content {
+                    margin-top: 60px;
+
+                    .title-text {
+                        padding: 21px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner-video {
+        .video-box {
+            min-width: 100%;
+
+            video {
+                min-width: 100%;
+                @include object-fit(cover, center center);
+            }
+        }
+    }
+}

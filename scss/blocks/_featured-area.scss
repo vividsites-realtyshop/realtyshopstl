@@ -29,6 +29,11 @@
                             bottom: -20px;
                             opacity: 0;
                             transition: inherit;
+                            overflow: hidden;
+
+                            &:before {
+                                content: "Search Now";
+                            }
                         }
                     }
 
