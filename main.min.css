@@ -32,8 +32,8 @@
 .font-color--theme{color:var(--color-theme)}
 body .mg-title{text-overflow:initial;white-space:initial}
 body .mg-title *{text-overflow:initial;white-space:initial}
-.rs-button,.page-content .md-cta-sc .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,body:not(.reviews) .md-testimonial.grid-progressive .title-container .mg-more,.page-content .md-testimonial.list-standard .title-container .mg-more{font-size:14px;font-weight:normal;background:#ffc03a;color:#fff !important;padding:.75rem 2rem !important;text-transform:uppercase;text-align:center;border-radius:0;height:auto !important;width:auto;line-height:initial !important;text-decoration:none !important;white-space:nowrap;-webkit-transition:all .3s;transition:all .3s}
-.rs-button:hover,.page-content .md-cta-sc .media-content .banner-button .btn-item:hover,.page-content .md-house.template1 .mg-more:hover,body:not(.reviews) .md-testimonial.grid-progressive .title-container .mg-more:hover,.page-content .md-testimonial.list-standard .title-container .mg-more:hover{background:#ffb516}
+.rs-button,.page-content .md-cta-sc .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,body:not(.reviews) .md-testimonial.grid-progressive .title-container .mg-more,.page-content .md-testimonial.list-standard .mg-more{font-size:14px;font-weight:normal;background:#ffc03a;color:#fff !important;padding:.75rem 2rem !important;text-transform:uppercase;text-align:center;border-radius:0;height:auto !important;width:auto;line-height:initial !important;text-decoration:none !important;white-space:nowrap;-webkit-transition:all .3s;transition:all .3s}
+.rs-button:hover,.page-content .md-cta-sc .media-content .banner-button .btn-item:hover,.page-content .md-house.template1 .mg-more:hover,body:not(.reviews) .md-testimonial.grid-progressive .title-container .mg-more:hover,.page-content .md-testimonial.list-standard .mg-more:hover{background:#ffb516}
 .rs-button--outline{background:transparent;border:solid 1px #fff}
 .rs-button--outline:hover{background:transparent}
 .page-content .richtext h1:not(:last-child),.page-content .richtext h2:not(:last-child),.page-content .richtext h3:not(:last-child),.page-content .richtext h4:not(:last-child),.page-content .richtext h5:not(:last-child),.page-content .richtext h6:not(:last-child){margin-bottom:.5rem}
@@ -175,17 +175,16 @@ body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimoni
 body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-container{height:auto}
 body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-container .zillow-container{top:20px}
 body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-container .testimonial-context-empty-pic{position:static;margin-top:76px;max-height:210px}
-@media(max-width:600px){body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-container .testimonial-context-empty-pic{max-height:120px}
-}body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
+body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
 body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-content .intro-left{margin-right:0}
 @media(max-width:767px) and (min-width:601px){body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-content .intro-left{display:none}
 }body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-content .intro-right .testimonial-name{font-size:16px;line-height:1.25;font-family:var(--font-medium)}
 body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-content .intro-right .testimonial-score span,body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-content .intro-right .testimonial-score a{font-size:14px;margin-right:6px}
 .page-content .md-testimonial.list-standard{padding-bottom:140px}
 .page-content .md-testimonial.list-standard .title-container{position:static !important}
-.page-content .md-testimonial.list-standard .title-container .mg-more{position:absolute;bottom:60px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
-.page-content .md-testimonial.list-standard .title-container .mg-more .text{margin-right:0;text-align:center}
-.page-content .md-testimonial.list-standard .title-container .mg-more .iconfont{display:none}
+.page-content .md-testimonial.list-standard .mg-more{position:absolute;bottom:60px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.page-content .md-testimonial.list-standard .mg-more .text{margin-right:0;text-align:center}
+.page-content .md-testimonial.list-standard .mg-more .iconfont{display:none}
 @media(min-width:601px){.page-content .md-testimonial.list-standard .comment-list-wrap .comment-list .odd .testimonial-picture{margin-right:0 !important}
 }.page-content .md-testimonial.slider-standard .testimonial-frame .testimonial-container .testimonial-swiper .testimonial .testimonial-item-container{background:rgba(255,255,255,0.9)}
 .page-content .md-testimonial.slider-standard .testimonial-frame .testimonial-container .testimonial-swiper .testimonial .testimonial-item-container .testimonial-body,.page-content .md-testimonial.slider-standard .testimonial-frame .testimonial-container .testimonial-swiper .testimonial .testimonial-item-container .testimonial-footer .testimonial-name{color:#222}

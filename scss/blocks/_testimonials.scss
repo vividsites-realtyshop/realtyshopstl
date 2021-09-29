@@ -82,10 +82,6 @@ body:not(.reviews) {
                             position: static;
                             margin-top: 76px;
                             max-height: 210px;
-
-                            @media (max-width: 600px) {
-                                max-height: 120px;
-                            }
                         }
                     }
                     .testimonial-content {
@@ -131,23 +127,22 @@ body:not(.reviews) {
     
             .title-container {
                 position: static !important;
-        
-                .mg-more {
-                    position: absolute;
-                    bottom: 60px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    justify-content: center;
-                    @extend .rs-button;
-    
-                    .text {
-                        margin-right: 0;
-                        text-align: center;
-                    }
-                    
-                    .iconfont {
-                        display: none;
-                    }
+            }
+            .mg-more {
+                position: absolute;
+                bottom: 60px;
+                left: 50%;
+                transform: translateX(-50%);
+                justify-content: center;
+                @extend .rs-button;
+
+                .text {
+                    margin-right: 0;
+                    text-align: center;
+                }
+                
+                .iconfont {
+                    display: none;
                 }
             }
     
