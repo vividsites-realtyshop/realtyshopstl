@@ -32,8 +32,8 @@
 .font-color--theme{color:var(--color-theme)}
 body .mg-title{text-overflow:initial;white-space:initial}
 body .mg-title *{text-overflow:initial;white-space:initial}
-.rs-button,.page-content .md-cta-sc .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,body:not(.reviews) .md-testimonial.grid-progressive .title-container .mg-more,.page-content .md-testimonial.list-standard .mg-more{font-size:14px;font-weight:normal;background:#ffc03a;color:#fff !important;padding:.75rem 2rem !important;text-transform:uppercase;text-align:center;border-radius:0;height:auto !important;width:auto;line-height:initial !important;text-decoration:none !important;white-space:nowrap;-webkit-transition:all .3s;transition:all .3s}
-.rs-button:hover,.page-content .md-cta-sc .media-content .banner-button .btn-item:hover,.page-content .md-house.template1 .mg-more:hover,body:not(.reviews) .md-testimonial.grid-progressive .title-container .mg-more:hover,.page-content .md-testimonial.list-standard .mg-more:hover{background:#ffb516}
+.rs-button,.page-content .md-cta-sc .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,body:not(.reviews) .md-testimonial.grid-progressive .mg-more,.page-content .md-testimonial.list-standard .mg-more{font-size:14px;font-weight:normal;background:#ffc03a;color:#fff !important;padding:.75rem 2rem !important;text-transform:uppercase;text-align:center;border-radius:0;height:auto !important;width:auto;line-height:initial !important;text-decoration:none !important;white-space:nowrap;-webkit-transition:all .3s;transition:all .3s}
+.rs-button:hover,.page-content .md-cta-sc .media-content .banner-button .btn-item:hover,.page-content .md-house.template1 .mg-more:hover,body:not(.reviews) .md-testimonial.grid-progressive .mg-more:hover,.page-content .md-testimonial.list-standard .mg-more:hover{background:#ffb516}
 .rs-button--outline{background:transparent;border:solid 1px #fff}
 .rs-button--outline:hover{background:transparent}
 .page-content .richtext h1:not(:last-child),.page-content .richtext h2:not(:last-child),.page-content .richtext h3:not(:last-child),.page-content .richtext h4:not(:last-child),.page-content .richtext h5:not(:last-child),.page-content .richtext h6:not(:last-child){margin-bottom:.5rem}
@@ -163,9 +163,9 @@ body:not(.reviews) .md-testimonial.flow-classic .comment-card .footer{display:-w
 body:not(.reviews) .md-testimonial.flow-classic .comment-card .footer>img{margin-top:0;width:120px;height:120px;border-radius:100%}
 body:not(.reviews) .md-testimonial.grid-progressive{padding-bottom:90px}
 body:not(.reviews) .md-testimonial.grid-progressive .title-container{position:static !important}
-body:not(.reviews) .md-testimonial.grid-progressive .title-container .mg-more{position:absolute;bottom:60px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
-body:not(.reviews) .md-testimonial.grid-progressive .title-container .mg-more .text{margin-right:0;text-align:center}
-body:not(.reviews) .md-testimonial.grid-progressive .title-container .mg-more .iconfont{display:none}
+body:not(.reviews) .md-testimonial.grid-progressive .mg-more{position:absolute;bottom:60px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+body:not(.reviews) .md-testimonial.grid-progressive .mg-more .text{margin-right:0;text-align:center}
+body:not(.reviews) .md-testimonial.grid-progressive .mg-more .iconfont{display:none}
 body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list{margin-top:0;padding-left:0}
 @media(min-width:601px){body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list{display:-webkit-box;display:-ms-flexbox;display:flex}
 body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
