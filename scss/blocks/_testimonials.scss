@@ -49,6 +49,16 @@ body:not(.reviews) {
                 margin-top: 0;
                 padding-left: 0;
 
+                @media (min-width: 601px) {
+                    display: flex;
+
+                    .testimonial-item {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    }
+                }
+
                 .testimonial-item {
                     background-color: $gray-lt;
                     filter: hue-rotate(180deg);
