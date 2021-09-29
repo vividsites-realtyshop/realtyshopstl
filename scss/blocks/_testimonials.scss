@@ -20,6 +20,72 @@ body:not(.reviews) {
                 }
             }
         }
+        &.grid-progressive  {
+            .title-container {
+                position: static !important;
+        
+                .mg-more {
+                    position: absolute;
+                    bottom: 60px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    justify-content: center;
+                    @extend .rs-button;
+    
+                    .text {
+                        margin-right: 0;
+                        text-align: center;
+                    }
+                    
+                    .iconfont {
+                        display: none;
+                    }
+                }
+            }
+            
+            .testimonial-item {
+                background-color: $gray-lt;
+                filter: hue-rotate(180deg);
+
+                .zillow-container,
+                .testimonial-content {
+                    filter: hue-rotate(-180deg);
+                }
+                .testimonial-context-empty-pic,
+                .testimonial-name {
+                    color: #515666;
+                }
+                .zillow-container {
+                    top: 20px;
+                }
+                .testimonial-context-empty-pic {
+                    top: 76px;
+                }
+                .testimonial-content {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    .intro-left {
+                        margin-right: 0;
+                    }
+
+                    .testimonial-name {
+                        font-size: 16px;
+                        line-height: 1.25;
+                        font-family: var(--font-medium);
+                    }
+
+                    .testimonial-score {
+                        span {
+                            font-size: 14px;
+                            margin-right: 6px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 .page-content {
