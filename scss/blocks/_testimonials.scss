@@ -47,10 +47,12 @@ body:not(.reviews) {
 
             .testimonial-list {
                 margin-top: 0;
-                
+                padding-left: 0;
+
                 .testimonial-item {
                     background-color: $gray-lt;
                     filter: hue-rotate(180deg);
+                    height: auto;
     
                     .zillow-container,
                     .testimonial-content {
@@ -61,12 +63,20 @@ body:not(.reviews) {
                         color: #515666;
                     }
                     .testimonial-container {
+                        height: auto;
+
                         .zillow-container {
                             top: 20px;
                         }
-                    }
-                    .testimonial-context-empty-pic {
-                        top: 76px;
+                        .testimonial-context-empty-pic {
+                            position: static;
+                            margin-top: 76px;
+                            max-height: 210px;
+
+                            @media (max-width: 600px) {
+                                max-height: 120px;
+                            }
+                        }
                     }
                     .testimonial-content {
                         display: flex;
@@ -76,6 +86,10 @@ body:not(.reviews) {
     
                         .intro-left {
                             margin-right: 0;
+
+                            @media (max-width: 767px) AND (min-width: 601px) {
+                                display: none;
+                            }
                         }
     
                         .intro-right {

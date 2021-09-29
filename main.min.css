@@ -166,15 +166,18 @@ body:not(.reviews) .md-testimonial.grid-progressive .title-container{position:st
 body:not(.reviews) .md-testimonial.grid-progressive .title-container .mg-more{position:absolute;bottom:60px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 body:not(.reviews) .md-testimonial.grid-progressive .title-container .mg-more .text{margin-right:0;text-align:center}
 body:not(.reviews) .md-testimonial.grid-progressive .title-container .mg-more .iconfont{display:none}
-body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list{margin-top:0}
-body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item{background-color:#f8f8f8;-webkit-filter:hue-rotate(180deg);filter:hue-rotate(180deg)}
+body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list{margin-top:0;padding-left:0}
+body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item{background-color:#f8f8f8;-webkit-filter:hue-rotate(180deg);filter:hue-rotate(180deg);height:auto}
 body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .zillow-container,body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-content{-webkit-filter:hue-rotate(-180deg);filter:hue-rotate(-180deg)}
 body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-context-empty-pic,body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-name{color:#515666}
+body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-container{height:auto}
 body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-container .zillow-container{top:20px}
-body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-context-empty-pic{top:76px}
-body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
+body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-container .testimonial-context-empty-pic{position:static;margin-top:76px;max-height:210px}
+@media(max-width:600px){body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-container .testimonial-context-empty-pic{max-height:120px}
+}body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
 body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-content .intro-left{margin-right:0}
-body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-content .intro-right .testimonial-name{font-size:16px;line-height:1.25;font-family:var(--font-medium)}
+@media(max-width:767px) and (min-width:601px){body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-content .intro-left{display:none}
+}body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-content .intro-right .testimonial-name{font-size:16px;line-height:1.25;font-family:var(--font-medium)}
 body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-content .intro-right .testimonial-score span,body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimonial-item .testimonial-content .intro-right .testimonial-score a{font-size:14px;margin-right:6px}
 .page-content .md-testimonial.list-standard{padding-bottom:140px}
 .page-content .md-testimonial.list-standard .title-container{position:static !important}
