@@ -117,6 +117,10 @@
 
             .desc-content[role="img"][aria-label=""] {
                 display: none;
+
+                .description:empty {
+                    display: none;
+                }
             }
     
             .intro-desc {
