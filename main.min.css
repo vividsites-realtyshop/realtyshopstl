@@ -38,6 +38,7 @@ body .mg-title *{text-overflow:initial;white-space:initial}
 .rs-button:hover,.page-content .md-cta-sc .media-content .banner-button .btn-item:hover,.page-content .md-house.template1 .mg-more:hover,body:not(.reviews) .md-testimonial.grid-progressive .mg-more:hover,.page-content .md-testimonial.list-standard .mg-more:hover{background:#ffb516}
 .rs-button--outline{background:transparent;border:solid 1px #fff}
 .rs-button--outline:hover{background:transparent}
+.button{border-radius:0 !important}
 body.has-uikit .uk-dropdown p{line-height:1.4}
 .page-content .richtext h1:not(:last-child),.page-content .richtext h2:not(:last-child),.page-content .richtext h3:not(:last-child),.page-content .richtext h4:not(:last-child),.page-content .richtext h5:not(:last-child),.page-content .richtext h6:not(:last-child){margin-bottom:.5rem}
 .page-content .richtext.md-content{overflow:hidden}
