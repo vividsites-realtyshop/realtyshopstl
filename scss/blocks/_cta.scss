@@ -52,4 +52,15 @@
             }
         }
     }
+
+    header {
+        & + .md-cta-tc-sc {
+            @media (min-width: $breakpoint-s) {
+                .copy-column {
+                    padding-top: calc($header-height + 20px);
+                    padding-bottom: calc($header-height + 20px);
+                }
+            }
+        }
+    }
 }
