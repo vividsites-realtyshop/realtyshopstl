@@ -113,14 +113,14 @@
             .team-desc-content {
                 margin-bottom: 0 !important;
                 background-color: $gray-lt;
+                
+                .description:empty {
+                    display: none;
+                }
             }
 
             .desc-content[role="img"][aria-label=""] {
                 display: none;
-
-                .description:empty {
-                    display: none;
-                }
             }
     
             .intro-desc {
