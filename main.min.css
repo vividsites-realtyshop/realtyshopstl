@@ -31,6 +31,7 @@
 .font-size--xl{font-size:2rem}
 .font-color--theme{color:var(--color-theme)}
 .font-color--white{color:#fff}
+a.font-color--white:hover{color:#ffc03a}
 body .mg-title{text-overflow:initial;white-space:initial}
 body .mg-title *{text-overflow:initial;white-space:initial}
 .rs-button,.page-content .md-cta-sc .media-content .banner-button .btn-item,.page-content .md-house.template1 .mg-more,body:not(.reviews) .md-testimonial.grid-progressive .mg-more,.page-content .md-testimonial.list-standard .mg-more{font-size:14px;font-weight:normal;background:#ffc03a;color:#fff !important;padding:.75rem 2rem !important;text-transform:uppercase;text-align:center;border-radius:0;height:auto !important;width:auto;line-height:initial !important;text-decoration:none !important;white-space:nowrap;-webkit-transition:all .3s;transition:all .3s}
