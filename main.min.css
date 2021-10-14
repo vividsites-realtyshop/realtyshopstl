@@ -144,8 +144,8 @@ body .md-hero .banner-video .video-box video{min-width:100%;-o-object-fit:cover;
 .page-content .md-team:not(.carousel-fashion) .agent-item:hover .info{height:100% !important;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important;background:rgba(0,0,0,0.5);-webkit-transition:height .4s,background .4s ease .2s;transition:height .4s,background .4s ease .2s}
 .page-content .md-team.multi-column-info-over-img+.md-team.multi-column-info-over-img{padding-top:0 !important}
 .page-content .md-team-desc.team-desc-simple .team-desc-content{margin-bottom:0 !important;background-color:#f8f8f8}
+.page-content .md-team-desc.team-desc-simple .team-desc-content .description:empty{display:none}
 .page-content .md-team-desc.team-desc-simple .desc-content[role="img"][aria-label=""]{display:none}
-.page-content .md-team-desc.team-desc-simple .desc-content[role="img"][aria-label=""] .description:empty{display:none}
 .page-content .md-team-desc.team-desc-simple .intro-desc .view-more-container .view-more-content{max-width:700px;padding-top:20px;padding-bottom:8px;margin-left:auto;margin-right:auto}
 .page-content .md-team-desc.team-desc-simple .intro-desc .view-more-container .view-more-content p:not(:last-child){margin-bottom:1rem}
 .page-content .md-team-desc.team-desc-simple .intro-desc .view-more-container .view-more-content a{text-decoration:underline;color:#3a2700}
