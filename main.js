@@ -28,7 +28,9 @@ function domReady(fn) {
 
 
 domReady(function () {
-  console.log("extra script loaded"); // Initially, just setting this up on Homepage
+  console.log("extra script loaded");
+  var mortgageLeadForm = document.querySelector(".mortgage-lead-form form");
+  if (mortgageLeadForm && !mortgageLeadForm.classList.contains("mortgate-lead-form")) mortgageLeadForm.classList.add("mortgate-lead-form"); // Initially, just setting this up on Homepage
 
   if (document.body.classList.contains("home")) {// listingsInterval = setInterval(() => {
     //     listings = document.querySelectorAll(".house-grid-item");
