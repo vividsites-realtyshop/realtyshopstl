@@ -34,14 +34,17 @@ domReady(function() {
         const mortgageLeadForm = document.querySelector(".mortgage-lead-form form");
         if( mortgageLeadForm && !mortgageLeadForm.classList.contains("mortgate-lead-form") ) mortgageLeadForm.classList.add("mortgate-lead-form");
         
-    }, 3000);
+    }, 4000);
     
-    document.querySelector(".item-login").addEventListener("click", function() {
-        setTimeout(() => {
-            const loginForm = document.querySelector(".login form");
-            if( loginForm && !loginForm.classList.contains("login-form") ) loginForm.classList.add("login-form");
-        }, 2000);
-    });
+    setTimeout(() => {
+        document.querySelector(".item-login").addEventListener("click", function() {
+            console.log("clicked login");
+            setTimeout(() => {
+                const loginForm = document.querySelector(".login form");
+                if( loginForm && !loginForm.classList.contains("login-form") ) loginForm.classList.add("login-form");
+            }, 2000);
+        });
+    }, 2000);
 
     // Initially, just setting this up on Homepage
     if( document.body.classList.contains("home") ) {
