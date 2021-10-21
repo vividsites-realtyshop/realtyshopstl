@@ -43,6 +43,13 @@ body.has-uikit .uk-dropdown p{line-height:1.4}
 .page-content .richtext h1:not(:last-child),.page-content .richtext h2:not(:last-child),.page-content .richtext h3:not(:last-child),.page-content .richtext h4:not(:last-child),.page-content .richtext h5:not(:last-child),.page-content .richtext h6:not(:last-child){margin-bottom:.5rem}
 .page-content .richtext.md-content{overflow:hidden}
 .page-content .richtext>.mg-container{overflow:visible}
+.page-content .fashion-detail-schedule .schedule-button{border-radius:0}
+.page-content .fashion-detail-schedule .schedule-agent-info .agent-head{border-radius:0}
+.page-content .fashion-detail-schedule .schedule-agent-info .info .company{display:none}
+.page-content .fashion-detail-schedule .schedule-agent-info .info .email,.page-content .fashion-detail-schedule .schedule-agent-info .info .phone{color:#fff;opacity:.7}
+.page-content .fashion-detail-schedule .schedule-agent-info .info .email:hover,.page-content .fashion-detail-schedule .schedule-agent-info .info .phone:hover{opacity:1}
+.page-content .fashion-detail-schedule .appointment{background:#000}
+.page-content .fashion-detail-schedule .appointment .date-container .prev,.page-content .fashion-detail-schedule .appointment .date-container .next{color:rgba(255,255,255,0.7);background:#000}
 .page-content .md-calculator .description-container{max-width:700px;margin-left:auto;margin-right:auto;color:#222}
 .page-content .md-calculator .mortgage-lead-form{background:#333;background-image:url("https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png");background-repeat:repeat}
 .page-content .md-calculator .mortgage-lead-form form .submit{background:#ffc03a;text-transform:uppercase}
