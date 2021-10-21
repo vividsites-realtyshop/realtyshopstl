@@ -30,8 +30,10 @@ function domReady(fn) {
 domReady(function() {
     console.log("extra script loaded");
 
-    const mortgageLeadForm = document.querySelector(".mortgage-lead-form form");
-    if( mortgageLeadForm && !mortgageLeadForm.classList.contains("mortgate-lead-form") ) mortgageLeadForm.classList.add("mortgate-lead-form");
+    setTimeout(() => {
+        const mortgageLeadForm = document.querySelector(".mortgage-lead-form form");
+        if( mortgageLeadForm && !mortgageLeadForm.classList.contains("mortgate-lead-form") ) mortgageLeadForm.classList.add("mortgate-lead-form");
+    }, 3000);
     
     // Initially, just setting this up on Homepage
     if( document.body.classList.contains("home") ) {
