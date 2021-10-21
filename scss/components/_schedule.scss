@@ -28,12 +28,20 @@
 
         .appointment {
             background: #000;
-            
+
+            .schedule-banner {
+                filter: hue-rotate(200deg);
+            }
+
             .date-container {
                 .prev,
                 .next {
                     color: rgba(255,255,255,0.7);
                     background: #000;
+                }
+
+                .date {
+                    color: rgba(255,255,255,0.7);
                 }
             }
         }

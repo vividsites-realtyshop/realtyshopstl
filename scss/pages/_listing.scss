@@ -4,7 +4,7 @@ body.listing-detail {
         top: 0;
         left: 0;
         z-index: 2;
-        background: rgba(0,0,0,0.7);
+        background: rgba(0,0,0,0.5);
         height: auto;
         padding: 10px 50px 12px;
 
@@ -104,12 +104,6 @@ body.listing-detail {
                         .save-share-tour {
                             .item {
                                 color: #fff;
-
-                                &.tour {
-                                    @media (min-width: 801px) {
-                                        display: none;
-                                    }
-                                }
                             }
                         }
                     }

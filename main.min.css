@@ -49,7 +49,9 @@ body.has-uikit .uk-dropdown p{line-height:1.4}
 .page-content .fashion-detail-schedule .schedule-agent-info .info .email,.page-content .fashion-detail-schedule .schedule-agent-info .info .phone{color:#fff;opacity:.7}
 .page-content .fashion-detail-schedule .schedule-agent-info .info .email:hover,.page-content .fashion-detail-schedule .schedule-agent-info .info .phone:hover{opacity:1}
 .page-content .fashion-detail-schedule .appointment{background:#000}
+.page-content .fashion-detail-schedule .appointment .schedule-banner{-webkit-filter:hue-rotate(200deg);filter:hue-rotate(200deg)}
 .page-content .fashion-detail-schedule .appointment .date-container .prev,.page-content .fashion-detail-schedule .appointment .date-container .next{color:rgba(255,255,255,0.7);background:#000}
+.page-content .fashion-detail-schedule .appointment .date-container .date{color:rgba(255,255,255,0.7)}
 .page-content .md-calculator .description-container{max-width:700px;margin-left:auto;margin-right:auto;color:#222}
 .page-content .md-calculator .mortgage-lead-form{background:#333;background-image:url("https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png");background-repeat:repeat}
 .page-content .md-calculator .mortgage-lead-form form .submit{background:#ffc03a;text-transform:uppercase}
@@ -655,7 +657,7 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 .home .md-featured-area.grid-fashion .style-container .city-wrapper:nth-of-type(n+9){display:none}
 }.home .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main .name{font-size:18px}
 .home .house-grid-item.template1{border:0;border-radius:0;background:#FFF}
-body.listing-detail .breadcrumb-container{position:absolute;top:0;left:0;z-index:2;background:rgba(0,0,0,0.7);height:auto;padding:10px 50px 12px}
+body.listing-detail .breadcrumb-container{position:absolute;top:0;left:0;z-index:2;background:rgba(0,0,0,0.5);height:auto;padding:10px 50px 12px}
 body.listing-detail .breadcrumb-container .breadcrumb-bar{width:auto}
 body.listing-detail .md-detail-info.fashion .detail-container .detail-info .addr-detail{color:rgba(255,255,255,0.7)}
 body.listing-detail .md-detail-info.fashion .detail-info-header{background-color:#222;background-image:url("https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png") !important;background-size:auto;background-repeat:repeat}
@@ -671,8 +673,7 @@ body.listing-detail .md-detail-info.fashion .detail-info-header .house-status.co
 body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner{background-color:#000}
 body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .banner-left .btn,body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .banner-right .btn{color:rgba(255,255,255,0.7);border-color:rgba(255,255,255,0.7)}
 body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour .item{color:#fff}
-@media(min-width:801px){body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour .item.tour{display:none}
-}body.listing .house-list.brief-list.template1{padding:0 0 0 12px}
+body.listing .house-list.brief-list.template1{padding:0 0 0 12px}
 body.listing .house-list.brief-list.template1 .house-list-item:nth-of-type(even){background:#f8f8f8}
 body.listing .house-list.brief-list.template1 .house-list-item.template1{margin-bottom:12px}
 body.listing .house-list.brief-list.template1 .house-list-item.template1 .house-preview{-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center;width:240px;min-height:160px}
