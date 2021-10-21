@@ -1,0 +1,41 @@
+.page-content {
+    .fashion-detail-schedule {
+        .schedule-button {
+            border-radius: 0;
+        }
+
+        .schedule-agent-info {
+            .agent-head {
+                border-radius: 0;
+            }
+
+            .info {
+                .company {
+                    display: none;
+                }
+
+                .email,
+                .phone {
+                    color: #fff;
+                    opacity: 0.7;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .appointment {
+            background: #000;
+            
+            .date-container {
+                .prev,
+                .next {
+                    color: rgba(255,255,255,0.7);
+                    background: #000;
+                }
+            }
+        }
+    }
+}

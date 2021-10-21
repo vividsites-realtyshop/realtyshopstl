@@ -648,7 +648,7 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 .home .md-featured-area.grid-fashion .style-container .city-wrapper:nth-of-type(n+9){display:none}
 }.home .md-team.carousel-fashion .agents-container .agent-list .agent-item .agent-main .name{font-size:18px}
 .home .house-grid-item.template1{border:0;border-radius:0;background:#FFF}
-body.listing-detail .breadcrumb-container{position:absolute;top:0;left:0;z-index:2;background:rgba(0,0,0,0.8);height:auto;padding:10px 50px 12px}
+body.listing-detail .breadcrumb-container{position:absolute;top:0;left:0;z-index:2;background:rgba(0,0,0,0.7);height:auto;padding:10px 50px 12px}
 body.listing-detail .breadcrumb-container .breadcrumb-bar{width:auto}
 body.listing-detail .md-detail-info.fashion .detail-container .detail-info .addr-detail{color:rgba(255,255,255,0.7)}
 body.listing-detail .md-detail-info.fashion .detail-info-header{background-color:#222;background-image:url("https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png") !important;background-size:auto;background-repeat:repeat}
