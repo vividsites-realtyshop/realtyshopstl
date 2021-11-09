@@ -175,7 +175,6 @@ body .md-hero .banner-video .video-box video{min-width:100%;-o-object-fit:cover;
 }@media(min-width:1201px){.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .number[title="★★★★★"]{font-size:32px}
 }.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .text{white-space:normal;text-overflow:initial;line-height:initial;color:#222}
 .page-content .md-team-desc.team-desc-stats{z-index:2}
-.page-content .md-team-desc.team-desc-stats .team-desc-content{background:0}
 @media(min-width:800px){.page-content .md-team-desc.team-desc-stats .desc-list{-webkit-transform:translateY(-40px);transform:translateY(-40px)}
 }body:not(.reviews) .md-testimonial.flow-classic .comment-card{background-color:#f8f8f8;-webkit-filter:hue-rotate(180deg);filter:hue-rotate(180deg)}
 body:not(.reviews) .md-testimonial.flow-classic .comment-card .footer{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;-webkit-filter:hue-rotate(-180deg);filter:hue-rotate(-180deg)}
