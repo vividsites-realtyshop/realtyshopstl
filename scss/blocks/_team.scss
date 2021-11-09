@@ -218,17 +218,20 @@
                     }
                 }
             }
-        }
-        &.team-desc-stats {
-            z-index: 2;
+            
+            &.team-desc-stats {
+                z-index: 2;
+    
+                .team-desc-content {
+                    // background: none;
+                }
 
-            .team-desc-content {
-                // background: none;
-            }
-
-            .desc-list {
-                @media (min-width: 800px) {
-                    transform: translateY(-40px);
+                .intro-desc {
+                    .desc-list {
+                        @media (min-width: 800px) {
+                            transform: translateY(-40px);
+                        }
+                    }
                 }
             }
         }

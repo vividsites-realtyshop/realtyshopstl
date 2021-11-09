@@ -1,0 +1,23 @@
+.uk-icon {
+    &.fill--gold {
+        svg {
+            polygon,
+            path,
+            rect,
+            circle {
+                fill: $gold;
+            }
+        }
+    }
+
+    &.stroke--none {
+        svg {
+            polygon,
+            path,
+            rect,
+            circle {
+                stroke: none;
+            }
+        }
+    }
+}
