@@ -41,7 +41,7 @@ body .mg-title *{text-overflow:initial;white-space:initial}
 .button{border-radius:0 !important}
 body.has-uikit .uk-dropdown p{line-height:1.4}
 .uk-icon.fill--gold svg polygon,.uk-icon.fill--gold svg path,.uk-icon.fill--gold svg rect,.uk-icon.fill--gold svg circle{fill:#ffc03a}
-.uk-icon.stroke--none svg polygon,.uk-icon.stroke--none svg path,.uk-icon.stroke--none svg rect,.uk-icon.stroke--none svg circle{stroke:none}
+.uk-icon.stroke--none svg polygon,.uk-icon.stroke--none svg path,.uk-icon.stroke--none svg rect,.uk-icon.stroke--none svg circle{stroke:none !important}
 .page-content .richtext h1:not(:last-child),.page-content .richtext h2:not(:last-child),.page-content .richtext h3:not(:last-child),.page-content .richtext h4:not(:last-child),.page-content .richtext h5:not(:last-child),.page-content .richtext h6:not(:last-child){margin-bottom:.5rem}
 .page-content .richtext.md-content{overflow:hidden}
 .page-content .richtext>.mg-container{overflow:visible}
@@ -177,7 +177,7 @@ body .md-hero .banner-video .video-box video{min-width:100%;-o-object-fit:cover;
 }@media(min-width:1201px){.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .number[title="★★★★★"]{font-size:32px}
 }.page-content .md-team-desc.team-desc-simple .intro-desc .desc-list .item .text{white-space:normal;text-overflow:initial;line-height:initial;color:#222}
 .page-content .md-team-desc.team-desc-simple.team-desc-stats{z-index:2}
-@media(min-width:800px){.page-content .md-team-desc.team-desc-simple.team-desc-stats .intro-desc .desc-list{-webkit-transform:translateY(-40px);transform:translateY(-40px)}
+@media(min-width:800px){.page-content .md-team-desc.team-desc-simple.team-desc-stats .intro-desc .desc-list{-webkit-transform:translateY(-60px);transform:translateY(-60px)}
 }body:not(.reviews) .md-testimonial.flow-classic .comment-card{background-color:#f8f8f8;-webkit-filter:hue-rotate(180deg);filter:hue-rotate(180deg)}
 body:not(.reviews) .md-testimonial.flow-classic .comment-card .footer{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;-webkit-filter:hue-rotate(-180deg);filter:hue-rotate(-180deg)}
 body:not(.reviews) .md-testimonial.flow-classic .comment-card .footer>img{margin-top:0;width:120px;height:120px;border-radius:100%}

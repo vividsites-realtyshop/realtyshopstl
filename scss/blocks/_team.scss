@@ -221,15 +221,11 @@
             
             &.team-desc-stats {
                 z-index: 2;
-    
-                .team-desc-content {
-                    // background: none;
-                }
 
                 .intro-desc {
                     .desc-list {
                         @media (min-width: 800px) {
-                            transform: translateY(-40px);
+                            transform: translateY(-60px);
                         }
                     }
                 }
