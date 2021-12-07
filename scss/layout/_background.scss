@@ -17,7 +17,7 @@
 
 		// Black
 		&--black {
-			background-color: #000;
+			background-color: #000 !important;
 
 			.uk-grid-divider {
 				& > :not(.uk-first-column) {
