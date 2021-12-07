@@ -16,11 +16,6 @@
                 display: block !important;
             }
         }
-        &\@xl {
-            @media (min-width: $breakpoint-xl) {
-                display: block !important;
-            }
-        }
     }
     &-inline-block {
         display: inline-block;
@@ -39,34 +34,6 @@
                 display: inline-block !important;
             }
         }
-        &\@xl {
-            @media (min-width: $breakpoint-xl) {
-                display: inline-block !important;
-            }
-        }
-    }
-    &-inline {
-        display: inline;
-        &\@s {
-            @media (min-width: $breakpoint-s) {
-                display: inline !important;
-            }
-        }
-        &\@m {
-            @media (min-width: $breakpoint-m) {
-                display: inline !important;
-            }
-        }
-        &\@l {
-            @media (min-width: $breakpoint-l) {
-                display: inline !important;
-            }
-        }
-        &\@xl {
-            @media (min-width: $breakpoint-xl) {
-                display: inline !important;
-            }
-        }
     }
     &-none {
         display: none;
@@ -82,11 +49,6 @@
         }
         &\@l {
             @media (min-width: $breakpoint-l) {
-                display: none !important;
-            }
-        }
-        &\@xl {
-            @media (min-width: $breakpoint-xl) {
                 display: none !important;
             }
         }
