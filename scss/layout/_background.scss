@@ -7,12 +7,12 @@
 	&-color {
 		// Light
 		&--light {
-			background: $gray-lt;
+			background: $gray-lt !important;
 		}
 
 		// Theme
 		&--theme {
-			background: var(--color-theme);
+			background: var(--color-theme) !important;
 		}
 
 		// Black

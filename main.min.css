@@ -269,8 +269,8 @@ body:not(.reviews) .md-testimonial.grid-progressive .testimonial-list .testimoni
 .page-content .md-evaluation-banner.standard .report-info .report-change>span.change-text{content:":";margin-left:0;margin-right:16px;font-family:var(--font-title);font-size:24px;letter-spacing:.05em;line-height:initial}
 .page-content .md-evaluation-banner.standard .report-info .report-change>span.change-value{border:0}
 .page-content .md-evaluation-banner.evaluation-progress .md-evaluation-steps-content .md-evaluation-steps .steps-box .step-description .step-label{font-family:var(--font-title);font-size:28px}
-.background-color--light{background:#f8f8f8}
-.background-color--theme{background:var(--color-theme)}
+.background-color--light{background:#f8f8f8 !important}
+.background-color--theme{background:var(--color-theme) !important}
 .background-color--black{background-color:#000 !important}
 .background-color--black .uk-grid-divider>:not(.uk-first-column):before{opacity:.5}
 .background__layer{position:absolute;top:0;right:0;left:0;bottom:0;width:100%;height:100%;display:block;z-index:0}
