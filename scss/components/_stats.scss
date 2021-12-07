@@ -1,0 +1,46 @@
+.stats {
+    font-size: 24px;
+    padding: 30px;
+
+    @media (max-width: 1000px) {
+        font-size: calc(12px + 1.2vw);
+        padding: 3vw 1vw;
+    }
+}
+
+.stat {
+    &__prefix,
+    &__suffix {
+        font-size: 2em;
+    }
+
+    &__number {
+        font-size: 4em;
+        padding-top: 0.1em;
+        line-height: 0.7;
+    }
+
+    &__inner {
+        & > * {
+            &:not(.stat__suffix):not(:first-child) {
+                margin-left: 10px;
+
+                @media (max-width: 1000px) {
+                    margin-left: 1vw;
+                }
+            }
+        }
+    }
+
+    // @media (max-width: $breakpoint-s - 1) {
+    //     &__inner {
+    //         flex-wrap: wrap;
+    //     }
+    //     &__description {
+    //         min-width: 100%;
+    //         text-align: center;
+    //         order: 3;
+    //         margin-top: 0.5rem;
+    //     }
+    // }
+}

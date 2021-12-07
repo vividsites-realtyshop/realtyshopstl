@@ -1,0 +1,11 @@
+.auto-increment-trigger {
+    .auto-increment {
+        transition: opacity 0.1s;
+    }
+
+    &:not(.uk-scrollspy-inview) {
+        .auto-increment {
+            opacity: 0;
+        }
+    }
+}

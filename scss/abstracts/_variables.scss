@@ -13,11 +13,14 @@ $title-letter-spacing: 0.05em;
 
 $transition: all 0.3s;
 
-$breakpoint-s:  601px;
-$breakpoint-l:  901px;
+$breakpoint-xs:  481px;
+$breakpoint-s:  640px;
+$breakpoint-m:  960px;
+$breakpoint-l: 1200px;
 
 $breakpoints: (
 	's': $breakpoint-s,
+	'm': $breakpoint-m,
 	'l': $breakpoint-l,
 );
 

@@ -1,0 +1,17 @@
+.columnize {
+    &\@s {
+        @media (min-width: $breakpoint-s) {
+            columns: 2;
+        }
+    }
+
+    &-gap {
+        &--xl {
+            column-gap: 100px;
+
+            @media (max-width: 1000px) {
+                column-gap: 10vw;
+            }
+        }
+    }
+}

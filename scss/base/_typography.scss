@@ -7,6 +7,10 @@
     font-weight: normal;
 }
 
+body {
+    font-family: var(--font-normal);
+}
+
 .text {
 	&-align {
 		&--center {
@@ -41,6 +45,32 @@
         &--xl {
             font-size: 2rem;
         }
+
+        &--xxl {
+            font-size: 3rem;
+            
+            @media (max-width: 1000px) {
+                font-size: calc(24px + 2vw);
+            }
+        }
+
+        &--xxxl {
+            font-size: 4rem;
+
+            @media (max-width: 1000px) {
+                font-size: calc(24px + 4vw);
+            }
+        }
+
+        &--xxxxl {
+            font-size: 6rem;
+            padding-top: 0.1em;
+            line-height: 0.7;
+
+            @media (max-width: 1000px) {
+                font-size: 9.6vw;
+            }
+        }
     }
 
     &-color {
@@ -48,8 +78,26 @@
             color: var(--color-theme);
         }
 
+        &--black {
+            color: #000;
+        }
+        
+        &--light {
+            color: #ccc;
+        }
+        
         &--white {
             color: #fff;
+        }
+    }
+}
+
+ul {
+    list-style: disc;
+
+    li {
+        &::marker {
+            color: var(--color-theme);
         }
     }
 }
@@ -57,5 +105,16 @@
 a.font-color--white {
     &:hover {
         color: $gold;
+    }
+}
+
+hr {
+    &.short {
+        border-width: 3px;
+        max-width: 72px;
+    }
+
+    &.color-theme {
+        border-color: var(--color-theme);
     }
 }

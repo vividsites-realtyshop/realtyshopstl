@@ -28,10 +28,11 @@ const config = require( './wpgulp.config.js' );
 const gulp = require( 'gulp' ); // Gulp of-course.
 
 // CSS related plugins.
-const sass = require( 'gulp-sass' ); // Gulp plugin for Sass compilation.
+const sass = require( 'gulp-sass' )(require( 'sass' )); // Gulp plugin for Sass compilation.
 const minifycss = require( 'gulp-uglifycss' ); // Minifies CSS files.
 const autoprefixer = require( 'gulp-autoprefixer' ); // Autoprefixing magic.
 const gcmq = require('gulp-group-css-media-queries');
+const rtlcss = require( 'gulp-rtlcss' ); // Generates RTL stylesheet.
 
 // JS related plugins.
 const concat = require( 'gulp-concat' ); // Concatenates JS files.

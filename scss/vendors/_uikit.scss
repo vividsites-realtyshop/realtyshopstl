@@ -1,6 +1,10 @@
 body.has-uikit {
     color: $charcoal;
 
+    h1, h2, h3, h4, h5, h6 {
+        @extend .font-family--title;
+    }
+
     address, dl, fieldset, figure, ol, p, pre, ul {
         &:last-child {
             margin-bottom: 0;
@@ -9,6 +13,19 @@ body.has-uikit {
 
     .button {
         text-decoration: none;
+    }
+
+    .uk-button {
+        @extend .font-family--title;
+        font-size: 18px;
+        padding: 0.75em 1.25em;
+        border: solid 1px #fff;
+        background-color: rgba(0,0,0,0.6);
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
     }
 
     header,
@@ -123,5 +140,17 @@ body.has-uikit {
         ul {
             margin-bottom: 0;
         }
+    }
+
+    .uk-overlay-primary {
+        background: rgba(0,0,0,0.5);
+    }
+
+    .uk-lightbox {
+        // background: rgba(0,0,0,0.7);
+    }
+
+    .uk-tab {
+        margin-left: 0;
     }
 }

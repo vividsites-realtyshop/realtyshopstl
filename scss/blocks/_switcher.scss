@@ -1,0 +1,11 @@
+.page-content {
+    .uk-switcher {
+        & > li {
+            padding: 4rem 20px 5rem;
+
+            @media (min-width: $breakpoint-m) {
+                padding: 4rem 30px 5rem;
+            }
+        }
+    }
+}

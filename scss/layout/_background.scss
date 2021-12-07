@@ -9,6 +9,24 @@
 		&--light {
 			background: $gray-lt;
 		}
+
+		// Theme
+		&--theme {
+			background: var(--color-theme);
+		}
+
+		// Black
+		&--black {
+			background-color: #000;
+
+			.uk-grid-divider {
+				& > :not(.uk-first-column) {
+					&:before {
+						opacity: 0.5;
+					}
+				}
+			}
+		}
 	}
 
 	/**------------------------------------*\

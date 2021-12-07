@@ -1,0 +1,534 @@
+@use "sass:math";
+.page--sellers {
+    @media (max-width: $breakpoint-s - 1) {
+        .stats {
+            padding: 0;
+        }
+        .stat {
+            margin: 0 !important;
+
+            &__inner {
+                padding: 24px 0;
+            }
+
+            &:nth-of-type(2) {
+                min-width: 100%;
+                order: 3;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 0;
+                    border-bottom: 1px solid #e5e5e5;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    #model_for_success {
+        #sales_process_phases {
+            .phase {
+                &__inner {
+                    @media (min-width: $breakpoint-s) {
+                        align-items: center;
+                    }
+                }
+                
+                &__bullet {
+                    transition: all 0.5s;
+                }
+                &__description {
+                    transition: all 0.5s ease 0.3s;
+                }
+
+                @for $i from 2 through 3 {
+                    &:nth-child(#{$i}) {
+                        .phase__bullet {
+                            transition-delay: 400ms * $i;
+                        }
+
+                        .phase__description {
+                            transition-delay: 400ms * $i + 200ms;
+                        }
+                    }
+                }
+            }
+            &:not(.uk-scrollspy-inview) {
+                .phase {
+                    &__bullet {
+                        transform: translateX(-60px);
+                        opacity: 0;
+                    }
+    
+                    &__description {
+                        transform: translatey(90px);
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        .strategy {
+            .bullet-list {
+                li {
+                    transition: all 300ms ease-out;
+
+                    @for $i from 1 through 20 {
+                        &:nth-child(#{$i}) {
+                            transition-delay: 150ms * $i;
+                        }
+                    }
+                }
+                &:not(.uk-scrollspy-inview) {
+                    li {
+                        transform: translateX(20px);
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    #syndication_infographic {
+        position: relative;
+        overflow: hidden;
+        max-width: 600px;
+        margin: 0 auto;
+
+        @media (min-width: $breakpoint-m) {
+            width: 45vw;
+            margin-left: 0;
+            margin-right: calc(100% - 45vw);
+        }
+
+        @media (min-width: $breakpoint-l) {
+            margin-top: -3rem;
+            margin-bottom: -1.5rem;
+        }
+        
+        &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-bottom: 100%;
+            
+        }
+
+        .company {
+            position: absolute;
+        }
+
+        .realty-shop {
+            width: 25%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+
+            .bubble {
+                position: static;
+            }
+        }
+
+        .syndicates {
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+            height: 50%;
+            width: 100%;
+        }
+        
+        .syndicate{
+            transform-origin: 0 100%;
+            height: 100%;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            transition: all 0.5s;
+
+            &:before {
+                content: '';
+                display: block;
+                width: 1px;
+                height: calc(100% - 50px);
+                background-color: #fff;
+                position: absolute;
+                bottom: 0;
+            }
+
+            .bubble {
+                transform: translateX(-50%);
+            }
+
+            @for $i from 1 to 10 {
+                $height: math.div($i, 10);
+                &[data-length='#{$i}'] {
+                    height: percentage($height);
+                }
+            }
+        }
+
+        .bubble {
+            position: absolute;
+            top: 0;
+            border-radius: 100%;
+            background: #ccc;
+            transform-origin: 0 0;
+            transition: inherit;
+
+            &:before {
+                content: '';
+                display: block;
+                width: 100%;
+                padding-bottom: 100%;
+            }
+
+            &--theme {
+                background: var(--color-theme);
+            }
+
+            &--dark {
+                background: #666;
+            }
+        }
+
+        .logo {
+            width: 88%;
+            position: absolute;
+            top: 6%;
+            left: 6%;
+            border-radius: 100%;
+            box-shadow: 0 1px 5px 0px rgba(0,0,0,0.3);
+            background: #fff;
+            overflow: hidden;
+
+            &:before {
+                content: '';
+                display: block;
+                width: 100%;
+                padding-bottom: 100%;
+                border-radius: 100%;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 90%;
+                height: 90%;
+                transform: translate(-50%, -50%);
+                background-image: url('../images/syndicates.png');
+                background-size: 100%;
+            }
+
+            $syndicates: (
+                'zillow',
+                'nextdoor',
+                'realtor',
+                'trulia',
+                'homes',
+                'realtytrac',
+                'assist2sell',
+                'hotpads',
+                'nestready',
+                'landsearch',
+                'l2l',
+                'homespotter',
+                'newhomesource',
+                'luxury'
+            );
+
+            $i: 0;
+            @each $s in $syndicates {
+                $i: $i + 1;
+                $offset: math.div($i, 14);
+                &--#{$s} {
+                    &:after {
+                        background-position-y: percentage($offset);
+                    }
+                }
+            }
+        }
+
+        .tier {
+            $delay: 0;
+
+            &-1 {
+                .bubble {
+                    width: 17%;
+                }
+
+                $rotate: (
+                    8,
+                    105,
+                    160,
+                    263
+                );
+
+                $i: 0;
+                @each $val in $rotate {
+                    $i: $i + 1;
+                    .syndicate:nth-of-type(#{$i}) {
+                        transform: rotate(#{$val}deg);
+                        transition-delay: #{$delay}ms;
+
+                        .logo {
+                            transform: rotate(-#{$val}deg);
+                        }
+                    }
+                    $delay: $delay + 150;
+                }
+            }
+
+            &-2 {
+                .bubble {
+                    width: 14%;
+                }
+
+                $rotate: (
+                    78,
+                    195,
+                    290,
+                    334
+                );
+
+                $i: 0;
+                @each $val in $rotate {
+                    $i: $i + 1;
+                    .syndicate:nth-of-type(#{$i}) {
+                        transform: rotate(#{$val}deg);
+                        transition-delay: #{$delay}ms;
+
+                        .logo {
+                            transform: rotate(-#{$val}deg);
+                        }
+                    }
+                    $delay: $delay + 100;
+                }
+            }
+
+            &-3 {
+                .bubble {
+                    width: 11%;
+                }
+
+                $rotate: (
+                    40,
+                    60,
+                    130,
+                    219,
+                    238,
+                    315
+                );
+
+                $i: 0;
+                @each $val in $rotate {
+                    $i: $i + 1;
+                    .syndicate:nth-of-type(#{$i}) {
+                        transform: rotate(#{$val}deg);
+                        transition-delay: #{$delay}ms;
+
+                        .logo {
+                            transform: rotate(-#{$val}deg);
+                        }
+
+                        $delay: $delay + 50;
+                    }
+                }
+            }
+        }
+
+        &:not(.uk-scrollspy-inview) {
+            .syndicate {
+                height: 0;
+
+                .bubble {
+                    opacity: 0;
+                    transform: scale(0.5) translateX(-50%);
+                }
+            }
+        }
+    }
+
+    #beyond_the_web {
+        .icon {
+            width: 60px;
+            min-width: 60px;
+            background-image: url('../images/offline.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+
+            &--brochure {
+                background-position-y: 50%;
+            }
+
+            &--ad {
+                background-position-y: 100%;
+            }
+        }
+
+        p {
+            margin-top: 1rem;
+        }
+    }
+
+    .marketing-grid {
+        padding: 15px;
+
+        .grid-item {
+            max-height: 50vw;
+        }
+    }
+
+    #next_steps {
+        .step {
+            &__text {
+                font-size: 15px;
+
+                a {
+                    color: var(--color-theme);
+                    text-transform: uppercase;
+                    font-weight: bold;
+
+                    &:last-child {
+                        position: relative;
+                        display: inline-block;
+
+                        &:before,
+                        &:after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            border: 3px solid var(--color-theme);
+                            top: 0.4em;
+                            left: calc(100% + 5px);
+                        }
+
+                        &:before {
+                            width: 5px;
+                            height: 0;
+                            border-top: none;
+                            margin-top: 3px;
+                        }
+
+                        &:after {
+                            width: 6px;
+                            height: 6px;
+                            border-bottom: none;
+                            border-left: none;
+                            margin-left: 4px;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+
+                ul {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .step {
+        $numsize: 100px;
+
+        // overflow: hidden;
+        // &:not(.uk-scrollspy-inview) {
+        //     .step__number,
+        //     .step__image,
+        //     .step__text,
+        //     .step__progress .line {
+        //         opacity: 0;
+        //     }
+        // }
+        &__number {
+            font-size: calc($numsize - 10px);
+            left: 0;
+            padding-bottom: 10px;
+            
+            @media (min-width: $breakpoint-s) {
+                width: max-content;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            // transition: all 0.5s ease 0.5s;
+        }
+        &__inner {
+            padding-bottom: 100px;
+
+            @media (max-width:$breakpoint-s - 1) {
+                // padding-left: 4rem;
+            }
+        }
+        &__image {
+            // transition: all 0.5s ease 1s;
+
+            .uk-cover-container {
+                max-width: 250px;
+
+            }
+            
+            @media (max-width: $breakpoint-s - 1) {
+                padding: 0 60px;
+
+                .uk-cover-container {
+                    margin: 0 auto 2rem !important;
+                }
+            }
+        }
+        &__text {
+            padding-left: 60px;
+
+            @media (min-width: $breakpoint-s) {
+                padding-left: 48px;
+            }
+            // transition: all 0.5s ease 1.5s;
+        }
+
+        &__progress {
+            height: 1px;
+
+            .line {
+                width: 1px;
+                height: 0;
+                background: #fff;
+                position: absolute;
+                left: 21px;
+                top: $numsize;
+                transition: height 0.5s;
+
+                @media (min-width: $breakpoint-s) {
+                    left: 50%;
+                    margin-left: -1px;
+                }
+                
+                // &:after {
+                //     content: '';
+                //     display: block;
+                //     width: 10px;
+                //     height: 10px;
+                //     border: solid 1px #fff;
+                //     border-right: none;
+                //     border-top: none;
+                //     transform: rotate(-45deg);
+                //     transform-origin: 0 100%;
+                //     position: absolute;
+                //     left: 0.5px;
+                //     bottom: -1px;
+                //     transition: all 1s;
+                // }
+            }
+
+            &.uk-scrollspy-inview {
+                
+                .line {
+                    height: calc(100% - $numsize);
+                    // height: calc(100% - 1px);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+body.has-uikit {
+    .uk-grid {
+        $xs: 8px;
+        &-xsmall {
+            margin-left: -$xs;
+    
+            & > * {
+                padding-left: $xs;
+            }
+
+            & > .uk-grid-margin {
+                margin-top: $xs;
+            }
+        }
+    
+        // & + .uk-grid {
+        //     &-xsmall {
+        //         margin-top: $xs;
+        //     }
+        // }
+    }
+}

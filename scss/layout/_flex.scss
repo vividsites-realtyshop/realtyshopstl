@@ -1,5 +1,11 @@
 .flex {
     display: flex;
+    &\@xs {
+        @media (min-width: $breakpoint-xs) {
+            display: flex;
+        }
+    }
+    
     &\@s {
         @media (min-width: $breakpoint-s) {
             display: flex;
