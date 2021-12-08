@@ -1,4 +1,9 @@
 body {
+    .rs-hero {
+        height: 40vw;
+        min-height: 500px;
+        max-height: 700px;
+    }
     .md-hero {
         &.template4 {
             &.banner-with-search-bar {

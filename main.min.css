@@ -34,8 +34,8 @@ body{font-family:var(--font-normal)}
 @media(max-width:1000px){.font-size--xxl{font-size:calc(24px + 2vw)}
 }.font-size--xxxl{font-size:4rem}
 @media(max-width:1000px){.font-size--xxxl{font-size:calc(24px + 4vw)}
-}.font-size--xxxxl{font-size:6rem;padding-top:.1em;line-height:.7}
-@media(max-width:1000px){.font-size--xxxxl{font-size:9.6vw}
+}.font-size--xxxxl{font-size:4.5rem;padding-top:.1em;line-height:.7}
+@media(max-width:1000px){.font-size--xxxxl{font-size:calc(24px + 4.8vw)}
 }.font-color--theme{color:var(--color-theme)}
 .font-color--black{color:#000}
 .font-color--light{color:#ccc}
@@ -124,6 +124,7 @@ body.has-uikit .uk-dropdown p{line-height:1.4}
 .page-content .md-featured-area.grid-fashion .style-container .city-style:hover .mask{opacity:.7}
 .page-content .md-featured-area.grid-fashion .style-container .city-style:hover>.style-title{display:block;bottom:64px}
 .page-content .md-featured-area.grid-fashion .style-container .city-style:hover .read-more{bottom:20px;opacity:1}
+body .rs-hero{height:40vw;min-height:500px;max-height:700px}
 @media(max-width:1080px){body .md-hero.template4.banner-with-search-bar .banner-video.autoplay{padding-bottom:0}
 body .md-hero.template4.banner-with-search-bar .media-content{margin-top:120px}
 body .md-hero.template4.banner-with-search-bar .media-content .search-bar{position:static;background-color:rgba(14,18,34,.85) !important}
@@ -817,8 +818,10 @@ body.has-uikit .uk-grid-xsmall>.uk-grid-margin{margin-top:8px}
 }body.has-uikit{color:#222}
 body.has-uikit address:last-child,body.has-uikit dl:last-child,body.has-uikit fieldset:last-child,body.has-uikit figure:last-child,body.has-uikit ol:last-child,body.has-uikit p:last-child,body.has-uikit pre:last-child,body.has-uikit ul:last-child{margin-bottom:0}
 body.has-uikit .button{text-decoration:none}
-body.has-uikit .uk-button{font-size:18px;padding:.75em 1.25em;border:solid 1px #fff;background-color:rgba(0,0,0,.6);-webkit-transition:all .3s;transition:all .3s}
+body.has-uikit .uk-button{font-size:18px;padding:.8em 1.25em .75em;border:solid 1px #fff;background-color:rgba(0,0,0,.6);-webkit-transition:all .3s;transition:all .3s}
 body.has-uikit .uk-button:hover{background-color:rgba(0,0,0,.8)}
+body.has-uikit .uk-button-primary{background-color:#ffc03a;border-color:#ffc03a;color:#222 !important}
+body.has-uikit .uk-button-primary:hover{background-color:#ffb516;border-color:#ffb516}
 body.has-uikit header .logo img,body.has-uikit footer .logo img{max-width:initial}
 body.has-uikit header ul,body.has-uikit header ol,body.has-uikit footer ul,body.has-uikit footer ol{padding-left:initial;margin:initial}
 body.has-uikit header .menu-item a,body.has-uikit footer .menu-item a{color:#fff}
