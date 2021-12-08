@@ -23,6 +23,17 @@
         }
     }
 
+    .md-house {
+        .house-grid.template4 {
+            justify-content: space-around;
+            padding: 10px;
+
+            .house-grid-item {
+                margin: 10px;
+            }
+        }
+    }
+
     .md-house.grid.template1 {
         background-color: #222;
         background-image: $marble;

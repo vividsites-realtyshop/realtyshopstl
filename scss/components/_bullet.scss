@@ -1,5 +1,13 @@
 .page-content {
     .bullets {
+        list-style: disc;
+
+        li {
+            &::marker {
+                color: var(--color-theme);
+            }
+        }
+        
         &--checkmarks {
             list-style: none;
 

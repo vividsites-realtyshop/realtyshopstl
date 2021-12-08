@@ -92,16 +92,6 @@ body {
     }
 }
 
-ul {
-    list-style: disc;
-
-    li {
-        &::marker {
-            color: var(--color-theme);
-        }
-    }
-}
-
 a.font-color--white {
     &:hover {
         color: $gold;

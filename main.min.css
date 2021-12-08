@@ -40,8 +40,6 @@ body{font-family:var(--font-normal)}
 .font-color--black{color:#000}
 .font-color--light{color:#ccc}
 .font-color--white{color:#fff}
-ul{list-style:disc}
-ul li::marker{color:var(--color-theme)}
 a.font-color--white:hover{color:#ffc03a}
 hr.short{border-width:3px;max-width:72px}
 hr.color-theme{border-color:var(--color-theme)}
@@ -49,6 +47,8 @@ body .mg-title{text-overflow:initial;white-space:initial}
 body .mg-title *{text-overflow:initial;white-space:initial}
 .auto-increment-trigger .auto-increment{-webkit-transition:opacity .1s;transition:opacity .1s}
 .auto-increment-trigger:not(.uk-scrollspy-inview) .auto-increment{opacity:0}
+.page-content .bullets{list-style:disc}
+.page-content .bullets li::marker{color:var(--color-theme)}
 .page-content .bullets--checkmarks{list-style:none}
 .page-content .bullets--checkmarks li{position:relative}
 .page-content .bullets--checkmarks li:before{content:"";display:block;border-right:solid 2px var(--color-theme);border-bottom:solid 2px var(--color-theme);width:4px;height:8px;position:absolute;top:5px;left:-25px;-webkit-transform:rotate(45deg);transform:rotate(45deg)}
@@ -850,6 +850,8 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 }@media(max-width:1080px){.home .md-hero .search-bar{background:#222}
 }.home .md-cta-sc.standard .single-picture,.home .md-banner.standard .single-picture{background-attachment:fixed}
 .home .md-banner .banner,.home .md-hero .banner,.home .md-cta-sc .banner{background-image:linear-gradient(-45deg,#222,#666);background-size:400% 400%;-webkit-animation-duration:4s;animation-duration:4s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:loadingbg;animation-name:loadingbg;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
+.home .md-house .house-grid.template4{-ms-flex-pack:distribute;justify-content:space-around;padding:10px}
+.home .md-house .house-grid.template4 .house-grid-item{margin:10px}
 .home .md-house.grid.template1{background-color:#222;background-image:url("https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png") !important;background-size:auto;background-repeat:repeat;padding-bottom:90px}
 .home .md-featured-area.grid-fashion{background-color:#222 !important;background-image:url("https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png") !important;background-size:auto !important;background-repeat:repeat !important;padding-bottom:40px}
 .home .house-grid-item.template4 .mask .house-detail{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),color-stop(25%,rgba(0,0,0,0.4)),to(rgba(0,0,0,0.8)));background-image:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.4) 25%,rgba(0,0,0,0.8) 100%)}
@@ -976,7 +978,7 @@ body.listing .house-list-item.template1 .house-preview .house-status.open-house{
 .page--sellers #syndication_infographic .bubble--dark{background:#666}
 .page--sellers #syndication_infographic .logo{width:88%;position:absolute;top:6%;left:6%;border-radius:100%;-webkit-box-shadow:0 1px 5px 0 rgba(0,0,0,.3);box-shadow:0 1px 5px 0 rgba(0,0,0,.3);background:#fff;overflow:hidden}
 .page--sellers #syndication_infographic .logo:before{content:"";display:block;width:100%;padding-bottom:100%;border-radius:100%}
-.page--sellers #syndication_infographic .logo:after{content:"";display:block;position:absolute;top:50%;left:50%;width:90%;height:90%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-image:url("../images/syndicates.png");background-size:100%}
+.page--sellers #syndication_infographic .logo:after{content:"";display:block;position:absolute;top:50%;left:50%;width:90%;height:90%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-image:url("https://cdn.chime.me/image/fs/cmsbuild/2021127/23/original_14b92ead-8eaf-4721-9a5e-d3f21f6d7db8.png");background-size:100%}
 .page--sellers #syndication_infographic .logo--zillow:after{background-position-y:7.1428571429%}
 .page--sellers #syndication_infographic .logo--nextdoor:after{background-position-y:14.2857142857%}
 .page--sellers #syndication_infographic .logo--realtor:after{background-position-y:21.4285714286%}
@@ -1024,7 +1026,7 @@ body.listing .house-list-item.template1 .house-preview .house-status.open-house{
 .page--sellers #syndication_infographic .tier-3 .syndicate:nth-of-type(6) .logo{-webkit-transform:rotate(-315deg);transform:rotate(-315deg)}
 .page--sellers #syndication_infographic:not(.uk-scrollspy-inview) .syndicate{height:0}
 .page--sellers #syndication_infographic:not(.uk-scrollspy-inview) .syndicate .bubble{opacity:0;-webkit-transform:scale(0.5) translateX(-50%);transform:scale(0.5) translateX(-50%)}
-.page--sellers #beyond_the_web .icon{width:60px;min-width:60px;background-image:url("../images/offline.png");background-size:100%;background-repeat:no-repeat}
+.page--sellers #beyond_the_web .icon{width:60px;min-width:60px;background-image:url("https://cdn.chime.me/image/fs/cmsbuild/2021128/8/original_a7d388ba-922f-42c2-bfd9-f1241b0df817.png");background-size:100%;background-repeat:no-repeat}
 .page--sellers #beyond_the_web .icon--brochure{background-position-y:50%}
 .page--sellers #beyond_the_web .icon--ad{background-position-y:100%}
 .page--sellers #beyond_the_web p{margin-top:1rem}
