@@ -117,6 +117,73 @@ body:not(.reviews) {
                 }
             }
         }
+        &.slider-standard {
+            .testimonial-frame {
+                &:not([role="img"]) {
+                    .testimonial-container {
+                        .testimonial-swiper {
+                            .testimonial {
+                                padding-bottom: 0 !important;
+
+                                &:before {
+                                    top: 20px;
+                                    left: 24px;
+                                    filter: hue-rotate(180deg);
+                                }
+
+                                .testimonial-item-container {
+                                    background-color: $gray-lt;
+
+                                    .testimonial-body {
+                                        font-family: var(--font-normal);
+                                        font-weight: normal !important;
+                                    }
+
+                                    .testimonial-footer {
+                                        height: 120px;
+                                        align-items: center;
+
+                                        .testimonial-picture {
+                                            width: 120px;
+                                            height: 120px;
+                                            margin-right: 30px;
+                                        }
+
+                                        & > div:not(.testimonial-picture) {
+                                            &:only-child {
+                                                padding-left: 150px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .zillow-container {
+                                    position: absolute;
+                                    left: 40px;
+                                    bottom: 40px;
+                                    width: 120px;
+                                    height: 120px;
+                                    border-radius: 100%;
+                                    border: 8px solid var(--color-theme);
+                                    background: #fff;
+
+                                    img {
+                                        object-fit: contain;
+                                        font-family: "object-fit: contain";
+                                        width: 80px;
+                                        height: 24px;
+                                        left: 50%;
+                                        top: 48%;
+                                        transform: translate(-50%, -50%);
+                                        position: absolute;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 .page-content {
