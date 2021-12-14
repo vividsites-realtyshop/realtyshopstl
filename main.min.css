@@ -1123,5 +1123,5 @@ body.listing .house-list-item.template1 .house-preview .house-status.open-house{
 .banner-button:empty{display:none !important}
 .md-cta-tc-sc.standard .copy-column .title,.md-cta-tc-sc.standard .copy-column .desc{text-overflow:initial}
 .copy-content p:not(:last-child){margin-bottom:1rem}
-.banner .single-picture[title^=parallax],[role=img][title^=parallax]{background-attachment:fixed}
-.banner .single-picture[title^="repeating*"],.banner .single-picture[aria-label^="repeating*"],[role=img][title^="repeating*"],[role=img][aria-label^="repeating*"]{background-repeat:repeat;background-size:contain !important}
+.banner .single-picture[title^=parallax],[role=img][title^=parallax]{background-attachment:fixed;pointer-events:none}
+.banner .single-picture[title^="repeating*"],.banner .single-picture[aria-label^="repeating*"],[role=img][title^="repeating*"],[role=img][aria-label^="repeating*"]{background-repeat:repeat;background-size:contain !important;pointer-events:none}
