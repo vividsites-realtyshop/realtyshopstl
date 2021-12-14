@@ -31,3 +31,9 @@
 .button {
     border-radius: 0 !important;
 }
+
+.button--hover-scale {
+    &:hover {
+        transform: scale(1.05);
+    }
+}

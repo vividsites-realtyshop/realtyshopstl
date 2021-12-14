@@ -65,6 +65,7 @@ body .mg-title *{text-overflow:initial;white-space:initial}
 .rs-button--outline{background:transparent;border:solid 1px #fff}
 .rs-button--outline:hover{background:transparent}
 .button{border-radius:0 !important}
+.button--hover-scale:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}
 body.has-uikit .uk-dropdown p{line-height:1.4}
 .uk-icon.fill--gold svg polygon,.uk-icon.fill--gold svg path,.uk-icon.fill--gold svg rect,.uk-icon.fill--gold svg circle{fill:#ffc03a}
 .uk-icon.stroke--none svg polygon,.uk-icon.stroke--none svg path,.uk-icon.stroke--none svg rect,.uk-icon.stroke--none svg circle{stroke:none !important}
@@ -859,7 +860,9 @@ body.has-uikit .uk-button{font-size:18px;padding:.8em 1.25em .75em;border:solid 
 body.has-uikit .uk-button:hover{background-color:rgba(0,0,0,.8)}
 body.has-uikit .uk-button-primary{background-color:#ffc03a;border-color:#ffc03a;color:#222 !important}
 body.has-uikit .uk-button-primary:hover{background-color:#ffb516;border-color:#ffb516}
-body.has-uikit header .logo img,body.has-uikit footer .logo img{max-width:initial}
+body.has-uikit .uk-button-large{font-size:24px}
+@media(max-width:1000px){body.has-uikit .uk-button-large{font-size:calc(16px + .8vw)}
+}body.has-uikit header .logo img,body.has-uikit footer .logo img{max-width:initial}
 body.has-uikit header ul,body.has-uikit header ol,body.has-uikit footer ul,body.has-uikit footer ol{padding-left:initial;margin:initial}
 body.has-uikit header .menu-item a,body.has-uikit footer .menu-item a{color:#fff}
 body.has-uikit header .menu-item a:hover,body.has-uikit footer .menu-item a:hover{color:var(--color-theme);text-decoration:none}
