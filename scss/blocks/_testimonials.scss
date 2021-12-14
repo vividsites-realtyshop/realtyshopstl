@@ -143,12 +143,21 @@ body:not(.reviews) {
                                 top: 20px;
                                 left: 24px;
                                 filter: hue-rotate(180deg);
+
+                                @media (max-width: 600px) {
+                                    top: 8px;
+                                    left: 8px;
+                                }
                             }
 
                             .testimonial-item-container {
                                 .testimonial-body {
                                     font-family: var(--font-normal);
                                     font-weight: normal !important;
+
+                                    @media (max-width: 500px) {
+                                        font-size: calc(12px + 1.2vw);
+                                    }
                                 }
 
                                 .testimonial-footer {
@@ -157,10 +166,6 @@ body:not(.reviews) {
                                     min-height: 120px;
                                     align-items: center;
                                     flex-wrap: wrap;
-
-                                    @media (max-width: 960px) AND (min-width: 601px) {
-                                        
-                                    }
 
                                     .testimonial-picture {
                                         width: 120px;
@@ -177,6 +182,10 @@ body:not(.reviews) {
                                     .testimonial-star .icon-star-fill {
                                         font-size: 24px;
                                         color: var(--color-theme);
+
+                                        @media (max-width: 500px) {
+                                            font-size: 4.8vw;
+                                        }
                                     }
 
                                     .testimonial-name {
@@ -192,6 +201,34 @@ body:not(.reviews) {
                                                 padding-top: 120px;
                                                 padding-left: 0px;
                                             }
+                                        }
+                                    }
+
+                                    @media (max-width: 600px) {
+                                        .testimonial-picture {
+                                            margin-right: 20px;
+                                        }
+
+                                        & > div:not(.testimonial-picture) {
+                                            &:only-child {
+                                                padding-left: 140px;
+                                            }
+                                        }
+                                    }
+
+                                    @media (max-width: 500px) {
+                                        & > div:not(.testimonial-picture) {
+                                            &:only-child {
+                                                padding-left: calc(80px + 12vw);
+                                            }
+                                        }
+                                        .testimonial-picture {
+                                            width: calc(60px + 12vw);
+                                            height: calc(60px + 12vw);
+                                        }
+
+                                        .testimonial-name {
+                                            font-size: calc(10px + 1.2vw);
                                         }
                                     }
                                 }
@@ -220,6 +257,11 @@ body:not(.reviews) {
 
                                 @media (max-width: 960px) AND (min-width: 601px) {
                                     bottom: 130px;
+                                }
+
+                                @media (max-width: 600px) {
+                                    left: 20px;
+                                    bottom: 24px;
                                 }
                             }
                         }
