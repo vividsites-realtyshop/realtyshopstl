@@ -174,7 +174,7 @@ body:not(.reviews) {
                                                 margin-top: 20px;
 
                                                 &:only-child {
-                                                    padding-top: 134px;
+                                                    padding-top: 120px;
                                                     padding-left: 0px;
                                                 }
                                             }
@@ -217,13 +217,8 @@ body:not(.reviews) {
                         .testimonial {
                             .testimonial-item-container {
                                 .testimonial-footer {
-                                    flex-wrap: wrap;
-
-                                    @media (max-width: 960px) AND (min-width: 601px) {
-                                        & > div {
-                                            min-width: 100%;
-                                        }
-                                    }
+                                    flex-direction: column;
+                                    align-items: flex-start;
                                 }
                             }
                         }
