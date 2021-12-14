@@ -1,0 +1,16 @@
+.page-content {
+    .md-lead-form.standard.newtheme {
+        &.inner-box-remove {
+            .media-content {
+                .title-text {
+                    background: none !important;
+                    padding: 0 !important;
+
+                    .media-title {
+                        line-height: 0.8 !important;
+                    }
+                }
+            }
+        }
+    }
+}
