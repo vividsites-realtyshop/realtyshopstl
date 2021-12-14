@@ -145,7 +145,7 @@ body:not(.reviews) {
 
                                     .testimonial-footer {
                                         margin-top: 0;
-                                        height: 120px;
+                                        height: auto;
                                         align-items: center;
 
                                         .testimonial-picture {
@@ -204,7 +204,7 @@ body:not(.reviews) {
                                     }
 
                                     @media (max-width: 960px) AND (min-width: 601px) {
-                                        bottom: 124px;
+                                        bottom: 130px;
                                     }
                                 }
                             }
@@ -213,6 +213,21 @@ body:not(.reviews) {
                 }
 
                 .testimonial-container {
+                    .testimonial-swiper {
+                        .testimonial {
+                            .testimonial-item-container {
+                                .testimonial-footer {
+                                    flex-wrap: wrap;
+
+                                    @media (max-width: 960px) AND (min-width: 601px) {
+                                        & > div {
+                                            min-width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                     .prevbutton,
                     .nextbutton {
                         width: 70px;
@@ -226,7 +241,6 @@ body:not(.reviews) {
                             width: 24px;
                             height: 24px;
                             border: 8px solid var(--color-theme);
-                            transform: translate(-50%, -50%) rotate(45deg);
                         }
 
                         @media (max-width: 1000px) {
@@ -248,6 +262,7 @@ body:not(.reviews) {
                         &:before {
                             border-top: none;
                             border-right: none;
+                            transform: translate(-30%, -50%) rotate(45deg);
                         }
                     }
 
@@ -258,6 +273,7 @@ body:not(.reviews) {
                         &:before {
                             border-bottom: none;
                             border-left: none;
+                            transform: translate(-70%, -50%) rotate(45deg);
                         }
                     }
                 }
