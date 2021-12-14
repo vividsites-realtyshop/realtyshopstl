@@ -154,6 +154,7 @@ body:not(.reviews) {
                                 .testimonial-footer {
                                     margin-top: 0;
                                     height: auto;
+                                    min-height: 120px;
                                     align-items: center;
                                     flex-wrap: wrap;
 
@@ -233,6 +234,11 @@ body:not(.reviews) {
                         top: calc(50% + 29px);
                         background: #fff;
                         box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 5%);
+                        transition: all 0.2s;
+
+                        &:hover {
+                            box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 7%);
+                        }
 
                         &:before {
                             content: "";
@@ -257,6 +263,10 @@ body:not(.reviews) {
                         left: calc(12.5% - 12.5vw);
                         transform: translate(-50%, -50%);
 
+                        &:hover {
+                            transform: translate(-50%, -50%) scale(1.08);
+                        }
+
                         &:before {
                             border-top: none;
                             border-right: none;
@@ -267,6 +277,10 @@ body:not(.reviews) {
                     .nextbutton {
                         right: calc(12.5% - 12.5vw);
                         transform: translate(50%, -50%);
+
+                        &:hover {
+                            transform: translate(50%, -50%) scale(1.08);
+                        }
 
                         &:before {
                             border-bottom: none;
