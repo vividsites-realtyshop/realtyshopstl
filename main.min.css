@@ -124,6 +124,8 @@ body.has-uikit .uk-dropdown p{line-height:1.4}
 .page-content .md-featured-area.grid-fashion .style-container .city-style:hover .mask{opacity:.7}
 .page-content .md-featured-area.grid-fashion .style-container .city-style:hover>.style-title{display:block;bottom:64px}
 .page-content .md-featured-area.grid-fashion .style-container .city-style:hover .read-more{bottom:20px;opacity:1}
+.page-content .md-lead-form.standard.newtheme.inner-box-remove .media-content .title-text{background:none !important;padding:0 !important}
+.page-content .md-lead-form.standard.newtheme.inner-box-remove .media-content .title-text .media-title{line-height:.8 !important}
 body .rs-hero{height:40vw;min-height:500px;max-height:700px}
 @media(max-width:1080px){body .md-hero.template4.banner-with-search-bar .banner-video.autoplay{padding-bottom:0}
 body .md-hero.template4.banner-with-search-bar .media-content{margin-top:120px}
