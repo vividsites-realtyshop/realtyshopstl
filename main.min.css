@@ -48,7 +48,6 @@ hr.color-theme{border-color:var(--color-theme)}
 body{overflow-x:hidden}
 body .mg-title{text-overflow:initial;white-space:initial}
 body .mg-title *{text-overflow:initial;white-space:initial}
-body main{margin-top:81px}
 .auto-increment-trigger .auto-increment{-webkit-transition:opacity .1s;transition:opacity .1s}
 .auto-increment-trigger:not(.uk-scrollspy-inview) .auto-increment{opacity:0}
 .page-content .bullets{list-style:disc}
