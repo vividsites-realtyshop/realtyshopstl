@@ -21,3 +21,61 @@
         }
     }
 }
+
+.icon {
+    &--rs {
+        background-image: url("https://cdn.chime.me/image/fs/cmsbuild/2021125/13/h200_original_c146ca14-e376-43d8-92e5-8af714cf5404.png");
+        background-size: cover;
+        background-position: left center;
+    }
+    &-x {
+        position: relative;
+
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            width: 0.35em;
+            height: 1.8em;
+            background-color: #ff0000;
+            position: absolute;
+            box-sizing: border-box;
+        }
+
+        &:before {
+            transform: rotate(45deg);
+        }
+        &:after {
+            transform: rotate(-45deg);
+        }
+
+        &--small {
+            font-size: 8px;
+        }
+    }
+}
+
+.checkmark {
+    box-sizing: border-box;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 0.6em;
+        height: 1.4em;
+        border: solid 0.4em var(--color-theme);
+        border-left: none;
+        border-top: none;
+        transform: rotate(45deg);
+    }
+
+    &--small {
+        font-size: 8px;
+    }
+
+    &--theme {
+        &:before {
+            border-color: var(--color-theme);
+        }
+    }
+}

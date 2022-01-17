@@ -1,8 +1,21 @@
+@use "sass:math";
 .before {
 	&:before {
 		content: '';
 		display: block;
 		width: 100%;
+	}
+
+	@for $i from 4 to 8 {
+		$val: $i * 10;
+		$dec: math.div($i, 10);
+		&--#{$val} {
+			@extend .before;
+			
+			&:before {
+				padding-bottom: percentage($dec);
+			}
+		}
 	}
 
 	&--square {
@@ -15,6 +28,12 @@
 		border-radius: 100%;
 		&:before {
 			padding-bottom: 100%;
+		}
+	}
+
+	&--video {
+		&:before {
+			padding-bottom: 56.25%;
 		}
 	}
 }

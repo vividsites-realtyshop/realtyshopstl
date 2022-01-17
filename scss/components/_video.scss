@@ -1,0 +1,34 @@
+.video {
+    &__thumbnail {
+        position: relative;
+    }
+
+    &__play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0,0,0,0.8);
+        width: 40px;
+        height: 30px;
+        border-radius: 6px;
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-4px, -6px);
+            border-left: solid 10px #fff;
+            border-top: solid 6px transparent;
+            border-bottom: solid 6px transparent;
+        }
+    }
+
+    &__wrapper {
+        iframe {
+            max-height: 56.25vw;
+        }
+    }
+}

@@ -102,12 +102,10 @@
 [role="img"] {
 	&[title^='parallax'] {
 		background-attachment: fixed;
-		pointer-events: none;
 	}
 	&[title^='repeating*'],
 	&[aria-label^='repeating*'] {
 		background-repeat: repeat;
 		background-size: contain !important;
-		pointer-events: none;
 	}
 }

@@ -1,6 +1,7 @@
 @import 'typography';
 
 body {
+    overflow-x: hidden;
     .mg-title {
         text-overflow: initial;
         white-space: initial;
@@ -9,5 +10,9 @@ body {
             text-overflow: initial;
             white-space: initial;
         }
+    }
+
+    main {
+        margin-top: 81px;
     }
 }

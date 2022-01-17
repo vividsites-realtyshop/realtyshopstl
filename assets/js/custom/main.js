@@ -28,8 +28,6 @@ function domReady(fn) {
 // }
 
 domReady(function() {
-    console.log("extra script loaded");
-
     setTimeout(() => {
         const mortgageLeadForm = document.querySelector(".mortgage-lead-form form");
         if( mortgageLeadForm && !mortgageLeadForm.classList.contains("mortgate-lead-form") ) mortgageLeadForm.classList.add("mortgate-lead-form");

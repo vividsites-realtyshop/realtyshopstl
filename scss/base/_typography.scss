@@ -40,10 +40,18 @@ body {
 
         &--l {
             font-size: 1.5rem;
+
+            @media (max-width: 1000px) {
+                font-size: calc(14px + 1vw);
+            }
         }
 
         &--xl {
             font-size: 2rem;
+            
+            @media (max-width: 1000px) {
+                font-size: calc(16px + 1.6vw);
+            }
         }
 
         &--xxl {

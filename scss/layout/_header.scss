@@ -46,7 +46,8 @@ header {
 	letter-spacing: $title-letter-spacing;
 }
 
-main.hide-chat {
+main.hide-chat,
+.md-header.fashion {
 	.header-container {
 		.header-bg {
 			opacity: 0.7 !important;

@@ -1,0 +1,46 @@
+.rs-collage {
+    margin-left: -1px;
+    margin-right: -1px;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+
+    &__block {
+        position: relative;
+    }
+
+    &__image,
+    &__text {
+        position: absolute !important;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border: solid 1px #fff;
+    }
+
+    &__image {
+        img {
+            transition: opacity 1s;
+            
+            &.fade {
+                opacity: 0;
+                transition: opacity 0s;
+            }
+        }
+
+    }
+
+    &__text {
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 72px;
+
+            @media (max-width: 1500px) {
+                font-size: 4.8vw;
+            }
+
+            @media (max-width: $breakpoint-s) {
+                font-size: 7.2vw;
+            }
+        }
+    }
+}

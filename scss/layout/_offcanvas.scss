@@ -1,0 +1,76 @@
+body.rs-offcanvas-inview {
+    overflow: hidden;
+}
+
+.rs-offcanvas {
+    position: fixed;
+    top: 100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    transition: top 0s ease 0.3s;
+
+    &__close {
+        border: solid 2px #fff;
+        border-radius: 100%;
+        background: none;
+        padding: 0;
+
+        &.before--circle {
+            width: 32px;
+            position: relative;
+            
+            .icon-x {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-1px, -8px);
+
+                &:before,
+                &:after {
+                    width: 2px;
+                    height: 16px;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    &__overlay {
+        position: fixed;
+        top: 100vh;
+        left: 0;
+        width: 200vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.7);
+        opacity: 0;
+        transform: translateX(-100vw);
+        transition: opacity 0.3s, top 0 ease 0.3s;
+    }
+
+    &__content {
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        overflow: auto;
+        transform: translateX(100%);
+        transition: transform 0.3s;
+    }
+
+    &.inview {
+        top: 0;
+        transition: top 0s;
+
+        .rs-offcanvas__content {
+            transform: none;
+            transition: transform 0.6s;
+        }
+
+        .rs-offcanvas__overlay {
+            top: 0;
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+    }
+}

@@ -20,3 +20,26 @@ body.has-uikit {
         // }
     }
 }
+
+.rs-grid {
+    $xs: 8px;
+    $s: 12px;
+
+    &-xsmall {
+        margin-left: -$xs;
+        margin-right: -$xs;
+
+        & > * {
+            padding: $xs;
+        }
+    }
+
+    &-small {
+        margin-left: -$s !important;
+        margin-right: -$s !important;
+
+        & > * {
+            padding: $s;
+        }
+    }
+}
