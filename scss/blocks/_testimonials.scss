@@ -336,6 +336,161 @@ body:not(.reviews) {
         }
     }
 }
+.rs-testimonial {
+    .uk-slider {
+        padding-left: 60px;
+        padding-right: 60px;
+
+        @media (max-width: $breakpoint-s - 1) {
+            padding-left: 24px;
+            padding-right: 24px;
+            
+            .uk-slidenav {
+                margin: 0;
+                top: 150px;
+            }
+
+            .uk-position-center-right-out,
+            .uk-position-center-left-out {
+                transform: translateY(-50%);
+            }
+
+            .uk-position-center-left-out {
+                right: auto;
+                left: -16px;
+            }
+
+            .uk-position-center-right-out {
+                left: auto;
+                right: -16px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            // padding-left: 0;
+            // padding-right: 0;
+
+            .uk-slidenav {
+                top: calc(50vw - 60px);
+            }
+        }
+    }
+    li {
+        padding: 0 20px;
+    }
+    .testimonial {
+        position: relative;
+
+        &:before {
+            font-size: 160px;
+            line-height: 0.8;
+            font-family: serif;
+            font-weight: 900;
+            color: var(--color-theme);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        @media (min-width: $breakpoint-s) {
+            padding-top: 80px;
+            
+            &:before {
+                content: open-quote;
+            }
+            &:after {
+                content: close-quote;
+                position: absolute;
+                visibility: hidden;
+            }
+        }
+        &__text {
+            position: relative;
+            padding-top: 32px;
+                
+            &:before {
+                content: open-quote;
+                font-size: 160px;
+                line-height: 0.8;
+                font-family: serif;
+                font-weight: 900;
+                color: var(--color-theme);
+                position: absolute;
+                top: 0;
+                left: -22px;
+                opacity: 0.3;
+                z-index: -1;
+            }
+
+            &:after {
+                content: close-quote;
+                position: absolute;
+                visibility: hidden;
+            }
+
+            @media (min-width: $breakpoint-s) {
+                padding-top: 0;
+
+                &:before,
+                &:after {
+                    display: none;
+                }
+            }
+
+            p {
+                font-size: 15px;
+
+                &:first-child:not(:last-child) {
+                    font-size: 18px;
+                }
+            }
+        }
+        &__attribution {
+            display: flex;
+            
+            &:before {
+                content: "";
+                display: block;
+                width: 75px;
+                height: 3px;
+                background: var(--color-theme);
+                margin-top: 11px;
+                margin-right: 12px;
+            }
+        }
+        &__name {
+            font-size: 16px;
+            font-weight: 700;
+        }
+        &__title {
+            font-size: 13px;
+            font-style: italic;
+        }
+        &__image {
+            border: solid 10px var(--color-theme);
+            border-radius: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+            margin-left: 60px;
+
+            @media (min-width: $breakpoint-s) {
+                min-width: 270px;
+            }
+
+            @media (min-width: $breakpoint-s) AND (max-width: 1000px) {
+                min-width: calc(70px + 20vw);
+                margin-left: calc(12vw - 60px);
+            }
+
+            @media (max-width: $breakpoint-s) {
+                max-width: calc(100% - 40px);
+                width: 300px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
 .page-content {
     .md-testimonial {
         &.list-standard {
