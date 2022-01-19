@@ -189,7 +189,7 @@ body .md-hero .banner-video .video-box video{min-width:100%;-o-object-fit:cover;
 .step__bullet:after{content:"";display:block;width:calc(100% - 6px);padding-bottom:calc(100% - 6px);border-radius:100%;background:var(--color-theme);position:absolute;top:3px;left:3px}
 @media(min-width:640px){.step__bullet{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
 }.step__number{font-size:90px;left:0;padding-bottom:10px}
-@media(min-width:640px){.step__number{width:-webkit-max-content;width:-moz-max-content;width:max-content;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+@media(min-width:640px){.step__number{width:-webkit-max-content !important;width:-moz-max-content !important;width:max-content !important;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
 }.step__inner{padding-bottom:100px}
 .step__image .uk-cover-container{max-width:250px}
 @media(max-width:639px){.step__image{padding:0 60px}
