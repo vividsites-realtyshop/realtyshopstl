@@ -141,15 +141,18 @@
                                 color: #fff !important;
                                 font-size: 20px;
                                 font-weight: 800;
-    
+                                margin-bottom: 0;
+                                line-height: 1.25 !important;
+                                margin-top: 0 !important;
                             }
     
                             &.agent-pos {
                                 color: #ccc !important;
                                 font-size: 14px;
                                 text-transform: none;
-                                letter-spacing: none;
                                 margin-bottom: 0;
+                                letter-spacing: 0;
+                                line-height: 1.25 !important;
                             }
                             
                             &:not(.agent-pos):not(.agent-name) {

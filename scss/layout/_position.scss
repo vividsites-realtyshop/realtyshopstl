@@ -1,0 +1,13 @@
+.page-content {
+	.position-static {
+		position: static !important;
+	}
+}
+
+@each $label, $breakpoint in $breakpoints {
+	.position-absolute\@#{$label} {
+		@media ( min-width: $breakpoint ) {
+			position: absolute !important;
+		}
+	}
+}

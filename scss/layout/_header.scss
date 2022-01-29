@@ -42,8 +42,25 @@ header {
     }
 }
 
-.md-header.fashion .header-container .menu-item {
-	letter-spacing: $title-letter-spacing;
+.md-header.fashion {
+    .header-container {
+        .head-account {
+            .menu-item {
+                border-color: var(--color-theme) !important;
+                color: var(--color-theme);
+            }
+        }
+        .menu-item {
+            letter-spacing: $title-letter-spacing;
+        }
+    }
+    &.mobile {
+        .header-container {
+            .nav-container {
+                background: rgba(0,0,0,0.7);
+            }
+        }
+    }
 }
 
 main.hide-chat,
@@ -55,7 +72,3 @@ main.hide-chat,
 	}
 }
 
-.md-header.fashion .header-container .head-account .menu-item {
-  border-color: #FFC03A !important;
-  color: #FFC03A; 
-}

@@ -81,16 +81,16 @@
     &__text {
         padding-left: 60px;
         font-size: 15px;
-
+        
         a {
             color: var(--color-theme);
             text-transform: uppercase;
             font-weight: bold;
-
+            
             &:last-child:not(.uk-button):not(.rs-button) {
                 position: relative;
                 display: inline-block;
-
+                
                 &:before,
                 &:after {
                     content: '';
@@ -100,14 +100,14 @@
                     top: 0.4em;
                     left: calc(100% + 5px);
                 }
-
+                
                 &:before {
                     width: 5px;
                     height: 0;
                     border-top: none;
                     margin-top: 3px;
                 }
-
+                
                 &:after {
                     width: 6px;
                     height: 6px;
@@ -118,17 +118,31 @@
                 }
             }
         }
-
+        
         ul {
             font-weight: bold;
         }
-
+        
         @media (min-width: $breakpoint-s) {
             padding-left: 48px;
         }
         // transition: all 0.5s ease 1.5s;
     }
+    
+    &__button {
+        padding-left: 60px;
 
+        @media (min-width: $breakpoint-xs) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            // transform: translateY(-15%);
+        }
+
+        @media (max-width: $breakpoint-xs - 1) {
+            padding-top: 1.5rem;
+        }
+    }
     &__progress {
         height: 1px;
 
@@ -187,6 +201,26 @@
                 &.uk-scrollspy-inview {
                     .line {
                         height: calc(100% - $bulsize);
+                    }
+                }
+            }
+        }
+    }
+
+    &--noimg {
+        .step {
+            &__bullet {
+                width: 100%;
+                @media (min-width: $breakpoint-s) {
+                    left: 8px;
+                    transform: none;
+                }
+            }
+
+            &__progress {
+                .line {
+                    @media (min-width: $breakpoint-s) {
+                        left: 21px;
                     }
                 }
             }
