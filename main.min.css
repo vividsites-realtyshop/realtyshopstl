@@ -276,14 +276,17 @@ body .md-hero .banner-video .video-box video{min-width:100%;-o-object-fit:cover;
 .page-content .md-team:not(.carousel-fashion) .agent-item .info-text.agent-name{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1;margin-bottom:0 !important;letter-spacing:.05em}
 .page-content .md-team:not(.carousel-fashion) .agent-item:hover .info{height:100% !important;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important;background:rgba(0,0,0,.5);-webkit-transition:height .4s,background .4s ease .2s;transition:height .4s,background .4s ease .2s}
 .page-content .md-team.multi-column-info-over-img+.md-team.multi-column-info-over-img{padding-top:0 !important}
-.page-content .md-team.multi-column-info-under-img .teamContent .agents-list{margin-left:-30px;margin-right:-30px}
-.page-content .md-team.multi-column-info-under-img .teamContent .agent-item{max-width:360px;padding-left:30px;padding-right:30px;margin-bottom:60px}
-.page-content .md-team.multi-column-info-under-img .teamContent .agent-item .img-box{height:auto !important}
+.page-content .md-team.multi-column-info-under-img .teamContent .agents-list{margin-left:0;margin-right:0}
+@media(min-width:481px){.page-content .md-team.multi-column-info-under-img .teamContent .agents-list{margin-left:-30px;margin-right:-30px}
+}.page-content .md-team.multi-column-info-under-img .teamContent .agent-item{max-width:360px;padding-left:30px;padding-right:30px;margin-bottom:40px}
+@media(min-width:481px){.page-content .md-team.multi-column-info-under-img .teamContent .agent-item{margin-bottom:60px;padding-left:30px;padding-right:30px}
+}.page-content .md-team.multi-column-info-under-img .teamContent .agent-item .img-box{height:auto !important}
 .page-content .md-team.multi-column-info-under-img .teamContent .agent-item .img-box:before{content:"";display:block;padding-bottom:106%}
 .page-content .md-team.multi-column-info-under-img .teamContent .agent-item .info-container{height:auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse;background:#393939;padding:.75rem 1.25rem 1rem}
 .page-content .md-team.multi-column-info-under-img .teamContent .agent-item .info-container .info-item.agent-name{color:#fff !important;font-size:20px;font-weight:800;margin-bottom:0;line-height:1.25 !important;margin-top:0 !important}
 .page-content .md-team.multi-column-info-under-img .teamContent .agent-item .info-container .info-item.agent-pos{color:#ccc !important;font-size:14px;text-transform:none;margin-bottom:0;letter-spacing:0;line-height:1.25 !important}
 .page-content .md-team.multi-column-info-under-img .teamContent .agent-item .info-container .info-item:not(.agent-pos):not(.agent-name){display:none}
+.page-content .md-team.multi-column-info-under-img .teamContent .agent-item .info-container .view-more-content{display:none}
 .page-content .md-team-desc.team-desc-simple .team-desc-content{margin-bottom:0 !important;background-color:#f8f8f8}
 .page-content .md-team-desc.team-desc-simple .team-desc-content .description:empty{display:none}
 .page-content .md-team-desc.team-desc-simple .desc-content[role=img][aria-label=""]{display:none}
@@ -1131,9 +1134,11 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 .page--join #rs_employee_support .table__key .checkmark--gray:before{border-color:gray}
 .page--join #rs_employee_support .table__key .icon-x--small{min-height:12px}
 .page--join #rs_employee_support .table__key .icon-x:before,.page--join #rs_employee_support .table__key .icon-x:after{background-color:#900}
-.page--join #systems_tools_resources .grid{margin-left:-15px;margin-right:-15px}
-.page--join #systems_tools_resources .grid>div{min-width:180px;padding:25px 15px}
-.page--join #systems_tools_resources .grid__icon{background-image:url("https://cdn.chime.me/image/fs/cmsbuild/2022111/9/original_3ddbe596-d562-4e43-a1b9-8a07d718f491.png");background-size:500%;width:140px;margin:0 auto;border:solid 3px transparent}
+.page--join #systems_tools_resources .grid{margin-left:-10px;margin-right:-10px}
+@media(min-width:481px){.page--join #systems_tools_resources .grid{margin-left:-15px;margin-right:-15px}
+}.page--join #systems_tools_resources .grid>div{min-width:160px;padding:15px 10px}
+@media(min-width:481px){.page--join #systems_tools_resources .grid>div{min-width:180px;padding:25px 15px}
+}.page--join #systems_tools_resources .grid__icon{background-image:url("https://cdn.chime.me/image/fs/cmsbuild/2022111/9/original_3ddbe596-d562-4e43-a1b9-8a07d718f491.png");background-size:500%;width:140px;margin:0 auto;border:solid 3px transparent}
 .page--join #systems_tools_resources .grid__icon--white{background-color:#fff}
 .page--join #systems_tools_resources .grid__icon--gray1{background-color:#d2d2d2}
 .page--join #systems_tools_resources .grid__icon--gray2{background-color:#868686}
@@ -1149,8 +1154,9 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 .page--join #systems_tools_resources .grid__icon--transaction-coordinator{background-position-y:100%;background-position-x:50%}
 .page--join #systems_tools_resources .grid__icon--mentorship{background-position-y:100%;background-position-x:75%}
 .page--join #systems_tools_resources .grid__icon--office{background-position-y:100%;background-position-x:100%}
-.page--join #systems_tools_resources .grid__text{font-size:22px;margin-top:28px;color:#fff}
-.page--join #systems_tools_resources .grid__dropdown{max-width:500px;background:#686868;color:#fff;-webkit-box-shadow:0 1px 12px -2px #000;box-shadow:0 1px 12px -2px #000;text-align:left}
+.page--join #systems_tools_resources .grid__text{font-size:18px;margin-top:18px;color:#fff}
+@media(min-width:481px){.page--join #systems_tools_resources .grid__text{font-size:22px;margin-top:28px}
+}.page--join #systems_tools_resources .grid__dropdown{max-width:500px;background:#686868;color:#fff;-webkit-box-shadow:0 1px 12px -2px #000;box-shadow:0 1px 12px -2px #000;text-align:left}
 .page--join #systems_tools_resources .grid__dropdown p{max-width:800px;margin-left:auto;margin-right:auto}
 .page--join #systems_tools_resources .grid__item{-webkit-transition:all .3s;transition:all .3s;cursor:pointer}
 .page--join #systems_tools_resources .grid__item:hover .grid__icon{-webkit-transition:inherit;transition:inherit;border-color:var(--color-theme)}

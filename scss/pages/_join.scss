@@ -377,12 +377,22 @@
 
     #systems_tools_resources {
         .grid {
-            margin-left: -15px;
-            margin-right: -15px;
-            // position: relative;
+            margin-left: -10px;
+            margin-right: -10px;
+
+            @media (min-width: $breakpoint-xs) {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+
             & > div {
-                min-width: 180px;
-                padding: 25px 15px;
+                min-width: 160px;
+                padding: 15px 10px;
+
+                @media (min-width: $breakpoint-xs) {
+                    min-width: 180px;
+                    padding: 25px 15px;
+                }
             }
 
             &__icon {
@@ -450,9 +460,14 @@
             }
 
             &__text {
-                font-size: 22px;
-                margin-top: 28px;
+                font-size: 18px;
+                margin-top: 18px;
                 color: #fff;
+
+                @media (min-width: $breakpoint-xs) {
+                    font-size: 22px;
+                    margin-top: 28px;
+                }
             }
 
             &__dropdown {

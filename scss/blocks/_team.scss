@@ -110,14 +110,25 @@
         &.multi-column-info-under-img {
             .teamContent {
                 .agents-list {
-                    margin-left: -30px;
-                    margin-right: -30px;
+                    margin-left: 0;
+                    margin-right: 0;
+
+                    @media (min-width: $breakpoint-xs) {
+                        margin-left: -30px;
+                        margin-right: -30px;
+                    }
                 }
                 .agent-item {
                     max-width: 360px;
                     padding-left: 30px;
                     padding-right: 30px;
-                    margin-bottom: 60px;
+                    margin-bottom: 40px;
+
+                    @media (min-width: $breakpoint-xs) {
+                        margin-bottom: 60px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
     
                     .img-box {
                         height: auto !important;
@@ -158,6 +169,10 @@
                             &:not(.agent-pos):not(.agent-name) {
                                 display: none;
                             }
+                        }
+
+                        .view-more-content {
+                            display: none;
                         }
                     }
                 }
