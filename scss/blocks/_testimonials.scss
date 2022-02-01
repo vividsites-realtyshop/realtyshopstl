@@ -160,6 +160,29 @@ body:not(.reviews) {
                                     }
                                 }
 
+                                &:not(:last-child) {
+                                    .testimonial-footer {
+                                        & > div:not(.testimonial-picture) {
+                                            &:only-child {
+                                                padding-left: 150px;
+
+                                                @media (max-width: 960px) AND (min-width: 601px) {
+                                                    padding-top: 120px;
+                                                    padding-left: 0px;
+                                                }
+
+                                                @media (max-width: 600px) {
+                                                    padding-left: 140px;
+                                                }
+            
+                                                @media (max-width: 500px) {
+                                                    padding-left: calc(80px + 12vw);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
                                 .testimonial-footer {
                                     margin-top: 0;
                                     height: auto;
@@ -173,11 +196,11 @@ body:not(.reviews) {
                                         margin-right: 30px;
                                     }
 
-                                    & > div:not(.testimonial-picture) {
-                                        &:only-child {
-                                            padding-left: 150px;
-                                        }
-                                    }
+                                    // & > div:not(.testimonial-picture) {
+                                    //     &:only-child {
+                                    //         padding-left: 150px;
+                                    //     }
+                                    // }
 
                                     .testimonial-star .icon-star-fill {
                                         font-size: 24px;
@@ -197,10 +220,10 @@ body:not(.reviews) {
                                             margin-top: 20px;
                                             min-width: 100%;
 
-                                            &:only-child {
-                                                padding-top: 120px;
-                                                padding-left: 0px;
-                                            }
+                                            // &:only-child {
+                                            //     padding-top: 120px;
+                                            //     padding-left: 0px;
+                                            // }
                                         }
                                     }
 
@@ -209,19 +232,19 @@ body:not(.reviews) {
                                             margin-right: 20px;
                                         }
 
-                                        & > div:not(.testimonial-picture) {
-                                            &:only-child {
-                                                padding-left: 140px;
-                                            }
-                                        }
+                                        // & > div:not(.testimonial-picture) {
+                                        //     &:only-child {
+                                        //         padding-left: 140px;
+                                        //     }
+                                        // }
                                     }
 
                                     @media (max-width: 500px) {
-                                        & > div:not(.testimonial-picture) {
-                                            &:only-child {
-                                                padding-left: calc(80px + 12vw);
-                                            }
-                                        }
+                                        // & > div:not(.testimonial-picture) {
+                                        //     &:only-child {
+                                        //         padding-left: calc(80px + 12vw);
+                                        //     }
+                                        // }
                                         .testimonial-picture {
                                             width: calc(60px + 12vw);
                                             height: calc(60px + 12vw);
