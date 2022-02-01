@@ -8,6 +8,7 @@
 
             .mg-title {
                 font-size: 60px;
+                color: #fff;
 
                 @media (max-width: 1000px) {
                     font-size: calc(20px + 4vw);
@@ -25,7 +26,7 @@
                     @media (max-width: 860px) {
                         width: 33.33% !important;
                     }
-                    @media (max-width: 600px) AND (min-width: 421px) {
+                    @media (max-width: 600px) {
                         width: 50% !important;
                     }
 
@@ -34,11 +35,13 @@
 
                         .mask {
                             background: rgba(0,0,0,0.5) !important;
+                            transition: all 0.3s;
                         }
 
                         .desc-content {
                             display: flex;
                             padding: 4px;
+                            transition: all 0.2s;
                         }
 
                         .style-title-container {
@@ -46,8 +49,8 @@
                                 font-family: var(--font-title);
                                 font-size: 32px;
 
-                                @media (max-width: 1000px) {
-                                    font-size: calc(10px + 2.2vw);
+                                @media (max-width: 1500px) {
+                                    font-size: calc(11px + 1.4vw);
                                 }
                             }
                         }
@@ -61,6 +64,9 @@
 
                             .desc-content {
                                 background: rgba(0,0,0,0.7);
+                                top: 0;
+                                transform: translate(-50%, 0);
+                                transition: all 0.4s;
                             }
                         }
                     }
