@@ -172,14 +172,15 @@ body .page-content *{-webkit-box-sizing:border-box;box-sizing:border-box}
 @media(max-width:1000px){.page-content .md-featured-area.grid-classic .mg-title{font-size:calc(20px + 4vw)}
 }.page-content .md-featured-area.grid-classic .style-container{padding:2px}
 .page-content .md-featured-area.grid-classic .style-container .city-style{width:25% !important;padding:2px !important;margin:0}
-@media(max-width:860px){.page-content .md-featured-area.grid-classic .style-container .city-style{width:33.33%}
-}@media(max-width:600px)and (min-width:421px){.page-content .md-featured-area.grid-classic .style-container .city-style{width:50%}
+@media(max-width:860px){.page-content .md-featured-area.grid-classic .style-container .city-style{width:33.33% !important}
+}@media(max-width:600px)and (min-width:421px){.page-content .md-featured-area.grid-classic .style-container .city-style{width:50% !important}
 }.page-content .md-featured-area.grid-classic .style-container .city-style .bg-img{padding-top:90% !important}
-.page-content .md-featured-area.grid-classic .style-container .city-style .bg-img .mask{background:rgba(0,0,0,.5)}
+.page-content .md-featured-area.grid-classic .style-container .city-style .bg-img .mask{background:rgba(0,0,0,.5) !important}
 .page-content .md-featured-area.grid-classic .style-container .city-style .bg-img .desc-content{display:-webkit-box;display:-ms-flexbox;display:flex;padding:4px}
 .page-content .md-featured-area.grid-classic .style-container .city-style .bg-img .style-title-container .style-title{font-family:var(--font-title);font-size:32px}
 @media(max-width:1000px){.page-content .md-featured-area.grid-classic .style-container .city-style .bg-img .style-title-container .style-title{font-size:calc(10px + 2.2vw)}
-}.page-content .md-featured-area.grid-classic .style-container .city-style:hover .bg-img .desc-content{background:rgba(0,0,0,.7)}
+}.page-content .md-featured-area.grid-classic .style-container .city-style:hover .bg-img .mask{background:rgba(0,0,0,0) !important}
+.page-content .md-featured-area.grid-classic .style-container .city-style:hover .bg-img .desc-content{background:rgba(0,0,0,.7)}
 .page-content .md-featured-area.grid-fashion .style-container .city-style{-webkit-transition:all .2s;transition:all .2s}
 .page-content .md-featured-area.grid-fashion .style-container .city-style .mask{display:block;background-color:#000;opacity:0;-webkit-transition:inherit;transition:inherit}
 .page-content .md-featured-area.grid-fashion .style-container .city-style>.style-title{-webkit-transition:inherit;transition:inherit}
