@@ -167,7 +167,6 @@ body:not(.reviews) {
                                                 padding-left: 150px;
 
                                                 @media (max-width: 960px) AND (min-width: 601px) {
-                                                    padding-top: 120px;
                                                     padding-left: 0px;
                                                 }
 
@@ -220,10 +219,9 @@ body:not(.reviews) {
                                             margin-top: 20px;
                                             min-width: 100%;
 
-                                            // &:only-child {
-                                            //     padding-top: 120px;
-                                            //     padding-left: 0px;
-                                            // }
+                                            &:only-child {
+                                                padding-top: 120px;
+                                            }
                                         }
                                     }
 
