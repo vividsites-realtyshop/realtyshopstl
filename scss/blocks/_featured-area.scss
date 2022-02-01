@@ -50,7 +50,7 @@
                                 font-size: 32px;
 
                                 @media (max-width: 1500px) {
-                                    font-size: calc(11px + 1.4vw);
+                                    font-size: calc(17px + 1vw);
                                 }
                             }
                         }
@@ -59,14 +59,7 @@
                     &:hover {
                         .bg-img {
                             .mask {
-                                background: rgba(0,0,0,0) !important;
-                            }
-
-                            .desc-content {
-                                background: rgba(0,0,0,0.7);
-                                top: 0;
-                                transform: translate(-50%, 0);
-                                transition: all 0.4s;
+                                background: rgba(0,0,0,0.4) !important;
                             }
                         }
                     }
