@@ -1,0 +1,61 @@
+@use "sass:math";
+.page--buyers {
+    @media (max-width: $breakpoint-l - 1) {
+        .stats {
+            padding: 0;
+        }
+        .stat {
+            margin: 0 !important;
+
+            &__inner {
+                padding: 24px 0;
+            }
+        }
+    }
+    @media (min-width: $breakpoint-l) {
+        .stats {
+            font-size: 20px;
+        }
+    }
+    #pre_approval {
+        .vs {
+            position: relative;
+
+            & > div {
+                &:first-of-type {
+                    background: #bcbcbc;
+                    margin-right: 4px;
+                }
+                &:last-of-type {
+                    background: #a1a1a1;
+                }
+            }
+
+            &:before,
+            &:after {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+            &:before {
+                content: "";
+                display: block;
+                background: #000;
+                width: 40px;
+                height: 40px;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            &:after {
+                content: "vs";
+                display: block;
+                font-family: var(--font-title);
+                font-size: 24px;
+                color: #fff;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .cta-trio {
+        padding: 4px;
+    }
+}

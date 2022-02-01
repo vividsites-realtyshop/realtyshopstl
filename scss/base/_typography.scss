@@ -20,6 +20,10 @@ body {
 }
 
 .font {
+    &-smooth {
+        -webkit-font-smoothing: antialiased;
+    }
+
     &-family {
         &--title {
             font-family: var(--font-title);
@@ -96,13 +100,18 @@ body {
         
         &--white {
             color: #fff;
+            // -webkit-font-smoothing: antialiased;
+
+            // * {
+            //     -webkit-font-smoothing: antialiased;
+            // } 
         }
     }
 }
 
 a.font-color--white {
     &:hover {
-        color: $gold;
+        color: var(--color-theme);
     }
 }
 
@@ -114,5 +123,15 @@ hr {
 
     &.color-theme {
         border-color: var(--color-theme);
+    }
+}
+
+.page-content {
+    a {
+        color: var(--color-theme);
+    
+        &:hover {
+            color: var(--color-theme);
+        }
     }
 }

@@ -1,5 +1,69 @@
 .page-content {
     .md-featured-area {
+        &.grid-classic {
+            .mg-container {
+                width: 100%;
+                padding-top: 36px !important;
+            }
+
+            .mg-title {
+                font-size: 60px;
+
+                @media (max-width: 1000px) {
+                    font-size: calc(20px + 4vw);
+                }
+            }
+
+            .style-container {
+                padding: 2px;
+
+                .city-style {
+                    width: 25% !important;
+                    padding: 2px !important;
+                    margin: 0;
+
+                    @media (max-width: 860px) {
+                        width: 33.33%;
+                    }
+                    @media (max-width: 600px) AND (min-width: 421px) {
+                        width: 50%;
+                    }
+
+                    .bg-img {
+                        padding-top: 90% !important;
+                        
+                        .mask {
+                            background: rgba(0,0,0,0.5);
+
+                        }
+
+                        .desc-content {
+                            display: flex;
+                            padding: 4px;
+                        }
+
+                        .style-title-container {
+                            .style-title {
+                                font-family: var(--font-title);
+                                font-size: 32px;
+
+                                @media (max-width: 1000px) {
+                                    font-size: calc(10px + 2.2vw);
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .bg-img {
+                            .desc-content {
+                                background: rgba(0,0,0,0.7);
+                            }
+                        }
+                    }
+                }
+            }
+        }
         &.grid-fashion {
             .style-container {
                 .city-style {

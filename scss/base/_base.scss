@@ -11,4 +11,10 @@ body {
             white-space: initial;
         }
     }
+
+    .page-content {
+        * {
+            box-sizing: border-box;
+        }
+    }
 }
