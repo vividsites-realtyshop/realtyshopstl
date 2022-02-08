@@ -36,6 +36,15 @@
 			padding-bottom: 56.25%;
 		}
 	}
+
+	&--content {
+		&:before {
+			content: attr(data-before);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
 }
 
 .after {

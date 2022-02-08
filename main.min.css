@@ -951,6 +951,7 @@ body.rs-offcanvas-inview{overflow:hidden}
 .before--circle{border-radius:100%}
 .before--circle:before{padding-bottom:100%}
 .before--video:before{padding-bottom:56.25%}
+.before--content:before{content:attr(data-before);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .after:after{content:"";display:block;width:100%}
 .after--square:after{padding-bottom:100%}
 @media(min-width:640px){.before\@s:before{content:"";display:block;width:100%}
@@ -1062,6 +1063,8 @@ body.has-uikit .uk-grid-xsmall>*{padding-left:4px}
 body.has-uikit .uk-card-primary{background-color:var(--color-theme)}
 body.has-uikit .uk-card-primary.uk-card-hover{-webkit-transition:all .2s;transition:all .2s}
 body.has-uikit .uk-card-primary.uk-card-hover:hover{background-color:#ffb821}
+body.has-uikit .uk-card-secondary{background-color:#000}
+body.has-uikit .uk-card--down-arrow:after{content:"";display:block;width:40px;height:40px;background-color:inherit;position:absolute;left:50%;bottom:-20px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transition:all .5s ease .5s;transition:all .5s ease .5s}
 body.has-uikit a.uk-card-hover:hover{text-decoration:none}
 body.contact header+.md-lead-form.standard .media-content .title-text{background:transparent !important}
 body.contact .md-agent-contact{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
@@ -1077,7 +1080,10 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 .page--buyers .stat{margin:0 !important}
 .page--buyers .stat__inner{padding:24px 0}
 }@media(min-width:1200px){.page--buyers .stats{font-size:20px}
-}.page--buyers #pre_approval .vs{position:relative}
+}.page--buyers #pre_approval .uk-card .before--content{padding-left:40px}
+.page--buyers #pre_approval .uk-card .before--content:before{background:var(--color-theme);font-size:18px;width:30px;height:30px;border-radius:100%;position:absolute;top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.page--buyers #pre_approval .uk-card--down-arrow:not(.uk-scrollspy-inview):after{opacity:0;bottom:0}
+.page--buyers #pre_approval .vs{position:relative}
 .page--buyers #pre_approval .vs>div:first-of-type{padding-bottom:2px}
 .page--buyers #pre_approval .vs>div:first-of-type>div{background:#bcbcbc}
 @media(min-width:640px){.page--buyers #pre_approval .vs>div:first-of-type{padding-bottom:0;padding-right:2px}
