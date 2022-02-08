@@ -187,4 +187,23 @@ body.has-uikit {
             }
         }
     }
+
+    .uk-card {
+        &-primary {
+            background-color: var(--color-theme);
+
+            &.uk-card-hover {
+                transition: all 0.2s;
+                
+                &:hover {
+                    background-color: darken($gold, 5%);
+                }
+            }
+        }
+    }
+    a.uk-card-hover {
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }

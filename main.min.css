@@ -39,10 +39,10 @@ body{font-family:var(--font-normal)}
 @media(max-width:1000px){.font-size--xxxl{font-size:calc(24px + 4vw)}
 }.font-size--xxxxl{font-size:4.5rem;padding-top:.1em;line-height:.7}
 @media(max-width:1000px){.font-size--xxxxl{font-size:calc(24px + 4.8vw)}
-}.font-color--theme{color:var(--color-theme)}
-.font-color--black{color:#000}
-.font-color--light{color:#ccc}
-.font-color--white{color:#fff}
+}.font-color--theme{color:var(--color-theme) !important}
+.font-color--black{color:#000 !important}
+.font-color--light{color:#ccc !important}
+.font-color--white{color:#fff !important}
 a.font-color--white:hover{color:var(--color-theme)}
 hr.short{border-width:3px;max-width:72px}
 hr.color-theme{border-color:var(--color-theme)}
@@ -1059,6 +1059,10 @@ body.has-uikit .uk-overlay-primary{background:rgba(0,0,0,.5)}
 body.has-uikit .uk-overlay-dark{background:rgba(0,0,0,.7)}
 body.has-uikit .uk-grid-xsmall{margin-left:-4px}
 body.has-uikit .uk-grid-xsmall>*{padding-left:4px}
+body.has-uikit .uk-card-primary{background-color:var(--color-theme)}
+body.has-uikit .uk-card-primary.uk-card-hover{-webkit-transition:all .2s;transition:all .2s}
+body.has-uikit .uk-card-primary.uk-card-hover:hover{background-color:#ffb821}
+body.has-uikit a.uk-card-hover:hover{text-decoration:none}
 body.contact header+.md-lead-form.standard .media-content .title-text{background:transparent !important}
 body.contact .md-agent-contact{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
 body.contact .md-agent-contact .contact-box{min-width:100%;-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1;background:#222;margin:0}

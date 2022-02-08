@@ -87,19 +87,19 @@ body {
 
     &-color {
         &--theme {
-            color: var(--color-theme);
+            color: var(--color-theme) !important;
         }
 
         &--black {
-            color: #000;
+            color: #000 !important;
         }
         
         &--light {
-            color: #ccc;
+            color: #ccc !important;
         }
         
         &--white {
-            color: #fff;
+            color: #fff !important;
             // -webkit-font-smoothing: antialiased;
 
             // * {
