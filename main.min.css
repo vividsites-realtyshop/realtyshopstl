@@ -1080,6 +1080,8 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 .page--buyers .stat{margin:0 !important}
 .page--buyers .stat__inner{padding:24px 0}
 }@media(min-width:1200px){.page--buyers .stats{font-size:20px}
+}@media(min-width:1200px){.page--buyers #what_is_agency .uk-slider{margin-left:-1px}
+}@media(max-width:1199px){.page--buyers #what_is_agency .uk-slider-items>div{min-height:70vw}
 }.page--buyers #pre_approval .uk-card .before--content{padding-left:40px}
 .page--buyers #pre_approval .uk-card .before--content:before{background:var(--color-theme);font-size:18px;width:30px;height:30px;border-radius:100%;position:absolute;top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
 .page--buyers #pre_approval .uk-card--down-arrow:not(.uk-scrollspy-inview):after{opacity:0;bottom:0}

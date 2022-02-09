@@ -17,6 +17,20 @@
             font-size: 20px;
         }
     }
+    #what_is_agency {
+        @media (min-width: $breakpoint-l) {
+            .uk-slider {
+                margin-left: -1px;
+            }
+        }
+        @media (max-width: $breakpoint-l - 1) {
+            .uk-slider-items {
+                & > div {
+                    min-height: 70vw;
+                }
+            }
+        }
+    }
     #pre_approval {
         .uk-card {
             .before--content {
