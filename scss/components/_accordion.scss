@@ -1,0 +1,98 @@
+.rs-accordion {
+    .background-color--dark & {
+        li {
+            .uk-accordion-title {
+                display: flex;
+                align-items: center;
+                background: $gray;
+                color: #fff;
+                font-family: var(--font-title);
+                font-size: 22px;
+                line-height: 1;
+                padding-right: 48px;
+                position: relative;
+
+                @media (min-width: $breakpoint-s) {
+                    padding-right: 60px;
+                }
+
+                &:before {
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    display: block;
+                    border: solid 3px var(--color-theme);
+                    border-top: none;
+                    border-left: none;
+                    position: absolute;
+                    right: 20px;
+                    top: 38%;
+                    transform: rotate(45deg);
+                    transition: all 0.3s;
+
+                    @media (min-width: $breakpoint-s) {
+                        right: 32px;
+                    }
+                }
+
+                &:after {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: var(--color-theme);
+                    font-size: 40px;
+                    text-align: center;
+                    min-width: 48px;
+                    min-height: 70px;
+                    margin-right: 20px;
+                    order: -1;
+                    
+                    @media (min-width: $breakpoint-s) {
+                        font-size: 48px;
+                        min-width: 64px;
+                        margin-right: 32px;
+                    }
+                }
+            }
+
+            &.uk-open {
+                .uk-accordion-title {
+                    &:before {
+                        top: 43%;
+                        transform: rotate(225deg);
+                    }
+                }
+            }
+
+            @for $i from 1 to 8 {
+                &:nth-of-type(#{$i}) {
+                    .uk-accordion-title {
+                        &:after {
+                            content: "#{$i}";
+                        }
+                    }
+                } 
+            }
+
+            .uk-accordion-content {
+                margin-top: 0;
+                background: $gray-dk;
+                padding: 32px;
+
+                @media (min-width: $breakpoint-s) {
+                    padding-left: 64px;
+                }
+
+                & > div {
+                    @media (min-width: $breakpoint-s) {
+                        margin-left: 32px;
+                    }
+                }
+            }
+        }
+
+        & > :nth-child(n+2) {
+            margin-top: 2px;
+        }
+    }
+}

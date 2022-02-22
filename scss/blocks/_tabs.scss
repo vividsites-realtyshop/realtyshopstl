@@ -1,68 +1,229 @@
 .page-content {
+    .uk-switcher {
+        & > li {
+            padding: 4rem 20px 5rem;
+
+            @media (min-width: $breakpoint-m) {
+                padding: 4rem 30px 5rem;
+            }
+        }
+    }
     .uk-tab {
         background: #ddd;
         margin-left: 0;
 
-        & > * {
-            padding-left: 0;
-
-            &:not(:first-child) {
-                border-left: solid 1px #eee;
+        &:not(.uk-tab-left) {
+            & > * {
+                padding-left: 0;
+    
+                &:not(:first-child) {
+                    border-left: solid 1px #eee;
+                }
+            }
+        
+            li {
+                background-color: var(--color-theme);
+                position: relative;
+                transition: background-color 0.3s;
+    
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 0px;
+                    height: 0px;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    border-left: solid 15px transparent;
+                    border-right: solid 15px transparent;
+                    transform: translateX(-50%);
+                    transition: all 0.3s;
+                }
+    
+                a {
+                    @extend .font-family--title;
+                    font-size: 22px;
+                    color: black;
+                    min-height: 48px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 16px 32px 14px;
+                    line-height: 0.9;
+                    position: relative;
+                    z-index: 2;
+                }
+                @media (max-width: $breakpoint-s - 1) {
+                    flex: 1 1 auto;
+                    
+                    a {
+                        font-size: 20px;
+                        padding: 12px 12px 10px; 
+                    }
+                }
+    
+                &.uk-active {
+                    background-color: #eee;
+    
+                    &:before {
+                        border-top: solid #eee 15px;
+                    }
+    
+                    a {
+                        color: #666;
+                        border: none;
+    
+                    }
+                }
             }
         }
-    
-        li {
-            background-color: var(--color-theme);
-            position: relative;
-            transition: background-color 0.3s;
+    }
 
-            &:before {
-                content: '';
-                display: block;
-                width: 0px;
-                height: 0px;
-                position: absolute;
-                top: 100%;
-                left: 50%;
-                border-left: solid 15px transparent;
-                border-right: solid 15px transparent;
-                transform: translateX(-50%);
-                transition: all 0.3s;
-            }
-
-            a {
-                @extend .font-family--title;
-                font-size: 22px;
-                color: black;
-                min-height: 48px;
+    .rs-tab {
+        &--left {
+            @media (min-width: $breakpoint-s) {
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 16px 32px 14px;
-                line-height: 0.9;
-                position: relative;
-                z-index: 2;
             }
-            @media (max-width: $breakpoint-s - 1) {
-                flex: 1 1 auto;
-                
-                a {
-                    font-size: 20px;
-                    padding: 12px 12px 10px; 
+
+            .rs-tab__navigation {
+                @media (min-width: $breakpoint-s) {
+                    max-width: 300px;
+                }
+
+                @media (min-width: $breakpoint-m) {
+                    max-width: 375px;
+                }
+
+                .uk-tab {
+                    li {
+                        min-width: 100%;
+                    }
+                    @media (min-width: $breakpoint-s) {
+                        flex-direction: column;
+
+                    }
                 }
             }
 
-            &.uk-active {
-                background-color: #eee;
+            .uk-switcher {
+                & > li {
+                    padding: 72px 64px 72px 72px;
+        
+                    @media (max-width: 1000px) {
+                        padding: 7.2vw 6.4vw 7.2vw 7.2vw;
+                    }
 
+                    @media (max-width: $breakpoint-s - 1) {
+                        padding: 30px 20px;
+                    }
+                }
+            }
+
+            .uk-tab {
+                background-color: transparent;
+                margin-right: 2px;
+    
                 &:before {
-                    border-top: solid #eee 15px;
+                    display: none;
                 }
+    
+                li {
+                    border: none !important;
+                    
+                    &:not(:last-child) {
+                        margin-bottom: 2px;
+                    }
+    
+                    // &:before,
+                    // &:after {
+                    //     content: "";
+                    //     display: block;
+                    //     width: 35px;
+                    //     height: calc(50% + 1px);
+                    //     position: absolute;
+                    //     border-right: solid 2px $charcoal;
+                    //     background-color: inherit;
+                    //     right: 0;
+                    //     transition: all 0.2s;
+                    // }
+    
+                    // &:before {
+                    //     top: -1px;
+                    //     transform-origin: 100% 0;
+                    // }
+    
+                    // &:after {
+                    //     bottom: -1px;
+                    //     transform-origin: 100% 100%;
+                    // }
 
-                a {
-                    color: #666;
-                    border: none;
+                    &:before {
+                        display: none;
+                    }
+    
+                    &:after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        border: solid 35px transparent;
+                        border-left: solid 0px $gray;
+                        border-right: none !important;
+                        left: 100%;
+                        top: 0;
+                        transition: border-width 0.1s;
+                    }
+    
+                    a {
+                        background-color: $gray;
+                        display: flex;
+                        justify-content: flex-start;
+                        text-align: left;
+                        align-items: center;
+                        @extend .font-family--title;
+                        font-size: 18px;
+                        color: #fff;
+                        padding: 12px 20px;
 
+                        @media (min-width: $breakpoint-s) {
+                            min-height: 70px;
+                            padding: 20px;
+                        }
+
+                        @media (min-width: $breakpoint-m) {
+                            font-size: 22px;
+                            padding: 20px 30px;
+                        }
+                    }
+    
+                    &.uk-active {
+                        position: relative;
+    
+                        // &:before,
+                        // &:after {
+                        //     height: 57%;
+                        // }
+    
+                        // &:before {
+                        //     transform: rotate(-30deg);
+                        // }
+    
+                        // &:after {
+                        //     transform: rotate(30deg);
+                        // }
+    
+                        &:after {
+                            @media (min-width: $breakpoint-s) {
+                                border-left-width: 30px;
+                                border-left-color: var(--color-theme);
+                            }
+                        }
+        
+                        a {
+                            background-color: var(--color-theme);
+                            border: none;
+                            color: #fff;
+                        }
+                    }
                 }
             }
         }

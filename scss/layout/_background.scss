@@ -16,7 +16,11 @@
 		}
 
 		&--dark {
-			background: #222 !important;
+			background: $charcoal !important;
+		}
+
+		&--gray-dk {
+			background: $gray-dk !important;
 		}
 
 		// Black

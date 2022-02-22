@@ -31,6 +31,80 @@
             }
         }
     }
+    #non-negotiables {
+        & > div {
+            @media (min-width: $breakpoint-s) {
+                min-height: 110px;
+            }
+        }
+    }
+    #contract_negotiation {
+        .rs-tab__navigation {
+            position: relative;
+            z-index: 3;
+
+            li {
+                transition: all 0.4s;
+
+                @for $i from 1 to 9 {
+                    &:nth-child(#{$i}) {
+                        transition-delay: 300ms * $i;
+                    }                        
+                }
+            }
+        }
+        .rs-tab__content {
+            #contingencies {
+                transition: all 1s ease 1.6s;
+            }
+        }
+        &:not(.uk-scrollspy-inview) {
+            .rs-tab__navigation {
+                li {
+                    opacity: 0;
+                    transform: translateX(-20px);
+
+                    &.uk-active {
+                        &:after {
+                            border-left-width: 0 !important;
+                        }
+                    }
+                }
+            }
+            .rs-tab__content {
+                overflow: hidden;
+
+                #contingencies {
+                    transform: translateY(-100%);
+                }
+            }
+        } 
+    }
+    #website_tools {
+        .tool {
+            &__image {
+                width: 80px;
+                background-image: url("https://vividsites-realtyshop.github.io/realtyshopstl/img/buy-property-selection.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    padding-bottom: 100%;
+                }
+
+                &--save {
+                    background-position-y: 0;
+                }
+
+                &--follow {
+                    background-position-y: 100%;
+                }
+            }
+        }
+    }
     #pre_approval {
         .uk-card {
             .before--content {

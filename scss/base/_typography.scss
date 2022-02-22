@@ -34,6 +34,10 @@ body {
     }
 
     &-size {
+        &--xs {
+            font-size: 0.875rem;
+        }
+        
         &--s {
             font-size: 1rem;
         }
