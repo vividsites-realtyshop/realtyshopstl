@@ -1,6 +1,6 @@
 @use "sass:math";
 
-@for $i from 1 through 12 {
+@for $i from 1 through 14 {
 	$max: $i * 100;
 	.width__max--#{$max} {
 		max-width: $max + 0px !important;

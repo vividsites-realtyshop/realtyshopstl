@@ -37,6 +37,14 @@
 		}
 	}
 
+	&--magazine {
+		@extend .before;
+
+		&:before {
+			padding-bottom: 132%;
+		}
+	}
+
 	&--content {
 		&:before {
 			content: attr(data-before);
