@@ -43,11 +43,13 @@
     .house-grid-item,
     .house-list-item {
         .house-status {
-            font-size: 12px !important;
+            font-family: var(--font-title) !important;
+            font-size: 15px !important;
+            letter-spacing: 0.05em !important;
             height: auto !important;
             line-height: normal !important;
-            padding: 4px 8px !important;
-            border-radius: 0 !important;
+            padding: 3px 12px 1px !important;
+            border-radius: 5px !important;
 
             &.new,
             &.open-house {

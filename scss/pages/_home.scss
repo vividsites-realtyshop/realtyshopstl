@@ -26,10 +26,39 @@
     .md-house {
         .house-grid.template4 {
             justify-content: space-around;
-            padding: 10px;
+            padding: 2px;
 
             .house-grid-item {
-                margin: 10px;
+                margin: 2px;
+                width: calc(50% - 4px) !important;
+
+                &.more-link {
+                    display: none !important;
+                }
+
+                .house-detail {
+                    .house-address {
+                        font-family: var(--font-title);
+                        font-size: 24px;
+                        line-height: 1.25;
+                        height: auto;
+                    }
+
+                    .house-price {
+                        font-size: 32px;
+                        order: 9;
+                        margin-bottom: 0;
+                    }
+    
+                    .house-basic {
+                        display: block !important;
+                        order: 8;
+                        margin-top: 0;
+                    }
+                    .house-mls-logo {
+                        display: none !important;
+                    }
+                }
             }
         }
     }
@@ -124,7 +153,11 @@
             .house-grid {
                 &.template4 {
                     .house-grid-item {
-                        width: 50%;
+                        width: 100%;
+
+                        .house-preview {
+                            min-height: 300px;
+                        }
 
                         &.more-link {
                             background: transparent;
