@@ -74,14 +74,20 @@
         .grid-item {
             .uk-cover-container {
                 .uk-cover-container {
-                    transition: all 0.3s;
+                    transition: all 0.4s;
                 }
+            }
+            .uk-overlay-primary {
+                transition: all 0.4s;
             }
             &:hover {
                 .uk-cover-container {
                     .uk-cover-container {
-                        transform: scale(1.05);
+                        transform: scale(1.08);
                     }
+                }
+                .uk-overlay-primary {
+                    background: rgba(0,0,0,0.7);
                 }
             }
         }
