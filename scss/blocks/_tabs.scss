@@ -157,10 +157,7 @@
                     //     transform-origin: 100% 100%;
                     // }
 
-                    &:before {
-                        display: none;
-                    }
-    
+                    &:before,
                     &:after {
                         content: "";
                         display: block;
@@ -171,6 +168,10 @@
                         left: 100%;
                         top: 0;
                         transition: border-width 0.1s;
+                    }
+
+                    &:before {
+                        margin-left: -1px;
                     }
     
                     a {
@@ -211,6 +212,7 @@
                         //     transform: rotate(30deg);
                         // }
     
+                        &:before,
                         &:after {
                             @media (min-width: $breakpoint-s) {
                                 border-left-width: 30px;

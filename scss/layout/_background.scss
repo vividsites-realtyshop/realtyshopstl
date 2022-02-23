@@ -7,20 +7,20 @@
 	&-color {
 		// Light
 		&--light {
-			background: $gray-lt !important;
+			background-color: $gray-lt !important;
 		}
 
 		// Theme
 		&--theme {
-			background: var(--color-theme) !important;
+			background-color: var(--color-theme) !important;
 		}
 
 		&--dark {
-			background: $charcoal !important;
+			background-color: $charcoal !important;
 		}
 
 		&--gray-dk {
-			background: $gray-dk !important;
+			background-color: $gray-dk !important;
 		}
 
 		// Black

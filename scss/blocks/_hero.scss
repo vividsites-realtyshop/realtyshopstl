@@ -1,6 +1,6 @@
 body {
     .rs-hero {
-        height: 40vw;
+        height: 45vw;
         min-height: 500px;
         max-height: 700px;
     }
@@ -17,7 +17,6 @@ body {
     
                         .search-bar {
                             position: static;
-                            background-color: rgba(14,18,34,0.85) !important;
     
                             .search-category {
                                 .keyword-submit {
@@ -62,8 +61,8 @@ body {
                                 font-family: var(--font-medium);
                                 font-size: 16px;
                                 cursor: pointer;
-                                background-color: var(--mg-button-background, #03c9ff);
-                                border-color: var(--mg-button-background, #03c9ff);
+                                background-color: var(--mg-button-background);
+                                border-color: var(--mg-button-background);
                                 color: var(--mg-button-color, #fff);
                                 float: right;
                                 padding: 0 3rem;

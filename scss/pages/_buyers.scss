@@ -65,6 +65,7 @@
                     transform: translateX(-20px);
 
                     &.uk-active {
+                        &:before,
                         &:after {
                             border-left-width: 0 !important;
                         }

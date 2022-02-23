@@ -1,4 +1,5 @@
 .rs-button {
+    display: inline-block;
     font-size: 14px;
     font-weight: normal;
     background: $gold;
@@ -24,6 +25,23 @@
 
         &:hover {
             background: transparent;
+        }
+    }
+
+    &--featured {
+        @include blockText;
+        font-size: 40px;
+        background: transparent;
+        border: solid 2px var(--color-theme);
+        color: var(--color-theme) !important;
+        padding: 0.75em !important;
+
+        @media (max-width: 1000px) {
+            font-size: calc(10px + 3vw);
+        }
+
+        &:hover {
+            color: #fff !important;
         }
     }
 }
