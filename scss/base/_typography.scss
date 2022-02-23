@@ -37,7 +37,7 @@ body {
         &--xs {
             font-size: 0.875rem;
         }
-        
+
         &--s {
             font-size: 1rem;
         }
@@ -85,6 +85,16 @@ body {
 
             @media (max-width: 1000px) {
                 font-size: calc(24px + 4.8vw);
+            }
+        }
+
+        &--xxxxxl {
+            font-size: 5.75rem;
+            padding-top: 0.1em;
+            line-height: 0.7;
+
+            @media (max-width: 1000px) {
+                font-size: calc(24px + 6.8vw);
             }
         }
     }

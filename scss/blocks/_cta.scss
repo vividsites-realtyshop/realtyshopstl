@@ -63,4 +63,12 @@
             }
         }
     }
+
+    .cta-trio {
+        padding: 4px;
+
+        & > .uk-grid-margin {
+            margin-top: 4px !important;
+        }
+    }
 }

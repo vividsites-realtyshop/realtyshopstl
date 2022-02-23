@@ -40,6 +40,8 @@ body{font-family:var(--font-normal)}
 @media(max-width:1000px){.font-size--xxxl{font-size:calc(24px + 4vw)}
 }.font-size--xxxxl{font-size:4.5rem;padding-top:.1em;line-height:.7}
 @media(max-width:1000px){.font-size--xxxxl{font-size:calc(24px + 4.8vw)}
+}.font-size--xxxxxl{font-size:5.75rem;padding-top:.1em;line-height:.7}
+@media(max-width:1000px){.font-size--xxxxxl{font-size:calc(24px + 6.8vw)}
 }.font-color--theme{color:var(--color-theme) !important}
 .font-color--black{color:#000 !important}
 .font-color--light{color:#ccc !important}
@@ -186,7 +188,9 @@ body .page-content *{-webkit-box-sizing:border-box;box-sizing:border-box}
 .page-content .md-cta-multiple-column.one-bg-two-column .content .card .description{color:#222;margin-bottom:0}
 .page-content .md-cta-multiple-column.one-bg-two-column .content .card .button:first-child{margin-top:0}
 @media(min-width:640px){.page-content header+.md-cta-tc-sc .copy-column{padding-top:calc(81px + 40px);padding-bottom:60px}
-}.page-content .md-featured-area.grid-classic .mg-container{width:100%;padding-top:36px !important}
+}.page-content .cta-trio{padding:4px}
+.page-content .cta-trio>.uk-grid-margin{margin-top:4px !important}
+.page-content .md-featured-area.grid-classic .mg-container{width:100%;padding-top:36px !important}
 .page-content .md-featured-area.grid-classic .mg-title{font-size:60px;color:#fff}
 @media(max-width:1000px){.page-content .md-featured-area.grid-classic .mg-title{font-size:calc(20px + 4vw)}
 }.page-content .md-featured-area.grid-classic .style-container{padding:2px;margin:0 !important;width:100% !important}
@@ -1157,8 +1161,6 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 }.page--buyers #pre_approval .vs .icon--vs:before,.page--buyers #pre_approval .vs .icon--vs:after{position:absolute;top:50%;left:50%}
 .page--buyers #pre_approval .vs .icon--vs:before{content:"";display:block;background:#000;width:40px;height:40px;-webkit-transform:translate(-50%,-50%) rotate(45deg);transform:translate(-50%,-50%) rotate(45deg)}
 .page--buyers #pre_approval .vs .icon--vs:after{content:"vs";display:block;font-family:var(--font-title);font-size:24px;color:#fff;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
-.page--buyers .cta-trio{padding:4px}
-.page--buyers .cta-trio>.uk-grid-margin{margin-top:4px !important}
 @media(max-width:1080px){.home .md-hero .search-bar{background:#222}
 }.home .md-cta-sc.standard .single-picture,.home .md-banner.standard .single-picture{background-attachment:fixed}
 .home .md-banner .banner,.home .md-hero .banner,.home .md-cta-sc .banner{background-image:linear-gradient(-45deg,#222,#666);background-size:400% 400%;-webkit-animation-duration:4s;animation-duration:4s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:loadingbg;animation-name:loadingbg;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
