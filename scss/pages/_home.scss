@@ -31,6 +31,8 @@
             .house-grid-item {
                 margin: 2px;
                 width: calc(50% - 4px) !important;
+                height: 32vw;
+                min-height: 300px;
 
                 &.more-link {
                     display: none !important;
@@ -155,7 +157,7 @@
             .house-grid {
                 &.template4 {
                     .house-grid-item {
-                        width: 100%;
+                        width: 100% !important;
 
                         .house-preview {
                             min-height: 300px;

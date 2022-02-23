@@ -1175,7 +1175,7 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 }.home .md-cta-sc.standard .single-picture,.home .md-banner.standard .single-picture{background-attachment:fixed}
 .home .md-banner .banner,.home .md-hero .banner,.home .md-cta-sc .banner{background-image:linear-gradient(-45deg,#222,#666);background-size:400% 400%;-webkit-animation-duration:4s;animation-duration:4s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:loadingbg;animation-name:loadingbg;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
 .home .md-house .house-grid.template4{-ms-flex-pack:distribute;justify-content:space-around;padding:2px}
-.home .md-house .house-grid.template4 .house-grid-item{margin:2px;width:calc(50% - 4px) !important}
+.home .md-house .house-grid.template4 .house-grid-item{margin:2px;width:calc(50% - 4px) !important;height:32vw;min-height:300px}
 .home .md-house .house-grid.template4 .house-grid-item.more-link{display:none !important}
 .home .md-house .house-grid.template4 .house-grid-item .house-detail .house-address{font-family:var(--font-title);font-size:24px;line-height:1.25;height:auto;margin-bottom:0 !important}
 .home .md-house .house-grid.template4 .house-grid-item .house-detail .house-price{font-size:32px;-webkit-box-ordinal-group:10;-ms-flex-order:9;order:9;margin-bottom:0}
@@ -1198,7 +1198,7 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 .home .md-featured-area.grid-fashion .style-container .city-wrapper .info .pc-content{margin-bottom:0}
 .home .md-featured-area.grid-fashion .style-container .city-wrapper .info .pc-content .style-title{font-size:20px}
 .home .md-featured-area.grid-fashion .style-container .city-wrapper .info .read-more{display:none}
-.home .md-house .house-grid.template4 .house-grid-item{width:100%}
+.home .md-house .house-grid.template4 .house-grid-item{width:100% !important}
 .home .md-house .house-grid.template4 .house-grid-item .house-preview{min-height:300px}
 .home .md-house .house-grid.template4 .house-grid-item.more-link{background:transparent;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;padding:20px 0 40px}
 .home .md-house .house-grid.template4 .house-grid-item.more-link a{color:#fff !important;background:transparent;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;border:solid 1px #fff;width:auto;height:auto;max-width:100%}
