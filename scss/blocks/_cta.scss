@@ -70,5 +70,20 @@
         & > .uk-grid-margin {
             margin-top: 4px !important;
         }
+
+        .grid-item {
+            .uk-cover-container {
+                .uk-cover-container {
+                    transition: all 0.3s;
+                }
+            }
+            &:hover {
+                .uk-cover-container {
+                    .uk-cover-container {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
     }
 }
