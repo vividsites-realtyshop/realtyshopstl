@@ -1177,10 +1177,10 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 .home .md-house .house-grid.template4{-ms-flex-pack:distribute;justify-content:space-around;padding:2px}
 .home .md-house .house-grid.template4 .house-grid-item{margin:2px;width:calc(50% - 4px) !important}
 .home .md-house .house-grid.template4 .house-grid-item.more-link{display:none !important}
-.home .md-house .house-grid.template4 .house-grid-item .house-detail .house-address{font-family:var(--font-title);font-size:24px;line-height:1.25;height:auto}
+.home .md-house .house-grid.template4 .house-grid-item .house-detail .house-address{font-family:var(--font-title);font-size:24px;line-height:1.25;height:auto;margin-bottom:0 !important}
 .home .md-house .house-grid.template4 .house-grid-item .house-detail .house-price{font-size:32px;-webkit-box-ordinal-group:10;-ms-flex-order:9;order:9;margin-bottom:0}
 .home .md-house .house-grid.template4 .house-grid-item .house-detail .house-basic{display:block !important;-webkit-box-ordinal-group:9;-ms-flex-order:8;order:8;margin-top:0}
-.home .md-house .house-grid.template4 .house-grid-item .house-detail .house-mls-logo{display:none !important}
+.home .md-house .house-grid.template4 .house-grid-item .house-detail .house-info-detail,.home .md-house .house-grid.template4 .house-grid-item .house-detail .house-mls-logo{display:none !important}
 .home .md-house.grid.template1{background-color:#222;background-image:url("https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png") !important;background-size:auto;background-repeat:repeat;padding-bottom:90px}
 .home .md-featured-area.grid-fashion{background-color:#222 !important;background-image:url("https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png") !important;background-size:auto !important;background-repeat:repeat !important;padding-bottom:40px}
 .home .house-grid-item.template4 .mask .house-detail{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),color-stop(25%,rgba(0,0,0,0.4)),to(rgba(0,0,0,0.8)));background-image:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.4) 25%,rgba(0,0,0,0.8) 100%)}
