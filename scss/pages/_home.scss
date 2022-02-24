@@ -113,6 +113,18 @@
         .md-featured-area.grid-fashion .city-wrapper:nth-of-type(9n) {display: none !important;}
     }
 
+    @media only screen AND (max-width: 800px) {
+        .house-grid {
+            .gallery {
+                a.house-grid-item {
+                    &:last-of-type {
+                        display: block !important;
+                    }
+                }
+            }
+        }
+    }
+
     @media (max-width: 600px) {
         .md-featured-area.grid-fashion {
             .style-container {
@@ -158,6 +170,7 @@
                 &.template4 {
                     .house-grid-item {
                         width: 100% !important;
+                        height: auto;
 
                         .house-preview {
                             min-height: 300px;

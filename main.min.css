@@ -1190,6 +1190,7 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 @media(min-width:1081px){.home .md-featured-area.grid-fashion .mg-container{width:1200px}
 .home .md-featured-area.grid-fashion .style-container .city-wrapper{width:25%}
 .home .md-featured-area.grid-fashion .city-wrapper:nth-of-type(9n){display:none !important}
+}@media only screen and (max-width:800px){.home .house-grid .gallery a.house-grid-item:last-of-type{display:block !important}
 }@media(max-width:600px){.home .md-featured-area.grid-fashion .style-container{padding:5px}
 .home .md-featured-area.grid-fashion .style-container .city-wrapper{width:33.333%;padding:5px}
 .home .md-featured-area.grid-fashion .style-container .city-wrapper .background{height:auto}
@@ -1198,7 +1199,7 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 .home .md-featured-area.grid-fashion .style-container .city-wrapper .info .pc-content{margin-bottom:0}
 .home .md-featured-area.grid-fashion .style-container .city-wrapper .info .pc-content .style-title{font-size:20px}
 .home .md-featured-area.grid-fashion .style-container .city-wrapper .info .read-more{display:none}
-.home .md-house .house-grid.template4 .house-grid-item{width:100% !important}
+.home .md-house .house-grid.template4 .house-grid-item{width:100% !important;height:auto}
 .home .md-house .house-grid.template4 .house-grid-item .house-preview{min-height:300px}
 .home .md-house .house-grid.template4 .house-grid-item.more-link{background:transparent;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;padding:20px 0 40px}
 .home .md-house .house-grid.template4 .house-grid-item.more-link a{color:#fff !important;background:transparent;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;border:solid 1px #fff;width:auto;height:auto;max-width:100%}
