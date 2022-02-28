@@ -1,5 +1,74 @@
 .page-content {
     .md-calculator {
+        .mg-title {
+            @extend .font-size--xxl;
+            @extend .margin-bottom-l
+        }
+
+        &.mortgage {
+            .cal-form {
+                .cal-form-item {
+                    label {
+                        font-size: 15px;
+                        line-height: 1;
+                        font-weight: 600;
+                        color: $gray;
+                        margin-bottom: 6px;
+                    }
+
+                    .input {
+                        color: $gray;
+                        font-size: 15px;
+
+                        &:not(:first-of-type) {
+                            input {
+                                border-left: 0;
+                            }
+                        }
+
+                        .prefix {
+                            color: inherit;
+                            font-size: inherit;
+                        }
+                        input {
+                            font-size: inherit;
+                            height: 48px;
+                            border-radius: 0;
+                            color: inherit;
+                        }
+                    }
+                }
+            }
+
+            .cal-result {
+                .tab {
+                    .tab-item {
+                        font-size: 15px;
+                        line-height: 1;
+                        font-weight: 700;
+
+                        &:not(.active) {
+                            color: #000;
+                        }
+
+                        &.active {
+                            border-bottom-width: 4px;
+                        }
+                    }
+                }
+
+                .tab-content {
+                    &.payment {
+                        .payment-des {
+                            margin-bottom: 36px;
+                            font-size: 15px;
+                            color: $gray;
+                        }
+                    } 
+                }
+            }
+        }
+
         .description-container {
             max-width: 700px;
             margin-left: auto;
@@ -63,6 +132,92 @@
         .approve-text {
             display: block;
             padding-left: 32px;
+        }
+
+        .result-pie {
+            .catagory { // misspelled by original developers
+                margin-top: 36px;
+
+                .catagory-item { // misspelled by original developers
+                    align-items: center;
+
+                    .catagory-title, // misspelled by original developers
+                    .catagory-price {
+                        color: $gray;
+                    }
+                    .mark {
+                        width: 18px;
+                        height: 18px;
+                        position: static;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+
+        .rs-pie {
+            width: 300px;
+            max-width: 100%;
+            margin: 0 auto;
+
+            &-box {
+                width: 100%;
+                transition: all 0.3s;
+                
+                &.exit {
+                    transform: translateX(10%);
+                    opacity: 0;
+                    transition: all 0.2s;
+
+                    &.entry {
+                        transition: none;
+                    }
+                }
+
+                &.entry {
+                    transform: translateX(-10%);
+                    opacity: 0;
+                }
+            }
+
+            &-filling {
+                width: 80%;
+                height: 80%;
+                background: #fff;
+                border-radius: 100%;
+                font-size: 60px;
+                font-family: var(--font-title);
+                letter-spacing: 0;
+                line-height: 1.1;
+                z-index: 3;
+
+                &:before {
+                    content: "";
+                    display: block;
+                    background: url("https://vividsites-realtyshop.github.io/realtyshopstl/img/home.png") center no-repeat;
+                    background-size: contain;
+                    margin-bottom: 0.75em;
+                }
+
+                &:after {
+                    content: "per month";
+                    display: block;
+                    font-size: 22px;
+                    color: $gray;
+                }
+            }
+        }
+    }
+}
+
+body:not(.mortgage) {
+    .md-calculator {
+        &.mortgage {
+            .cal-result {
+                .echart {
+                    display: none !important;
+                }
+            }
         }
     }
 }
