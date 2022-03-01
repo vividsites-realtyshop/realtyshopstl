@@ -168,19 +168,25 @@ body .page-content *{-webkit-box-sizing:border-box;box-sizing:border-box}
 .page-content .md-calculator.mortgage .cal-form .cal-form-item .input{color:#666;font-size:15px}
 .page-content .md-calculator.mortgage .cal-form .cal-form-item .input:not(:first-of-type) input{border-left:0}
 .page-content .md-calculator.mortgage .cal-form .cal-form-item .input .prefix{color:inherit;font-size:inherit}
-.page-content .md-calculator.mortgage .cal-form .cal-form-item .input input{font-size:inherit;height:48px;border-radius:0;color:inherit}
+.page-content .md-calculator.mortgage .cal-form .cal-form-item .input input,.page-content .md-calculator.mortgage .cal-form .cal-form-item select{font-size:inherit;height:48px;border-radius:0;color:inherit}
+.page-content .md-calculator.mortgage .cal-form .submit-container{-ms-flex-wrap:wrap;flex-wrap:wrap}
+.page-content .md-calculator.mortgage .cal-form .submit-container .more{margin-right:12px}
+.page-content .md-calculator.mortgage .cal-form .submit-container .submit{margin-top:12px;margin-bottom:12px}
 .page-content .md-calculator.mortgage .cal-result .tab .tab-item{font-size:15px;line-height:1;font-weight:700}
 .page-content .md-calculator.mortgage .cal-result .tab .tab-item:not(.active){color:#000}
 .page-content .md-calculator.mortgage .cal-result .tab .tab-item.active{border-bottom-width:4px}
 .page-content .md-calculator.mortgage .cal-result .tab-content.payment .payment-des{margin-bottom:36px;font-size:15px;color:#666}
 .page-content .md-calculator .description-container{max-width:700px;margin-left:auto;margin-right:auto;color:#222}
-.page-content .md-calculator .mortgage-lead-form{background:#000;padding:32px}
-.page-content .md-calculator .mortgage-lead-form .lead-title{font-family:var(--font-title);font-size:24px;max-width:200px;text-align:left}
-.page-content .md-calculator .mortgage-lead-form form .input-box,.page-content .md-calculator .mortgage-lead-form form .v-input{margin-bottom:24px}
-.page-content .md-calculator .mortgage-lead-form form .label-top{padding:0 4px !important}
-.page-content .md-calculator .mortgage-lead-form form .label-top,.page-content .md-calculator .mortgage-lead-form form input[type=text],.page-content .md-calculator .mortgage-lead-form form input[type=email],.page-content .md-calculator .mortgage-lead-form form input[type=tel]{font-size:15px;color:#666}
-.page-content .md-calculator .mortgage-lead-form form input[type=text],.page-content .md-calculator .mortgage-lead-form form input[type=email],.page-content .md-calculator .mortgage-lead-form form input[type=tel]{height:42px;border-radius:0;padding:8px 12px}
-.page-content .md-calculator .mortgage-lead-form form .submit{display:block;font-family:var(--font-title);font-size:18px;color:#000;background:#ffc03a;height:42px;padding:8px 24px;margin-left:auto}
+.page-content .md-calculator .mortgage-lead-form{background:#000;padding:24px 12px}
+@media(min-width:768px){.page-content .md-calculator .mortgage-lead-form{padding:32px 24px}
+}@media(min-width:961px){.page-content .md-calculator .mortgage-lead-form{padding:32px}
+}.page-content .md-calculator .mortgage-lead-form .lead-title{font-family:var(--font-title);font-size:24px;text-align:left}
+@media(min-width:601px){.page-content .md-calculator .mortgage-lead-form .lead-title{max-width:200px}
+}.page-content .md-calculator .mortgage-lead-form form .input-box,.page-content .md-calculator .mortgage-lead-form form .v-input{margin-bottom:24px}
+.page-content .md-calculator .mortgage-lead-form form .label-top{padding:0 4px !important;font-family:var(--font-normal)}
+.page-content .md-calculator .mortgage-lead-form form .label-top,.page-content .md-calculator .mortgage-lead-form form input[type=text],.page-content .md-calculator .mortgage-lead-form form input[type=email],.page-content .md-calculator .mortgage-lead-form form input[type=tel]{color:#666}
+.page-content .md-calculator .mortgage-lead-form form input[type=text],.page-content .md-calculator .mortgage-lead-form form input[type=email],.page-content .md-calculator .mortgage-lead-form form input[type=tel]{font-size:15px;height:42px;border-radius:0;padding:8px 12px}
+.page-content .md-calculator .mortgage-lead-form form .submit{display:block;font-family:var(--font-title);font-size:18px;color:#000;background:#ffc03a;height:42px;padding:8px 24px;margin-left:auto;width:auto}
 .page-content .md-calculator .mortgage-lead-form form .submit:hover{background:#ffb516}
 .page-content .md-calculator .approve-checkbox{position:relative;left:-200vw;float:left}
 .page-content .md-calculator .approve-checkbox:before{content:"";border:solid 1px #fff;position:relative;left:200vw;width:20px;height:20px;display:block;top:4px}
@@ -188,17 +194,18 @@ body .page-content *{-webkit-box-sizing:border-box;box-sizing:border-box}
 .page-content .md-calculator .approve-checkbox:checked:after{opacity:1}
 .page-content .md-calculator .approve-text{display:block;padding-left:32px}
 .page-content .md-calculator .result-pie .catagory{margin-top:36px}
-.page-content .md-calculator .result-pie .catagory .catagory-item{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.page-content .md-calculator .result-pie .catagory .catagory-item{-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:auto !important}
 .page-content .md-calculator .result-pie .catagory .catagory-item .catagory-title,.page-content .md-calculator .result-pie .catagory .catagory-item .catagory-price{color:#666}
 .page-content .md-calculator .result-pie .catagory .catagory-item .mark{width:18px;height:18px;position:static;margin-right:8px}
-.page-content .md-calculator .rs-pie{width:300px;max-width:100%;margin:0 auto}
+@media(max-width:600px){.page-content .md-calculator .result-pie .catagory .catagory-item{width:100% !important;max-width:320px;padding-left:0 !important}
+}.page-content .md-calculator .rs-pie{width:300px;max-width:100%;margin:0 auto}
 .page-content .md-calculator .rs-pie-box{width:100%;-webkit-transition:all .3s;transition:all .3s}
 .page-content .md-calculator .rs-pie-box.exit{-webkit-transform:translateX(10%);transform:translateX(10%);opacity:0;-webkit-transition:all .2s;transition:all .2s}
 .page-content .md-calculator .rs-pie-box.exit.entry{-webkit-transition:none;transition:none}
 .page-content .md-calculator .rs-pie-box.entry{opacity:0}
 .page-content .md-calculator .rs-pie-box.entry:not(.exit){-webkit-transform:translateX(-10%);transform:translateX(-10%)}
 .page-content .md-calculator .rs-pie-filling{width:80%;height:80%;background:#fff;border-radius:100%;font-size:60px;font-family:var(--font-title);letter-spacing:0;line-height:1.1;z-index:3}
-.page-content .md-calculator .rs-pie-filling:before{content:"";display:block;background:url("https://vividsites-realtyshop.github.io/realtyshopstl/img/home.png") center no-repeat;background-size:contain;margin-bottom:.75em}
+.page-content .md-calculator .rs-pie-filling:before{content:"";display:block;background:url("https://vividsites-realtyshop.github.io/realtyshopstl/img/home.png") center no-repeat;background-size:contain;width:60px;height:60px;margin-bottom:4px}
 .page-content .md-calculator .rs-pie-filling:after{content:"per month";display:block;font-size:22px;color:#666}
 body:not(.mortgage-calculator) .md-calculator.mortgage .cal-result .tab-content.payment .echart{display:none !important}
 .page-content .md-content:not(.two-column) .list{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}

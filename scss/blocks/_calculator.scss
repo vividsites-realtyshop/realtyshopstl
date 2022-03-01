@@ -30,12 +30,27 @@
                             color: inherit;
                             font-size: inherit;
                         }
-                        input {
-                            font-size: inherit;
-                            height: 48px;
-                            border-radius: 0;
-                            color: inherit;
-                        }
+                    }
+
+                    .input input,
+                    select {
+                        font-size: inherit;
+                        height: 48px;
+                        border-radius: 0;
+                        color: inherit;
+                    }
+                }
+
+                .submit-container {
+                    flex-wrap: wrap;
+
+                    .more {
+                        margin-right: 12px;
+                    }
+
+                    .submit {
+                        margin-top: 12px;
+                        margin-bottom: 12px;
                     }
                 }
             }
@@ -78,15 +93,26 @@
 
         .mortgage-lead-form {
             background: #000;
-            padding: 32px;
+            padding: 24px 12px;
+
+            @media (min-width: 768px) {
+                padding: 32px 24px;
+            }
+
+            @media (min-width: 961px) {
+                padding: 32px;
+            }
             // background-image: url("https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png");
             // background-repeat: repeat;
 
             .lead-title {
                 font-family: var(--font-title);
                 font-size: 24px;
-                max-width: 200px;
                 text-align: left;
+                
+                @media (min-width: 601px) {
+                    max-width: 200px;
+                }
             }
 
             form {
@@ -97,19 +123,20 @@
 
                 .label-top {
                     padding: 0 4px !important;
+                    font-family: var(--font-normal);
                 }
                 
                 .label-top,
                 input[type="text"],
                 input[type="email"],
                 input[type="tel"] {
-                    font-size: 15px;
                     color: $gray;
                 }
 
                 input[type="text"],
                 input[type="email"],
                 input[type="tel"] {
+                    font-size: 15px;
                     height: 42px;
                     border-radius: 0;
                     padding: 8px 12px;
@@ -124,6 +151,7 @@
                     height: 42px;
                     padding: 8px 24px;
                     margin-left: auto;
+                    width: auto;
                     
                     &:hover {
                         background: darken($gold, 7%);
@@ -179,6 +207,7 @@
 
                 .catagory-item { // misspelled by original developers
                     align-items: center;
+                    width: auto !important;
 
                     .catagory-title, // misspelled by original developers
                     .catagory-price {
@@ -189,6 +218,12 @@
                         height: 18px;
                         position: static;
                         margin-right: 8px;
+                    }
+
+                    @media (max-width: 600px) {
+                        width: 100% !important;
+                        max-width: 320px;
+                        padding-left: 0 !important;
                     }
                 }
             }
@@ -238,7 +273,9 @@
                     display: block;
                     background: url("https://vividsites-realtyshop.github.io/realtyshopstl/img/home.png") center no-repeat;
                     background-size: contain;
-                    margin-bottom: 0.75em;
+                    width: 60px;
+                    height: 60px;
+                    margin-bottom: 4px;
                 }
 
                 &:after {
