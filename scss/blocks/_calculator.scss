@@ -208,6 +208,7 @@
                 .catagory-item { // misspelled by original developers
                     align-items: center;
                     width: auto !important;
+                    padding: 0 16px !important;
 
                     .catagory-title, // misspelled by original developers
                     .catagory-price {
@@ -223,7 +224,6 @@
                     @media (max-width: 600px) {
                         width: 100% !important;
                         max-width: 320px;
-                        padding-left: 0 !important;
                     }
                 }
             }
@@ -289,7 +289,7 @@
     }
 }
 
-body:not(.mortgage-calculator) {
+// body:not(.mortgage-calculator) {
     .md-calculator {
         &.mortgage {
             .cal-result {
@@ -303,4 +303,4 @@ body:not(.mortgage-calculator) {
             }
         }
     }
-}
+// }
