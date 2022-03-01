@@ -256,8 +256,12 @@ body:not(.mortgage-calculator) {
     .md-calculator {
         &.mortgage {
             .cal-result {
-                .echart {
-                    display: none !important;
+                .tab-content {
+                    &.payment {
+                        .echart {
+                            display: none !important;
+                        }
+                    }
                 }
             }
         }
