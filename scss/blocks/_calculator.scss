@@ -77,14 +77,53 @@
         }
 
         .mortgage-lead-form {
-            background: #333;
-            background-image: url("https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png");
-            background-repeat: repeat;
+            background: #000;
+            padding: 32px;
+            // background-image: url("https://cdn.chime.me/image/fs/cmsbuild/2021527/7/original_ae1de395-0aa0-43e4-a92e-f7b080f8d6c0.png");
+            // background-repeat: repeat;
+
+            .lead-title {
+                font-family: var(--font-title);
+                font-size: 24px;
+                max-width: 200px;
+                text-align: left;
+            }
 
             form {
+                .input-box,
+                .v-input {
+                    margin-bottom: 24px;
+                }
+
+                .label-top {
+                    padding: 0 4px !important;
+                }
+                
+                .label-top,
+                input[type="text"],
+                input[type="email"],
+                input[type="tel"] {
+                    font-size: 15px;
+                    color: $gray;
+                }
+
+                input[type="text"],
+                input[type="email"],
+                input[type="tel"] {
+                    height: 42px;
+                    border-radius: 0;
+                    padding: 8px 12px;
+                }
+
                 .submit {
+                    display: block;
+                    font-family: var(--font-title);
+                    font-size: 18px;
+                    color: #000;
                     background: $gold;
-                    text-transform: uppercase;
+                    height: 42px;
+                    padding: 8px 24px;
+                    margin-left: auto;
                     
                     &:hover {
                         background: darken($gold, 7%);
@@ -175,8 +214,11 @@
                 }
 
                 &.entry {
-                    transform: translateX(-10%);
                     opacity: 0;
+
+                    &:not(.exit) {
+                        transform: translateX(-10%);
+                    }
                 }
             }
 
@@ -196,9 +238,7 @@
                     display: block;
                     background: url("https://vividsites-realtyshop.github.io/realtyshopstl/img/home.png") center no-repeat;
                     background-size: contain;
-                    width: 60px;
-                    height: 60px;
-                    margin-bottom: 4px;
+                    margin-bottom: 0.75em;
                 }
 
                 &:after {
