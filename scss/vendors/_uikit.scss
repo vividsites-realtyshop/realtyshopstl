@@ -84,12 +84,12 @@ body.has-uikit {
         }
     }
 
-    .uk-accordion {
-        &-content {
-            background: $gray-lt;
-            @extend .padding-m;
-        }
-    }
+    // .uk-accordion {
+    //     &-content {
+    //         background: $gray-lt;
+    //         @extend .padding-m;
+    //     }
+    // }
 
     .md-cta-multiple-column {
         .site-card {

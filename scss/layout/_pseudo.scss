@@ -67,6 +67,11 @@
 			padding-bottom: 100%;
 		}
 	}
+	&--content {
+		&:after {
+			content: attr(data-after);
+		}
+	}
 }
 
 @each $label, $breakpoint in $breakpoints {

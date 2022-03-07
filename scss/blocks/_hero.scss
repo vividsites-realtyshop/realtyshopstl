@@ -3,6 +3,9 @@ body {
         height: 45vw;
         min-height: 500px;
         max-height: 700px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .md-hero {
         &.template4 {

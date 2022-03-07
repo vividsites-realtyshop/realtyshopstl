@@ -104,6 +104,10 @@ body {
             color: var(--color-theme) !important;
         }
 
+        &--gray {
+            color: $gray !important;
+        }
+
         &--black {
             color: #000 !important;
         }
@@ -123,6 +127,18 @@ body {
     }
 }
 
+.letter-spacing {
+    &--0 {
+        letter-spacing: 0 !important;
+    }
+}
+
+.currency {
+    &:before {
+        content: "$";
+    }
+}
+
 a.font-color--white {
     &:hover {
         color: var(--color-theme);
@@ -137,6 +153,10 @@ hr {
 
     &.color-theme {
         border-color: var(--color-theme);
+    }
+
+    &.color-gray {
+        border-color: $gray;
     }
 }
 

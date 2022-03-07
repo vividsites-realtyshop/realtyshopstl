@@ -1,6 +1,11 @@
 .display {
     &-block {
         display: block;
+        &\@xs {
+            @media (min-width: $breakpoint-xs) {
+                display: block !important;
+            }
+        }
         &\@s {
             @media (min-width: $breakpoint-s) {
                 display: block !important;
