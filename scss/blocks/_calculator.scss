@@ -5,94 +5,92 @@
             @extend .margin-bottom-l
         }
 
-        &.mortgage {
-            .cal-form {
-                .cal-form-item {
-                    label {
-                        font-size: 15px;
-                        line-height: 1;
-                        font-weight: 600;
-                        color: $gray;
-                        margin-bottom: 6px;
-                    }
+        .cal-form {
+            .cal-form-item {
+                label {
+                    font-size: 15px;
+                    line-height: 1;
+                    font-weight: 600;
+                    color: $gray;
+                    margin-bottom: 6px;
+                }
 
-                    .input {
-                        color: $gray;
-                        font-size: 15px;
+                .input {
+                    color: $gray;
+                    font-size: 15px;
 
-                        &:not(:first-of-type) {
-                            input {
-                                border-left: 0;
-                            }
-                        }
-
-                        .prefix {
-                            color: inherit;
-                            font-size: inherit;
+                    &:not(:first-of-type) {
+                        input {
+                            border-left: 0;
                         }
                     }
 
-                    .input input,
-                    select {
-                        font-size: inherit;
-                        height: 48px;
-                        border-radius: 0;
+                    .prefix {
                         color: inherit;
+                        font-size: inherit;
                     }
                 }
 
-                .submit-container {
-                    flex-wrap: wrap;
+                .input input,
+                select {
+                    font-size: inherit;
+                    height: 48px;
+                    border-radius: 0;
+                    color: inherit;
+                }
+            }
 
-                    .more {
-                        margin-right: 12px;
+            .submit-container {
+                flex-wrap: wrap;
+
+                .more {
+                    margin-right: 12px;
+                }
+
+                .submit {
+                    margin-top: 12px;
+                    margin-bottom: 12px;
+                    font-size: 18px;
+                    font-family: var(--font-title);
+                    color: #000;
+                    height: 48px;
+                    border-radius: 0;
+                    width: auto;
+                    padding: 8px 24px;
+
+                    &:hover {
+                        color: #000;
+                        background: darken($gold, 7%);
+                    }
+                }
+            }
+        }
+
+        .cal-result {
+            .tab {
+                .tab-item {
+                    font-size: 15px;
+                    line-height: 1;
+                    font-weight: 700;
+
+                    &:not(.active) {
+                        color: #000;
                     }
 
-                    .submit {
-                        margin-top: 12px;
-                        margin-bottom: 12px;
-                        font-size: 18px;
-                        font-family: var(--font-title);
-                        color: #000;
-                        height: 48px;
-                        border-radius: 0;
-                        width: auto;
-                        padding: 8px 24px;
-
-                        &:hover {
-                            color: #000;
-                            background: darken($gold, 7%);
-                        }
+                    &.active {
+                        border-bottom-width: 4px;
                     }
                 }
             }
 
-            .cal-result {
-                .tab {
-                    .tab-item {
+            .tab-content {
+                &.payment {
+                    .payment-des {
+                        margin-bottom: 36px;
                         font-size: 15px;
-                        line-height: 1;
-                        font-weight: 700;
-
-                        &:not(.active) {
-                            color: #000;
-                        }
-
-                        &.active {
-                            border-bottom-width: 4px;
-                        }
+                        color: $gray;
                     }
-                }
-
-                .tab-content {
-                    &.payment {
-                        .payment-des {
-                            margin-bottom: 36px;
-                            font-size: 15px;
-                            color: $gray;
-                        }
-                    } 
-                }
+                } 
             }
         }
 

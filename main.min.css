@@ -181,19 +181,19 @@ body .page-content *{-webkit-box-sizing:border-box;box-sizing:border-box}
 .rs-table tbody tr:nth-of-type(odd){background-color:#414141}
 .rs-table tbody td:first-of-type{padding:10px 30px 12px 12px}
 @media(max-width:500px){.rs-table tbody td:first-of-type{padding-left:2.4vw;padding-right:10px}
-}.page-content .md-calculator.mortgage .cal-form .cal-form-item label{font-size:15px;line-height:1;font-weight:600;color:#666;margin-bottom:6px}
-.page-content .md-calculator.mortgage .cal-form .cal-form-item .input{color:#666;font-size:15px}
-.page-content .md-calculator.mortgage .cal-form .cal-form-item .input:not(:first-of-type) input{border-left:0}
-.page-content .md-calculator.mortgage .cal-form .cal-form-item .input .prefix{color:inherit;font-size:inherit}
-.page-content .md-calculator.mortgage .cal-form .cal-form-item .input input,.page-content .md-calculator.mortgage .cal-form .cal-form-item select{font-size:inherit;height:48px;border-radius:0;color:inherit}
-.page-content .md-calculator.mortgage .cal-form .submit-container{-ms-flex-wrap:wrap;flex-wrap:wrap}
-.page-content .md-calculator.mortgage .cal-form .submit-container .more{margin-right:12px}
-.page-content .md-calculator.mortgage .cal-form .submit-container .submit{margin-top:12px;margin-bottom:12px;font-size:18px;font-family:var(--font-title);color:#000;height:48px;border-radius:0;width:auto;padding:8px 24px}
-.page-content .md-calculator.mortgage .cal-form .submit-container .submit:hover{color:#000;background:#ffb516}
-.page-content .md-calculator.mortgage .cal-result .tab .tab-item{font-size:15px;line-height:1;font-weight:700}
-.page-content .md-calculator.mortgage .cal-result .tab .tab-item:not(.active){color:#000}
-.page-content .md-calculator.mortgage .cal-result .tab .tab-item.active{border-bottom-width:4px}
-.page-content .md-calculator.mortgage .cal-result .tab-content.payment .payment-des{margin-bottom:36px;font-size:15px;color:#666}
+}.page-content .md-calculator .cal-form .cal-form-item label{font-size:15px;line-height:1;font-weight:600;color:#666;margin-bottom:6px}
+.page-content .md-calculator .cal-form .cal-form-item .input{color:#666;font-size:15px}
+.page-content .md-calculator .cal-form .cal-form-item .input:not(:first-of-type) input{border-left:0}
+.page-content .md-calculator .cal-form .cal-form-item .input .prefix{color:inherit;font-size:inherit}
+.page-content .md-calculator .cal-form .cal-form-item .input input,.page-content .md-calculator .cal-form .cal-form-item select{font-size:inherit;height:48px;border-radius:0;color:inherit}
+.page-content .md-calculator .cal-form .submit-container{-ms-flex-wrap:wrap;flex-wrap:wrap}
+.page-content .md-calculator .cal-form .submit-container .more{margin-right:12px}
+.page-content .md-calculator .cal-form .submit-container .submit{margin-top:12px;margin-bottom:12px;font-size:18px;font-family:var(--font-title);color:#000;height:48px;border-radius:0;width:auto;padding:8px 24px}
+.page-content .md-calculator .cal-form .submit-container .submit:hover{color:#000;background:#ffb516}
+.page-content .md-calculator .cal-result .tab .tab-item{font-size:15px;line-height:1;font-weight:700}
+.page-content .md-calculator .cal-result .tab .tab-item:not(.active){color:#000}
+.page-content .md-calculator .cal-result .tab .tab-item.active{border-bottom-width:4px}
+.page-content .md-calculator .cal-result .tab-content.payment .payment-des{margin-bottom:36px;font-size:15px;color:#666}
 .page-content .md-calculator .description-container{max-width:700px;margin-left:auto;margin-right:auto;color:#222}
 .page-content .md-calculator .mortgage-lead-form{background:#000;padding:24px 12px}
 @media(min-width:768px){.page-content .md-calculator .mortgage-lead-form{padding:32px 24px}
@@ -303,8 +303,8 @@ body .page-content *{-webkit-box-sizing:border-box;box-sizing:border-box}
 .page-content .slider__container--mortgage{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto}
 .page-content .slider__container--mortgage:before{border-top-left-radius:0;border-bottom-left-radius:0}
 .page-content .slider__container--mortgage .slider{position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);margin-left:-12px;margin-right:-12px}
-.page-content .slider__container--mortgage .slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:25px;height:25px;border-radius:50%;background:var(--color-theme);border:solid 2px #fff;-webkit-box-shadow:0 0 6px 0 rgba(0,0,0,.5);box-shadow:0 0 6px 0 rgba(0,0,0,.5);cursor:pointer}
-.page-content .slider__container--mortgage .slider::-moz-range-thumb{width:25px;height:25px;border-radius:50%;background:var(--color-theme);border:solid 2px #fff;box-shadow:0 0 6px 0 rgba(0,0,0,.5);cursor:pointer}
+.page-content .slider__container--mortgage .slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:25px;height:25px;border-radius:50%;background:var(--color-theme);border:solid 2px #fff;-webkit-box-shadow:0 0 6px 0 rgba(0,0,0,.3);box-shadow:0 0 6px 0 rgba(0,0,0,.3);cursor:pointer}
+.page-content .slider__container--mortgage .slider::-moz-range-thumb{width:25px;height:25px;border-radius:50%;background:var(--color-theme);border:solid 2px #fff;box-shadow:0 0 6px 0 rgba(0,0,0,.3);cursor:pointer}
 .page-content .slider__container--debt:before{background:#000;border-top-right-radius:0;border-bottom-right-radius:0}
 .page-content .slider__container--debt .slider{margin-right:0}
 .page-content .slider__container--debt .slider::-webkit-slider-thumb,.page-content .slider__container--debt .slider::-moz-range-thumb{background:transparent}
