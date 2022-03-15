@@ -125,6 +125,12 @@ body {
             // } 
         }
     }
+
+    &-weight {
+        &--normal {
+            font-weight: normal !important;
+        }
+    }
 }
 
 .letter-spacing {

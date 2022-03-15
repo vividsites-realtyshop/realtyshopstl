@@ -48,6 +48,7 @@ body{font-family:var(--font-normal)}
 .font-color--black{color:#000 !important}
 .font-color--light{color:#ccc !important}
 .font-color--white{color:#fff !important}
+.font-weight--normal{font-weight:normal !important}
 .letter-spacing--0{letter-spacing:0 !important}
 .currency:before{content:"$"}
 a.font-color--white:hover{color:var(--color-theme)}
@@ -66,7 +67,8 @@ body .page-content *{-webkit-box-sizing:border-box;box-sizing:border-box}
 @media(min-width:640px){.background-color--dark .rs-accordion li .uk-accordion-title:before{right:32px}
 }.background-color--dark .rs-accordion li .uk-accordion-title:after{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background:var(--color-theme);font-size:40px;text-align:center;min-width:48px;min-height:70px;margin-right:20px;-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}
 @media(min-width:640px){.background-color--dark .rs-accordion li .uk-accordion-title:after{font-size:48px;min-width:64px;margin-right:32px}
-}.background-color--dark .rs-accordion li.uk-open .uk-accordion-title:before{top:43%;-webkit-transform:rotate(225deg);transform:rotate(225deg)}
+}.background-color--dark .rs-accordion li.uk-open .uk-accordion-title{color:#fff !important}
+.background-color--dark .rs-accordion li.uk-open .uk-accordion-title:before{top:43%;-webkit-transform:rotate(225deg);transform:rotate(225deg)}
 .background-color--dark .rs-accordion li:nth-of-type(1) .uk-accordion-title:after{content:"1"}
 .background-color--dark .rs-accordion li:nth-of-type(2) .uk-accordion-title:after{content:"2"}
 .background-color--dark .rs-accordion li:nth-of-type(3) .uk-accordion-title:after{content:"3"}
@@ -74,8 +76,8 @@ body .page-content *{-webkit-box-sizing:border-box;box-sizing:border-box}
 .background-color--dark .rs-accordion li:nth-of-type(5) .uk-accordion-title:after{content:"5"}
 .background-color--dark .rs-accordion li:nth-of-type(6) .uk-accordion-title:after{content:"6"}
 .background-color--dark .rs-accordion li:nth-of-type(7) .uk-accordion-title:after{content:"7"}
-.background-color--dark .rs-accordion li .uk-accordion-content{margin-top:0;background:#404040;padding:32px}
-@media(min-width:640px){.background-color--dark .rs-accordion li .uk-accordion-content{padding-left:64px}
+.background-color--dark .rs-accordion li .uk-accordion-content{margin-top:0;background:#404040;padding:32px !important}
+@media(min-width:640px){.background-color--dark .rs-accordion li .uk-accordion-content{padding-left:64px !important}
 }@media(min-width:640px){.background-color--dark .rs-accordion li .uk-accordion-content>div{margin-left:32px}
 }.background-color--dark .rs-accordion>:nth-child(n+2){margin-top:2px}
 .uk-accordion>:nth-child(n+2){margin-top:0 !important}

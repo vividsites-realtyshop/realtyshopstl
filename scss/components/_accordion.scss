@@ -57,6 +57,8 @@
 
             &.uk-open {
                 .uk-accordion-title {
+                    color: #fff !important;
+
                     &:before {
                         top: 43%;
                         transform: rotate(225deg);
@@ -77,10 +79,10 @@
             .uk-accordion-content {
                 margin-top: 0;
                 background: $gray-dk;
-                padding: 32px;
+                padding: 32px !important;
 
                 @media (min-width: $breakpoint-s) {
-                    padding-left: 64px;
+                    padding-left: 64px !important;
                 }
 
                 & > div {
