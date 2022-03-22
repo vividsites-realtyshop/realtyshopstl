@@ -218,15 +218,16 @@ body .page-content *{-webkit-box-sizing:border-box;box-sizing:border-box}
 .page-content .md-calculator .result-pie .catagory .catagory-item .catagory-title,.page-content .md-calculator .result-pie .catagory .catagory-item .catagory-price{color:#666}
 .page-content .md-calculator .result-pie .catagory .catagory-item .mark{width:18px;height:18px;position:static;margin-right:8px}
 @media(max-width:600px){.page-content .md-calculator .result-pie .catagory .catagory-item{max-width:320px;padding:0 !important}
-}.page-content .md-calculator .rs-pie{width:300px;max-width:100%;margin:0 auto}
-.page-content .md-calculator .rs-pie-box{width:100%;-webkit-transition:all .3s;transition:all .3s}
-.page-content .md-calculator .rs-pie-box.exit{-webkit-transform:translateX(10%);transform:translateX(10%);opacity:0;-webkit-transition:all .2s;transition:all .2s}
-.page-content .md-calculator .rs-pie-box.exit.entry{-webkit-transition:none;transition:none}
-.page-content .md-calculator .rs-pie-box.entry{opacity:0}
-.page-content .md-calculator .rs-pie-box.entry:not(.exit){-webkit-transform:translateX(-10%);transform:translateX(-10%)}
-.page-content .md-calculator .rs-pie-filling{width:80%;height:80%;background:#fff;border-radius:100%;font-size:60px;font-family:var(--font-title);letter-spacing:0;line-height:1.1;z-index:3}
-.page-content .md-calculator .rs-pie-filling:before{content:"";display:block;background:url("https://vividsites-realtyshop.github.io/realtyshopstl/img/home.png") center no-repeat;background-size:contain;width:60px;height:60px;margin-bottom:4px}
-.page-content .md-calculator .rs-pie-filling:after{content:"per month";display:block;font-size:22px;color:#666}
+}.page-content .rs-pie{width:300px;max-width:100%;margin:0 auto}
+.page-content .rs-pie-box{width:100%;-webkit-transition:all .3s;transition:all .3s}
+.page-content .rs-pie-box.exit{-webkit-transform:translateX(10%);transform:translateX(10%);opacity:0;-webkit-transition:all .2s;transition:all .2s}
+.page-content .rs-pie-box.exit.entry{-webkit-transition:none;transition:none}
+.page-content .rs-pie-box.entry{opacity:0}
+.page-content .rs-pie-box.entry:not(.exit){-webkit-transform:translateX(-10%);transform:translateX(-10%)}
+.page-content .rs-pie-filling{width:80%;height:80%;background:#fff;border-radius:100%;font-size:60px;font-family:var(--font-title);letter-spacing:0;line-height:1.1;z-index:3}
+.page-content .rs-pie-filling:before{content:"";display:block;background:url("https://vividsites-realtyshop.github.io/realtyshopstl/img/home.png") center no-repeat;background-size:contain;width:60px;height:60px;margin-bottom:4px}
+.page-content .rs-pie-filling:after{content:"per month";display:block;font-size:22px;color:#666}
+.page-content .rs-pie--closing .rs-pie-filling:after{display:none}
 .md-calculator.mortgage .cal-result .tab-content.payment .echart{display:none !important}
 #dti_calculator .rs-expandable .uk-accordion-content{padding:0;background:0}
 #dti_calculator #debt_slider{max-width:100%}
@@ -299,17 +300,39 @@ body .page-content *{-webkit-box-sizing:border-box;box-sizing:border-box}
 .page-content .md-lead-form.standard.newtheme.inner-box-remove .media-content .title-text{background:none !important;padding:0 !important}
 .page-content .md-lead-form.standard.newtheme.inner-box-remove .media-content .title-text .media-title{line-height:.8 !important}
 .page-content .slider{-webkit-appearance:none;-moz-appearance:none;appearance:none;width:calc(100% + 25px);height:15px;border-radius:5px;outline:0;-webkit-transition:.2s;transition:.2s;background:transparent;cursor:pointer}
-.page-content .slider__progress{position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);background:#666;height:15px}
+.page-content .slider__progress{position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);height:15px;border-radius:50px}
 .page-content .slider__container{position:relative;height:40px}
+.page-content .slider__container .slider{position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);margin-left:-12px;margin-right:-12px}
+.page-content .slider__container .slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:25px;height:25px;border-radius:50%;background:var(--color-theme);border:solid 2px #fff;-webkit-box-shadow:0 0 6px 0 rgba(0,0,0,.3);box-shadow:0 0 6px 0 rgba(0,0,0,.3);cursor:pointer}
+.page-content .slider__container .slider::-moz-range-thumb{width:25px;height:25px;border-radius:50%;background:var(--color-theme);border:solid 2px #fff;box-shadow:0 0 6px 0 rgba(0,0,0,.3);cursor:pointer}
 .page-content .slider__container:before{content:"";display:block;width:100%;height:15px;background:var(--color-theme);position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);border-radius:100px}
 .page-content .slider__container--mortgage{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto}
 .page-content .slider__container--mortgage:before{border-top-left-radius:0;border-bottom-left-radius:0}
-.page-content .slider__container--mortgage .slider{position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);margin-left:-12px;margin-right:-12px}
+.page-content .slider__container--mortgage .slider__progress{background:#666;border-top-left-radius:0;border-bottom-left-radius:0}
 .page-content .slider__container--mortgage .slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:25px;height:25px;border-radius:50%;background:var(--color-theme);border:solid 2px #fff;-webkit-box-shadow:0 0 6px 0 rgba(0,0,0,.3);box-shadow:0 0 6px 0 rgba(0,0,0,.3);cursor:pointer}
 .page-content .slider__container--mortgage .slider::-moz-range-thumb{width:25px;height:25px;border-radius:50%;background:var(--color-theme);border:solid 2px #fff;box-shadow:0 0 6px 0 rgba(0,0,0,.3);cursor:pointer}
 .page-content .slider__container--debt:before{background:#000;border-top-right-radius:0;border-bottom-right-radius:0}
-.page-content .slider__container--debt .slider{margin-right:0}
+.page-content .slider__container--debt .slider{margin-right:0;margin-left:initial}
 .page-content .slider__container--debt .slider::-webkit-slider-thumb,.page-content .slider__container--debt .slider::-moz-range-thumb{background:transparent}
+.page-content .slider__container--homeval:before,.page-content .slider__container--downpayment:before{background:#ccc}
+.page-content .slider__container--homeval .slider__progress,.page-content .slider__container--downpayment .slider__progress{background:var(--color-theme)}
+.page-content .input.currency{position:relative}
+.page-content .input.currency:before{position:absolute;left:.5em;top:.25em}
+.page-content .input.currency input{padding-left:1.5em}
+.page-content .input.percent{position:relative}
+.page-content .input.percent:after{content:"%";position:absolute;right:.5em;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.page-content .input.percent input{padding-right:2em}
+.page-content .input.percent input::-webkit-outer-spin-button,.page-content .input.percent input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.page-content input[type=radio]{position:absolute;left:-200vw;-webkit-appearance:hidden;-moz-appearance:hidden;appearance:hidden}
+.page-content input[type=radio]+label{position:relative;padding-left:28px}
+.page-content input[type=radio]+label:before,.page-content input[type=radio]+label:after{content:"";display:inline-block;border-radius:100%;position:absolute}
+.page-content input[type=radio]+label:before{width:20px;height:20px;border:solid 1px #e5e5e5;top:0;left:0}
+.page-content input[type=radio]+label:after{width:16px;height:16px;background:var(--color-theme);opacity:0;top:3px;left:3px}
+.page-content input[type=radio]:checked+label:after{opacity:1}
+.page-content input[type=radio]:not(:last-child)+label{margin-right:16px}
+.page-content input[type=number]::-webkit-outer-spin-button,.page-content input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.page-content input[readonly]{opacity:.4}
+.page-content input[readonly]:focus,.page-content input[readonly]:active{border-color:rgba(255,255,255,.2) !important}
 body .rs-hero{height:45vw;min-height:500px;max-height:700px;background-size:cover;background-repeat:no-repeat;background-position:center}
 @media(max-width:1080px){body .md-hero.template4.banner-with-search-bar .banner-video.autoplay{padding-bottom:0}
 body .md-hero.template4.banner-with-search-bar .media-content{margin-top:120px}

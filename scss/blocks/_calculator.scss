@@ -239,60 +239,68 @@
             }
         }
 
-        .rs-pie {
-            width: 300px;
-            max-width: 100%;
-            margin: 0 auto;
+    }
+    .rs-pie {
+        width: 300px;
+        max-width: 100%;
+        margin: 0 auto;
 
-            &-box {
-                width: 100%;
-                transition: all 0.3s;
-                
-                &.exit {
-                    transform: translateX(10%);
-                    opacity: 0;
-                    transition: all 0.2s;
-
-                    &.entry {
-                        transition: none;
-                    }
-                }
+        &-box {
+            width: 100%;
+            transition: all 0.3s;
+            
+            &.exit {
+                transform: translateX(10%);
+                opacity: 0;
+                transition: all 0.2s;
 
                 &.entry {
-                    opacity: 0;
-
-                    &:not(.exit) {
-                        transform: translateX(-10%);
-                    }
+                    transition: none;
                 }
             }
 
-            &-filling {
-                width: 80%;
-                height: 80%;
-                background: #fff;
-                border-radius: 100%;
-                font-size: 60px;
-                font-family: var(--font-title);
-                letter-spacing: 0;
-                line-height: 1.1;
-                z-index: 3;
+            &.entry {
+                opacity: 0;
 
-                &:before {
-                    content: "";
-                    display: block;
-                    background: url("https://vividsites-realtyshop.github.io/realtyshopstl/img/home.png") center no-repeat;
-                    background-size: contain;
-                    width: 60px;
-                    height: 60px;
-                    margin-bottom: 4px;
+                &:not(.exit) {
+                    transform: translateX(-10%);
                 }
+            }
+        }
 
+        &-filling {
+            width: 80%;
+            height: 80%;
+            background: #fff;
+            border-radius: 100%;
+            font-size: 60px;
+            font-family: var(--font-title);
+            letter-spacing: 0;
+            line-height: 1.1;
+            z-index: 3;
+
+            &:before {
+                content: "";
+                display: block;
+                background: url("https://vividsites-realtyshop.github.io/realtyshopstl/img/home.png") center no-repeat;
+                background-size: contain;
+                width: 60px;
+                height: 60px;
+                margin-bottom: 4px;
+            }
+
+            &:after {
+                content: "per month";
+                display: block;
+                font-size: 22px;
+                color: $gray;
+            }
+        }
+
+        &--closing {
+            .rs-pie-filling {
                 &:after {
-                    content: "per month";
-                    display: block;
-                    font-size: 22px;
-                    color: $gray;
+                    display: none;
                 }
             }
         }
