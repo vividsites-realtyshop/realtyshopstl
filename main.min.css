@@ -319,7 +319,7 @@ body .page-content *{-webkit-box-sizing:border-box;box-sizing:border-box}
 .page-content .slider__container--debt:before{background:#000;border-top-right-radius:0;border-bottom-right-radius:0}
 .page-content .slider__container--debt .slider{margin-right:0;margin-left:initial}
 .page-content .slider__container--debt .slider::-webkit-slider-thumb,.page-content .slider__container--debt .slider::-moz-range-thumb{background:transparent}
-.page-content .slider__container--homeval:before,.page-content .slider__container--downpayment:before{background:#ccc}
+.page-content .slider__container--homeval:before,.page-content .slider__container--downpayment:before{background:#e5e5e5}
 .page-content .slider__container--homeval .slider__progress,.page-content .slider__container--downpayment .slider__progress{background:var(--color-theme)}
 .page-content .input.currency{position:relative}
 .page-content .input.currency:before{position:absolute;left:.5em;top:.25em}
@@ -338,6 +338,12 @@ body .page-content *{-webkit-box-sizing:border-box;box-sizing:border-box}
 .page-content input[type=number]::-webkit-outer-spin-button,.page-content input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
 .page-content input[readonly]{opacity:.4}
 .page-content input[readonly]:focus,.page-content input[readonly]:active{border-color:rgba(255,255,255,.2) !important}
+.page-content .radio-group--buttons{display:-webkit-box;display:-ms-flexbox;display:flex}
+.page-content .radio-group--buttons input[type=radio]+label{display:block;padding:.75rem 1rem;margin-right:1px;background:#e5e5e5;min-width:90px;text-align:center}
+.page-content .radio-group--buttons input[type=radio]+label:before,.page-content .radio-group--buttons input[type=radio]+label:after{display:none}
+.page-content .radio-group--buttons input[type=radio]:checked+label{background:var(--color-theme)}
+.page-content .radio-group--buttons .radio:first-child input[type=radio]+label{border-top-left-radius:30px;border-bottom-left-radius:30px;padding-left:1.5rem}
+.page-content .radio-group--buttons .radio:last-child input[type=radio]+label{border-top-right-radius:30px;border-bottom-right-radius:30px;padding-right:1.5rem}
 body .rs-hero{height:45vw;min-height:500px;max-height:700px;background-size:cover;background-repeat:no-repeat;background-position:center}
 @media(max-width:1080px){body .md-hero.template4.banner-with-search-bar .banner-video.autoplay{padding-bottom:0}
 body .md-hero.template4.banner-with-search-bar .media-content{margin-top:120px}
@@ -1248,7 +1254,6 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 }@media(max-width:900px){body.contact .md-agent-contact .contact-box .contact-container .item.address{min-width:100%;border-top:solid 1px #444}
 }@media(max-width:600px){body.contact .md-agent-contact .contact-box .contact-container .item.email{min-width:100%;border-top:solid 1px #444}
 }.page--dti-calculator .uk-form-label{display:block;margin-bottom:4px}
-.page--dti-calculator pre{color:initial}
 @media(max-width:1199px){.page--buyers .stats{padding:0}
 .page--buyers .stat{margin:0 !important}
 .page--buyers .stat__inner{padding:24px 0}

@@ -138,7 +138,7 @@
         &--homeval,
         &--downpayment {
             &:before {
-                background: #ccc;
+                background: #e5e5e5;
             }
             .slider__progress {
                 background: var(--color-theme);
@@ -247,6 +247,52 @@
             &:focus,
             &:active {
                 border-color: rgba(255,255,255,.2) !important;
+            }
+        }
+    }
+
+    .radio-group {
+        &--buttons {
+            display: flex;
+
+            input[type="radio"] {
+                & + label {
+                    display: block;
+                    padding: 0.75rem 1rem;
+                    margin-right: 1px;
+                    background: #e5e5e5;
+                    min-width: 90px;
+                    text-align: center;
+
+                    &:before,
+                    &:after {
+                        display: none;
+                    }
+                }
+
+                &:checked {
+                    & + label {
+                        background: var(--color-theme);
+                    }
+                }
+            }
+
+            .radio {
+                &:first-child {
+                    input[type="radio"] + label {
+                        border-top-left-radius: 30px;
+                        border-bottom-left-radius: 30px;
+                        padding-left: 1.5rem;
+                    }
+                }
+
+                &:last-child {
+                    input[type="radio"] + label {
+                        border-top-right-radius: 30px;
+                        border-bottom-right-radius: 30px;
+                        padding-right: 1.5rem;
+                    }
+                }
             }
         }
     }
