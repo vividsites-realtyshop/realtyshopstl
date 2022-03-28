@@ -1248,6 +1248,7 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 }@media(max-width:900px){body.contact .md-agent-contact .contact-box .contact-container .item.address{min-width:100%;border-top:solid 1px #444}
 }@media(max-width:600px){body.contact .md-agent-contact .contact-box .contact-container .item.email{min-width:100%;border-top:solid 1px #444}
 }.page--dti-calculator .uk-form-label{display:block;margin-bottom:4px}
+.page--dti-calculator pre{color:initial}
 @media(max-width:1199px){.page--buyers .stats{padding:0}
 .page--buyers .stat{margin:0 !important}
 .page--buyers .stat__inner{padding:24px 0}
