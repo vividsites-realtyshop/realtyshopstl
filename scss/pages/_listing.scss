@@ -1,4 +1,13 @@
 body.listing-detail {
+    .save-share-container {
+        &[data-v-298eec66] {
+            background-color: #222;
+            border-top: none;
+        }
+        .right-btn .item.share[data-v-298eec66] {
+            color: #fff;
+        }
+    }
     .breadcrumb-container {
         position: absolute;
         top: 0;
@@ -10,28 +19,75 @@ body.listing-detail {
 
         .breadcrumb-bar {
             width: auto;
+
+            &.mg-container {
+                .link {
+                    &:not(:hover) {
+                        color: #fff;
+                    }
+                }
+                .fack-link, // sp?
+                .fake-link,
+                .arrow {
+                    color: #fff;
+                }
+            }
         }
+    }
+
+    .mls-provided-container {
+        display: none;
     }
 
     .md-detail-info.fashion {
         .detail-container {
             .detail-info {
+                display: block;
+
+                .addr {
+                    font-weight: normal;
+                }
                 .addr-detail {
                     color: rgba(255,255,255,0.7);
+                    font-weight: normal;
                 }
             }
         }
 
         .detail-info-header {
-            background-color: #222;
-            background-image: $marble;
-            background-size: auto;
-            background-repeat: repeat;
-    
+            padding: 20px 15px 30px;
+            @media (min-width: 601px) {
+                padding: 30px 30px;
+            }
+            @media (min-width: 1231px) {
+                padding: 30px 120px;
+            }
+            .top-content {
+                order: 4;
+            }
+            & > .mg-container {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .detail-info {
+                .addr {
+                    font-size: 24px;
+                }
+                .addr-detail {
+                    font-size: 16px;
+                }
+            }
+            .price-value {
+                font-size: 48px; 
+            }
             .caculator-container {
                 .icon-caculator,
                 .payment-text {
                     color: #fff;
+                    font-family: var(--font-normal);
+                }
+                .payment-text {
+                    font-size: inherit;
                 }
                 .separator {
                     border-color: rgba(255,255,255,0.4);
@@ -46,11 +102,24 @@ body.listing-detail {
             }
     
             .prev-next-box {
+                position: static;
+
                 .banner-left,
                 .banner-right {
-                    color: rgba(255,255,255,0.7);
-                    border-color: rgba(255,255,255,0.7);
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    .btn {
+                        color: rgba(255,255,255,0.7);
+                        border-color: rgba(255,255,255,0.7);
+                        height: 27px;
+                        border-radius: 0;
+                    }
                 }
+            }
+
+            .image-count {
+                background-color: rgba(0,0,0,0.5);
             }
     
             .count-container {
@@ -92,6 +161,13 @@ body.listing-detail {
                 background-color: #000;
 
                 .banner-box {
+                    width: 100%;
+                    padding: 0 15px;
+
+                    @media (min-width: 601px) {
+                        padding: 0 30px;
+                    }
+
                     .banner-left,
                     .banner-right {
                         .btn {
@@ -101,14 +177,92 @@ body.listing-detail {
                     }
 
                     .center {
+                        flex: 1 1 auto;
+
                         .save-share-tour {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: flex-end;
+
                             .item {
                                 color: #fff;
+                            }
+
+                            @media (max-width: 767px) {
+                                max-width: 160px;
+
+                                .item[data-v-298eec66] {
+                                    margin-right: 0;
+                                    margin-bottom: 6px;
+                                }
+
+                            }
+                        }
+                    }
+
+                    .detail-info {
+                        @media (min-width: 901px) {
+                            .addr {
+                                font-size: 24px;
+                            }
+                            .addr-detail {
+                                font-size: 16px;
                             }
                         }
                     }
                 }
             }
+        }
+    }
+
+    .md-map.fashion {
+        .map-tab {
+            .tab-header {
+                background-color: #000;
+            }
+            .tab-body {
+                background-color: #222;
+            }
+            .tab-collapse {
+                .icon-expand {
+                    background-color: #222;
+                }
+            }
+        }
+    }
+
+    .md-demographic.fashion {
+        .mg-container {
+            .demographic-content {
+                background-color: #000 !important;
+                height: auto;
+
+                .item {
+                    .info {
+                        .number {
+                            font-family: var(--font-title);
+                            font-size: 90px;
+                            line-height: 0.7;
+                            padding-top: 0.3em;
+
+                            @media (max-width: 1000px) {
+                                font-size: calc(20px + 7vw);
+                            }
+                        }
+                        .text {
+                            color: #fff;
+                        }
+                    }
+
+                    @media (max-width: 600px) {
+                        height: auto;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+        .md-demographic-content {
+            background-color: #000 !important;
         }
     }
 }
