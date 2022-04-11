@@ -56,6 +56,7 @@ body.listing-detail {
 
         .detail-info-header {
             padding: 20px 15px 30px;
+
             @media (min-width: 601px) {
                 padding: 30px 30px;
             }
@@ -68,6 +69,9 @@ body.listing-detail {
             & > .mg-container {
                 display: flex;
                 flex-direction: column-reverse;
+            }
+            .detail-container {
+                margin-top: 10px;
             }
             .detail-info {
                 .addr {
@@ -115,6 +119,16 @@ body.listing-detail {
                         height: 27px;
                         border-radius: 0;
                     }
+                }
+
+                .banner-left {
+                    left: auto;
+                    right: 100%;
+                }
+
+                .banner-right {
+                    right: auto;
+                    left: 100%;
                 }
             }
 
@@ -178,6 +192,14 @@ body.listing-detail {
 
                     .center {
                         flex: 1 1 auto;
+
+                        .price-address {
+                            .address {
+                                .detail-container {
+                                    margin-top: 0;
+                                }
+                            }
+                        }
 
                         .save-share-tour {
                             display: flex;

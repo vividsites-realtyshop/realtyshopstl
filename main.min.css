@@ -1450,6 +1450,7 @@ body.listing-detail .md-detail-info.fashion .detail-info-header{padding:20px 15p
 }@media(min-width:1231px){body.listing-detail .md-detail-info.fashion .detail-info-header{padding:30px 120px}
 }body.listing-detail .md-detail-info.fashion .detail-info-header .top-content{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}
 body.listing-detail .md-detail-info.fashion .detail-info-header>.mg-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
+body.listing-detail .md-detail-info.fashion .detail-info-header .detail-container{margin-top:10px}
 body.listing-detail .md-detail-info.fashion .detail-info-header .detail-info .addr{font-size:24px}
 body.listing-detail .md-detail-info.fashion .detail-info-header .detail-info .addr-detail{font-size:16px}
 body.listing-detail .md-detail-info.fashion .detail-info-header .price-value{font-size:48px}
@@ -1460,6 +1461,8 @@ body.listing-detail .md-detail-info.fashion .detail-info-header .btn-container .
 body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box{position:static}
 body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-left,body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-right{top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
 body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-left .btn,body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-right .btn{color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.7);height:27px;border-radius:0}
+body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-left{left:auto;right:100%}
+body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-right{right:auto;left:100%}
 body.listing-detail .md-detail-info.fashion .detail-info-header .image-count{background-color:rgba(0,0,0,.5)}
 body.listing-detail .md-detail-info.fashion .detail-info-header .count-container .item .house{color:#fff}
 body.listing-detail .md-detail-info.fashion .detail-info-header .house-status{font-size:12px !important;height:auto !important;line-height:normal !important;padding:4px 8px !important;border-radius:0 !important}
@@ -1471,6 +1474,7 @@ body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner
 @media(min-width:601px){body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box{padding:0 30px}
 }body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .banner-left .btn,body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .banner-right .btn{color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.7)}
 body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto}
+body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .price-address .address .detail-container{margin-top:0}
 body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour .item{color:#fff}
 @media(max-width:767px){body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour{max-width:160px}
