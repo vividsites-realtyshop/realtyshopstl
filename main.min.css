@@ -1445,19 +1445,24 @@ body.listing-detail .mls-provided-container{display:none}
 body.listing-detail .md-detail-info.fashion .detail-container .detail-info{display:block}
 body.listing-detail .md-detail-info.fashion .detail-container .detail-info .addr{font-weight:normal}
 body.listing-detail .md-detail-info.fashion .detail-container .detail-info .addr-detail{color:rgba(255,255,255,.7);font-weight:normal}
-body.listing-detail .md-detail-info.fashion .detail-info-header{padding:20px 15px 30px}
+body.listing-detail .md-detail-info.fashion .detail-info-header{background-color:#000;padding:20px 15px 30px}
 @media(min-width:601px){body.listing-detail .md-detail-info.fashion .detail-info-header{padding:30px 30px}
 }@media(min-width:1231px){body.listing-detail .md-detail-info.fashion .detail-info-header{padding:30px 120px}
 }body.listing-detail .md-detail-info.fashion .detail-info-header .top-content{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}
 body.listing-detail .md-detail-info.fashion .detail-info-header>.mg-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
 body.listing-detail .md-detail-info.fashion .detail-info-header .detail-container{margin-top:10px}
 body.listing-detail .md-detail-info.fashion .detail-info-header .detail-info .addr{font-size:24px}
-body.listing-detail .md-detail-info.fashion .detail-info-header .detail-info .addr-detail{font-size:16px}
-body.listing-detail .md-detail-info.fashion .detail-info-header .price-value{font-size:48px}
-body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .icon-caculator,body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .payment-text{color:#fff;font-family:var(--font-normal)}
-body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .payment-text{font-size:inherit}
+@media(max-width:1000px){body.listing-detail .md-detail-info.fashion .detail-info-header .detail-info .addr{font-size:calc(14px + 1vw)}
+}@media(min-width:601px){body.listing-detail .md-detail-info.fashion .detail-info-header .detail-info .addr-detail{font-size:16px}
+}body.listing-detail .md-detail-info.fashion .detail-info-header .price-value{font-size:48px}
+@media(max-width:1000px){body.listing-detail .md-detail-info.fashion .detail-info-header .price-value{font-size:calc(28px + 2vw)}
+}@media(max-width:600px){body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .icon-font{font-size:14px}
+}body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .icon-caculator,body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .payment-text{color:#fff;font-family:var(--font-normal)}
+@media(max-width:600px){body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .icon-caculator{padding-bottom:0}
+}body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .payment-text{font-size:inherit}
 body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .separator{border-color:rgba(255,255,255,.4)}
-body.listing-detail .md-detail-info.fashion .detail-info-header .btn-container .btn-item.save{border-color:rgba(255,255,255,.7);color:#fff}
+@media(max-width:600px){body.listing-detail .md-detail-info.fashion .detail-info-header .btn-container{display:none}
+}body.listing-detail .md-detail-info.fashion .detail-info-header .btn-container .btn-item.save{border-color:rgba(255,255,255,.7);color:#fff}
 body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box{position:static}
 body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-left,body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-right{top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
 body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-left .btn,body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-right .btn{color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.7);height:27px;border-radius:0}
