@@ -474,7 +474,14 @@ body .md-hero .banner-video .video-box video{min-width:100%;-o-object-fit:cover;
 .page-content .md-team:not(.carousel-fashion) .agent-item .info-text.agent-position{margin-bottom:20px}
 .page-content .md-team:not(.carousel-fashion) .agent-item .info-text.agent-name{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1;margin-bottom:0 !important;letter-spacing:.05em}
 .page-content .md-team:not(.carousel-fashion) .agent-item:hover .info{height:100% !important;-webkit-box-pack:center !important;-ms-flex-pack:center !important;justify-content:center !important;background:rgba(0,0,0,.5);-webkit-transition:height .4s,background .4s ease .2s;transition:height .4s,background .4s ease .2s}
-.page-content .md-team.multi-column-info-over-img+.md-team.multi-column-info-over-img{padding-top:0 !important}
+.page-content .md-team.multi-column-info-over-img .team-container .teamContent .agents-list .agent-item:hover{text-decoration:none !important}
+@media(max-width:600px)and (min-width:481px){.page-content .md-team.multi-column-info-over-img .team-container .teamContent .agents-list .agent-item{width:calc(50% - 10px)}
+}@media(max-width:600px){.page-content .md-team.multi-column-info-over-img .team-container .teamContent .agents-list .agent-item{margin-bottom:20px}
+.page-content .md-team.multi-column-info-over-img .team-container .teamContent .agents-list .agent-item .agent-img{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.page-content .md-team.multi-column-info-over-img .team-container .teamContent .agents-list .agent-item .agent-img .img-content{position:relative;padding-bottom:125%}
+.page-content .md-team.multi-column-info-over-img .team-container .teamContent .agents-list .agent-item .agent-img .img-content>img{position:absolute;top:0;left:0}
+.page-content .md-team.multi-column-info-over-img .team-container .teamContent .agents-list .agent-item .info{background-color:#111;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+}.page-content .md-team.multi-column-info-over-img+.md-team.multi-column-info-over-img{padding-top:0 !important}
 .page-content .md-team.multi-column-info-under-img .teamContent .agents-list{margin-left:0;margin-right:0}
 @media(min-width:481px){.page-content .md-team.multi-column-info-under-img .teamContent .agents-list{margin-left:-30px;margin-right:-30px}
 }.page-content .md-team.multi-column-info-under-img .teamContent .agent-item{max-width:360px;padding-left:30px;padding-right:30px;margin-bottom:40px}

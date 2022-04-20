@@ -102,6 +102,46 @@
         }
     
         &.multi-column-info-over-img {
+            .team-container {
+                .teamContent {
+                    .agents-list {
+                        .agent-item {
+                            &:hover {
+                                text-decoration: none !important;
+                            }
+                            @media (max-width: 600px) AND (min-width: 481px) {
+                                width: calc(50% - 10px);
+                            }
+                            
+                            @media (max-width: 600px) {
+                                margin-bottom: 20px;
+
+                                .agent-img {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    .img-content {
+                                        position: relative;
+                                        padding-bottom: 125%;
+
+                                        & > img {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                        }
+                                    }
+                                }
+
+                                .info {
+                                    background-color: #111;
+                                    flex: 1 1 auto;
+                                    justify-content: flex-start;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             & + .md-team.multi-column-info-over-img {
                 padding-top: 0 !important;
             }
