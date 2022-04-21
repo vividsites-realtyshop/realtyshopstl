@@ -35,13 +35,15 @@ domReady(function() {
     }, 4000);
     
     setTimeout(() => {
-        document.querySelector(".item-login").addEventListener("click", function() {
-            console.log("clicked login");
-            setTimeout(() => {
-                const loginForm = document.querySelector(".login form");
-                if( loginForm && !loginForm.classList.contains("login-form") ) loginForm.classList.add("login-form");
-            }, 2000);
-        });
+        const login = document.querySelector(".item-login");
+        if(login) {
+            login.addEventListener("click", function() {
+                setTimeout(() => {
+                    const loginForm = document.querySelector(".login form");
+                    if( loginForm && !loginForm.classList.contains("login-form") ) loginForm.classList.add("login-form");
+                }, 2000);
+            });
+        }
     }, 2000);
 
     // Initially, just setting this up on Homepage
