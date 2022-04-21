@@ -2,19 +2,29 @@
     .page-content.template4 {
         .md-nbr-info {
             background: #000;
-            background-image: $marble;
-            background-size: auto !important;
-            background-repeat: repeat !important;
     
             .info-container {
+                padding: 15px 0;
+
                 .left-box {
                     display: flex;
                     flex-wrap: wrap;
+                    padding: 15px 0;
+
+                    .info-content,
+                    .name {
+                        font-family: var(--font-title);
+                        font-size: 48px;
+                        font-weight: normal;
+                        color: #fff;
+                        margin-bottom: 0;
+
+                        @media (max-width: 1000px) {
+                            font-size: calc(18px + 3vw);
+                        }
+                    }
     
                     .info-content {
-                        font-family: var(--font-title);
-                        font-size: 24px;
-                        color: #fff;
                         line-height: normal;
     
                         &:before {
@@ -31,8 +41,6 @@
                     }
     
                     .name {
-                        font-size: 24px;
-                        font-weight: normal;
                         margin-top: 0;
                         order: -1;
                         line-height: normal;
@@ -47,6 +55,14 @@
                     .item {
                         .title {
                             color: #fff;
+                        }
+
+                        .content {
+                            font-size: 36px;
+
+                            @media (max-width: 1000px) {
+                                font-size: calc(16px + 2vw);
+                            }
                         }
                     }
                 }
