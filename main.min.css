@@ -1497,8 +1497,16 @@ body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner
 }@media(min-width:901px){body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .detail-info .addr{font-size:24px}
 body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .detail-info .addr-detail{font-size:16px}
 }body.listing-detail .md-map.fashion .map-tab .tab-header{background-color:#000}
+body.listing-detail .md-map.fashion .map-tab .tab-header .item:not(.active){color:#fff}
 body.listing-detail .md-map.fashion .map-tab .tab-body{background-color:#222}
+body.listing-detail .md-map.fashion .map-tab .tab-body .tab-content.house .item.active{background-color:rgba(255,255,255,.1)}
+body.listing-detail .md-map.fashion .map-tab .tab-body .tab-content.house .item .desc{color:#ccc}
+body.listing-detail .md-map.fashion .map-tab .tab-body .tab-content.house .item .house-mls-info .mls-info{color:#999;font-size:11px}
+body.listing-detail .md-map.fashion .map-tab .tab-body .tab-content.house .item>a{border-color:#373737}
+body.listing-detail .md-map.fashion .map-tab .tab-body .tab-content.school .item .school-desc{color:#ccc}
 body.listing-detail .md-map.fashion .map-tab .tab-collapse .icon-expand{background-color:#222}
+body.listing-detail .md-map.fashion .map-tab .tab-collapse .icon-expand:before{color:#fff}
+body.listing-detail .md-map.fashion .map-tab .more-panel .more{background-color:#000}
 body.listing-detail .md-demographic.fashion .mg-container .demographic-content{background-color:#000 !important;height:auto}
 body.listing-detail .md-demographic.fashion .mg-container .demographic-content .item .info .number{font-family:var(--font-title);font-size:90px;line-height:.7;padding-top:.3em}
 @media(max-width:1000px){body.listing-detail .md-demographic.fashion .mg-container .demographic-content .item .info .number{font-size:calc(20px + 7vw)}
@@ -1513,6 +1521,11 @@ body.listing .house-list.brief-list.template1 .house-list-item.template1 .detail
 body.listing .house-list-item.template1 .house-preview .house-status.open-house{background-color:#ffc03a}
 body.listing .house-list-item.template1 .house-preview .house-status.open-house{background-color:#ffc03a}
 body.listing .house-list-item.template1 .house-preview .house-status.open-house{background-color:#ffc03a}
+.neighborhood .page-content.template4 .mg-title{font-size:36px}
+.neighborhood .page-content.template4 .md-sidebar.fashion{padding:15px 15px 15px 10px;border:0;-webkit-box-shadow:3px 2px 6px 0 rgba(0,0,0,.1);box-shadow:3px 2px 6px 0 rgba(0,0,0,.1)}
+.neighborhood .page-content.template4 .md-sidebar.fashion .sidebar-item:not(.selected){color:#bbb}
+.neighborhood .page-content.template4 .md-sidebar.fashion .collapse-btn{-webkit-box-shadow:inherit;box-shadow:inherit}
+.neighborhood .page-content.template4 .md-sidebar.fashion .collapse-btn .icon-expand:before{color:#bbb}
 .neighborhood .page-content.template4 .md-nbr-info{background:#000}
 .neighborhood .page-content.template4 .md-nbr-info .info-container{padding:15px 0}
 .neighborhood .page-content.template4 .md-nbr-info .info-container .left-box{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:15px 0}
@@ -1523,10 +1536,13 @@ body.listing .house-list-item.template1 .house-preview .house-status.open-house{
 .neighborhood .page-content.template4 .md-nbr-info .info-container .left-box .info-content span:last-child:after{display:none}
 .neighborhood .page-content.template4 .md-nbr-info .info-container .left-box .name{margin-top:0;-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1;line-height:normal}
 .neighborhood .page-content.template4 .md-nbr-info .info-container .info-dec{color:#fff}
-.neighborhood .page-content.template4 .md-nbr-info .info-container .right-box .item .title{color:#fff}
+@media(max-width:600px){.neighborhood .page-content.template4 .md-nbr-info .info-container .info-dec{margin-top:20px}
+}.neighborhood .page-content.template4 .md-nbr-info .info-container .info-dec .more-btn{font-family:var(--font-title);font-size:16px;margin-top:.25em}
+@media(max-width:600px){.neighborhood .page-content.template4 .md-nbr-info .info-container .right-box .item{margin:20px 0;text-align:left}
+}.neighborhood .page-content.template4 .md-nbr-info .info-container .right-box .item .title{color:#fff}
 .neighborhood .page-content.template4 .md-nbr-info .info-container .right-box .item .content{font-size:36px}
 @media(max-width:1000px){.neighborhood .page-content.template4 .md-nbr-info .info-container .right-box .item .content{font-size:calc(16px + 2vw)}
-}.neighborhood .page-content.template4 .md-house .house-title .mg-more{background:transparent;color:#ffc03a;border:solid 1px;height:auto;line-height:normal;padding:4px 12px}
+}.neighborhood .page-content.template4 .md-house .mg-more{font-family:var(--font-title);font-weight:normal;font-size:16px;letter-spacing:var(--mg-title-letter-spacing);background:transparent;color:var(--color-theme);border:solid 1px var(--color-theme);height:auto;line-height:normal;padding:4px 12px;max-width:200px}
 .neighborhood .page-content.template4 .md-market-trends .container{padding:60px 0}
 @media(max-width:639px){.page--sellers .stats{padding:0}
 .page--sellers .stat{margin:0 !important}
