@@ -28,19 +28,21 @@ function domReady(fn) {
 
 
 domReady(function () {
-  console.log("extra script loaded");
   setTimeout(function () {
     var mortgageLeadForm = document.querySelector(".mortgage-lead-form form");
     if (mortgageLeadForm && !mortgageLeadForm.classList.contains("mortgate-lead-form")) mortgageLeadForm.classList.add("mortgate-lead-form");
   }, 4000);
   setTimeout(function () {
-    document.querySelector(".item-login").addEventListener("click", function () {
-      console.log("clicked login");
-      setTimeout(function () {
-        var loginForm = document.querySelector(".login form");
-        if (loginForm && !loginForm.classList.contains("login-form")) loginForm.classList.add("login-form");
-      }, 2000);
-    });
+    var login = document.querySelector(".item-login");
+
+    if (login) {
+      login.addEventListener("click", function () {
+        setTimeout(function () {
+          var loginForm = document.querySelector(".login form");
+          if (loginForm && !loginForm.classList.contains("login-form")) loginForm.classList.add("login-form");
+        }, 2000);
+      });
+    }
   }, 2000); // Initially, just setting this up on Homepage
 
   if (document.body.classList.contains("home")) {// listingsInterval = setInterval(() => {
