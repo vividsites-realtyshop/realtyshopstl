@@ -9,8 +9,14 @@
             box-shadow: 3px 2px 6px 0px rgba(0,0,0,0.1);
 
             .sidebar-item {
+                height: 40px;
+                
                 &:not(.selected) {
                     color: #bbb;
+                }
+
+                .text {
+                    font-family: var(--font-title);
                 }
             }
             
@@ -97,6 +103,7 @@
 
                         .content {
                             font-size: 36px;
+                            font-family: var(--font-title);
 
                             @media (max-width: 1000px) {
                                 font-size: calc(16px + 2vw);

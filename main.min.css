@@ -395,6 +395,17 @@ body .md-hero .banner-video .video-box video{min-width:100%;-o-object-fit:cover;
 @media(min-width:640px){.step--noimg .step__bullet{left:8px;-webkit-transform:none;transform:none}
 }@media(min-width:640px){.step--noimg .step__progress .line{left:21px}
 }.page-content .md-house.template4 .house-grid .house-grid-item.more-link a{color:#fff !important;background:transparent;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;border:solid 1px #fff;width:auto;height:auto;max-width:100%}
+.page-content .md-house.template4 .house-list .header>p.address,.page-content .md-house.template4 .house-list .header>p.price,.page-content .md-house.template4 .house-list .header>p.configure,.page-content .md-house.template4 .house-list .header>p.house-basic,.page-content .md-house.template4 .house-list .header>p.status,.page-content .md-house.template4 .house-list .header>p.property,.page-content .md-house.template4 .house-list .house-detail>p.address,.page-content .md-house.template4 .house-list .house-detail>p.price,.page-content .md-house.template4 .house-list .house-detail>p.configure,.page-content .md-house.template4 .house-list .house-detail>p.house-basic,.page-content .md-house.template4 .house-list .house-detail>p.status,.page-content .md-house.template4 .house-list .house-detail>p.property{width:auto;margin-right:20px;padding:0}
+.page-content .md-house.template4 .house-list .header>p.price,.page-content .md-house.template4 .house-list .house-detail>p.price{width:auto;margin-right:20px;padding:0}
+@media(min-width:1081px){.page-content .md-house.template4 .house-list .header>p.price,.page-content .md-house.template4 .house-list .house-detail>p.price{max-width:100px;min-width:100px}
+}@media(min-width:1081px){.page-content .md-house.template4 .house-list .header>p.configure,.page-content .md-house.template4 .house-list .header>p.house-basic,.page-content .md-house.template4 .house-list .house-detail>p.configure,.page-content .md-house.template4 .house-list .house-detail>p.house-basic{max-width:150px;min-width:150px}
+}@media(min-width:1081px){.page-content .md-house.template4 .house-list .header>p.status,.page-content .md-house.template4 .house-list .house-detail>p.status{max-width:150px;min-width:150px}
+}.page-content .md-house.template4 .house-list .header>p.property,.page-content .md-house.template4 .house-list .house-detail>p.property{margin-right:0}
+@media(min-width:1081px){.page-content .md-house.template4 .house-list .header>p.property,.page-content .md-house.template4 .house-list .house-detail>p.property{max-width:150px;min-width:150px}
+}.page-content .md-house.template4 .house-list .house-list-item .house-detail{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;padding:10px 0;border-top:solid 1px #f6f6f6;border-bottom:0}
+.page-content .md-house.template4 .house-list .house-list-item .house-detail>p{color:#666}
+.page-content .md-house.template4 .house-list .house-list-item .house-detail .house-basic{color:#666}
+.page-content .md-house.template4 .house-list .house-list-item:first-of-type,.page-content .md-house.template4 .house-list .house-list-item:hover+.house-list-item .house-detail{border-top-color:transparent}
 .page-content .house-grid-item .house-status,.page-content .house-list-item .house-status{font-family:var(--font-title) !important;font-size:15px !important;letter-spacing:.05em !important;height:auto !important;line-height:normal !important;padding:3px 12px 1px !important;border-radius:5px !important}
 .page-content .house-grid-item .house-status.new,.page-content .house-grid-item .house-status.open-house,.page-content .house-list-item .house-status.new,.page-content .house-list-item .house-status.open-house{background-color:#ffc03a !important}
 .page-content .house-grid-item .house-status.active,.page-content .house-grid-item .house-status.pending,.page-content .house-grid-item .house-status.contingent,.page-content .house-list-item .house-status.active,.page-content .house-list-item .house-status.pending,.page-content .house-list-item .house-status.contingent{background-color:#2c74a0 !important}
@@ -423,6 +434,18 @@ body .md-hero .banner-video .video-box video{min-width:100%;-o-object-fit:cover;
 .page-content .template4.house-grid-item .house-detail{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .page-content .template4.house-grid-item .house-detail .house-price{min-width:100%}
 .page-content .template4.house-grid-item .house-detail .house-mls-logo{-ms-flex-item-align:end;align-self:flex-end;margin-left:10px}
+.page-content .md-map.fashion .map-tab .tab-header{background-color:#000}
+.page-content .md-map.fashion .map-tab .tab-header .item:not(.active){color:#fff}
+.page-content .md-map.fashion .map-tab .tab-body{background-color:#222}
+.page-content .md-map.fashion .map-tab .tab-body .tab-content.house .item.active{background-color:rgba(255,255,255,.1)}
+.page-content .md-map.fashion .map-tab .tab-body .tab-content.house .item .desc{color:#ccc}
+.page-content .md-map.fashion .map-tab .tab-body .tab-content.house .item .house-mls-info .mls-info{color:#999;font-size:11px}
+.page-content .md-map.fashion .map-tab .tab-body .tab-content.house .item>a{border-color:#373737}
+.page-content .md-map.fashion .map-tab .tab-body .tab-content.school .item .school-desc{color:#ccc}
+.page-content .md-map.fashion .map-tab .tab-collapse .icon-expand{background-color:#222}
+.page-content .md-map.fashion .map-tab .tab-collapse .icon-expand:before{color:#fff}
+.page-content .md-map.fashion .map-tab .more-panel .more{background-color:#000}
+.page-content .md-market-trends .cta-btn button{font-family:var(--font-title);letter-spacing:var(--mg-title-letter-spacing)}
 .uk-slider .uk-slidenav svg{width:24px}
 @media(max-width:500px){.uk-slider .uk-slidenav svg{width:4.8vw}
 }.page-content .uk-switcher>li{padding:4rem 20px 5rem}
@@ -1496,18 +1519,7 @@ body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner
 body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour .item[data-v-298eec66]{margin-right:0;margin-bottom:6px}
 }@media(min-width:901px){body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .detail-info .addr{font-size:24px}
 body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .detail-info .addr-detail{font-size:16px}
-}body.listing-detail .md-map.fashion .map-tab .tab-header{background-color:#000}
-body.listing-detail .md-map.fashion .map-tab .tab-header .item:not(.active){color:#fff}
-body.listing-detail .md-map.fashion .map-tab .tab-body{background-color:#222}
-body.listing-detail .md-map.fashion .map-tab .tab-body .tab-content.house .item.active{background-color:rgba(255,255,255,.1)}
-body.listing-detail .md-map.fashion .map-tab .tab-body .tab-content.house .item .desc{color:#ccc}
-body.listing-detail .md-map.fashion .map-tab .tab-body .tab-content.house .item .house-mls-info .mls-info{color:#999;font-size:11px}
-body.listing-detail .md-map.fashion .map-tab .tab-body .tab-content.house .item>a{border-color:#373737}
-body.listing-detail .md-map.fashion .map-tab .tab-body .tab-content.school .item .school-desc{color:#ccc}
-body.listing-detail .md-map.fashion .map-tab .tab-collapse .icon-expand{background-color:#222}
-body.listing-detail .md-map.fashion .map-tab .tab-collapse .icon-expand:before{color:#fff}
-body.listing-detail .md-map.fashion .map-tab .more-panel .more{background-color:#000}
-body.listing-detail .md-demographic.fashion .mg-container .demographic-content{background-color:#000 !important;height:auto}
+}body.listing-detail .md-demographic.fashion .mg-container .demographic-content{background-color:#000 !important;height:auto}
 body.listing-detail .md-demographic.fashion .mg-container .demographic-content .item .info .number{font-family:var(--font-title);font-size:90px;line-height:.7;padding-top:.3em}
 @media(max-width:1000px){body.listing-detail .md-demographic.fashion .mg-container .demographic-content .item .info .number{font-size:calc(20px + 7vw)}
 }body.listing-detail .md-demographic.fashion .mg-container .demographic-content .item .info .text{color:#fff}
@@ -1523,7 +1535,9 @@ body.listing .house-list-item.template1 .house-preview .house-status.open-house{
 body.listing .house-list-item.template1 .house-preview .house-status.open-house{background-color:#ffc03a}
 .neighborhood .page-content.template4 .mg-title{font-size:36px}
 .neighborhood .page-content.template4 .md-sidebar.fashion{padding:15px 15px 15px 10px;border:0;-webkit-box-shadow:3px 2px 6px 0 rgba(0,0,0,.1);box-shadow:3px 2px 6px 0 rgba(0,0,0,.1)}
+.neighborhood .page-content.template4 .md-sidebar.fashion .sidebar-item{height:40px}
 .neighborhood .page-content.template4 .md-sidebar.fashion .sidebar-item:not(.selected){color:#bbb}
+.neighborhood .page-content.template4 .md-sidebar.fashion .sidebar-item .text{font-family:var(--font-title)}
 .neighborhood .page-content.template4 .md-sidebar.fashion .collapse-btn{-webkit-box-shadow:inherit;box-shadow:inherit}
 .neighborhood .page-content.template4 .md-sidebar.fashion .collapse-btn .icon-expand:before{color:#bbb}
 .neighborhood .page-content.template4 .md-nbr-info{background:#000}
@@ -1540,7 +1554,7 @@ body.listing .house-list-item.template1 .house-preview .house-status.open-house{
 }.neighborhood .page-content.template4 .md-nbr-info .info-container .info-dec .more-btn{font-family:var(--font-title);font-size:16px;margin-top:.25em}
 @media(max-width:600px){.neighborhood .page-content.template4 .md-nbr-info .info-container .right-box .item{margin:20px 0;text-align:left}
 }.neighborhood .page-content.template4 .md-nbr-info .info-container .right-box .item .title{color:#fff}
-.neighborhood .page-content.template4 .md-nbr-info .info-container .right-box .item .content{font-size:36px}
+.neighborhood .page-content.template4 .md-nbr-info .info-container .right-box .item .content{font-size:36px;font-family:var(--font-title)}
 @media(max-width:1000px){.neighborhood .page-content.template4 .md-nbr-info .info-container .right-box .item .content{font-size:calc(16px + 2vw)}
 }.neighborhood .page-content.template4 .md-house .mg-more{font-family:var(--font-title);font-weight:normal;font-size:16px;letter-spacing:var(--mg-title-letter-spacing);background:transparent;color:var(--color-theme);border:solid 1px var(--color-theme);height:auto;line-height:normal;padding:4px 12px;max-width:200px}
 .neighborhood .page-content.template4 .md-market-trends .container{padding:60px 0}

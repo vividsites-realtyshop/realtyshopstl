@@ -37,6 +37,76 @@
                     }
                 }
             }
+
+            .house-list {
+                .header,
+                .house-detail {
+                    & > p.address,
+                    & > p.price,
+                    & > p.configure,
+                    & > p.house-basic,
+                    & > p.status,
+                    & > p.property {
+                        width: auto;
+                        margin-right: 20px;
+                        padding: 0;
+                    }
+                    & > p.address {
+                    }
+                    & > p.price {
+                        width: auto;
+                        margin-right: 20px;
+                        padding: 0;
+
+                        @media (min-width: 1081px) {
+                            max-width: 100px;
+                            min-width: 100px;
+                        }
+                    }
+                    & > p.configure,
+                    & > p.house-basic {
+                        @media (min-width: 1081px) {
+                            max-width: 150px;
+                            min-width: 150px;
+                        }
+                    }
+                    & > p.status {
+                        @media (min-width: 1081px) {
+                            max-width: 150px;
+                            min-width: 150px;
+                        }
+                    }
+                    & > p.property {
+                        margin-right: 0;
+
+                        @media (min-width: 1081px) {
+                            max-width: 150px;
+                            min-width: 150px;
+                        }
+                    }
+                }
+                .house-list-item {
+                    .house-detail {
+                        align-items: flex-start;
+                        padding: 10px 0;
+                        border-top: solid 1px #f6f6f6;
+                        border-bottom: none;
+                        
+                        & > p {
+                            color: #666;
+                        }
+
+                        .house-basic {
+                            color: #666;
+                        }
+                    }
+
+                    &:first-of-type,
+                    &:hover + .house-list-item .house-detail {
+                        border-top-color: transparent;
+                    }
+                }
+            }
         }
     }
 

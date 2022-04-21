@@ -1,0 +1,59 @@
+.page-content {
+    .md-map.fashion {
+        .map-tab {
+            .tab-header {
+                background-color: #000;
+
+                .item:not(.active) {
+                    color: #fff;
+                }
+            }
+            .tab-body {
+                background-color: #222;
+
+                .tab-content {
+                    &.house {
+                        .item {
+                            &.active {
+                                background-color: rgba(255,255,255,0.1);
+                            }
+                            .desc {
+                                color: #ccc;
+                            }
+                            .house-mls-info {
+                                .mls-info {
+                                    color: #999;
+                                    font-size: 11px;
+                                }
+                            }
+                            & > a {
+                                border-color: #373737;
+                            }
+                        }
+                    }
+                    &.school {
+                        .item {
+                            .school-desc {
+                                color: #ccc;
+                            }
+                        }
+                    }
+                }
+            }
+            .tab-collapse {
+                .icon-expand {
+                    background-color: #222;
+
+                    &:before {
+                        color: #fff;
+                    }
+                }
+            }
+            .more-panel {
+                .more {
+                    background-color: #000;
+                }
+            }
+        }
+    }
+}
