@@ -57,6 +57,7 @@
                     & > p.price {
                         width: auto;
                         padding: 0;
+                        text-align: left;
 
                         @media (min-width: 1081px) {
                             max-width: 100px;
@@ -93,7 +94,7 @@
                         min-width: calc(100% - 220px);
                         max-width: calc(100% - 220px);
 
-                        @media (min-width: 1081px) {
+                        @media (min-width: 801px) {
                             min-width: calc(100% - 510px);
                             max-width: calc(100% - 510px);
                         }
@@ -109,7 +110,7 @@
                         min-width: calc(100% - 120px);
                         max-width: calc(100% - 120px);
 
-                        @media (min-width: 1081px) {
+                        @media (min-width: 801px) {
                             min-width: calc(100% - 290px);
                             max-width: calc(100% - 290px);
                         }

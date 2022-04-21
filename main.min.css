@@ -397,7 +397,7 @@ body .md-hero .banner-video .video-box video{min-width:100%;-o-object-fit:cover;
 }.page-content .md-house.template4 .house-grid .house-grid-item.more-link a{color:#fff !important;background:transparent;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;border:solid 1px #fff;width:auto;height:auto;max-width:100%}
 .page-content .md-house.template4 .house-list .header,.page-content .md-house.template4 .house-list .house-detail{gap:20px}
 .page-content .md-house.template4 .house-list .header>p.address,.page-content .md-house.template4 .house-list .header>p.price,.page-content .md-house.template4 .house-list .header>p.configure,.page-content .md-house.template4 .house-list .header>div.house-basic,.page-content .md-house.template4 .house-list .header>p.status,.page-content .md-house.template4 .house-list .header>p.property,.page-content .md-house.template4 .house-list .house-detail>p.address,.page-content .md-house.template4 .house-list .house-detail>p.price,.page-content .md-house.template4 .house-list .house-detail>p.configure,.page-content .md-house.template4 .house-list .house-detail>div.house-basic,.page-content .md-house.template4 .house-list .house-detail>p.status,.page-content .md-house.template4 .house-list .house-detail>p.property{width:auto;padding:0}
-.page-content .md-house.template4 .house-list .header>p.price,.page-content .md-house.template4 .house-list .house-detail>p.price{width:auto;padding:0}
+.page-content .md-house.template4 .house-list .header>p.price,.page-content .md-house.template4 .house-list .house-detail>p.price{width:auto;padding:0;text-align:left}
 @media(min-width:1081px){.page-content .md-house.template4 .house-list .header>p.price,.page-content .md-house.template4 .house-list .house-detail>p.price{max-width:100px;min-width:100px}
 }@media(min-width:1081px){.page-content .md-house.template4 .house-list .header>p.configure,.page-content .md-house.template4 .house-list .header>div.house-basic,.page-content .md-house.template4 .house-list .house-detail>p.configure,.page-content .md-house.template4 .house-list .house-detail>div.house-basic{max-width:150px;min-width:150px}
 }@media(min-width:1081px){.page-content .md-house.template4 .house-list .header>p.status,.page-content .md-house.template4 .house-list .house-detail>p.status{max-width:100px;min-width:100px}
@@ -405,10 +405,10 @@ body .md-hero .banner-video .video-box video{min-width:100%;-o-object-fit:cover;
 .page-content .md-house.template4 .house-list .header{border-bottom:solid 1px #f6f6f6}
 @media(max-width:800px){.page-content .md-house.template4 .house-list .header>p.image{min-width:0}
 }.page-content .md-house.template4 .house-list .header>p.address{min-width:calc(100% - 220px);max-width:calc(100% - 220px)}
-@media(min-width:1081px){.page-content .md-house.template4 .house-list .header>p.address{min-width:calc(100% - 510px);max-width:calc(100% - 510px)}
+@media(min-width:801px){.page-content .md-house.template4 .house-list .header>p.address{min-width:calc(100% - 510px);max-width:calc(100% - 510px)}
 }@media(min-width:1081px){.page-content .md-house.template4 .house-list .header>p.address{min-width:calc(100% - 800px);max-width:calc(100% - 800px)}
 }.page-content .md-house.template4 .house-list .house-detail>p.address{min-width:calc(100% - 120px);max-width:calc(100% - 120px)}
-@media(min-width:1081px){.page-content .md-house.template4 .house-list .house-detail>p.address{min-width:calc(100% - 290px);max-width:calc(100% - 290px)}
+@media(min-width:801px){.page-content .md-house.template4 .house-list .house-detail>p.address{min-width:calc(100% - 290px);max-width:calc(100% - 290px)}
 }@media(min-width:1081px){.page-content .md-house.template4 .house-list .house-detail>p.address{min-width:calc(100% - 580px);max-width:calc(100% - 580px)}
 }.page-content .md-house.template4 .house-list .house-detail>p.price{display:block}
 .page-content .md-house.template4 .house-list .house-detail>p.price span{display:block}
