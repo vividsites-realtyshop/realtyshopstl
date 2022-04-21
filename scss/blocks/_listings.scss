@@ -41,21 +41,21 @@
             .house-list {
                 .header,
                 .house-detail {
+                    gap: 20px;
+
                     & > p.address,
                     & > p.price,
                     & > p.configure,
-                    & > p.house-basic,
+                    & > div.house-basic,
                     & > p.status,
                     & > p.property {
                         width: auto;
-                        margin-right: 20px;
                         padding: 0;
                     }
                     & > p.address {
                     }
                     & > p.price {
                         width: auto;
-                        margin-right: 20px;
                         padding: 0;
 
                         @media (min-width: 1081px) {
@@ -64,7 +64,7 @@
                         }
                     }
                     & > p.configure,
-                    & > p.house-basic {
+                    & > div.house-basic {
                         @media (min-width: 1081px) {
                             max-width: 150px;
                             min-width: 150px;
@@ -72,16 +72,58 @@
                     }
                     & > p.status {
                         @media (min-width: 1081px) {
-                            max-width: 150px;
-                            min-width: 150px;
+                            max-width: 100px;
+                            min-width: 100px;
                         }
                     }
                     & > p.property {
-                        margin-right: 0;
+                        text-align: left;
+                        max-width: 150px;
+                        min-width: 150px;
+                    }
+                }
+                .header {
+                    border-bottom: solid 1px #f6f6f6;
+                    & > p.image {
+                        @media (max-width: 800px) {
+                            min-width: 0;
+                        }
+                    }
+                    & > p.address {
+                        min-width: calc(100% - 220px);
+                        max-width: calc(100% - 220px);
 
                         @media (min-width: 1081px) {
-                            max-width: 150px;
-                            min-width: 150px;
+                            min-width: calc(100% - 510px);
+                            max-width: calc(100% - 510px);
+                        }
+                        
+                        @media (min-width: 1081px) {
+                            min-width: calc(100% - 800px);
+                            max-width: calc(100% - 800px);
+                        }
+                    }
+                }
+                .house-detail {
+                    & > p.address {
+                        min-width: calc(100% - 120px);
+                        max-width: calc(100% - 120px);
+
+                        @media (min-width: 1081px) {
+                            min-width: calc(100% - 290px);
+                            max-width: calc(100% - 290px);
+                        }
+                        
+                        @media (min-width: 1081px) {
+                            min-width: calc(100% - 580px);
+                            max-width: calc(100% - 580px);
+                        }
+                    }
+                    & > p.price {
+                        display: block;
+
+                        span {
+                            display: block;
                         }
                     }
                 }
@@ -99,9 +141,13 @@
                         .house-basic {
                             color: #666;
                         }
+
+                        @media (max-width: 800px) {
+                            margin-left: 0;
+                        }
                     }
 
-                    &:first-of-type,
+                    &:first-of-type .house-detail,
                     &:hover + .house-list-item .house-detail {
                         border-top-color: transparent;
                     }
