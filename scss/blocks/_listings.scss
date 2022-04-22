@@ -8,19 +8,17 @@
 
         &.template4 {
             .house-grid {
+                max-width: none;
+
                 .house-grid-item {
-                    // .house-detail {
-                    //     .house-status {
-                    //         &.new,
-                    //         &.open-house {
-                    //             background-color: var(--color-theme);
-                    //         }
-        
-                    //         &.active {
-                    //             background-color: $blue;
-                    //         }
-                    //     }
-                    // }
+                    @media (max-width: 800px) {
+                        width: calc(50% - 20px);
+                    }
+                    @media (max-width: 600px) {
+                        .mask {
+                            background-color: #222;
+                        }
+                    }
 
                     &.more-link {
                         a {
@@ -51,6 +49,7 @@
                     & > p.property {
                         width: auto;
                         padding: 0;
+                        line-height: 1.25;
                     }
                     & > p.address {
                     }
@@ -85,6 +84,10 @@
                 }
                 .header {
                     border-bottom: solid 1px #f6f6f6;
+
+                    p {
+                        text-transform: none;
+                    }
                     & > p.image {
                         @media (max-width: 800px) {
                             min-width: 0;
@@ -120,11 +123,25 @@
                             max-width: calc(100% - 580px);
                         }
                     }
+                    & > .house-basic {
+                        letter-spacing: 0;
+                    }
                     & > p.price {
                         display: block;
 
                         span {
                             display: block;
+                        }
+
+                        @media (max-width: 800px) {
+                            font-size: 16px;
+                        }
+
+                        @media (max-width: 600px) {
+                            .initial-price {
+                                transform: none;
+                                margin-top: 0;
+                            }
                         }
                     }
                 }

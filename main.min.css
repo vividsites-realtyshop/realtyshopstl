@@ -394,15 +394,19 @@ body .md-hero .banner-video .video-box video{min-width:100%;-o-object-fit:cover;
 .step--noimg .step__bullet{width:100%}
 @media(min-width:640px){.step--noimg .step__bullet{left:8px;-webkit-transform:none;transform:none}
 }@media(min-width:640px){.step--noimg .step__progress .line{left:21px}
+}.page-content .md-house.template4 .house-grid{max-width:none}
+@media(max-width:800px){.page-content .md-house.template4 .house-grid .house-grid-item{width:calc(50% - 20px)}
+}@media(max-width:600px){.page-content .md-house.template4 .house-grid .house-grid-item .mask{background-color:#222}
 }.page-content .md-house.template4 .house-grid .house-grid-item.more-link a{color:#fff !important;background:transparent;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;border:solid 1px #fff;width:auto;height:auto;max-width:100%}
 .page-content .md-house.template4 .house-list .header,.page-content .md-house.template4 .house-list .house-detail{gap:20px}
-.page-content .md-house.template4 .house-list .header>p.address,.page-content .md-house.template4 .house-list .header>p.price,.page-content .md-house.template4 .house-list .header>p.configure,.page-content .md-house.template4 .house-list .header>div.house-basic,.page-content .md-house.template4 .house-list .header>p.status,.page-content .md-house.template4 .house-list .header>p.property,.page-content .md-house.template4 .house-list .house-detail>p.address,.page-content .md-house.template4 .house-list .house-detail>p.price,.page-content .md-house.template4 .house-list .house-detail>p.configure,.page-content .md-house.template4 .house-list .house-detail>div.house-basic,.page-content .md-house.template4 .house-list .house-detail>p.status,.page-content .md-house.template4 .house-list .house-detail>p.property{width:auto;padding:0}
+.page-content .md-house.template4 .house-list .header>p.address,.page-content .md-house.template4 .house-list .header>p.price,.page-content .md-house.template4 .house-list .header>p.configure,.page-content .md-house.template4 .house-list .header>div.house-basic,.page-content .md-house.template4 .house-list .header>p.status,.page-content .md-house.template4 .house-list .header>p.property,.page-content .md-house.template4 .house-list .house-detail>p.address,.page-content .md-house.template4 .house-list .house-detail>p.price,.page-content .md-house.template4 .house-list .house-detail>p.configure,.page-content .md-house.template4 .house-list .house-detail>div.house-basic,.page-content .md-house.template4 .house-list .house-detail>p.status,.page-content .md-house.template4 .house-list .house-detail>p.property{width:auto;padding:0;line-height:1.25}
 .page-content .md-house.template4 .house-list .header>p.price,.page-content .md-house.template4 .house-list .house-detail>p.price{width:auto;padding:0;text-align:left}
 @media(min-width:1081px){.page-content .md-house.template4 .house-list .header>p.price,.page-content .md-house.template4 .house-list .house-detail>p.price{max-width:100px;min-width:100px}
 }@media(min-width:1081px){.page-content .md-house.template4 .house-list .header>p.configure,.page-content .md-house.template4 .house-list .header>div.house-basic,.page-content .md-house.template4 .house-list .house-detail>p.configure,.page-content .md-house.template4 .house-list .house-detail>div.house-basic{max-width:150px;min-width:150px}
 }@media(min-width:1081px){.page-content .md-house.template4 .house-list .header>p.status,.page-content .md-house.template4 .house-list .house-detail>p.status{max-width:100px;min-width:100px}
 }.page-content .md-house.template4 .house-list .header>p.property,.page-content .md-house.template4 .house-list .house-detail>p.property{text-align:left;max-width:150px;min-width:150px}
 .page-content .md-house.template4 .house-list .header{border-bottom:solid 1px #f6f6f6}
+.page-content .md-house.template4 .house-list .header p{text-transform:none}
 @media(max-width:800px){.page-content .md-house.template4 .house-list .header>p.image{min-width:0}
 }.page-content .md-house.template4 .house-list .header>p.address{min-width:calc(100% - 220px);max-width:calc(100% - 220px)}
 @media(min-width:801px){.page-content .md-house.template4 .house-list .header>p.address{min-width:calc(100% - 510px);max-width:calc(100% - 510px)}
@@ -410,9 +414,12 @@ body .md-hero .banner-video .video-box video{min-width:100%;-o-object-fit:cover;
 }.page-content .md-house.template4 .house-list .house-detail>p.address{min-width:calc(100% - 120px);max-width:calc(100% - 120px)}
 @media(min-width:801px){.page-content .md-house.template4 .house-list .house-detail>p.address{min-width:calc(100% - 290px);max-width:calc(100% - 290px)}
 }@media(min-width:1081px){.page-content .md-house.template4 .house-list .house-detail>p.address{min-width:calc(100% - 580px);max-width:calc(100% - 580px)}
-}.page-content .md-house.template4 .house-list .house-detail>p.price{display:block}
+}.page-content .md-house.template4 .house-list .house-detail>.house-basic{letter-spacing:0}
+.page-content .md-house.template4 .house-list .house-detail>p.price{display:block}
 .page-content .md-house.template4 .house-list .house-detail>p.price span{display:block}
-.page-content .md-house.template4 .house-list .house-list-item .house-detail{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;padding:10px 0;border-top:solid 1px #f6f6f6;border-bottom:0}
+@media(max-width:800px){.page-content .md-house.template4 .house-list .house-detail>p.price{font-size:16px}
+}@media(max-width:600px){.page-content .md-house.template4 .house-list .house-detail>p.price .initial-price{-webkit-transform:none;transform:none;margin-top:0}
+}.page-content .md-house.template4 .house-list .house-list-item .house-detail{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;padding:10px 0;border-top:solid 1px #f6f6f6;border-bottom:0}
 .page-content .md-house.template4 .house-list .house-list-item .house-detail>p{color:#666}
 .page-content .md-house.template4 .house-list .house-list-item .house-detail .house-basic{color:#666}
 @media(max-width:800px){.page-content .md-house.template4 .house-list .house-list-item .house-detail{margin-left:0}
@@ -1567,7 +1574,7 @@ body.listing .house-list-item.template1 .house-preview .house-status.open-house{
 }.neighborhood .page-content.template4 .md-nbr-info .info-container .right-box .item .title{color:#fff}
 .neighborhood .page-content.template4 .md-nbr-info .info-container .right-box .item .content{font-size:36px;font-family:var(--font-title)}
 @media(max-width:1000px){.neighborhood .page-content.template4 .md-nbr-info .info-container .right-box .item .content{font-size:calc(16px + 2vw)}
-}.neighborhood .page-content.template4 .md-house .mg-more{font-family:var(--font-title);font-weight:normal;font-size:16px;letter-spacing:var(--mg-title-letter-spacing);background:transparent;color:var(--color-theme);border:solid 1px var(--color-theme);height:auto;line-height:normal;padding:4px 12px;max-width:200px}
+}.neighborhood .page-content.template4 .md-house .mg-more{font-family:var(--font-title);font-weight:normal;font-size:16px;letter-spacing:var(--mg-title-letter-spacing);background:transparent;color:var(--color-theme);border:solid 1px var(--color-theme);height:auto;line-height:normal;padding:8px 12px;max-width:200px}
 .neighborhood .page-content.template4 .md-market-trends .container{padding:60px 0}
 @media(max-width:639px){.page--sellers .stats{padding:0}
 .page--sellers .stat{margin:0 !important}
