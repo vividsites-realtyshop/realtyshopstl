@@ -396,7 +396,8 @@ body .md-hero .banner-video .video-box video{min-width:100%;-o-object-fit:cover;
 }@media(min-width:640px){.step--noimg .step__progress .line{left:21px}
 }.page-content .md-house.template4 .house-grid{max-width:none}
 @media(max-width:800px){.page-content .md-house.template4 .house-grid .house-grid-item{width:calc(50% - 20px)}
-}@media(max-width:600px){.page-content .md-house.template4 .house-grid .house-grid-item .mask{background-color:#222}
+}@media(max-width:600px){.page-content .md-house.template4 .house-grid .house-grid-item{width:100%}
+.page-content .md-house.template4 .house-grid .house-grid-item .mask{background-color:#222}
 }.page-content .md-house.template4 .house-grid .house-grid-item.more-link a{color:#fff !important;background:transparent;padding:.75rem 2rem !important;min-width:240px;text-transform:uppercase;border:solid 1px #fff;width:auto;height:auto;max-width:100%}
 .page-content .md-house.template4 .house-list .header,.page-content .md-house.template4 .house-list .house-detail{gap:20px}
 .page-content .md-house.template4 .house-list .header>p.address,.page-content .md-house.template4 .house-list .header>p.price,.page-content .md-house.template4 .house-list .header>p.configure,.page-content .md-house.template4 .house-list .header>div.house-basic,.page-content .md-house.template4 .house-list .header>p.status,.page-content .md-house.template4 .house-list .header>p.property,.page-content .md-house.template4 .house-list .house-detail>p.address,.page-content .md-house.template4 .house-list .house-detail>p.price,.page-content .md-house.template4 .house-list .house-detail>p.configure,.page-content .md-house.template4 .house-list .house-detail>div.house-basic,.page-content .md-house.template4 .house-list .house-detail>p.status,.page-content .md-house.template4 .house-list .house-detail>p.property{width:auto;padding:0;line-height:1.25}
@@ -1486,63 +1487,65 @@ body.contact .md-agent-contact .contact-box .contact-container .item .title{colo
 .page--join #systems_tools_resources .grid__item{-webkit-transition:all .3s;transition:all .3s;cursor:pointer}
 .page--join #systems_tools_resources .grid__item:hover .grid__icon{-webkit-transition:inherit;transition:inherit;border-color:var(--color-theme)}
 .page--join #systems_tools_resources .grid__item:hover .grid__text{-webkit-transition:inherit;transition:inherit;color:var(--color-theme)}
-body.listing-detail .save-share-container[data-v-298eec66]{background-color:#222;border-top:0}
-body.listing-detail .save-share-container .right-btn .item.share[data-v-298eec66]{color:#fff}
-body.listing-detail .breadcrumb-container{position:absolute;top:0;left:0;z-index:2;background:rgba(0,0,0,.5);height:auto;padding:10px 50px 12px}
-body.listing-detail .breadcrumb-container .breadcrumb-bar{width:auto}
-body.listing-detail .breadcrumb-container .breadcrumb-bar.mg-container .link:not(:hover){color:#fff}
-body.listing-detail .breadcrumb-container .breadcrumb-bar.mg-container .fack-link,body.listing-detail .breadcrumb-container .breadcrumb-bar.mg-container .fake-link,body.listing-detail .breadcrumb-container .breadcrumb-bar.mg-container .arrow{color:#fff}
-body.listing-detail .mls-provided-container{display:none}
-body.listing-detail .md-detail-info.fashion .detail-container .detail-info{display:block}
-body.listing-detail .md-detail-info.fashion .detail-container .detail-info .addr{font-weight:normal}
-body.listing-detail .md-detail-info.fashion .detail-container .detail-info .addr-detail{color:rgba(255,255,255,.7);font-weight:normal}
-body.listing-detail .md-detail-info.fashion .detail-info-header{background-color:#000;padding:20px 15px 30px}
-@media(min-width:601px){body.listing-detail .md-detail-info.fashion .detail-info-header{padding:30px 30px}
-}@media(min-width:1231px){body.listing-detail .md-detail-info.fashion .detail-info-header{padding:30px 120px}
-}body.listing-detail .md-detail-info.fashion .detail-info-header .top-content{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}
-body.listing-detail .md-detail-info.fashion .detail-info-header>.mg-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
-body.listing-detail .md-detail-info.fashion .detail-info-header .detail-container{margin-top:10px}
-body.listing-detail .md-detail-info.fashion .detail-info-header .detail-info .addr{font-size:24px}
-@media(max-width:1000px){body.listing-detail .md-detail-info.fashion .detail-info-header .detail-info .addr{font-size:calc(14px + 1vw)}
-}@media(min-width:601px){body.listing-detail .md-detail-info.fashion .detail-info-header .detail-info .addr-detail{font-size:16px}
-}body.listing-detail .md-detail-info.fashion .detail-info-header .price-value{font-size:48px}
-@media(max-width:1000px){body.listing-detail .md-detail-info.fashion .detail-info-header .price-value{font-size:calc(28px + 2vw)}
-}@media(max-width:600px){body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .icon-font{font-size:14px}
-}body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .icon-caculator,body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .payment-text{color:#fff;font-family:var(--font-normal)}
-@media(max-width:600px){body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .icon-caculator{padding-bottom:0}
-}body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .payment-text{font-size:inherit}
-body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .separator{border-color:rgba(255,255,255,.4)}
-@media(max-width:600px){body.listing-detail .md-detail-info.fashion .detail-info-header .btn-container{display:none}
-}body.listing-detail .md-detail-info.fashion .detail-info-header .btn-container .btn-item.save{border-color:rgba(255,255,255,.7);color:#fff}
-body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box{position:static}
-body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-left,body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-right{top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
-body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-left .btn,body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-right .btn{color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.7);height:27px;border-radius:0}
-body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-left{left:auto;right:100%}
-body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-right{right:auto;left:100%}
-body.listing-detail .md-detail-info.fashion .detail-info-header .image-count{background-color:rgba(0,0,0,.5)}
-body.listing-detail .md-detail-info.fashion .detail-info-header .count-container .item .house{color:#fff}
-body.listing-detail .md-detail-info.fashion .detail-info-header .house-status{font-size:12px !important;height:auto !important;line-height:normal !important;padding:4px 8px !important;border-radius:0 !important}
-body.listing-detail .md-detail-info.fashion .detail-info-header .house-status.new,body.listing-detail .md-detail-info.fashion .detail-info-header .house-status.open-house{background-color:#ffc03a !important}
-body.listing-detail .md-detail-info.fashion .detail-info-header .house-status.active,body.listing-detail .md-detail-info.fashion .detail-info-header .house-status.pending,body.listing-detail .md-detail-info.fashion .detail-info-header .house-status.contingent{background-color:#2c74a0 !important}
-body.listing-detail .md-detail-info.fashion .detail-info-header .house-status.coming-soon{background-color:rgba(255,255,255,.3) !important;border:solid 1px #fff !important;color:#fff !important}
-body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner{background-color:#000}
-body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box{width:100%;padding:0 15px}
-@media(min-width:601px){body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box{padding:0 30px}
-}body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .banner-left .btn,body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .banner-right .btn{color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.7)}
-body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto}
-body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .price-address .address .detail-container{margin-top:0}
-body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
-body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour .item{color:#fff}
-@media(max-width:767px){body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour{max-width:160px}
-body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour .item[data-v-298eec66]{margin-right:0;margin-bottom:6px}
-}@media(min-width:901px){body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .detail-info .addr{font-size:24px}
-body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .detail-info .addr-detail{font-size:16px}
-}body.listing-detail .md-demographic.fashion .mg-container .demographic-content{background-color:#000 !important;height:auto}
-body.listing-detail .md-demographic.fashion .mg-container .demographic-content .item .info .number{font-family:var(--font-title);font-size:90px;line-height:.7;padding-top:.3em}
-@media(max-width:1000px){body.listing-detail .md-demographic.fashion .mg-container .demographic-content .item .info .number{font-size:calc(20px + 7vw)}
-}body.listing-detail .md-demographic.fashion .mg-container .demographic-content .item .info .text{color:#fff}
-@media(max-width:600px){body.listing-detail .md-demographic.fashion .mg-container .demographic-content .item{height:auto;margin-bottom:15px}
-}body.listing-detail .md-demographic.fashion .md-demographic-content{background-color:#000 !important}
+body.listing-detail .banner.swiper-container .swiper-wrapper .swiper-slide:only-of-type,body.listing-detail-sold .banner.swiper-container .swiper-wrapper .swiper-slide:only-of-type{width:100%}
+body.listing-detail .save-share-container[data-v-298eec66],body.listing-detail-sold .save-share-container[data-v-298eec66]{background-color:#222;border-top:0}
+body.listing-detail .save-share-container .right-btn .item.share[data-v-298eec66],body.listing-detail-sold .save-share-container .right-btn .item.share[data-v-298eec66]{color:#fff}
+body.listing-detail .breadcrumb-container,body.listing-detail-sold .breadcrumb-container{position:absolute;top:0;left:0;z-index:2;background:rgba(0,0,0,.5);height:auto;padding:10px 50px 12px}
+body.listing-detail .breadcrumb-container .breadcrumb-bar,body.listing-detail-sold .breadcrumb-container .breadcrumb-bar{width:auto}
+body.listing-detail .breadcrumb-container .breadcrumb-bar.mg-container .link:not(:hover),body.listing-detail-sold .breadcrumb-container .breadcrumb-bar.mg-container .link:not(:hover){color:#fff}
+body.listing-detail .breadcrumb-container .breadcrumb-bar.mg-container .fack-link,body.listing-detail .breadcrumb-container .breadcrumb-bar.mg-container .fake-link,body.listing-detail .breadcrumb-container .breadcrumb-bar.mg-container .arrow,body.listing-detail-sold .breadcrumb-container .breadcrumb-bar.mg-container .fack-link,body.listing-detail-sold .breadcrumb-container .breadcrumb-bar.mg-container .fake-link,body.listing-detail-sold .breadcrumb-container .breadcrumb-bar.mg-container .arrow{color:#fff}
+body.listing-detail .mls-provided-container,body.listing-detail-sold .mls-provided-container{display:none}
+body.listing-detail .md-detail-info.fashion .detail-container .detail-info,body.listing-detail-sold .md-detail-info.fashion .detail-container .detail-info{display:block}
+body.listing-detail .md-detail-info.fashion .detail-container .detail-info .addr,body.listing-detail-sold .md-detail-info.fashion .detail-container .detail-info .addr{font-weight:normal}
+body.listing-detail .md-detail-info.fashion .detail-container .detail-info .addr-detail,body.listing-detail-sold .md-detail-info.fashion .detail-container .detail-info .addr-detail{color:rgba(255,255,255,.7);font-weight:normal}
+body.listing-detail .md-detail-info.fashion .detail-info-header,body.listing-detail-sold .md-detail-info.fashion .detail-info-header{background-color:#000;padding:20px 15px 30px}
+@media(min-width:601px){body.listing-detail .md-detail-info.fashion .detail-info-header,body.listing-detail-sold .md-detail-info.fashion .detail-info-header{padding:30px 30px}
+}@media(min-width:1231px){body.listing-detail .md-detail-info.fashion .detail-info-header,body.listing-detail-sold .md-detail-info.fashion .detail-info-header{padding:30px 120px}
+}body.listing-detail .md-detail-info.fashion .detail-info-header .top-content,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .top-content{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}
+body.listing-detail .md-detail-info.fashion .detail-info-header>.mg-container,body.listing-detail-sold .md-detail-info.fashion .detail-info-header>.mg-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
+body.listing-detail .md-detail-info.fashion .detail-info-header .detail-container,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .detail-container{margin-top:10px}
+body.listing-detail .md-detail-info.fashion .detail-info-header .detail-info .addr,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .detail-info .addr{font-size:24px}
+@media(max-width:1000px){body.listing-detail .md-detail-info.fashion .detail-info-header .detail-info .addr,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .detail-info .addr{font-size:calc(14px + 1vw)}
+}@media(min-width:601px){body.listing-detail .md-detail-info.fashion .detail-info-header .detail-info .addr-detail,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .detail-info .addr-detail{font-size:16px}
+}body.listing-detail .md-detail-info.fashion .detail-info-header .price-value,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .price-value{font-size:48px}
+@media(max-width:1000px){body.listing-detail .md-detail-info.fashion .detail-info-header .price-value,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .price-value{font-size:calc(28px + 2vw)}
+}@media(max-width:600px){body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .icon-font,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .caculator-container .icon-font{font-size:14px}
+}body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .icon-caculator,body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .payment-text,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .caculator-container .icon-caculator,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .caculator-container .payment-text{color:#fff;font-family:var(--font-normal)}
+@media(max-width:600px){body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .icon-caculator,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .caculator-container .icon-caculator{padding-bottom:0}
+}body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .payment-text,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .caculator-container .payment-text{font-size:inherit}
+body.listing-detail .md-detail-info.fashion .detail-info-header .caculator-container .separator,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .caculator-container .separator{border-color:rgba(255,255,255,.4)}
+@media(max-width:600px){body.listing-detail .md-detail-info.fashion .detail-info-header .btn-container,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .btn-container{display:none}
+}body.listing-detail .md-detail-info.fashion .detail-info-header .btn-container .btn-item.save,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .btn-container .btn-item.save{border-color:rgba(255,255,255,.7);color:#fff}
+body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .prev-next-box{position:static}
+body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-left,body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-right,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .prev-next-box .banner-left,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .prev-next-box .banner-right{top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-left .btn,body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-right .btn,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .prev-next-box .banner-left .btn,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .prev-next-box .banner-right .btn{color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.7);height:27px;border-radius:0}
+body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-left,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .prev-next-box .banner-left{left:auto;right:100%}
+body.listing-detail .md-detail-info.fashion .detail-info-header .prev-next-box .banner-right,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .prev-next-box .banner-right{right:auto;left:100%}
+body.listing-detail .md-detail-info.fashion .detail-info-header .image-count,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .image-count{background-color:rgba(0,0,0,.5)}
+body.listing-detail .md-detail-info.fashion .detail-info-header .count-container .item .house,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .count-container .item .house{color:#fff}
+body.listing-detail .md-detail-info.fashion .detail-info-header .house-status,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .house-status{font-size:12px !important;height:auto !important;line-height:normal !important;padding:4px 8px !important;border-radius:0 !important}
+body.listing-detail .md-detail-info.fashion .detail-info-header .house-status.new,body.listing-detail .md-detail-info.fashion .detail-info-header .house-status.open-house,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .house-status.new,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .house-status.open-house{background-color:#ffc03a !important}
+body.listing-detail .md-detail-info.fashion .detail-info-header .house-status.active,body.listing-detail .md-detail-info.fashion .detail-info-header .house-status.pending,body.listing-detail .md-detail-info.fashion .detail-info-header .house-status.contingent,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .house-status.active,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .house-status.pending,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .house-status.contingent{background-color:#2c74a0 !important}
+body.listing-detail .md-detail-info.fashion .detail-info-header .house-status.coming-soon,body.listing-detail-sold .md-detail-info.fashion .detail-info-header .house-status.coming-soon{background-color:rgba(255,255,255,.3) !important;border:solid 1px #fff !important;color:#fff !important}
+body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner,body.listing-detail-sold .md-detail-info.fashion .listing-detail-banner .fixed-banner{background-color:#000}
+body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box,body.listing-detail-sold .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box{width:100%;padding:0 15px}
+@media(min-width:601px){body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box,body.listing-detail-sold .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box{padding:0 30px}
+}body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .banner-left .btn,body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .banner-right .btn,body.listing-detail-sold .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .banner-left .btn,body.listing-detail-sold .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .banner-right .btn{color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.7)}
+body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center,body.listing-detail-sold .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto}
+body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .price-address .address .detail-container,body.listing-detail-sold .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .price-address .address .detail-container{margin-top:0}
+body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour,body.listing-detail-sold .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
+body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour .item,body.listing-detail-sold .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour .item{color:#fff}
+@media(max-width:767px){body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour,body.listing-detail-sold .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour{max-width:160px}
+body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour .item[data-v-298eec66],body.listing-detail-sold .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .center .save-share-tour .item[data-v-298eec66]{margin-right:0;margin-bottom:6px}
+}@media(min-width:901px){body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .detail-info .addr,body.listing-detail-sold .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .detail-info .addr{font-size:24px}
+body.listing-detail .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .detail-info .addr-detail,body.listing-detail-sold .md-detail-info.fashion .listing-detail-banner .fixed-banner .banner-box .detail-info .addr-detail{font-size:16px}
+}body.listing-detail .md-demographic.fashion .mg-container .demographic-content,body.listing-detail-sold .md-demographic.fashion .mg-container .demographic-content{background-color:#000 !important;height:auto}
+body.listing-detail .md-demographic.fashion .mg-container .demographic-content .item .info .number,body.listing-detail-sold .md-demographic.fashion .mg-container .demographic-content .item .info .number{font-family:var(--font-title);font-size:90px;line-height:.7;padding-top:.3em}
+@media(max-width:1000px){body.listing-detail .md-demographic.fashion .mg-container .demographic-content .item .info .number,body.listing-detail-sold .md-demographic.fashion .mg-container .demographic-content .item .info .number{font-size:calc(20px + 7vw)}
+}body.listing-detail .md-demographic.fashion .mg-container .demographic-content .item .info .text,body.listing-detail-sold .md-demographic.fashion .mg-container .demographic-content .item .info .text{color:#fff}
+@media(max-width:600px){body.listing-detail .md-demographic.fashion .mg-container .demographic-content .item,body.listing-detail-sold .md-demographic.fashion .mg-container .demographic-content .item{height:auto;margin-bottom:15px}
+}body.listing-detail .md-demographic.fashion .md-demographic-content,body.listing-detail-sold .md-demographic.fashion .md-demographic-content{background-color:#000 !important}
+body.listing-detail-sold .md-sold-detail{padding-top:0 !important}
 body.listing .house-list.brief-list.template1{padding:0 0 0 12px}
 body.listing .house-list.brief-list.template1 .house-list-item:nth-of-type(even){background:#f8f8f8}
 body.listing .house-list.brief-list.template1 .house-list-item.template1{margin-bottom:12px}

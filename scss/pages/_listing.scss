@@ -1,4 +1,14 @@
-body.listing-detail {
+body.listing-detail,
+body.listing-detail-sold {
+    .banner.swiper-container {
+        .swiper-wrapper {
+            .swiper-slide {
+                &:only-of-type {
+                    width: 100%;
+                }
+            }
+        }
+    }
     .save-share-container {
         &[data-v-298eec66] {
             background-color: #222;
@@ -294,5 +304,11 @@ body.listing-detail {
         .md-demographic-content {
             background-color: #000 !important;
         }
+    }
+}
+
+body.listing-detail-sold {
+    .md-sold-detail {
+        padding-top: 0 !important;
     }
 }
