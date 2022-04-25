@@ -27,7 +27,7 @@
 body{font-family:var(--font-normal)}
 .text-align--center{text-align:center}
 .font-smooth{-webkit-font-smoothing:antialiased}
-.font-family--title,body.has-uikit .uk-button,body.has-uikit h1,body.has-uikit h2,body.has-uikit h3,body.has-uikit h4,body.has-uikit h5,body.has-uikit h6,.page-content .rs-tab--left .uk-tab li a,.page-content .uk-tab:not(.uk-tab-left) li a,.rs-button--featured,.page-content .bullet--arrow{font-family:var(--font-title);font-weight:normal;letter-spacing:.05em;line-height:1}
+.font-family--title,body.has-uikit .uk-button,body.has-uikit h1,body.has-uikit h2,body.has-uikit h3,body.has-uikit h4,body.has-uikit h5,body.has-uikit h6,.page-content .md-evaluation-banner.standard .banner .cover .main-title,.page-content .rs-tab--left .uk-tab li a,.page-content .uk-tab:not(.uk-tab-left) li a,.rs-button--featured,.page-content .bullet--arrow{font-family:var(--font-title);font-weight:normal;letter-spacing:.05em;line-height:1}
 .font-size--xs{font-size:.875rem}
 .font-size--s{font-size:1rem}
 .font-size--m{font-size:1.25rem}
@@ -112,8 +112,8 @@ body .page-content *{-webkit-box-sizing:border-box;box-sizing:border-box}
 }@media(max-width:480px){.page-content .bullet--arrow{margin-right:0;min-width:100%;margin-bottom:1.5em;padding:.2em 0 0;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .page-content .bullet--arrow:before{margin-top:-1px;margin-left:0}
 .page-content .bullet--arrow:after,.page-content .bullet--arrow:before{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);top:100%;border-left:calc(50vw - 20px) solid transparent;border-right:calc(50vw - 20px) solid transparent;border-top-width:.5em;border-top-color:inherit}
-}.rs-button,.page-content .md-evaluation-banner.standard .address-input.gf .address-body .right-box .submit-btn,.page-content .md-testimonial.list-standard .mg-more,body:not(.reviews) .md-testimonial.grid-progressive .mg-more,.page-content .md-house.template1 .mg-more,.page-content .md-cta-sc .media-content .banner-button .btn-item{display:inline-block;font-size:14px;font-weight:normal;background:#ffc03a;color:#fff !important;padding:.75rem 2rem !important;text-transform:uppercase;text-align:center;border-radius:0;height:auto !important;width:auto;line-height:initial !important;text-decoration:none !important;white-space:nowrap;-webkit-transition:all .3s;transition:all .3s}
-.rs-button:hover,.page-content .md-evaluation-banner.standard .address-input.gf .address-body .right-box .submit-btn:hover,.page-content .md-testimonial.list-standard .mg-more:hover,body:not(.reviews) .md-testimonial.grid-progressive .mg-more:hover,.page-content .md-house.template1 .mg-more:hover,.page-content .md-cta-sc .media-content .banner-button .btn-item:hover{background:#ffb516}
+}.rs-button,.page-content .md-testimonial.list-standard .mg-more,body:not(.reviews) .md-testimonial.grid-progressive .mg-more,.page-content .md-house.template1 .mg-more,.page-content .md-cta-sc .media-content .banner-button .btn-item{display:inline-block;font-size:14px;font-weight:normal;background:#ffc03a;color:#fff !important;padding:.75rem 2rem !important;text-transform:uppercase;text-align:center;border-radius:0;height:auto !important;width:auto;line-height:initial !important;text-decoration:none !important;white-space:nowrap;-webkit-transition:all .3s;transition:all .3s}
+.rs-button:hover,.page-content .md-testimonial.list-standard .mg-more:hover,body:not(.reviews) .md-testimonial.grid-progressive .mg-more:hover,.page-content .md-house.template1 .mg-more:hover,.page-content .md-cta-sc .media-content .banner-button .btn-item:hover{background:#ffb516}
 .rs-button--outline{background:transparent;border:solid 1px #fff}
 .rs-button--outline:hover{background:transparent}
 .rs-button--featured{font-size:40px;background:transparent;border:solid 2px var(--color-theme);color:var(--color-theme) !important;padding:.75em !important}
@@ -656,25 +656,39 @@ body:not(.reviews) .md-testimonial.slider-standard .testimonial-frame .testimoni
 @media(min-width:601px){.page-content .md-testimonial.list-standard .comment-list-wrap .comment-list .odd .testimonial-picture{margin-right:0 !important}
 }.page-content .md-testimonial.slider-standard .testimonial-frame .testimonial-container .testimonial-swiper .testimonial .testimonial-item-container{background:rgba(255,255,255,.9)}
 .page-content .md-testimonial.slider-standard .testimonial-frame .testimonial-container .testimonial-swiper .testimonial .testimonial-item-container .testimonial-body,.page-content .md-testimonial.slider-standard .testimonial-frame .testimonial-container .testimonial-swiper .testimonial .testimonial-item-container .testimonial-footer .testimonial-name{color:#222}
+.page-content .md-evaluation-banner .banner .main-title p{line-height:1}
 .page-content .md-evaluation-banner.standard .banner .cover{padding:120px 0 90px}
-.page-content .md-evaluation-banner.standard .banner .cover .slide-switch .slide .address-input{color:#000;font-family:var(--font-title);min-width:0;padding:0 1.5em}
+.page-content .md-evaluation-banner.standard .banner .cover .main-title{font-size:72px}
+@media(max-width:1000px){.page-content .md-evaluation-banner.standard .banner .cover .main-title{font-size:calc(22px + 5vw)}
+}.page-content .md-evaluation-banner.standard .banner .cover .description{font-size:28px;margin-bottom:24px}
+@media(max-width:1000px){.page-content .md-evaluation-banner.standard .banner .cover .description{font-size:calc(8px + 2vw)}
+}.page-content .md-evaluation-banner.standard .banner .cover .slide-switch .slide .address-input{color:#000;font-family:var(--font-title);min-width:0;padding:0 1.5em}
 .page-content .md-evaluation-banner.standard .top{border-radius:0}
 .page-content .md-evaluation-banner.standard .top .form-wrap{border-radius:0}
 .page-content .md-evaluation-banner.standard .top .form-wrap .reg-form .desc{padding:0}
 .page-content .md-evaluation-banner.standard .top .form-wrap .reg-form .desc .basic-info .iconfont{display:none}
 .page-content .md-evaluation-banner.standard .top .form-wrap .reg-form .desc .basic-info .input-container input:not([type=submit]){padding:6px 0}
 .page-content .md-evaluation-banner.standard .single-picture:after{content:"";display:block;position:absolute;top:0;bottom:0;left:0;right:0;background:rgba(0,0,0,.4)}
+.page-content .md-evaluation-banner.standard .address-input.gf .address-body{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .page-content .md-evaluation-banner.standard .address-input.gf .address-body .input{border-radius:0}
 .page-content .md-evaluation-banner.standard .address-input.gf .address-body .left-box{margin-right:20px}
-.page-content .md-evaluation-banner.standard .clame{margin-top:16px}
+@media(max-width:840px){.page-content .md-evaluation-banner.standard .address-input.gf .address-body .left-box{max-width:600px}
+}.page-content .md-evaluation-banner.standard .clame{margin-top:16px}
 .page-content .md-evaluation-banner.standard .report-info .report-price .price-item .price-text{font-family:var(--font-title);letter-spacing:.05em}
 .page-content .md-evaluation-banner.standard .report-info .report-change>span{-webkit-box-flex:0;-ms-flex:none;flex:none}
 .page-content .md-evaluation-banner.standard .report-info .report-change>span:empty{display:none}
 .page-content .md-evaluation-banner.standard .report-info .report-change>span.change-text{content:":";margin-left:0;margin-right:16px;font-family:var(--font-title);font-size:24px;letter-spacing:.05em;line-height:initial}
 .page-content .md-evaluation-banner.standard .report-info .report-change>span.change-value{border:0}
+.page-content .md-evaluation-banner.evaluation-progress .md-evaluation-steps-content .md-evaluation-steps .steps-box .step-icon{width:100px}
+@media(max-width:1000px){.page-content .md-evaluation-banner.evaluation-progress .md-evaluation-steps-content .md-evaluation-steps .steps-box .step-icon{width:calc(50px + 5vw)}
+}.page-content .md-evaluation-banner.evaluation-progress .md-evaluation-steps-content .md-evaluation-steps .steps-box .step-icon:before{content:"";display:block;width:100%;padding-bottom:100%;background-image:url("https://vividsites-realtyshop.github.io/realtyshopstl/img/valuation_steps.png");background-size:cover;background-repeat:no-repeat}
+.page-content .md-evaluation-banner.evaluation-progress .md-evaluation-steps-content .md-evaluation-steps .steps-box .step-icon.icon-evaluation-step-2:before{background-position:50% 0}
+.page-content .md-evaluation-banner.evaluation-progress .md-evaluation-steps-content .md-evaluation-steps .steps-box .step-icon.icon-evaluation-step-3:before{background-position:100% 0}
 .page-content .md-evaluation-banner.evaluation-progress .md-evaluation-steps-content .md-evaluation-steps .steps-box .step-description{font-family:var(--font-title);font-size:21px}
-.page-content .md-evaluation-banner.evaluation-progress .md-evaluation-steps-content .md-evaluation-steps .steps-box .step-description .step-label{font-family:var(--font-title);font-size:48px}
-.background-color--white{background-color:#fff !important}
+@media(max-width:1000px){.page-content .md-evaluation-banner.evaluation-progress .md-evaluation-steps-content .md-evaluation-steps .steps-box .step-description{font-size:calc(11px + 1vw)}
+}.page-content .md-evaluation-banner.evaluation-progress .md-evaluation-steps-content .md-evaluation-steps .steps-box .step-description .step-label{font-family:var(--font-title);font-size:48px}
+@media(max-width:1000px){.page-content .md-evaluation-banner.evaluation-progress .md-evaluation-steps-content .md-evaluation-steps .steps-box .step-description .step-label{font-size:calc(18px + 3vw)}
+}.background-color--white{background-color:#fff !important}
 .background-color--light{background-color:#f8f8f8 !important}
 .background-color--theme{background-color:var(--color-theme) !important}
 .background-color--dark{background-color:#222 !important}

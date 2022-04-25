@@ -1,9 +1,27 @@
 .page-content {
     .md-evaluation-banner {
+        .banner .main-title p {line-height: 1;}
+
         &.standard {
             .banner {
                 .cover {
                     padding: 120px 0 90px;
+                    .main-title {
+                        @extend .font-family--title;
+                        font-size: 72px;
+
+                        @media (max-width: 1000px) {
+                            font-size: calc(22px + 5vw);
+                        }
+                    }
+                    .description {
+                        font-size: 28px;
+                        margin-bottom:24px;
+
+                        @media( max-width:1000px ) {
+                            font-size: calc(8px + 2vw);
+                        }
+                    }
                     .slide-switch {
                         .slide {
                             .address-input {
@@ -58,17 +76,22 @@
             .address-input {
                 &.gf {
                     .address-body {
+                        justify-content: center;
+
                         .input {
                             border-radius: 0;
                         }
 
                         .left-box {
                             margin-right: 20px;
+                            
+                            @media(max-width:840px) {
+                                max-width: 600px;
+                            }
                         }
 
                         .right-box {
                             .submit-btn {
-                                @extend .rs-button;
                                 @extend .rs-button--alt;
                             }
                         }
@@ -119,13 +142,48 @@
             .md-evaluation-steps-content {
                 .md-evaluation-steps {
                     .steps-box {
+                        .step-icon {
+                            width: 100px;
+
+                            @media (max-width: 1000px) {
+                                width: calc(50px + 5vw);
+                            }
+
+                            &:before {
+                                content: "";
+                                display: block;
+                                width: 100%;
+                                padding-bottom: 100%;
+                                background-image: url("https://vividsites-realtyshop.github.io/realtyshopstl/img/valuation_steps.png");
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                            }
+                            &.icon-evaluation-step-2{
+                                &:before {
+                                    background-position: 50% 0%;
+                                }
+                            }
+                            &.icon-evaluation-step-3{
+                                &:before {
+                                    background-position: 100% 0%;
+                                }
+                            }
+                        }
                         .step-description {
                             font-family: var(--font-title);
                             font-size: 21px;
+                            
+                            @media (max-width: 1000px) {
+                                font-size: calc(11px + 1vw);
+                            }
 
                             .step-label {
                                 font-family: var(--font-title);
                                 font-size: 48px;
+
+                                @media (max-width: 1000px) {
+                                    font-size: calc(18px + 3vw);
+                                }
                             }
                         }
                     }
