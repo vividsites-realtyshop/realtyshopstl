@@ -34,6 +34,31 @@ header {
             &.item-login {
                 margin-left: 0 !important;
             }
+            &.has-child:only-child {
+                &:hover {
+                    & > a:hover {
+                        color: #fff;
+                    }
+                }
+                .wrapper {
+                    background: #222;
+                    right: 0;
+                    font-size: 15px;
+
+                    .submenu {
+                        .menu-item {
+                            &:hover {
+                                background: transparent;
+                            }
+                            a {
+                                &:hover {
+                                    background: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 

@@ -4,6 +4,7 @@
             .banner-button {
                 .btn-item {
                     @extend .rs-button;
+                    @extend .rs-button--alt;
                 }
             }
         }

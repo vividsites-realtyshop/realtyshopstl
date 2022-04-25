@@ -27,7 +27,7 @@
 body{font-family:var(--font-normal)}
 .text-align--center{text-align:center}
 .font-smooth{-webkit-font-smoothing:antialiased}
-.font-family--title,body.has-uikit .uk-button,body.has-uikit h1,body.has-uikit h2,body.has-uikit h3,body.has-uikit h4,body.has-uikit h5,body.has-uikit h6,.page-content .rs-tab--left .uk-tab li a,.page-content .uk-tab:not(.uk-tab-left) li a,.rs-button--featured,.page-content .bullet--arrow{font-family:var(--font-title);font-weight:normal;letter-spacing:.05em;line-height:1}
+.font-family--title,body.has-uikit .uk-button,body.has-uikit h1,body.has-uikit h2,body.has-uikit h3,body.has-uikit h4,body.has-uikit h5,body.has-uikit h6,.page-content .rs-tab--left .uk-tab li a,.page-content .uk-tab:not(.uk-tab-left) li a,.rs-button--alt,.page-content .md-cta-sc .media-content .banner-button .btn-item,.rs-button--featured,.page-content .bullet--arrow{font-family:var(--font-title);font-weight:normal;letter-spacing:.05em;line-height:1}
 .font-size--xs{font-size:.875rem}
 .font-size--s{font-size:1rem}
 .font-size--m{font-size:1.25rem}
@@ -119,6 +119,7 @@ body .page-content *{-webkit-box-sizing:border-box;box-sizing:border-box}
 .rs-button--featured{font-size:40px;background:transparent;border:solid 2px var(--color-theme);color:var(--color-theme) !important;padding:.75em !important}
 @media(max-width:1000px){.rs-button--featured{font-size:calc(10px + 3vw)}
 }.rs-button--featured:hover{color:#fff !important}
+.rs-button--alt,.page-content .md-cta-sc .media-content .banner-button .btn-item{font-size:16px !important;color:#000 !important}
 .button{border-radius:0 !important}
 .button--hover-scale:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}
 .rs-collage{margin-left:-1px;margin-right:-1px;border-top:solid 1px #fff;border-bottom:solid 1px #fff}
@@ -655,6 +656,7 @@ body:not(.reviews) .md-testimonial.slider-standard .testimonial-frame .testimoni
 }.page-content .md-testimonial.slider-standard .testimonial-frame .testimonial-container .testimonial-swiper .testimonial .testimonial-item-container{background:rgba(255,255,255,.9)}
 .page-content .md-testimonial.slider-standard .testimonial-frame .testimonial-container .testimonial-swiper .testimonial .testimonial-item-container .testimonial-body,.page-content .md-testimonial.slider-standard .testimonial-frame .testimonial-container .testimonial-swiper .testimonial .testimonial-item-container .testimonial-footer .testimonial-name{color:#222}
 .page-content .md-evaluation-banner.standard .banner .cover{padding:120px 0 90px}
+.page-content .md-evaluation-banner.standard .banner .cover .slide-switch .slide .address-input{color:#000;font-family:var(--font-title);min-width:0;padding:0 1.5em}
 .page-content .md-evaluation-banner.standard .top{border-radius:0}
 .page-content .md-evaluation-banner.standard .top .form-wrap{border-radius:0}
 .page-content .md-evaluation-banner.standard .top .form-wrap .reg-form .desc{padding:0}
@@ -669,7 +671,8 @@ body:not(.reviews) .md-testimonial.slider-standard .testimonial-frame .testimoni
 .page-content .md-evaluation-banner.standard .report-info .report-change>span:empty{display:none}
 .page-content .md-evaluation-banner.standard .report-info .report-change>span.change-text{content:":";margin-left:0;margin-right:16px;font-family:var(--font-title);font-size:24px;letter-spacing:.05em;line-height:initial}
 .page-content .md-evaluation-banner.standard .report-info .report-change>span.change-value{border:0}
-.page-content .md-evaluation-banner.evaluation-progress .md-evaluation-steps-content .md-evaluation-steps .steps-box .step-description .step-label{font-family:var(--font-title);font-size:28px}
+.page-content .md-evaluation-banner.evaluation-progress .md-evaluation-steps-content .md-evaluation-steps .steps-box .step-description .step-label{font-family:var(--font-title);font-size:48px}
+.page-content .md-evaluation-banner.evaluation-progress .md-evaluation-steps-content .md-evaluation-steps .steps-box .step-description .step-description{font-family:var(--font-title);font-size:21px}
 .background-color--white{background-color:#fff !important}
 .background-color--light{background-color:#f8f8f8 !important}
 .background-color--theme{background-color:var(--color-theme) !important}
@@ -746,6 +749,10 @@ header .head-account .menu-item{-webkit-transition:all .3s;transition:all .3s}
 header .head-account .menu-item:hover{background:var(--color-theme);color:#fff !important}
 header .head-account .menu-item.item-regist{display:none !important}
 header .head-account .menu-item.item-login{margin-left:0 !important}
+header .head-account .menu-item.has-child:only-child:hover>a:hover{color:#fff}
+header .head-account .menu-item.has-child:only-child .wrapper{background:#222;right:0;font-size:15px}
+header .head-account .menu-item.has-child:only-child .wrapper .submenu .menu-item:hover{background:transparent}
+header .head-account .menu-item.has-child:only-child .wrapper .submenu .menu-item a:hover{background:transparent}
 header .header-placeholder{background:#000}
 .md-header.fashion .header-container .head-account .menu-item{border-color:var(--color-theme) !important;color:var(--color-theme)}
 .md-header.fashion .header-container .menu-item{letter-spacing:.05em}
