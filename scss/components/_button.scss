@@ -46,7 +46,8 @@
     }
 
     &--alt {
-        @extend .font-family--title;
+        font-family: var(--font-title) !important;
+        letter-spacing: $title-letter-spacing;
         font-size: 16px !important;
         color: #000 !important;
     }

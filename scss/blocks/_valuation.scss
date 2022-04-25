@@ -65,6 +65,13 @@
                         .left-box {
                             margin-right: 20px;
                         }
+
+                        .right-box {
+                            .submit-btn {
+                                @extend .rs-button;
+                                @extend .rs-button--alt;
+                            }
+                        }
                     }
                 }
             }
@@ -113,13 +120,12 @@
                 .md-evaluation-steps {
                     .steps-box {
                         .step-description {
+                            font-family: var(--font-title);
+                            font-size: 21px;
+
                             .step-label {
                                 font-family: var(--font-title);
                                 font-size: 48px;
-                            }
-                            .step-description {
-                                font-family: var(--font-title);
-                                font-size: 21px;
                             }
                         }
                     }
