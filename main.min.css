@@ -671,7 +671,8 @@ body:not(.reviews) .md-testimonial.slider-standard .testimonial-frame .testimoni
 .page-content .md-evaluation-banner.standard .single-picture:after{content:"";display:block;position:absolute;top:0;bottom:0;left:0;right:0;background:rgba(0,0,0,.4)}
 .page-content .md-evaluation-banner.standard .address-input.gf .address-body{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .page-content .md-evaluation-banner.standard .address-input.gf .address-body .input{border-radius:0}
-@media(max-width:840px){.page-content .md-evaluation-banner.standard .address-input.gf .address-body .left-box{margin-right:20px;max-width:600px}
+.page-content .md-evaluation-banner.standard .address-input.gf .address-body .left-box{margin-right:0}
+@media(min-width:841px){.page-content .md-evaluation-banner.standard .address-input.gf .address-body .left-box{margin-right:20px;max-width:600px}
 }.page-content .md-evaluation-banner.standard .clame{margin-top:16px}
 .page-content .md-evaluation-banner.standard .report-info .report-price .price-item .price-text{font-family:var(--font-title);letter-spacing:.05em}
 .page-content .md-evaluation-banner.standard .report-info .report-change>span{-webkit-box-flex:0;-ms-flex:none;flex:none}
