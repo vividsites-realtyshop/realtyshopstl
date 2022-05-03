@@ -48,9 +48,9 @@
                     width: 100%;
                     display: block;
                     padding: 0 !important;
-                    margin: 0 !important;
+                    margin: 0 0 -1px 0 !important;
                     height: auto;
-                    margin-bottom: -1px;
+                    break-inside: avoid;
 
                     &:before,
                     &:after {
